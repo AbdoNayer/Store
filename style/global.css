@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;700&family=Tajawal:wght@400;700&display=swap");
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  outline: none !important;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  font-family: "Tajawal", sans-serif;
+  font-weight: 200 !important;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--main);
+  border: 1px solid var(--main);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--main);
+}
+
+::-moz-selection {
+  background: var(--main);
+  color: #fff;
+}
+
+::selection {
+  background: var(--main);
+  color: #fff;
+}
+
+::-moz-selection {
+  background: var(--main);
+  color: #fff;
+}
+
+::-webkit-input-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder,
+:-moz-placeholder {
+  color: var(--main);
+  opacity: 1;
+}
+
+.owl-carousel {
+  display: block;
+  width: 100%;
+  -webkit-tap-highlight-color: transparent;
+  position: relative;
+  direction: ltr;
+}
+
+.loader::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: initial;
+  right: 0;
+  left: initial;
+  transform: var(--backRightIn);
+  margin: auto;
+  transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  background: #fff;
+  width: 50%;
+  height: 100%;
+}
+.loader::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: initial;
+  right: initial;
+  left: 0;
+  transform: var(--backLefttIn);
+  margin: auto;
+  transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  background: #fff;
+  width: 50%;
+  height: 100%;
+}
+.loader .spinner .item.item-1 {
+  background-color: #166434;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  animation: item-1_move 1.8s cubic-bezier(0.6, 0.01, 0.4, 1) infinite;
+}
+.loader .spinner .item.item-2 {
+  background-color: #D2B065;
+  top: 0;
+  right: 0;
+  animation: item-2_move 1.8s cubic-bezier(0.6, 0.01, 0.4, 1) infinite;
+}
+.loader .spinner .item.item-3 {
+  background-color: #00396a;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  animation: item-3_move 1.8s cubic-bezier(0.6, 0.01, 0.4, 1) infinite;
+}
+.loader .spinner .item.item-4 {
+  background-color: #000000;
+  bottom: 0;
+  left: 0;
+  animation: item-4_move 1.8s cubic-bezier(0.6, 0.01, 0.4, 1) infinite;
+}
+@keyframes item-1_move {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(0, 30px);
+  }
+  50% {
+    transform: translate(30px, 30px);
+  }
+  75% {
+    transform: translate(30px, 0);
+  }
+}
+@keyframes item-2_move {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-30px, 0);
+  }
+  50% {
+    transform: translate(-30px, 30px);
+  }
+  75% {
+    transform: translate(0, 30px);
+  }
+}
+@keyframes item-3_move {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(0, -30px);
+  }
+  50% {
+    transform: translate(-30px, -30px);
+  }
+  75% {
+    transform: translate(-30px, 0);
+  }
+}
+@keyframes item-4_move {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(30px, 0);
+  }
+  50% {
+    transform: translate(30px, -30px);
+  }
+  75% {
+    transform: translate(0, -30px);
+  }
+}
+
+.main-body-slider #sliderHome .owl-item.active .over-info h1, .main-body-slider #sliderHome .owl-item.active .over-info p {
+  transition: 1s;
+  animation-name: translateInfo;
+  animation-fill-mode: both;
+}
+.main-body-slider #sliderHome .owl-item.active .over-info h1 {
+  animation-duration: 1s;
+  animation-delay: 1s;
+}
+.main-body-slider #sliderHome .owl-item.active .over-info p {
+  animation-duration: 1.5s;
+  animation-delay: 1.5s;
+}
+@keyframes translateInfo {
+  from {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    visibility: initial;
+    transform: translateY(0px);
+  }
+}
+
+.owl-dots {
+  display: none;
+}/*# sourceMappingURL=global.css.map */
