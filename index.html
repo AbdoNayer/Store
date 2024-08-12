@@ -37,6 +37,9 @@
     <link rel="stylesheet" href="./style/global.css" />
   </head>
   <body id="Home">
+
+    <div class="overlay fixed top-0 right-0 w-full h-full bg-overlay translate-x-[-100%] transition duration-700 ease-in-out z-[998]"></div>
+
     <!-- Loading App -->
     <div class="loader w-full h-full fixed top-0 right-0 z-[99999]">
       <div
@@ -56,40 +59,76 @@
           <a href=""
             ><img class="max-w-[100px]" src="./images/logo.png" alt=""
           /></a>
-          <div class="flex items-center">
-            <ul class="flex items-center">
-              <li class="overflow-hidden position-relative">
-                <a href="" data-value="Home" class="mx-4 text-white"
+          <!-- Click BTN On Mobile Open Nav  -->
+          <div class="click-nav">
+            <div class="handle bg-white"></div>
+            <div class="handle bg-white"></div>
+            <div class="handle bg-white"></div>
+          </div>
+          <div
+            class="list-head flex items-center lg:translate-x-[0] translate-x-[100%] transition duration-700 ease-in-out lg:flex-row flex-col lg:relative lg:w-auto lg:h-auto lg:bg-transparent bg-white fixed top-0 rtl:right-0 ltr:left-0 w-[300px] h-screen z-[999]"
+          >
+            <ul class="flex items-center lg:flex-row flex-col">
+              <li class="overflow-hidden active lg:my-0 my-4">
+                <a
+                  href=""
+                  data-value="Home"
+                  class="mx-4 relative p-[10px] z-[9] rounded-[3px] overflow-hidden flex lg:text-white text-main"
                   >الرئيسية</a
                 >
               </li>
-              <li class="overflow-hidden position-relative">
-                <a href="" data-value="About" class="mx-4 text-white">من نحن</a>
+              <li class="overflow-hidden lg:my-0 my-4">
+                <a
+                  href=""
+                  data-value="About"
+                  class="mx-4 relative p-[10px] z-[9] rounded-[3px] overflow-hidden flex lg:text-white text-main"
+                  >من نحن</a
+                >
               </li>
-              <li class="overflow-hidden position-relative">
-                <a href="" data-value="Services " class="mx-4 text-white"
+              <li class="overflow-hidden lg:my-0 my-4">
+                <a
+                  href=""
+                  data-value="Services "
+                  class="mx-4 relative p-[10px] z-[9] rounded-[3px] overflow-hidden flex lg:text-white text-main"
                   >خدماتنا</a
                 >
               </li>
-              <li class="overflow-hidden position-relative">
-                <a href="" data-value="OurValues" class="mx-4 text-white"
+              <li class="overflow-hidden lg:my-0 my-4">
+                <a
+                  href=""
+                  data-value="OurValues"
+                  class="mx-4 relative p-[10px] z-[9] rounded-[3px] overflow-hidden flex lg:text-white text-main"
                   >قيمنا</a
                 >
               </li>
-              <li class="overflow-hidden position-relative">
-                <a href="" data-value="Customers" class="mx-4 text-white"
+              <li class="overflow-hidden lg:my-0 my-4">
+                <a
+                  href=""
+                  data-value="VisionsMassages"
+                  class="mx-4 relative p-[10px] z-[9] rounded-[3px] overflow-hidden flex lg:text-white text-main"
+                  >رؤيتنا ورسالتنا</a
+                >
+              </li>
+              <li class="overflow-hidden lg:my-0 my-4">
+                <a
+                  href=""
+                  data-value="Customers"
+                  class="mx-4 relative p-[10px] z-[9] rounded-[3px] overflow-hidden flex lg:text-white text-main"
                   >عملائنا</a
                 >
               </li>
-              <li class="overflow-hidden position-relative">
-                <a href="" data-value="Contact" class="mx-4 text-white"
+              <li class="overflow-hidden lg:my-0 my-4">
+                <a
+                  href=""
+                  data-value="Contact"
+                  class="mx-4 relative p-[10px] z-[9] rounded-[3px] overflow-hidden flex lg:text-white text-main"
                   >راسلنا</a
                 >
               </li>
             </ul>
             <a
               href=""
-              class="w-[45px] h-[45px] flex items-center justify-center rounded-[5px] bg-main text-white fw-bold"
+              class="w-[45px] h-[45px] flex items-center justify-center rounded-[5px] bg-main text-white fw-bold lg:my-0 my-4"
               >EN</a
             >
           </div>
@@ -106,7 +145,7 @@
             class="overlay-fix w-full h-full flex items-center absolute top-0 right-0 bg-overlay"
           >
             <div class="container overflow-hidden">
-              <div class="over-info w-[600px] m-auto text-center">
+              <div class="over-info lg:w-[600px] m-auto text-center">
                 <h1 class="font-bold text-[60px] text-white">ملاذ الحكمة</h1>
                 <p class="text-white text-[22px]">
                   " يزدهر الكون بوجود العدل ويموت الكون حيت غيابة "
@@ -121,7 +160,7 @@
             class="overlay-fix w-full h-full flex items-center absolute top-0 right-0 bg-overlay"
           >
             <div class="container overflow-hidden">
-              <div class="over-info w-[600px] m-auto text-center">
+              <div class="over-info lg:w-[600px] m-auto text-center">
                 <h1 class="font-bold text-[60px] text-white">ملاذ الحكمة</h1>
                 <p class="text-white text-[22px]">
                   " يزدهر الكون بوجود العدل ويموت الكون حيت غيابة "
@@ -131,12 +170,12 @@
           </div>
         </div>
         <div class="item position-relative">
-          <img src="./images/bg-6.png" alt="" class="h-screen" />
+          <img src="./images/bg-8.png" alt="" class="h-screen" />
           <div
             class="overlay-fix w-full h-full flex items-center absolute top-0 right-0 bg-overlay"
           >
             <div class="container overflow-hidden">
-              <div class="over-info w-[600px] m-auto text-center">
+              <div class="over-info lg:w-[600px] m-auto text-center">
                 <h1 class="font-bold text-[60px] text-white">ملاذ الحكمة</h1>
                 <p class="text-white text-[22px]">
                   " يزدهر الكون بوجود العدل ويموت الكون حيت غيابة "
@@ -160,7 +199,7 @@
     </div>
 
     <!-- Targets -->
-    <div class="relative top-[-150px] z-[99]">
+    <div class="relative lg:top-[-150px] z-[99]">
       <div class="container">
         <div
           class="flex justify-center items-center lg:flex-row flex-col gap-9"
@@ -201,8 +240,12 @@
     </div>
 
     <!-- About -->
-    <div id="About" class="relative">
-      <img src="./images/image-balance.png" class="absolute  top-[-600px] right-0 left-0 m-auto opacity-25" alt="">
+    <div id="About" class="relative mb-8">
+      <img
+        src="./images/image-balance.png"
+        class="absolute top-[-600px] right-0 left-0 m-auto opacity-25"
+        alt=""
+      />
       <div class="container">
         <div class="grid grid-cols-12 gap-3 py-3">
           <div
@@ -212,10 +255,11 @@
             data-aos-easing="ease-in-sine"
             data-aos-duration="400"
           >
-            <h5 class="font-bold text-[40px] relative 
-              after:content-[''] after:w-[15px] after:h-[15px] after:bg-main after:rounded-[3px] after:absolute after:top-[50%] after:translate-y-[-50%] after:rotate-[50deg] after:right-[-30px]
-              before:content-[''] before:w-[15px] before:h-[15px] before:bg-secondary before:rounded-[3px] before:absolute before:top-[50%] before:translate-y-[-50%] before:rotate-[50deg] before:right-[-20px]
-              ">من نحن</h5>
+            <h5
+              class="font-bold text-[40px] relative after:content-[''] after:w-[15px] after:h-[15px] after:bg-main after:rounded-[3px] after:absolute after:top-[50%] after:translate-y-[-50%] after:rotate-[50deg] after:right-[-30px] ltr:after:left-[-30px] before:content-[''] before:w-[15px] before:h-[15px] before:bg-secondary before:rounded-[3px] before:absolute before:top-[50%] before:translate-y-[-50%] before:rotate-[50deg] before:right-[-20px] ltr:before:left-[-20px]"
+            >
+              من نحن
+            </h5>
             <p class="leading-9">
               ﺷـــﺮﮐﺔ ﻣﻼﺫ ﺍﻟﺤﮑﻤﺔ ﻟﻠﻤﺤﺎﻣﺎﺓ ﻭﺍﻻﺳﺘﺸـــﺎﺭﺍﺕ ﺍﻟﻘﺎﻧﻮﻧﯿﺔ ﻣﻨﺸـــﺄﺓ ﻣﻬﻨﯿﺔ
               ﺗﺒﻮﺃﺕ ﻣﮑﺎﻧﺘﻬﺎ ﺍﳌﺮﻣﻮﻗﺔ ﺿﻤﻦ ﺍﳌﻨﺸﺂﺕ ﺍﻟﺮﺍﺋـــﺪﺓ ﻲﻓ ﻣﺠﺎﻝ ﺍﻟﺨﺪﻣﺎﺕ
@@ -244,16 +288,703 @@
               "
             > -->
             <div
-              class="m-auto lg:w-[90%] w-full relative
-              after:content-[''] after:w-[100px] after:h-[100px] after:border-t-[5px] after:border-l-[5px] after:border-main after:absolute after:top-[-20px] after:left-[-20px] after:opacity-50
-              before:content-[''] before:w-[100px] before:h-[100px] before:border-b-[5px] before:border-r-[5px] before:border-main before:absolute before:bottom-[-20px] before:right-[-20px] before:opacity-50
-              "
+              class="m-auto lg:w-[90%] w-full relative after:content-[''] after:w-[100px] after:h-[100px] after:border-t-[5px] after:border-l-[5px] after:border-main after:absolute after:top-[-20px] after:left-[-20px] after:opacity-50 before:content-[''] before:w-[100px] before:h-[100px] before:border-b-[5px] before:border-r-[5px] before:border-main before:absolute before:bottom-[-20px] before:right-[-20px] before:opacity-50"
             >
               <img
                 class="m-auto lg:w-[100%] h-[400px] w-full rounded-[10px]"
                 src="./images/bg-6.png"
                 alt=""
               />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services -->
+    <div id="Services" class="relative overflow-hidden pt-[40px] pb-[40px]">
+      <div class="container">
+        <div class="text-center mb-8">
+          <h5
+            class="font-bold m-auto table text-[40px] relative after:content-[''] after:w-[15px] after:h-[15px] after:bg-main after:rounded-[3px] after:absolute after:top-[50%] after:translate-y-[-50%] after:rotate-[50deg] after:right-[-30px] ltr:after:left-[-30px] before:content-[''] before:w-[15px] before:h-[15px] before:bg-secondary before:rounded-[3px] before:absolute before:top-[50%] before:translate-y-[-50%] before:rotate-[50deg] before:right-[-20px] ltr:before:left-[-20px]"
+          >
+            خدماتنا
+          </h5>
+          <p class="leading-9">
+            خدماتنا التخصصية تشمل على خيارات متعددة تناسب كافة الأحتياجات ويمكن
+            تلخيصها بما يلي
+          </p>
+        </div>
+        <div
+          class="grid grid-cols-12 gap-y-2 lg:gap-x-14 py-3 lg:h-[550px] overflow-hidden px-[35px] list-services"
+        >
+          <div
+            class="lg:col-span-6 col-span-12 my-3"
+            data-aos="fade-right"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="500"
+          >
+            <div
+              class="border border-secondary p-2 rounded-[3px] bg-white relative"
+            >
+              <div
+                class="bg-white border border-secondary p-2 rounded-[3px] absolute top-[50%] translate-y-[-50%] rtl:right-[-35px] ltr:left-[-35px]"
+              >
+                <img src="./images/home-done.png" alt="" class="max-w-[50px]" />
+              </div>
+              <div class="ps-[45px] py-4">
+                <h4 class="font-bold text-[18px] mb-2">الترافع والتقاضي</h4>
+                <p
+                  class="text-[#8d8d8d] text-[14px] lg:h-[60px] overflow-y-auto"
+                >
+                  تمثيل العملاء في جميع إجراءات التقاضي لكافة أنواع القضايا لدى
+                  المحاكم والجهات العدلية وأمام اللجان القضائية وشبه القضائية
+                  وعلى اختلاف أنواعها ودرجاتها القضائية
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="lg:col-span-6 col-span-12 my-3"
+            data-aos="fade-right"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="500"
+          >
+            <div
+              class="border border-secondary p-2 rounded-[3px] bg-white relative"
+            >
+              <div
+                class="bg-white border border-secondary p-2 rounded-[3px] absolute top-[50%] translate-y-[-50%] rtl:right-[-35px] ltr:left-[-35px]"
+              >
+                <img src="./images/chats.png" alt="" class="max-w-[50px]" />
+              </div>
+              <div class="ps-[45px] py-4">
+                <h4 class="font-bold text-[18px] mb-2">الاستشارات القانونية</h4>
+                <p
+                  class="text-[#8d8d8d] text-[14px] lg:h-[60px] overflow-y-auto"
+                >
+                  تقديم كافة الاستشارات القانونية مع الإمتثال الكامل للقوانين
+                  المحلية والإلتزام بالإتفاقيات الدولية
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="lg:col-span-6 col-span-12 my-3"
+            data-aos="fade-right"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="500"
+          >
+            <div
+              class="border border-secondary p-2 rounded-[3px] bg-white relative"
+            >
+              <div
+                class="bg-white border border-secondary p-2 rounded-[3px] absolute top-[50%] translate-y-[-50%] rtl:right-[-35px] ltr:left-[-35px]"
+              >
+                <img src="./images/t-build.png" alt="" class="max-w-[50px]" />
+              </div>
+              <div class="ps-[45px] py-4">
+                <h4 class="font-bold text-[18px] mb-2">
+                  قطاع الأعمال والشركات
+                </h4>
+                <p
+                  class="text-[#8d8d8d] text-[14px] lg:h-[60px] overflow-y-auto"
+                >
+                  كافة الإجراءات اللازمة لتسجيل الشركات والوكالات التجارية
+                  والعلامات التجارية وكذلك إعادة هيكلة الشركات بما يشمل تشكيل
+                  الكيانات وحلها وعمليات الدمج والإستحواذ بالإضافة إلى خدمات
+                  حوكمة الشركات وقضايا تصفية الشركات والإفلاس
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="lg:col-span-6 col-span-12 my-3"
+            data-aos="fade-right"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="500"
+          >
+            <div
+              class="border border-secondary p-2 rounded-[3px] bg-white relative"
+            >
+              <div
+                class="bg-white border border-secondary p-2 rounded-[3px] absolute top-[50%] translate-y-[-50%] rtl:right-[-35px] ltr:left-[-35px]"
+              >
+                <img src="./images/engenir.png" class="max-w-[50px]" alt="" />
+              </div>
+              <div class="ps-[45px] py-4">
+                <h4 class="font-bold text-[18px] mb-2">الاستثمار الأجنبي</h4>
+                <p
+                  class="text-[#8d8d8d] text-[14px] lg:h-[60px] overflow-y-auto"
+                >
+                  توفير كافة الخدمات والإستشارات القانونية المتعلقة بالإستثمار
+                  الأجنبي مثل إصدار التراخيص والسجلات التجارية والتمثيل أمام
+                  الجهات الرسمية وغير الرسمية في المملكة العربية السعودية
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="lg:col-span-6 col-span-12 my-3"
+            data-aos="fade-right"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="500"
+          >
+            <div
+              class="border border-secondary p-2 rounded-[3px] bg-white relative"
+            >
+              <div
+                class="bg-white border border-secondary p-2 rounded-[3px] absolute top-[50%] translate-y-[-50%] rtl:right-[-35px] ltr:left-[-35px]"
+              >
+                <img src="./images/build.png" class="max-w-[50px]" alt="" />
+              </div>
+              <div class="ps-[45px] py-4">
+                <h4 class="font-bold text-[18px] mb-2">التوثيق القانوني</h4>
+                <p
+                  class="text-[#8d8d8d] text-[14px] lg:h-[60px] overflow-y-auto"
+                >
+                  توفير كافة خدمات التوثيق القانوني المتميزة باستخدام الوسائل
+                  الإلكترونية الحديثة
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="lg:col-span-6 col-span-12 my-3"
+            data-aos="fade-right"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="500"
+          >
+            <div
+              class="border border-secondary p-2 rounded-[3px] bg-white relative"
+            >
+              <div
+                class="bg-white border border-secondary p-2 rounded-[3px] absolute top-[50%] translate-y-[-50%] rtl:right-[-35px] ltr:left-[-35px]"
+              >
+                <img src="./images/user-hand.png" alt="" class="max-w-[50px]" />
+              </div>
+              <div class="ps-[45px] py-4">
+                <h4 class="font-bold text-[18px] mb-2">التحكيم</h4>
+                <p
+                  class="text-[#8d8d8d] text-[14px] lg:h-[60px] overflow-y-auto"
+                >
+                  توفير الطرق البديلة عن القضاء لحل المنازعات كالتحكيم والصلح
+                  والوساطة القانونية والتسويات الودية
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="lg:col-span-6 col-span-12 my-3"
+            data-aos="fade-right"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="500"
+          >
+            <div
+              class="border border-secondary p-2 rounded-[3px] bg-white relative"
+            >
+              <div
+                class="bg-white border border-secondary p-2 rounded-[3px] absolute top-[50%] translate-y-[-50%] rtl:right-[-35px] ltr:left-[-35px]"
+              >
+                <img
+                  src="./images/setting-mony.png"
+                  class="max-w-[50px]"
+                  alt=""
+                />
+              </div>
+              <div class="ps-[45px] py-4">
+                <h4 class="font-bold text-[18px] mb-2">
+                  قوانين العمل والتوظيف
+                </h4>
+                <p
+                  class="text-[#8d8d8d] text-[14px] lg:h-[60px] overflow-y-auto"
+                >
+                  جميع الخدمات الخاصة بأنظمة العمل والنزاعات العمالية والقضايا
+                  الإدارية
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="lg:col-span-6 col-span-12 my-3"
+            data-aos="fade-right"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="500"
+          >
+            <div
+              class="border border-secondary p-2 rounded-[3px] bg-white relative"
+            >
+              <div
+                class="bg-white border border-secondary p-2 rounded-[3px] absolute top-[50%] translate-y-[-50%] rtl:right-[-35px] ltr:left-[-35px]"
+              >
+                <img src="./images/home-done.png" alt="" class="max-w-[50px]" />
+              </div>
+              <div class="ps-[45px] py-4">
+                <h4 class="font-bold text-[18px] mb-2">الملكية الفكرية</h4>
+                <p
+                  class="text-[#8d8d8d] text-[14px] lg:h-[60px] overflow-y-auto"
+                >
+                  كافة الخدمات القانونية المتعلقة بحقوق الملكية الفكرية كتسجيل
+                  براءات الإختراع والعلامات التجارية
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="lg:col-span-6 col-span-12 my-3"
+            data-aos="fade-right"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="500"
+          >
+            <div
+              class="border border-secondary p-2 rounded-[3px] bg-white relative"
+            >
+              <div
+                class="bg-white border border-secondary p-2 rounded-[3px] absolute top-[50%] translate-y-[-50%] rtl:right-[-35px] ltr:left-[-35px]"
+              >
+                <img src="./images/t-build.png" class="max-w-[50px]" alt="" />
+              </div>
+              <div class="ps-[45px] py-4">
+                <h4 class="font-bold text-[18px] mb-2">العقارات</h4>
+                <p
+                  class="text-[#8d8d8d] text-[14px] lg:h-[60px] overflow-y-auto"
+                >
+                  كل الخدمات القانونية الخاصة بالقوانين والأنظمة العقارية والرهن
+                  العقاري
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="lg:col-span-6 col-span-12 my-3"
+            data-aos="fade-right"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="500"
+          >
+            <div
+              class="border border-secondary p-2 rounded-[3px] bg-white relative"
+            >
+              <div
+                class="bg-white border border-secondary p-2 rounded-[3px] absolute top-[50%] translate-y-[-50%] rtl:right-[-35px] ltr:left-[-35px]"
+              >
+                <img src="./images/wifi.png" class="max-w-[50px]" alt="" />
+              </div>
+              <div class="ps-[45px] py-4">
+                <h4 class="font-bold text-[18px] mb-2">
+                  التكنولوجيا والميديا والإتصالات
+                </h4>
+                <p
+                  class="text-[#8d8d8d] text-[14px] lg:h-[60px] overflow-y-auto"
+                >
+                  كل ما يتعلق بقوانين الإتصالات والمعاملات الإلكترونية والأمن
+                  السيبراني
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="lg:col-span-6 col-span-12 my-3"
+            data-aos="fade-right"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="500"
+          >
+            <div
+              class="border border-secondary p-2 rounded-[3px] bg-white relative"
+            >
+              <div
+                class="bg-white border border-secondary p-2 rounded-[3px] absolute top-[50%] translate-y-[-50%] rtl:right-[-35px] ltr:left-[-35px]"
+              >
+                <img src="./images/hands.png" alt="" class="max-w-[50px]" />
+              </div>
+              <div class="ps-[45px] py-4">
+                <h4 class="font-bold text-[18px] mb-2">
+                  الشراكة بين القطاع العام والخاص
+                </h4>
+                <p
+                  class="text-[#8d8d8d] text-[14px] lg:h-[60px] overflow-y-auto"
+                >
+                  توفير كافة الإستشارات القانونية للشراكة الفاعلة والإيجابية بين
+                  القطاع العام والخاص
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="lg:col-span-6 col-span-12 my-3"
+            data-aos="fade-right"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="500"
+          >
+            <div
+              class="border border-secondary p-2 rounded-[3px] bg-white relative"
+            >
+              <div
+                class="bg-white border border-secondary p-2 rounded-[3px] absolute top-[50%] translate-y-[-50%] rtl:right-[-35px] ltr:left-[-35px]"
+              >
+                <img src="./images/safe.png" alt="" class="max-w-[50px]" />
+              </div>
+              <div class="ps-[45px] py-4">
+                <h4 class="font-bold text-[18px] mb-2">قطاع التأمين</h4>
+                <p
+                  class="text-[#8d8d8d] text-[14px] lg:h-[60px] overflow-y-auto"
+                >
+                  تقديم كافة الخدمات والاستشارات القانونية المتعلقة بقطاع
+                  التأمين
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="lg:col-span-6 col-span-12 my-3"
+            data-aos="fade-right"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="500"
+          >
+            <div
+              class="border border-secondary p-2 rounded-[3px] bg-white relative"
+            >
+              <div
+                class="bg-white border border-secondary p-2 rounded-[3px] absolute top-[50%] translate-y-[-50%] rtl:right-[-35px] ltr:left-[-35px]"
+              >
+                <img src="./images/report.png" alt="" class="max-w-[50px]" />
+              </div>
+              <div class="ps-[45px] py-4">
+                <h4 class="font-bold text-[18px] mb-2">العقود والإتفاقيات</h4>
+                <p
+                  class="text-[#8d8d8d] text-[14px] lg:h-[60px] overflow-y-auto"
+                >
+                  إعداد ومراجعة العقود والإتفاقيات ومذكرات التفاهم
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="lg:col-span-6 col-span-12 my-3"
+            data-aos="fade-right"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="500"
+          >
+            <div
+              class="border border-secondary p-2 rounded-[3px] bg-white relative"
+            >
+              <div
+                class="bg-white border border-secondary p-2 rounded-[3px] absolute top-[50%] translate-y-[-50%] rtl:right-[-35px] ltr:left-[-35px]"
+              >
+                <img src="./images/take-hand.png" class="max-w-[50px]" alt="" />
+              </div>
+              <div class="ps-[45px] py-4">
+                <h4 class="font-bold text-[18px] mb-2">
+                  الخدمات المالية وأنظمة التمويل الإسلامية
+                </h4>
+                <p
+                  class="text-[#8d8d8d] text-[14px] lg:h-[60px] overflow-y-auto"
+                >
+                  تشمل الخدمات التي نقدمها في المجال المصرفي كامل الجوانب
+                  القانونية المتعلقة بالخدمات المالية وأنظمة التمويل الإسلامية
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="lg:col-span-6 col-span-12 my-3"
+            data-aos="fade-right"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="500"
+          >
+            <div
+              class="border border-secondary p-2 rounded-[3px] bg-white relative"
+            >
+              <div
+                class="bg-white border border-secondary p-2 rounded-[3px] absolute top-[50%] translate-y-[-50%] rtl:right-[-35px] ltr:left-[-35px]"
+              >
+                <img src="./images/builds.png" alt="" class="max-w-[50px]" />
+              </div>
+              <div class="ps-[45px] py-4">
+                <h4 class="font-bold text-[18px] mb-2">
+                  الأعمال الهندسية والإنشاءات
+                </h4>
+                <p
+                  class="text-[#8d8d8d] text-[14px] lg:h-[60px] overflow-y-auto"
+                >
+                  اعداد جميع أنواع عقود المقاولات والإشراف على تنفيذها من
+                  النواحي القانونية
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="lg:col-span-6 col-span-12 my-3"
+            data-aos="fade-right"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="500"
+          >
+            <div
+              class="border border-secondary p-2 rounded-[3px] bg-white relative"
+            >
+              <div
+                class="bg-white border border-secondary p-2 rounded-[3px] absolute top-[50%] translate-y-[-50%] rtl:right-[-35px] ltr:left-[-35px]"
+              >
+                <img src="./images/dollar.png" alt="" class="max-w-[50px]" />
+              </div>
+              <div class="ps-[45px] py-4">
+                <h4 class="font-bold text-[18px] mb-2">
+                  الخدمات والاستشارات القانونية المتعلقة بأنظمة سوق المال
+                </h4>
+                <p
+                  class="text-[#8d8d8d] text-[14px] lg:h-[60px] overflow-y-auto"
+                >
+                  نقوم على تمثيل المصدرين والمكتتبين في معاملات الأسهم العامة
+                  والإكتتابات الأولية والإكتتابات اللاحقة وإكتتابات الحقوق
+                  الأولية وعمليات الإدراج إضافة لتقديم الخدمات الاستشارية
+                  المتكاملة للشركات المساهمة والصناديق وأمناء الحفظ وغيرهم
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="show-more-list hidden w-[200px] h-[45px] bg-main text-white lg:flex items-center justify-center rounded-[5px] m-auto mt-7"
+        >
+          مشاهدة المزيد
+        </button>
+      </div>
+    </div>
+
+    <!-- OurValues -->
+    <div
+      id="OurValues"
+      class="relative my-[40px] overflow-hidden bg-[url('./images/bg-6.png')] bg-no-repeat bg-cover bg-center"
+    >
+      <div class="bg-secondary/40 lg:p-[50px] p-[20px]">
+        <div class="border-4 border-secondary pt-8">
+          <div class="container">
+            <div class="text-center mb-8">
+              <h5
+                class="font-bold m-auto table text-white text-[40px] relative after:content-[''] after:w-[15px] after:h-[15px] after:bg-main after:rounded-[3px] after:absolute after:top-[50%] after:translate-y-[-50%] after:rotate-[50deg] after:right-[-30px] ltr:after:left-[-30px] before:content-[''] before:w-[15px] before:h-[15px] before:bg-secondary before:rounded-[3px] before:absolute before:top-[50%] before:translate-y-[-50%] before:rotate-[50deg] before:right-[-20px] ltr:before:left-[-20px]"
+              >
+                قيمنا
+              </h5>
+              <p class="leading-9 text-white">
+                نعتمد في أعمالنا على التطبيق العملي والالتزام التام بالقيم التي
+                نؤمن بها، وأهمها:
+              </p>
+            </div>
+            <div class="grid grid-cols-12 gap-x-6 gap-y-2 py-3">
+              <div
+                class="lg:col-span-4 col-span-12 relative after:hidden lg:after:block after:content-[''] after:absolute after:top-[50%] after:translate-y-[-50%] after:w-[2px] after:h-[50%] after:left-[-10px] after:bg-white"
+                data-aos="fade-up"
+                data-aos-offset="200"
+                data-aos-easing="ease-in-sine"
+                data-aos-duration="400"
+              >
+                <div
+                  class="text-center rounded-[5px] px-5 my-4 flex items-center justify-center flex-col"
+                >
+                  <img
+                    src="./images/svg/svgviewer-output (1).svg"
+                    class="max-w-[100px] m-auto"
+                    alt=""
+                  />
+                  <p
+                    class="leading-9 my-5 lg:h-[80px] overflow-y-auto text-white font-bold text-[17px]"
+                  >
+                    الالتزام التام بالقيم الشرعية والأنظمة المتبعة والسارية وعدم
+                    الخروج عنها أو مخالفتها
+                  </p>
+                </div>
+              </div>
+              <div
+                class="lg:col-span-4 col-span-12 relative after:hidden lg:after:block after:content-[''] after:absolute after:top-[50%] after:translate-y-[-50%] after:w-[2px] after:h-[50%] after:left-[-10px] after:bg-white"
+                data-aos="fade-up"
+                data-aos-offset="200"
+                data-aos-easing="ease-in-sine"
+                data-aos-duration="400"
+              >
+                <div
+                  class="text-center rounded-[5px] px-5 my-4 flex items-center justify-center flex-col"
+                >
+                  <img
+                    src="./images/svg/svgviewer-output (2).svg"
+                    class="max-w-[100px] m-auto"
+                    alt=""
+                  />
+                  <p
+                    class="leading-9 my-5 lg:h-[80px] overflow-y-auto text-white font-bold text-[17px]"
+                  >
+                    الالتزام التام بالقيم الشرعية والأنظمة المتبعة والسارية وعدم
+                    الخروج عنها أو مخالفتها
+                  </p>
+                </div>
+              </div>
+              <div
+                class="lg:col-span-4 col-span-12 relative"
+                data-aos="fade-up"
+                data-aos-offset="200"
+                data-aos-easing="ease-in-sine"
+                data-aos-duration="400"
+              >
+                <div
+                  class="text-center rounded-[5px] px-5 my-4 flex items-center justify-center flex-col"
+                >
+                  <img
+                    src="./images/svg/svgviewer-output (3).svg"
+                    class="max-w-[100px] m-auto"
+                    alt=""
+                  />
+                  <p
+                    class="leading-9 my-5 lg:h-[80px] overflow-y-auto text-white font-bold text-[17px]"
+                  >
+                    الالتزام التام بالقيم الشرعية والأنظمة المتبعة والسارية وعدم
+                    الخروج عنها أو مخالفتها
+                  </p>
+                </div>
+              </div>
+              <div
+                class="lg:col-span-4 col-span-12 relative after:hidden lg:after:block after:content-[''] after:absolute after:top-[50%] after:translate-y-[-50%] after:w-[2px] after:h-[50%] after:left-[-10px] after:bg-white"
+                data-aos="fade-up"
+                data-aos-offset="200"
+                data-aos-easing="ease-in-sine"
+                data-aos-duration="400"
+              >
+                <div
+                  class="text-center rounded-[5px] px-5 my-4 flex items-center justify-center flex-col"
+                >
+                  <img
+                    src="./images/svg/svgviewer-output (4).svg"
+                    class="max-w-[100px] m-auto"
+                    alt=""
+                  />
+                  <p
+                    class="leading-9 my-5 lg:h-[80px] overflow-y-auto text-white font-bold text-[17px]"
+                  >
+                    الالتزام التام بالقيم الشرعية والأنظمة المتبعة والسارية وعدم
+                    الخروج عنها أو مخالفتها
+                  </p>
+                </div>
+              </div>
+              <div
+                class="lg:col-span-4 col-span-12 relative after:hidden lg:after:block after:content-[''] after:absolute after:top-[50%] after:translate-y-[-50%] after:w-[2px] after:h-[50%] after:left-[-10px] after:bg-white"
+                data-aos="fade-up"
+                data-aos-offset="200"
+                data-aos-easing="ease-in-sine"
+                data-aos-duration="400"
+              >
+                <div
+                  class="text-center rounded-[5px] px-5 my-4 flex items-center justify-center flex-col"
+                >
+                  <img
+                    src="./images/svg/svgviewer-output (5).svg"
+                    class="max-w-[100px] m-auto"
+                    alt=""
+                  />
+                  <p
+                    class="leading-9 my-5 lg:h-[80px] overflow-y-auto text-white font-bold text-[17px]"
+                  >
+                    الالتزام التام بالقيم الشرعية والأنظمة المتبعة والسارية وعدم
+                    الخروج عنها أو مخالفتها
+                  </p>
+                </div>
+              </div>
+              <div
+                class="lg:col-span-4 col-span-12 relative"
+                data-aos="fade-up"
+                data-aos-offset="200"
+                data-aos-easing="ease-in-sine"
+                data-aos-duration="400"
+              >
+                <div
+                  class="text-center rounded-[5px] px-5 my-4 flex items-center justify-center flex-col"
+                >
+                  <img
+                    src="./images/svg/svgviewer-output (6).svg"
+                    class="max-w-[100px] m-auto"
+                    alt=""
+                  />
+                  <p
+                    class="leading-9 my-5 lg:h-[80px] overflow-y-auto text-white font-bold text-[17px]"
+                  >
+                    الالتزام التام بالقيم الشرعية والأنظمة المتبعة والسارية وعدم
+                    الخروج عنها أو مخالفتها
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Visions & Massages -->
+    <div id="VisionsMassages" class="relative py-[20px] overflow-hidden">
+      <div class="container">
+        <div class="grid grid-cols-12 gap-6 py-3">
+          <div
+            class="lg:col-span-6 col-span-12 my-3"
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="400"
+          >
+            <div class="shadow-md rounded-[6px] p-5 bg-white my-4 relative">
+              <img
+                src="./images/shap-text.png"
+                class="absolute bottom-0 w-full opacity-25 right-0"
+                alt=""
+              />
+              <h5
+                class="font-bold m-auto table text-[30px] relative after:content-[''] after:w-[15px] after:h-[15px] after:bg-main after:rounded-[3px] after:absolute after:top-[50%] after:translate-y-[-50%] after:rotate-[50deg] after:right-[-30px] ltr:after:left-[-30px] before:content-[''] before:w-[15px] before:h-[15px] before:bg-secondary before:rounded-[3px] before:absolute before:top-[50%] before:translate-y-[-50%] before:rotate-[50deg] before:right-[-20px] ltr:before:left-[-20px]"
+              >
+                رؤيتنا
+              </h5>
+              <p class="leading-9 my-5 h-[200px] overflow-y-auto">
+                التميز والابداع والريادة من خلال اتباع أفضل المنهجيات القانونية
+                وأحدث الممارسات الدولية مع التوظيف الأمثل لاستخدام التقنية
+                المتطورة.
+              </p>
+            </div>
+          </div>
+          <div
+            class="lg:col-span-6 col-span-12 my-3"
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="400"
+          >
+            <div class="shadow-md rounded-[6px] p-5 bg-white my-4 relative">
+              <img
+                src="./images/shap-text.png"
+                class="absolute bottom-0 w-full opacity-25 right-0"
+                alt=""
+              />
+              <h5
+                class="font-bold m-auto table text-[30px] relative after:content-[''] after:w-[15px] after:h-[15px] after:bg-main after:rounded-[3px] after:absolute after:top-[50%] after:translate-y-[-50%] after:rotate-[50deg] after:right-[-30px] ltr:after:left-[-30px] before:content-[''] before:w-[15px] before:h-[15px] before:bg-secondary before:rounded-[3px] before:absolute before:top-[50%] before:translate-y-[-50%] before:rotate-[50deg] before:right-[-20px] ltr:before:left-[-20px]"
+              >
+                رسالتنا
+              </h5>
+              <p class="leading-9 my-5 h-[200px] overflow-y-auto">
+                توفير رعاية قانونية لعملائنا تلتزم بأخلاقيات مهنة المحاماة
+                السامية من خلال الإخلاص في تقديم الخدمات القانونية المتخصصة ذات
+                القيمة المضافة التي تعتمد على أسس العمل المهني مع الامتثال
+                والتطبيق الكامل للقوانين والأنظمة المعمول بها محليا وبما يتلائم
+                مع المواثيق والاتفاقيات الدولية، ولدينا شبكة علاقات وشراكات
+                دولية عدة مع شركات المحاماة والكيانات الاستشارية والمالية.
+              </p>
             </div>
           </div>
         </div>

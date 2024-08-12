@@ -27,13 +27,15 @@ $(document).ready(function () {
   // Scroll Fix Header
   $(window).scroll(function () {
     if ($(window).width() > 767) {
-      if ($(this).scrollTop() > 30) {
-        $("header").addClass("bg-white shadow-md");
-        $("header ul li a").addClass("!text-black");
-      } else {
-        $("header").removeClass("bg-white shadow-md");
-        $("header ul li a").removeClass("!text-black");
-      }
+    }
+    if ($(this).scrollTop() > 30) {
+      $("header").addClass("!bg-white !shadow-md");
+      $("header ul li a").addClass("!text-black");
+      $(".click-nav .handle").addClass("!bg-black");
+    } else {
+      $("header").removeClass("!bg-white !shadow-md");
+      $("header ul li a").removeClass("!text-black");
+      $(".click-nav .handle").removeClass("!bg-black");
     }
   });
 
@@ -48,6 +50,16 @@ $(document).ready(function () {
     $(window).scrollTop(0);
   });
 
+  // Show More List
+  $(document).on("click", ".show-more-list", function () {
+    $(".list-services").toggleClass("!h-auto");
+    if ($(this).text() === "مشاهدة المزيد") {
+      $(this).text("مشاهدة الآقل");
+    } else {
+      $(this).text("مشاهدة المزيد");
+    }
+  });
+
   // Scroll For Section
   $(document).on(
     "click",
@@ -55,15 +67,15 @@ $(document).ready(function () {
     function (e) {
       $("html, body").animate(
         {
-          scrollTop: $("#" + $(this).data("value")).offset().top - 150,
+          scrollTop: $("#" + $(this).data("value")).offset().top - 70,
         },
         50
       );
       e.preventDefault();
       if ($(window).width() < 990) {
         $(".handle").toggleClass("closed");
-        $("header ul").toggleClass("back");
-        $(".overlay").toggleClass("back");
+        $(".list-head").toggleClass("translate-x-[100%]");
+        $(".overlay").toggleClass("translate-x-[-100%]");
       }
     }
   );
@@ -71,8 +83,8 @@ $(document).ready(function () {
   // Click Open Nav Mobile
   $(document).on("click", ".click-nav", function () {
     $(".handle").toggleClass("closed");
-    $("header ul").toggleClass("back");
-    $(".overlay").toggleClass("back");
+    $(".list-head").toggleClass("translate-x-[100%]");
+    $(".overlay").toggleClass("translate-x-[-100%]");
     $("body").toggleClass("overflow-hidden");
   });
 

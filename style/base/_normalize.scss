@@ -1,5 +1,5 @@
 // Font Import Cdn
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;700&family=Tajawal:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;700&family=Tajawal:wght@400;700&display=swap");
 
 // Local Style Page
 * {
@@ -14,7 +14,7 @@
 body {
   overflow-x: hidden;
   overflow-y: hidden;
-  font-family: 'Tajawal', sans-serif;
+  font-family: "Tajawal", sans-serif;
   font-weight: 200 !important;
 }
 
@@ -26,7 +26,7 @@ body {
 
 ::-webkit-scrollbar-track {
   background: var(--main);
-  border: 1px solid var(--main)
+  border: 1px solid var(--main);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -48,17 +48,16 @@ body {
 ::-webkit-input-placeholder,
 ::-moz-placeholder,
 :-ms-input-placeholder,
-:-moz-placeholder{
+:-moz-placeholder {
   color: var(--main);
   opacity: 1;
 }
 
 // Style Owl Carousel
-.owl-carousel{
+.owl-carousel {
   display: block;
   width: 100%;
   -webkit-tap-highlight-color: transparent;
   position: relative;
   direction: ltr;
 }
-
