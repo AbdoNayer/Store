@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <!-- Title Page -->
+    <title>Store</title>
+
+    <!-- favicon Page -->
+    <link rel="shortcut icon" href="./images/logo.png" />
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <meta name="HandheldFriendly" content="true" />
+
+    <!-- Fancybox CSS -->
+    <meta name="theme-color" content="#121320" />
+    <meta name="msapplication-navbutton-color" content="#121320" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#121320" />
+
+    <!-- CSS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- CSS OwlCarousel 2 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+    />
+    <!-- CSS Flowbite -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./style/global.css" />
+  </head>
+  <body>
+    <!-- Loading App -->
+    <div class="loader w-full h-full fixed top-0 right-0 z-[99999]">
+      <div
+        class="spinner w-[60px] h-[60px] absolute top-0 bottom-0 right-0 left-0 m-auto z-[9]"
+      >
+        <div class="item item-1 absolute w-[30px] h-[30px] rounded-full"></div>
+        <div class="item item-2 absolute w-[30px] h-[30px] rounded-full"></div>
+        <div class="item item-3 absolute w-[30px] h-[30px] rounded-full"></div>
+        <div class="item item-4 absolute w-[30px] h-[30px] rounded-full"></div>
+      </div>
+    </div>
+
+    <!-- Auth Form -->
+    <div class="grid grid-cols-12">
+      <div class="lg:col-span-8 col-span-12">
+        <div
+          class="h-screen p-4 overflow-y-auto flex flex-col justify-center items-center w-full"
+        >
+          <form action="/otp.html" class="lg:w-[50%] w-full m-auto">
+            <h5 class="font-bold text-center mb-6 text-[20px]">إنشاء حساب</h5>
+            <div class="w-full my-4 pt-5">
+              <label for="" class="block"
+                >اسم المستخدم <span class="text-red-500">*</span></label
+              >
+              <div class="w-full my-3">
+                <input
+                  type="text"
+                  placeholder="ادخل اسم المستخدم"
+                  class="border border-[#F6F6F6] rounded-[5px] w-full h-[45px] px-3 rtl:text-right ltr:text-left text-[13px]"
+                />
+              </div>
+            </div>
+            <div class="w-full my-4 pt-5">
+              <label for="" class="block"
+                >البريد الإلكتروني <span class="text-red-500">*</span></label
+              >
+              <div class="w-full my-3">
+                <input
+                  type="text"
+                  placeholder="ادخل البريد الإلكتروني"
+                  class="border border-[#F6F6F6] rounded-[5px] w-full h-[45px] px-3 rtl:text-right ltr:text-left text-[13px]"
+                />
+              </div>
+            </div>
+            <div class="w-full my-4 pt-5">
+              <label for="" class="block"
+                >رقم الجوال <span class="text-red-500">*</span></label
+              >
+              <div class="w-full my-3 relative">
+                <input
+                  type="tel"
+                  placeholder="ادخل رقم الجوال"
+                  class="border border-[#F6F6F6] rounded-[5px] w-full h-[45px] px-3 rtl:text-right ltr:text-left text-[13px]"
+                />
+                <div
+                  class="flex items-center gap-1 absolute top-[50%] translate-y-[-50%] rtl:left-[10px] ltr:right-[10px]"
+                >
+                  <img src="./images/saudi.png" class="max-w-[20px]" alt="" />
+                  <select
+                    name=""
+                    id=""
+                    class="border-0 !bg-transparent !p-0 !bg-none text-[13px]"
+                  >
+                    <option value="">+966</option>
+                    <option value="">+20</option>
+                  </select>
+                  <img
+                    class="max-w-[20px]"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAARBJREFUaEPtl1EOwjAMQ7ObwcmAk42jQT6KULUOmpcITbg/Q6ri+dnd0BY7+FoO7t8E8OsG1YAagAnoCMEA8bgawBFCATUAA8TjagBHCAXUAAwQj/99Ayczu8MYkQZp4GpmFzO7PQH8d2RhjShAu3EzHYHI0Ah9Unrl60bcMxC9+SZ3nj2SWQ3MNDEyPxPAK78ogAtEjERmdp8tAjALkW7eDVCAbyFKzGcBfILwfX/d9it05nuRjAaa5ijlrTOcYj6zgRmINPMVAHvHyfdSzVcBjCDSzVcC9BAl5qsBGsT7dfdPKbKZ+RaK3B/PCABHCAXUAAwQj6sBHCEUUAMwQDyuBnCEUEANwADxuBrAEUKBB7c/LDHYu3A3AAAAAElFTkSuQmCC"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="w-full my-4">
+              <label for="" class="block"
+                >كلمة المرور <span class="text-red-500">*</span></label
+              >
+              <div class="w-full my-3 relative">
+                <input
+                  type="password"
+                  placeholder="ادخل كلمة المرور"
+                  class="border border-[#F6F6F6] rounded-[5px] w-full h-[45px] px-3 rtl:text-right ltr:text-left text-[13px]"
+                />
+                <button
+                  class="absolute top-[50%] translate-y-[-50%] rtl:left-[10px] ltr:right-[10px]"
+                >
+                  <img
+                    class="max-w-[20px]"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAkFJREFUaEPtWG1uwjAMJXCwsWtQcRbGWVC5BnAw2s1VI5U0znuJgyak9M9YWzvvw0mcus2HX+7D8W8agf92sDnQHDAq0ErIKKA5vDngJbxcLvvtdrt3zn35e+M47uW3c+4uf8dxfPhnXdf9mOWX3JYkAnq325080IJcZ4mxkCkiMKt9KwCcCjmXEMkiUEFxxDmbBE2g73up2ZOGwNf58/mcykKu4/E41b5cfo7M/6p55uc0EYpACrwAF9BLsEhm/xyIQpGABLRBLMBDggkikESSgJZ4GIbvEsVTzpSSUAloKw0DPjLZqeWyZEyVQN/3Y6gYA/56vd4S+wIsiRgJKdfD4fAdczBKQLETDo5WKr8ra2CCFSvcZ6LjawRC9auA9wAZJ2NidF23wru6wQaGdoLSeXk9VRLLFyM5V0LGCGSrL4PG5kxq00NltNj8XkopdAESYOyWwXIckPdj5cDsDwyBl5bBYHdq2YdzSnEVlxAbGKLL7FAhAXYu0ssoU0pkGRWB/zu78MuoVtMMCdT4ocmrOanNmbe0EjMJ0eG0bLNR/1S1lZjngnYGgGXAttRg95XHybGK22mUmCUATnlQKEgAOAEV0ogQx1MIfuqtWKWYRk1ckXzDMNzD46QfR75iyG/wJYMCn0XAAyCJsLqseqTc4yntwHKkd5BgluiYKkUEAjem5bJE8hrnahOBiCvTLf95Mfy0ONf+I5wjJeR9TDUCFhCW2EbAol6N2OZADRUtOZoDFvVqxDYHaqhoyfHxDvwCYyCbQNNrT0AAAAAASUVORK5CYII="
+                  />
+                </button>
+              </div>
+            </div>
+            <button
+              type="submit"
+              class="bg-main w-full h-[45px] my-8 text-white rounded-[5px]"
+            >
+              تسجيل
+            </button>
+            <p class="text-[12px] text-center">
+              هل لديك حساب ؟
+              <a href="login.html" class="font-bold">تسجيل الدخول</a>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="lg:col-span-4 col-span-12 lg:block hidden">
+        <div
+          class="h-screen flex items-center justify-center bg-gradient-to-r from-[#F2572F] to-main relative"
+        >
+          <a
+            href="index.html"
+            class="absolute top-[30px] rtl:right-[40px] ltr:left-[20px] flex items-center gap-1"
+          >
+            <img
+              class="max-w-[20px]"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAYZJREFUaEPtmVEOwjAIhuFmejL1ZHozlGRLlqa0UKDLTPdiogz+r1BCK8LFH7y4flgAZ2cwLQNEdAOABwDw5wsRnxmwKQBExGJZ/PFJgQgHEMTvIOEQoQAd8SkQYQBK8eEQIQAN8a9Ncbkf+OuQcnIDtMTvnUdjM9qhXAAWYRZbC8wwwIigkXd6MEMAHiGed2swZoAIARE+dhgTQGTgKF9qgKiAxzKI8KkCiAgkbUav7y6AN0Cvi/DvnhhNAI9jjfCIchIBZorfQRox74j4MbVRInpvh5H0mV6RiQ8i3q0ANONAUhNVywT+BisXgOTAWutae/pRHG0XwF9noLiB0FRJ9zAztYTKYBqCzUZsj9MAjGfhkk1sjzMBynZrSACAtLdOA+htdq0wrV1rlFD1YW2gw7gQ6ncBrAwIM452YVYJaVdqbeKscXplYNYmNs0HCcYjB5ramThBmsqlOH632ij/u8gQpz+t+cpzsTUDjK9SePWrVyosoAswQ6UnxgLwrF7Eu5fPwBf0Np5ADNwCNAAAAABJRU5ErkJggg=="
+            />
+            <span class="text-white">العودة للرئيسية</span>
+          </a>
+          <img src="./images/fav-icon.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Plugin Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Select2 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.4/js/select2.min.js"></script>
+    <!-- Plugin OwlCarousel 2 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+    <!-- Plugin TailwindCss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Plugin Flowbite -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+    <!-- Plugin Animation Page -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Plugin Text Animation -->
+    <script src="./js/script.js"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          container: {
+            center: true,
+            padding: {
+              DEFAULT: "1.5rem",
+              sm: "1rem",
+              lg: "2rem",
+              xl: "2rem",
+              "2xl": "3rem",
+            },
+          },
+          extend: {
+            colors: {
+              main: "#FFC82C",
+              secondary: "#000",
+              overlay: "rgba(0, 0, 0, 0.4)",
+            },
+          },
+        },
+      };
+    </script>
+  </body>
+</html>
