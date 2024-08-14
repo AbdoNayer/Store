@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
+
 * {
   border: 0;
   margin: 0;
@@ -16,11 +17,18 @@ body {
   outline: none !important;
 }
 
-select, input, textarea, button {
+select,
+input,
+textarea,
+button {
   outline: none !important;
   box-shadow: initial !important;
 }
-select:focus, input:focus, textarea:focus, button:focus {
+
+select:focus,
+input:focus,
+textarea:focus,
+button:focus {
   box-shadow: initial !important;
 }
 
@@ -98,6 +106,7 @@ input[type=number] {
   width: 50%;
   height: 100%;
 }
+
 .loader::before {
   content: "";
   position: absolute;
@@ -115,6 +124,7 @@ input[type=number] {
   width: 50%;
   height: 100%;
 }
+
 .loader .spinner .item.item-1 {
   background-color: #166434;
   top: 0;
@@ -122,12 +132,14 @@ input[type=number] {
   z-index: 1;
   animation: item-1_move 1.8s cubic-bezier(0.6, 0.01, 0.4, 1) infinite;
 }
+
 .loader .spinner .item.item-2 {
   background-color: #d2b065;
   top: 0;
   right: 0;
   animation: item-2_move 1.8s cubic-bezier(0.6, 0.01, 0.4, 1) infinite;
 }
+
 .loader .spinner .item.item-3 {
   background-color: #00396a;
   bottom: 0;
@@ -135,64 +147,89 @@ input[type=number] {
   z-index: 1;
   animation: item-3_move 1.8s cubic-bezier(0.6, 0.01, 0.4, 1) infinite;
 }
+
 .loader .spinner .item.item-4 {
   background-color: #000000;
   bottom: 0;
   left: 0;
   animation: item-4_move 1.8s cubic-bezier(0.6, 0.01, 0.4, 1) infinite;
 }
+
 @keyframes item-1_move {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translate(0, 0);
   }
+
   25% {
     transform: translate(0, 30px);
   }
+
   50% {
     transform: translate(30px, 30px);
   }
+
   75% {
     transform: translate(30px, 0);
   }
 }
+
 @keyframes item-2_move {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translate(0, 0);
   }
+
   25% {
     transform: translate(-30px, 0);
   }
+
   50% {
     transform: translate(-30px, 30px);
   }
+
   75% {
     transform: translate(0, 30px);
   }
 }
+
 @keyframes item-3_move {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translate(0, 0);
   }
+
   25% {
     transform: translate(0, -30px);
   }
+
   50% {
     transform: translate(-30px, -30px);
   }
+
   75% {
     transform: translate(-30px, 0);
   }
 }
+
 @keyframes item-4_move {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translate(0, 0);
   }
+
   25% {
     transform: translate(30px, 0);
   }
+
   50% {
     transform: translate(30px, -30px);
   }
+
   75% {
     transform: translate(0, -30px);
   }
@@ -201,9 +238,11 @@ input[type=number] {
 header ul li.active a {
   color: #fff !important;
 }
+
 header ul li.active a::after {
   top: 0px;
 }
+
 header ul li a::after {
   content: "";
   position: absolute;
@@ -230,18 +269,22 @@ header ul li a::after {
   transition: all 350ms cubic-bezier(0.28, 0.55, 0.385, 1.65);
   transition-timing-function: cubic-bezier(0.28, 0.55, 0.385, 1.65);
 }
+
 .click-nav .closed {
   transform: rotate(45deg);
   width: 35px;
   position: relative;
   top: -5px;
 }
+
 .click-nav .closed:nth-of-type(1) {
   top: 5px;
 }
+
 .click-nav .closed:nth-of-type(2) {
   transform: rotate(-45deg);
 }
+
 .click-nav .closed:nth-of-type(3) {
   display: none;
 }
@@ -252,20 +295,24 @@ header ul li a::after {
   animation-name: translateInfo;
   animation-fill-mode: both;
 }
+
 .main-body-slider #sliderHome .owl-item.active .over-info h1 {
   animation-duration: 1s;
   animation-delay: 1s;
 }
+
 .main-body-slider #sliderHome .owl-item.active .over-info p {
   animation-duration: 1.5s;
   animation-delay: 1.5s;
 }
+
 @keyframes translateInfo {
   from {
     opacity: 0;
     visibility: hidden;
     transform: translateY(50px);
   }
+
   to {
     opacity: 1;
     visibility: initial;
@@ -275,4 +322,132 @@ header ul li a::after {
 
 .owl-dots {
   display: none;
-}/*# sourceMappingURL=global.css.map */
+}
+
+/*# sourceMappingURL=global.css.map */
+
+
+.countdown__time--orange {
+  color: #F2572F !important;
+}
+
+.countdown__time--red {
+  color: #ff3400 !important;
+}
+
+.countdown__reset {
+  &[disabled] {
+    filter: grayscale(2);
+    cursor: no-drop;
+
+    span {
+      color: #A0A0A0;
+    }
+  }
+
+  span {
+    color: black;
+
+  }
+}
+
+/* START:: LIST COUNTRIES */
+
+
+.btn_select {
+  width: 115px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: transparent;
+  border: 0 !important;
+  box-shadow: none !important;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAARBJREFUaEPtl1EOwjAMQ7ObwcmAk42jQT6KULUOmpcITbg/Q6ri+dnd0BY7+FoO7t8E8OsG1YAagAnoCMEA8bgawBFCATUAA8TjagBHCAXUAAwQj/99Ayczu8MYkQZp4GpmFzO7PQH8d2RhjShAu3EzHYHI0Ah9Unrl60bcMxC9+SZ3nj2SWQ3MNDEyPxPAK78ogAtEjERmdp8tAjALkW7eDVCAbyFKzGcBfILwfX/d9it05nuRjAaa5ijlrTOcYj6zgRmINPMVAHvHyfdSzVcBjCDSzVcC9BAl5qsBGsT7dfdPKbKZ+RaK3B/PCABHCAXUAAwQj6sBHCEUUAMwQDyuBnCEUEANwADxuBrAEUKBB7c/LDHYu3A3AAAAAElFTkSuQmCC");
+  background-size: 20px;
+  background-position: center left 1rem;
+  background-repeat: no-repeat;
+  padding-inline-end: 1.5rem;
+}
+
+.btn_select li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  
+  span {
+    direction: ltr;
+  }
+
+}
+
+.btn_select:hover li {
+  margin: 0px;
+  cursor: pointer;
+}
+
+.btn_select:hover {
+  background-color: transparent;
+  border: 1px solid transparent;
+  box-shadow: inset 0 0px 0px 1px #ccc;
+}
+
+.btn_select:focus {
+  outline: none;
+}
+
+.lang-select {
+  margin-inline-end: 10px;
+  position: absolute;
+  margin: 0;
+  height: 100%;
+  left: 0;
+  display: flex;
+  align-items: center;
+  top: 0;
+}
+
+.vodiapicker {
+  display: none;
+}
+
+.lang_list #loop_list_language {
+  padding-left: 0;
+  margin: 0;
+}
+
+.lang_list #loop_list_language li {
+  list-style: none;
+  margin-block: 5px;
+  cursor: pointer;
+}
+
+.lang_list #loop_list_language li:hover {
+  background-color: #f4f3f3;
+}
+
+.mobile_select img {
+  margin-inline-end: 5px;
+  width: 26px;
+  height: 17px;
+}
+
+#loop_list_language img {
+  width: 28px;
+  height: 15px;
+}
+
+.lang_list {
+  display: none;
+  position: absolute;
+  background-color: #f4f3f3;
+  ;
+  width: 100%;
+  box-shadow: 1px 1px 1px #ccc;
+  border-radius: 10px;
+  padding: 10px 5px;
+  top: 112%;
+  z-index: 99;
+  max-height: 150px;
+  overflow: auto;
+}

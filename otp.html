@@ -1,152 +1,213 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-  <head>
-    <!-- Title Page -->
-    <title>Store</title>
 
-    <!-- favicon Page -->
-    <link rel="shortcut icon" href="./images/fav-icon.png" />
+<head>
+  <!-- Title Page -->
+  <title>Store</title>
 
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
-    />
-    <meta name="HandheldFriendly" content="true" />
+  <!-- favicon Page -->
+  <link rel="shortcut icon" href="./images/fav-icon.png" />
 
-    <!-- Fancybox CSS -->
-    <meta name="theme-color" content="#121320" />
-    <meta name="msapplication-navbutton-color" content="#121320" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="#121320" />
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <meta name="HandheldFriendly" content="true" />
 
-    <!-- CSS Animation -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <!-- CSS OwlCarousel 2 -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
-    />
-    <!-- CSS Flowbite -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"
-      rel="stylesheet"
-    />
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="./style/global.css" />
-  </head>
-  <body>
-    <!-- Loading App -->
-    <div class="loader w-full h-full fixed top-0 right-0 z-[99999]">
-      <div
-        class="spinner w-[60px] h-[60px] absolute top-0 bottom-0 right-0 left-0 m-auto z-[9]"
-      >
-        <div class="item item-1 absolute w-[30px] h-[30px] rounded-full"></div>
-        <div class="item item-2 absolute w-[30px] h-[30px] rounded-full"></div>
-        <div class="item item-3 absolute w-[30px] h-[30px] rounded-full"></div>
-        <div class="item item-4 absolute w-[30px] h-[30px] rounded-full"></div>
-      </div>
+  <!-- Fancybox CSS -->
+  <meta name="theme-color" content="#121320" />
+  <meta name="msapplication-navbutton-color" content="#121320" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="#121320" />
+
+  <!-- CSS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <!-- CSS OwlCarousel 2 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+  <!-- CSS Flowbite -->
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" rel="stylesheet" />
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="./style/global.css" />
+</head>
+
+<body>
+  <!-- Loading App -->
+  <div class="loader w-full h-full fixed top-0 right-0 z-[99999]">
+    <div class="spinner w-[60px] h-[60px] absolute top-0 bottom-0 right-0 left-0 m-auto z-[9]">
+      <div class="item item-1 absolute w-[30px] h-[30px] rounded-full"></div>
+      <div class="item item-2 absolute w-[30px] h-[30px] rounded-full"></div>
+      <div class="item item-3 absolute w-[30px] h-[30px] rounded-full"></div>
+      <div class="item item-4 absolute w-[30px] h-[30px] rounded-full"></div>
     </div>
+  </div>
 
-    <!-- Auth Form -->
-    <div class="grid grid-cols-12">
-      <div class="lg:col-span-8 col-span-12">
-        <div
-          class="h-screen p-4 overflow-y-auto flex flex-col justify-center items-center w-full"
-        >
-          <form action="/otp.html" class="lg:w-[50%] w-full m-auto">
-            <h5 class="font-bold text-center mb-6 text-[20px]">رمز التحقق</h5>
-            <div class="w-full my-4 pb-6">
-              <div class="w-full my-3 flex items-center justify-center gap-3">
-                <input
-                  type="number"
-                  max="1"
-                  class="border border-[#F6F6F6] rounded-[5px] w-[55px] h-[45px] px-3 text-center"
-                />
-                <input
-                  type="number"
-                  max="1"
-                  class="border border-[#F6F6F6] rounded-[5px] w-[55px] h-[45px] px-3 text-center"
-                />
-                <input
-                  type="number"
-                  max="1"
-                  class="border border-[#F6F6F6] rounded-[5px] w-[55px] h-[45px] px-3 text-center"
-                />
-                <input
-                  type="number"
-                  max="1"
-                  class="border border-[#F6F6F6] rounded-[5px] w-[55px] h-[45px] px-3 text-center"
-                />
-              </div>
+  <!-- Auth Form -->
+  <div class="grid grid-cols-12">
+    <div class="lg:col-span-8 col-span-12">
+      <div class="h-screen p-4 overflow-y-auto flex flex-col justify-center items-center w-full">
+        <form action="./completeRegister.html" class="lg:w-[50%] w-full m-auto">
+          <h5 class="font-bold text-center mb-6 text-[20px]">رمز التحقق</h5>
+          <div class="w-full my-4 pb-6">
+            <div class="w-full my-3 flex items-center justify-center gap-3">
+              <input type="number" max="1"
+                class="border border-[#F6F6F6] rounded-[5px] w-[55px] h-[45px] px-3 text-center code-input" />
+              <input type="number" max="1"
+                class="border border-[#F6F6F6] rounded-[5px] w-[55px] h-[45px] px-3 text-center code-input" />
+              <input type="number" max="1"
+                class="border border-[#F6F6F6] rounded-[5px] w-[55px] h-[45px] px-3 text-center code-input" />
+              <input type="number" max="1"
+                class="border border-[#F6F6F6] rounded-[5px] w-[55px] h-[45px] px-3 text-center code-input" />
             </div>
-            <a href="" class="flex items-center justify-center gap-2">
-              <img
-                class="max-w-[20px]"
-                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAeRJREFUaEPtWNuRwjAMlPtJAfB1UNlBZZf7ggLSjxk7ARLix+qRu8mM/cEQsKVdaWU5drTz4XaOnxqB/85gy0DLgDICTULKAKqXtwzMQ+hv3YmITuToa/o9PIfRx09Pv+G7Ow7js8EwyUAE7ug7gkeHp6s7Dhd0em6emoC/dz8s4IuU6UmICUxRD+D1Q5ENEYEK+J48XROsRnmNUluOPydw73wCYASOFKi/dZcXEQX4MR7MsXD+XCsAEe0EAMpCZhGwAs+MWXE6j8CndASRL6GRZAUmkCxcQwLSuuAQeBfeFEZ3GOD11ch/7k5gcGAAq4YFOqjpPVlXjM1hRaBosIqG11khX5VAJTMAGVY2I5aPAomshKwcpJLGsl2RU7EGIEfMWoBs5qSa8FUtYm2R1com/J/w0bvDcEbWVglkHISXE5PzfLSvaJAQgRUJS/Dzg91b72fkUMg+zElafU0GKYlyGiScgRoQyf8Wh0M1AWlWLMCzJbTqXR8vJsj5vnQBwJHOE4s4A7Xt9XWVMmddurnwBBfu0qREvOPeHa5SrF7qReDVEsr2CDwo8Ht0zqRYQnODguOBGri6BjKHtH1eLeKKsZ9pIiF7WLjFRgCP1TYzWwa2iStutWUAj9U2M1sGtokrbvUBvosGQJR9kKAAAAAASUVORK5CYII="
-              />
-              <span class="text-[#A0A0A0]">إعادة إرسال الرمز</span>
-            </a>
-          </form>
-        </div>
-      </div>
-      <div class="lg:col-span-4 col-span-12 lg:block hidden">
-        <div
-          class="h-screen flex items-center justify-center bg-gradient-to-r from-[#F2572F] to-main relative"
-        >
-          <a
-            href="index.html"
-            class="absolute top-[30px] rtl:right-[40px] ltr:left-[20px] flex items-center gap-1"
-          >
-            <img
-              class="max-w-[20px]"
-              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAYZJREFUaEPtmVEOwjAIhuFmejL1ZHozlGRLlqa0UKDLTPdiogz+r1BCK8LFH7y4flgAZ2cwLQNEdAOABwDw5wsRnxmwKQBExGJZ/PFJgQgHEMTvIOEQoQAd8SkQYQBK8eEQIQAN8a9Ncbkf+OuQcnIDtMTvnUdjM9qhXAAWYRZbC8wwwIigkXd6MEMAHiGed2swZoAIARE+dhgTQGTgKF9qgKiAxzKI8KkCiAgkbUav7y6AN0Cvi/DvnhhNAI9jjfCIchIBZorfQRox74j4MbVRInpvh5H0mV6RiQ8i3q0ANONAUhNVywT+BisXgOTAWutae/pRHG0XwF9noLiB0FRJ9zAztYTKYBqCzUZsj9MAjGfhkk1sjzMBynZrSACAtLdOA+htdq0wrV1rlFD1YW2gw7gQ6ncBrAwIM452YVYJaVdqbeKscXplYNYmNs0HCcYjB5ramThBmsqlOH632ij/u8gQpz+t+cpzsTUDjK9SePWrVyosoAswQ6UnxgLwrF7Eu5fPwBf0Np5ADNwCNAAAAABJRU5ErkJggg=="
-            />
-            <span class="text-white">العودة للرئيسية</span>
-          </a>
-          <img src="./images/fav-icon.png" alt="" />
-        </div>
+          </div>
+          <div class="count_down_timer countdown flex gap-3 flex-col justify-center items-center">
+            <div class="countdown__time text-2xl font-medium">01:00</div>
+            <div class="countdown_reset">
+              <button type="button"
+                class="flex items-center justify-center gap-2  resend_code_btn countdown__reset custom-disabled"
+                aria-label="countdown timer wait 1 minute and click to resend code" disabled>
+                <img class="max-w-[20px]"
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAeRJREFUaEPtWNuRwjAMlPtJAfB1UNlBZZf7ggLSjxk7ARLix+qRu8mM/cEQsKVdaWU5drTz4XaOnxqB/85gy0DLgDICTULKAKqXtwzMQ+hv3YmITuToa/o9PIfRx09Pv+G7Ow7js8EwyUAE7ug7gkeHp6s7Dhd0em6emoC/dz8s4IuU6UmICUxRD+D1Q5ENEYEK+J48XROsRnmNUluOPydw73wCYASOFKi/dZcXEQX4MR7MsXD+XCsAEe0EAMpCZhGwAs+MWXE6j8CndASRL6GRZAUmkCxcQwLSuuAQeBfeFEZ3GOD11ch/7k5gcGAAq4YFOqjpPVlXjM1hRaBosIqG11khX5VAJTMAGVY2I5aPAomshKwcpJLGsl2RU7EGIEfMWoBs5qSa8FUtYm2R1com/J/w0bvDcEbWVglkHISXE5PzfLSvaJAQgRUJS/Dzg91b72fkUMg+zElafU0GKYlyGiScgRoQyf8Wh0M1AWlWLMCzJbTqXR8vJsj5vnQBwJHOE4s4A7Xt9XWVMmddurnwBBfu0qREvOPeHa5SrF7qReDVEsr2CDwo8Ht0zqRYQnODguOBGri6BjKHtH1eLeKKsZ9pIiF7WLjFRgCP1TYzWwa2iStutWUAj9U2M1sGtokrbvUBvosGQJR9kKAAAAAASUVORK5CYII=" />
+                <span>إعادة إرسال الرمز</span>
+              </button>
+            </div>
+          </div>
+          <button type="submit" class="bg-main w-full h-[45px] my-8 text-white rounded-[5px]">
+            تأكيد
+          </button>
+        </form>
       </div>
     </div>
+    <div class="lg:col-span-4 col-span-12 lg:block hidden">
+      <div class="h-screen flex items-center justify-center bg-gradient-to-r from-[#F2572F] to-main relative">
+        <a href="index.html" class="absolute top-[30px] rtl:right-[40px] ltr:left-[20px] flex items-center gap-1">
+          <img class="max-w-[20px]"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAYZJREFUaEPtmVEOwjAIhuFmejL1ZHozlGRLlqa0UKDLTPdiogz+r1BCK8LFH7y4flgAZ2cwLQNEdAOABwDw5wsRnxmwKQBExGJZ/PFJgQgHEMTvIOEQoQAd8SkQYQBK8eEQIQAN8a9Ncbkf+OuQcnIDtMTvnUdjM9qhXAAWYRZbC8wwwIigkXd6MEMAHiGed2swZoAIARE+dhgTQGTgKF9qgKiAxzKI8KkCiAgkbUav7y6AN0Cvi/DvnhhNAI9jjfCIchIBZorfQRox74j4MbVRInpvh5H0mV6RiQ8i3q0ANONAUhNVywT+BisXgOTAWutae/pRHG0XwF9noLiB0FRJ9zAztYTKYBqCzUZsj9MAjGfhkk1sjzMBynZrSACAtLdOA+htdq0wrV1rlFD1YW2gw7gQ6ncBrAwIM452YVYJaVdqbeKscXplYNYmNs0HCcYjB5ramThBmsqlOH632ij/u8gQpz+t+cpzsTUDjK9SePWrVyosoAswQ6UnxgLwrF7Eu5fPwBf0Np5ADNwCNAAAAABJRU5ErkJggg==" />
+          <span class="text-white">العودة للرئيسية</span>
+        </a>
+        <img src="./images/fav-icon.png" alt="" />
+      </div>
+    </div>
+  </div>
 
-    <!-- Plugin Jquery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- Select2 -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.4/js/select2.min.js"></script>
-    <!-- Plugin OwlCarousel 2 -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
-    <!-- Plugin TailwindCss -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Plugin Flowbite -->
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
-    <!-- Plugin Animation Page -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- Plugin Text Animation -->
-    <script src="./js/script.js"></script>
+  <!-- Plugin Jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Select2 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.4/js/select2.min.js"></script>
+  <!-- Plugin OwlCarousel 2 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+  <!-- Plugin TailwindCss -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Plugin Flowbite -->
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+  <!-- Plugin Animation Page -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- Plugin Text Animation -->
+  <script src="./js/script.js"></script>
 
-    <script>
-      tailwind.config = {
-        theme: {
-          container: {
-            center: true,
-            padding: {
-              DEFAULT: "1.5rem",
-              sm: "1rem",
-              lg: "2rem",
-              xl: "2rem",
-              "2xl": "3rem",
-            },
-          },
-          extend: {
-            colors: {
-              main: "#FFC82C",
-              secondary: "#000",
-              overlay: "rgba(0, 0, 0, 0.4)",
-            },
+  <script>
+    tailwind.config = {
+      theme: {
+        container: {
+          center: true,
+          padding: {
+            DEFAULT: "1.5rem",
+            sm: "1rem",
+            lg: "2rem",
+            xl: "2rem",
+            "2xl": "3rem",
           },
         },
+        extend: {
+          colors: {
+            main: "#FFC82C",
+            secondary: "#000",
+            overlay: "rgba(0, 0, 0, 0.4)",
+          },
+        },
+      },
+    };
+  </script>
+
+
+  <script>
+    // START:: VERIFICATION CODE
+    const inputElements = [...document.querySelectorAll("input.code-input")];
+
+    inputElements.forEach((ele, index) => {
+      ele.addEventListener("keydown", (e) => {
+        if (e.keyCode === 8 && e.target.value === "")
+          inputElements[Math.max(0, index - 1)].focus();
+      });
+      ele.addEventListener("input", (e) => {
+        const [first, ...rest] = e.target.value;
+        e.target.value = first ?? "";
+        const lastInputBox = index === inputElements.length - 1;
+        const insertedContent = first !== undefined;
+        if (insertedContent && !lastInputBox) {
+          inputElements[index + 1].focus();
+          inputElements[index + 1].value = rest.join("");
+          inputElements[index + 1].dispatchEvent(new Event("input"));
+        }
+      });
+    });
+    // END:: VERIFICATION CODE
+
+
+
+    // START:: COUNT DOWN
+    jQuery(function ($) {
+      var countdownTimer = {
+        init: function () {
+          this.cacheDom();
+          this.render();
+        },
+        cacheDom: function () {
+          this.$el = $(".countdown");
+          this.$time = this.$el.find(".countdown__time");
+          this.$reset = this.$el.find(".countdown__reset");
+        },
+        render: function () {
+          var totalTime = 10 * 1,
+            display = this.$time;
+          this.startTimer(totalTime, display);
+          this.$time.removeClass("countdown__time--red");
+          this.$time.removeClass("countdown__time--orange");
+          $('.countdown__reset').attr("disabled", "disabled");
+
+        },
+        startTimer: function (duration, display, icon) {
+          var timer = duration,
+            minutes,
+            seconds;
+          var interval = setInterval(function () {
+            minutes = parseInt(timer / 60, 10);
+            seconds = parseInt(timer % 60, 10);
+            minutes = minutes < 10 ? "0" + minutes : minutes;
+            seconds = seconds < 10 ? "0" + seconds : seconds;
+            display.text(minutes + ":" + seconds);
+            if (--timer < 0) {
+              clearInterval(interval);
+            }
+            if (timer < 15) {
+              display.addClass("countdown__time--orange");
+            }
+            if (timer < 5) {
+              display.addClass("countdown__time--red");
+            }
+            if (timer === 0) {
+              $('.countdown__reset').removeAttr("disabled");
+            }
+          }, 1000);
+          this.$reset.on("click", function () {
+            clearInterval(interval);
+            countdownTimer.render();
+          });
+        },
       };
-    </script>
-  </body>
+      countdownTimer.init();
+    });
+    // END:: COUNT DOWN
+
+  </script>
+</body>
+
 </html>
