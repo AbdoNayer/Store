@@ -218,3 +218,128 @@ header {
   border-top: 75px solid red;
   border-right: 75px solid transparent;
 }
+
+/*# sourceMappingURL=global.css.map */
+
+.countdown__time--orange {
+  color: #F2572F !important;
+}
+
+.countdown__time--red {
+  color: #ff3400 !important;
+}
+
+.countdown__reset {
+  &[disabled] {
+    filter: grayscale(2);
+    cursor: no-drop;
+
+    span {
+      color: #A0A0A0;
+    }
+  }
+
+  span {
+    color: black;
+
+  }
+}
+
+/* START:: LIST COUNTRIES */
+.btn_select {
+  width: 115px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: transparent;
+  border: 0 !important;
+  box-shadow: none !important;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAARBJREFUaEPtl1EOwjAMQ7ObwcmAk42jQT6KULUOmpcITbg/Q6ri+dnd0BY7+FoO7t8E8OsG1YAagAnoCMEA8bgawBFCATUAA8TjagBHCAXUAAwQj/99Ayczu8MYkQZp4GpmFzO7PQH8d2RhjShAu3EzHYHI0Ah9Unrl60bcMxC9+SZ3nj2SWQ3MNDEyPxPAK78ogAtEjERmdp8tAjALkW7eDVCAbyFKzGcBfILwfX/d9it05nuRjAaa5ijlrTOcYj6zgRmINPMVAHvHyfdSzVcBjCDSzVcC9BAl5qsBGsT7dfdPKbKZ+RaK3B/PCABHCAXUAAwQj6sBHCEUUAMwQDyuBnCEUEANwADxuBrAEUKBB7c/LDHYu3A3AAAAAElFTkSuQmCC");
+  background-size: 20px;
+  background-position: center left 1rem;
+  background-repeat: no-repeat;
+  padding-inline-end: 1.5rem;
+}
+
+.btn_select li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  
+  span {
+    direction: ltr;
+  }
+
+}
+
+.btn_select:hover li {
+  margin: 0px;
+  cursor: pointer;
+}
+
+.btn_select:hover {
+  background-color: transparent;
+  border: 1px solid transparent;
+  box-shadow: inset 0 0px 0px 1px #ccc;
+}
+
+.btn_select:focus {
+  outline: none;
+}
+
+.lang-select {
+  margin-inline-end: 10px;
+  position: absolute;
+  margin: 0;
+  height: 100%;
+  left: 0;
+  display: flex;
+  align-items: center;
+  top: 0;
+}
+
+.vodiapicker {
+  display: none;
+}
+
+.lang_list #loop_list_language {
+  padding-left: 0;
+  margin: 0;
+}
+
+.lang_list #loop_list_language li {
+  list-style: none;
+  margin-block: 5px;
+  cursor: pointer;
+}
+
+.lang_list #loop_list_language li:hover {
+  background-color: #f4f3f3;
+}
+
+.mobile_select img {
+  margin-inline-end: 5px;
+  width: 26px;
+  height: 17px;
+}
+
+#loop_list_language img {
+  width: 28px;
+  height: 15px;
+}
+
+.lang_list {
+  display: none;
+  position: absolute;
+  background-color: #f4f3f3;
+  ;
+  width: 100%;
+  box-shadow: 1px 1px 1px #ccc;
+  border-radius: 10px;
+  padding: 10px 5px;
+  top: 112%;
+  z-index: 99;
+  max-height: 150px;
+  overflow: auto;
+}
