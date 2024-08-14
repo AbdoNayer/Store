@@ -55,22 +55,10 @@
         <div
           class="h-screen p-4 overflow-y-auto flex flex-col justify-center items-center w-full"
         >
-          <form action="/otp.html" class="lg:w-[50%] w-full m-auto">
+          <form action="./otp.html" class="lg:w-[50%] w-full m-auto">
             <h5 class="font-bold text-center mb-6 text-[20px]">إنشاء حساب</h5>
             <div class="w-full my-4 pt-5">
-              <label for="" class="block"
-                >اسم المستخدم <span class="text-red-500">*</span></label
-              >
-              <div class="w-full my-3">
-                <input
-                  type="text"
-                  placeholder="ادخل اسم المستخدم"
-                  class="border border-[#F6F6F6] rounded-[5px] w-full h-[45px] px-3 rtl:text-right ltr:text-left text-[13px]"
-                />
-              </div>
-            </div>
-            <div class="w-full my-4 pt-5">
-              <label for="" class="block"
+              <label for="" class="block font-medium"
                 >البريد الإلكتروني <span class="text-red-500">*</span></label
               >
               <div class="w-full my-3">
@@ -81,60 +69,12 @@
                 />
               </div>
             </div>
-            <div class="w-full my-4 pt-5">
-              <label for="" class="block"
-                >رقم الجوال <span class="text-red-500">*</span></label
-              >
-              <div class="w-full my-3 relative">
-                <input
-                  type="tel"
-                  placeholder="ادخل رقم الجوال"
-                  class="border border-[#F6F6F6] rounded-[5px] w-full h-[45px] px-3 rtl:text-right ltr:text-left text-[13px]"
-                />
-                <div
-                  class="flex items-center gap-1 absolute top-[50%] translate-y-[-50%] rtl:left-[10px] ltr:right-[10px]"
-                >
-                  <img src="./images/saudi.png" class="max-w-[20px]" alt="" />
-                  <select
-                    name=""
-                    id=""
-                    class="border-0 !bg-transparent !p-0 !bg-none text-[13px]"
-                  >
-                    <option value="">+966</option>
-                    <option value="">+20</option>
-                  </select>
-                  <img
-                    class="max-w-[20px]"
-                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAARBJREFUaEPtl1EOwjAMQ7ObwcmAk42jQT6KULUOmpcITbg/Q6ri+dnd0BY7+FoO7t8E8OsG1YAagAnoCMEA8bgawBFCATUAA8TjagBHCAXUAAwQj/99Ayczu8MYkQZp4GpmFzO7PQH8d2RhjShAu3EzHYHI0Ah9Unrl60bcMxC9+SZ3nj2SWQ3MNDEyPxPAK78ogAtEjERmdp8tAjALkW7eDVCAbyFKzGcBfILwfX/d9it05nuRjAaa5ijlrTOcYj6zgRmINPMVAHvHyfdSzVcBjCDSzVcC9BAl5qsBGsT7dfdPKbKZ+RaK3B/PCABHCAXUAAwQj6sBHCEUUAMwQDyuBnCEUEANwADxuBrAEUKBB7c/LDHYu3A3AAAAAElFTkSuQmCC"
-                  />
-                </div>
-              </div>
-            </div>
-            <div class="w-full my-4">
-              <label for="" class="block"
-                >كلمة المرور <span class="text-red-500">*</span></label
-              >
-              <div class="w-full my-3 relative">
-                <input
-                  type="password"
-                  placeholder="ادخل كلمة المرور"
-                  class="border border-[#F6F6F6] rounded-[5px] w-full h-[45px] px-3 rtl:text-right ltr:text-left text-[13px]"
-                />
-                <button
-                  class="absolute top-[50%] translate-y-[-50%] rtl:left-[10px] ltr:right-[10px]"
-                >
-                  <img
-                    class="max-w-[20px]"
-                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAkFJREFUaEPtWG1uwjAMJXCwsWtQcRbGWVC5BnAw2s1VI5U0znuJgyak9M9YWzvvw0mcus2HX+7D8W8agf92sDnQHDAq0ErIKKA5vDngJbxcLvvtdrt3zn35e+M47uW3c+4uf8dxfPhnXdf9mOWX3JYkAnq325080IJcZ4mxkCkiMKt9KwCcCjmXEMkiUEFxxDmbBE2g73up2ZOGwNf58/mcykKu4/E41b5cfo7M/6p55uc0EYpACrwAF9BLsEhm/xyIQpGABLRBLMBDggkikESSgJZ4GIbvEsVTzpSSUAloKw0DPjLZqeWyZEyVQN/3Y6gYA/56vd4S+wIsiRgJKdfD4fAdczBKQLETDo5WKr8ra2CCFSvcZ6LjawRC9auA9wAZJ2NidF23wru6wQaGdoLSeXk9VRLLFyM5V0LGCGSrL4PG5kxq00NltNj8XkopdAESYOyWwXIckPdj5cDsDwyBl5bBYHdq2YdzSnEVlxAbGKLL7FAhAXYu0ssoU0pkGRWB/zu78MuoVtMMCdT4ocmrOanNmbe0EjMJ0eG0bLNR/1S1lZjngnYGgGXAttRg95XHybGK22mUmCUATnlQKEgAOAEV0ogQx1MIfuqtWKWYRk1ckXzDMNzD46QfR75iyG/wJYMCn0XAAyCJsLqseqTc4yntwHKkd5BgluiYKkUEAjem5bJE8hrnahOBiCvTLf95Mfy0ONf+I5wjJeR9TDUCFhCW2EbAol6N2OZADRUtOZoDFvVqxDYHaqhoyfHxDvwCYyCbQNNrT0AAAAAASUVORK5CYII="
-                  />
-                </button>
-              </div>
-            </div>
+            
             <button
               type="submit"
               class="bg-main w-full h-[45px] my-8 text-white rounded-[5px]"
             >
-              تسجيل
+              تأكيد
             </button>
             <p class="text-[12px] text-center">
               هل لديك حساب ؟
