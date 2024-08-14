@@ -165,9 +165,19 @@ header {
 .main-body-slider {
   #sliderHome {
     .owl-item.active {
+      .item {
+        img {
+          transition: 1s;
+          animation-name: translateInfo;
+          animation-fill-mode: both;
+          animation-duration: 1s;
+          animation-delay: 1s;
+        }
+      }
       .over-info {
         h1,
-        p {
+        p,
+        span {
           transition: 1s;
           animation-name: translateInfo;
           animation-fill-mode: both;
@@ -179,6 +189,10 @@ header {
         p {
           animation-duration: 1.5s;
           animation-delay: 1.5s;
+        }
+        span {
+          animation-duration: 2s;
+          animation-delay: 2s;
         }
       }
     }
@@ -196,6 +210,11 @@ header {
     }
   }
 }
-.owl-dots {
-  display: none;
+
+// Shape
+.shapeCss {
+  width: 0;
+  height: 0;
+  border-top: 75px solid red;
+  border-right: 75px solid transparent;
 }

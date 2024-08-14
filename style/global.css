@@ -42,26 +42,26 @@ input[type=number] {
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--main);
-  border: 1px solid var(--main);
+  background: #000;
+  border: 1px solid #000;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--main);
+  background: #000;
 }
 
 ::-moz-selection {
-  background: var(--main);
+  background: #000;
   color: #fff;
 }
 
 ::selection {
-  background: var(--main);
+  background: #000;
   color: #fff;
 }
 
 ::-moz-selection {
-  background: var(--main);
+  background: #000;
   color: #fff;
 }
 
@@ -69,7 +69,7 @@ input[type=number] {
 ::-moz-placeholder,
 :-ms-input-placeholder,
 :-moz-placeholder {
-  color: var(--main);
+  color: #000;
   opacity: 1;
 }
 
@@ -246,8 +246,16 @@ header ul li a::after {
   display: none;
 }
 
+.main-body-slider #sliderHome .owl-item.active .item img {
+  transition: 1s;
+  animation-name: translateInfo;
+  animation-fill-mode: both;
+  animation-duration: 1s;
+  animation-delay: 1s;
+}
 .main-body-slider #sliderHome .owl-item.active .over-info h1,
-.main-body-slider #sliderHome .owl-item.active .over-info p {
+.main-body-slider #sliderHome .owl-item.active .over-info p,
+.main-body-slider #sliderHome .owl-item.active .over-info span {
   transition: 1s;
   animation-name: translateInfo;
   animation-fill-mode: both;
@@ -259,6 +267,10 @@ header ul li a::after {
 .main-body-slider #sliderHome .owl-item.active .over-info p {
   animation-duration: 1.5s;
   animation-delay: 1.5s;
+}
+.main-body-slider #sliderHome .owl-item.active .over-info span {
+  animation-duration: 2s;
+  animation-delay: 2s;
 }
 @keyframes translateInfo {
   from {
@@ -273,6 +285,9 @@ header ul li a::after {
   }
 }
 
-.owl-dots {
-  display: none;
+.shapeCss {
+  width: 0;
+  height: 0;
+  border-top: 75px solid red;
+  border-right: 75px solid transparent;
 }/*# sourceMappingURL=global.css.map */

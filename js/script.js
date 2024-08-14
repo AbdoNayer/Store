@@ -98,7 +98,7 @@ $(document).ready(function () {
     smartSpeed: 1000,
     animateOut: "fadeOut",
     dragEndSpeed: 7000,
-    pagination: false,
+    pagination: true,
     nav: false,
     navText: [
       '<i class="icon-arrow-left"></i>',
@@ -113,6 +113,30 @@ $(document).ready(function () {
       },
       1000: {
         items: 1,
+      },
+    },
+  });
+   // Slider Classification
+   $("#sliderClassification").owlCarousel({
+    loop: true,
+    margin: 0,
+    center: false,
+    autoplay: false,
+    pagination: false,
+    nav: false,
+    navText: [
+      '<i class="icon-arrow-left"></i>',
+      '<i class="icon-arrow-right"></i>',
+    ],
+    responsive: {
+      0: {
+        items: 2,
+      },
+      900: {
+        items: 5,
+      },
+      1000: {
+        items: 10,
       },
     },
   });
