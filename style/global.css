@@ -81,6 +81,10 @@ input[type=number] {
   direction: ltr;
 }
 
+.back {
+  transform: translate(0) !important;
+}
+
 .loader::after {
   content: "";
   position: absolute;
