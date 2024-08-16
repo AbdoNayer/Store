@@ -164,6 +164,30 @@ header {
 // Slider Home
 .main-body-slider {
   #sliderHome {
+    .owl-stage-outer {
+      overflow: initial !important;
+    }
+    .owl-dots {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      right: 0;
+      bottom: 20px;
+      width: 100%;
+      button {
+        width: 20px;
+        height: 7px;
+        border-radius: 50px;
+        background-color: #fff;
+        margin: 0 3px;
+        opacity: 0.5;
+        &.active {
+          width: 35px;
+          opacity: 1;
+        }
+      }
+    }
     .owl-item.active {
       .item {
         img {
@@ -222,7 +246,7 @@ header {
 /*# sourceMappingURL=global.css.map */
 
 .countdown__time--orange {
-  color: #F2572F !important;
+  color: #f2572f !important;
 }
 
 .countdown__time--red {
@@ -235,13 +259,12 @@ header {
     cursor: no-drop;
 
     span {
-      color: #A0A0A0;
+      color: #a0a0a0;
     }
   }
 
   span {
     color: black;
-
   }
 }
 
@@ -265,12 +288,11 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: .5rem;
-  
+  gap: 0.5rem;
+
   span {
     direction: ltr;
   }
-
 }
 
 .btn_select:hover li {
@@ -333,7 +355,6 @@ header {
   display: none;
   position: absolute;
   background-color: #f4f3f3;
-  ;
   width: 100%;
   box-shadow: 1px 1px 1px #ccc;
   border-radius: 10px;
@@ -342,4 +363,21 @@ header {
   z-index: 99;
   max-height: 150px;
   overflow: auto;
+}
+
+// media
+@media (max-width: 767px) {
+  // Slider Home
+  .main-body-slider {
+    #sliderHome {
+      .owl-stage-outer {
+        overflow: hidden !important;
+      }
+      .owl-dots {
+        position: relative;
+        bottom: 0px;
+        padding: 10px 0;
+      }
+    }
+  }
 }

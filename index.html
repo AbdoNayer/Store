@@ -50,12 +50,7 @@
     <div class="loader w-full h-full fixed top-0 right-0 z-[99999]">
       <div
         class="spinner w-[60px] h-[60px] absolute top-0 bottom-0 right-0 left-0 m-auto z-[9]"
-      >
-        <div class="item item-1 absolute w-[30px] h-[30px] rounded-full"></div>
-        <div class="item item-2 absolute w-[30px] h-[30px] rounded-full"></div>
-        <div class="item item-3 absolute w-[30px] h-[30px] rounded-full"></div>
-        <div class="item item-4 absolute w-[30px] h-[30px] rounded-full"></div>
-      </div>
+      ></div>
     </div>
 
     <!-- Header -->
@@ -277,24 +272,29 @@
     </div>
 
     <!-- Slider Head -->
-    <div class="main-body-slider relative overflow-hidden" id="Home">
+    <div class="main-body-slider relative pt-5" id="Home">
       <div class="container">
-        <div id="sliderHome" class="owl-carousel owl-theme sliderHome">
+        <div
+          id="sliderHome"
+          class="owl-carousel owl-theme sliderHome bg-gradient-to-r from-[#F2572F] to-main rounded-[10px]"
+        >
           <div
-            class="item flex items-center lg:flex-row flex-col lg:justify-between justify-center p-7 rounded-[10px] position-relative bg-gradient-to-r from-[#F2572F] to-main"
+            class="item flex items-center lg:flex-row flex-col lg:justify-between justify-center p-5 rounded-[10px] position-relative"
           >
             <div
-              class="relative before:content-[''] before:absolute before:top-[-20px] before:w-[280px] before:h-[280px] before:shadow-custom before:bg-white before:shadow-white before:opacity-35 before:rounded-full"
+              class="relative lg:before:block before:hidden before:content-[''] before:absolute before:top-[-50px] before:rtl:right-[30px] before:ltr:left-[20px] before:w-[280px] before:h-[280px] before:shadow-custom before:bg-white before:shadow-white before:opacity-30 before:rounded-full"
             >
               <img
                 src="./images/smart.png"
                 alt=""
-                class="max-w-[300px] relative"
+                class="max-w-[330px] relative lg:top-[-65px]"
               />
             </div>
             <div class="overlay-fix flex items-center">
               <div class="container overflow-hidden">
-                <div class="over-info flex lg:items-end items-center lg:mt-0 mt-6 flex-col">
+                <div
+                  class="over-info flex lg:items-end items-center lg:mt-0 mt-6 flex-col"
+                >
                   <h1
                     class="font-medium text-[17px] text-white rtl:text-right ltr:text-left"
                   >
@@ -315,20 +315,22 @@
             </div>
           </div>
           <div
-            class="item flex items-center lg:flex-row flex-col lg:justify-between justify-center p-7 rounded-[10px] position-relative bg-gradient-to-r from-[#F2572F] to-main"
+            class="item flex items-center lg:flex-row flex-col lg:justify-between justify-center p-5 rounded-[10px] position-relative"
           >
             <div
-              class="relative before:content-[''] before:absolute before:top-[-20px] before:w-[280px] before:h-[280px] before:shadow-custom before:bg-white before:shadow-white before:opacity-35 before:rounded-full"
+              class="relative lg:before:block before:hidden before:content-[''] before:absolute before:top-[-50px] before:rtl:right-[30px] before:ltr:left-[20px] before:w-[280px] before:h-[280px] before:shadow-custom before:bg-white before:shadow-white before:opacity-30 before:rounded-full"
             >
               <img
                 src="./images/smart.png"
                 alt=""
-                class="max-w-[300px] relative"
+                class="max-w-[330px] relative lg:top-[-65px]"
               />
             </div>
             <div class="overlay-fix flex items-center">
               <div class="container overflow-hidden">
-                <div class="over-info flex lg:items-end items-center lg:mt-0 mt-6 flex-col">
+                <div
+                  class="over-info flex lg:items-end items-center lg:mt-0 mt-6 flex-col"
+                >
                   <h1
                     class="font-medium text-[17px] text-white rtl:text-right ltr:text-left"
                   >
@@ -349,20 +351,22 @@
             </div>
           </div>
           <div
-            class="item flex items-center lg:flex-row flex-col lg:justify-between justify-center p-7 rounded-[10px] position-relative bg-gradient-to-r from-[#F2572F] to-main"
+            class="item flex items-center lg:flex-row flex-col lg:justify-between justify-center p-5 rounded-[10px] position-relative"
           >
             <div
-              class="relative before:content-[''] before:absolute before:top-[-20px] before:w-[280px] before:h-[280px] before:shadow-custom before:bg-white before:shadow-white before:opacity-35 before:rounded-full"
+              class="relative lg:before:block before:hidden before:content-[''] before:absolute before:top-[-50px] before:rtl:right-[30px] before:ltr:left-[20px] before:w-[280px] before:h-[280px] before:shadow-custom before:bg-white before:shadow-white before:opacity-30 before:rounded-full"
             >
               <img
                 src="./images/smart.png"
                 alt=""
-                class="max-w-[300px] relative"
+                class="max-w-[330px] relative lg:top-[-65px]"
               />
             </div>
             <div class="overlay-fix flex items-center">
               <div class="container overflow-hidden">
-                <div class="over-info flex lg:items-end items-center lg:mt-0 mt-6 flex-col">
+                <div
+                  class="over-info flex lg:items-end items-center lg:mt-0 mt-6 flex-col"
+                >
                   <h1
                     class="font-medium text-[17px] text-white rtl:text-right ltr:text-left"
                   >
@@ -387,7 +391,7 @@
     </div>
 
     <!-- Box Bouns -->
-    <div class="py-5 overflow-hidden">
+    <div class="py-5 mt-5 overflow-hidden">
       <div class="container">
         <div class="grid grid-cols-12 gap-7">
           <div class="lg:col-span-4 col-span-12 overflow-hidden">
@@ -484,9 +488,10 @@
         </div>
       </div>
       <div
-        class="flex items-center overflow-x-auto overflow-y-hidden flex-nowrap gap-x-6 my-5 lg:ps-[145px] ps-[22px] pe-[20px]"
+        id="sliderClassification"
+        class="owl-carousel owl-theme sliderClassification lg:ps-[135px] ps-[22px] pe-[20px] pt-6"
       >
-        <div class="flex items-center justify-center flex-col">
+        <div class="item flex items-center justify-center flex-col">
           <div
             class="bg-[#ffde80] w-[80px] h-[80px] flex items-center justify-center rounded-[10px] overflow-hidden"
           >
@@ -498,7 +503,7 @@
           </div>
           <h5 class="mt-2 font-normal text-[12px]">الجوالات</h5>
         </div>
-        <div class="flex items-center justify-center flex-col">
+        <div class="item flex items-center justify-center flex-col">
           <div
             class="bg-[#ffde80] w-[80px] h-[80px] flex items-center justify-center rounded-[10px] overflow-hidden"
           >
@@ -510,7 +515,7 @@
           </div>
           <h5 class="mt-2 font-normal text-[12px]">أجهزة كهربائية</h5>
         </div>
-        <div class="flex items-center justify-center flex-col">
+        <div class="item flex items-center justify-center flex-col">
           <div
             class="bg-[#ffde80] w-[80px] h-[80px] flex items-center justify-center rounded-[10px] overflow-hidden"
           >
@@ -522,7 +527,7 @@
           </div>
           <h5 class="mt-2 font-normal text-[12px]">اكسسوارات</h5>
         </div>
-        <div class="flex items-center justify-center flex-col">
+        <div class="item flex items-center justify-center flex-col">
           <div
             class="bg-[#ffde80] w-[80px] h-[80px] flex items-center justify-center rounded-[10px] overflow-hidden"
           >
@@ -534,7 +539,7 @@
           </div>
           <h5 class="mt-2 font-normal text-[12px]">منتجات البشرة</h5>
         </div>
-        <div class="flex items-center justify-center flex-col">
+        <div class="item flex items-center justify-center flex-col">
           <div
             class="bg-[#ffde80] w-[80px] h-[80px] flex items-center justify-center rounded-[10px] overflow-hidden"
           >
@@ -546,7 +551,7 @@
           </div>
           <h5 class="mt-2 font-normal text-[12px]">منتجات الشعر</h5>
         </div>
-        <div class="flex items-center justify-center flex-col">
+        <div class="item flex items-center justify-center flex-col">
           <div
             class="bg-[#ffde80] w-[80px] h-[80px] flex items-center justify-center rounded-[10px] overflow-hidden"
           >
@@ -558,7 +563,7 @@
           </div>
           <h5 class="mt-2 font-normal text-[12px]">ملابس</h5>
         </div>
-        <div class="flex items-center justify-center flex-col">
+        <div class="item flex items-center justify-center flex-col">
           <div
             class="bg-[#ffde80] w-[80px] h-[80px] flex items-center justify-center rounded-[10px] overflow-hidden"
           >
@@ -570,7 +575,7 @@
           </div>
           <h5 class="mt-2 font-normal text-[12px]">أحذية</h5>
         </div>
-        <div class="flex items-center justify-center flex-col">
+        <div class="item flex items-center justify-center flex-col">
           <div
             class="bg-[#ffde80] w-[80px] h-[80px] flex items-center justify-center rounded-[10px] overflow-hidden"
           >
@@ -582,7 +587,7 @@
           </div>
           <h5 class="mt-2 font-normal text-[12px]">حقائب</h5>
         </div>
-        <div class="flex items-center justify-center flex-col">
+        <div class="item flex items-center justify-center flex-col">
           <div
             class="bg-[#ffde80] w-[80px] h-[80px] flex items-center justify-center rounded-[10px] overflow-hidden"
           >
@@ -594,7 +599,7 @@
           </div>
           <h5 class="mt-2 font-normal text-[12px]">ساعات</h5>
         </div>
-        <div class="flex items-center justify-center flex-col">
+        <div class="item flex items-center justify-center flex-col">
           <div
             class="bg-[#ffde80] w-[80px] h-[80px] flex items-center justify-center rounded-[10px] overflow-hidden"
           >
@@ -606,7 +611,7 @@
           </div>
           <h5 class="mt-2 font-normal text-[12px]">سماعات</h5>
         </div>
-        <div class="flex items-center justify-center flex-col">
+        <div class="item flex items-center justify-center flex-col">
           <div
             class="bg-[#ffde80] w-[80px] h-[80px] flex items-center justify-center rounded-[10px] overflow-hidden"
           >
@@ -618,7 +623,7 @@
           </div>
           <h5 class="mt-2 font-normal text-[12px]">منتجات البشرة</h5>
         </div>
-        <div class="flex items-center justify-center flex-col">
+        <div class="item flex items-center justify-center flex-col">
           <div
             class="bg-[#ffde80] w-[80px] h-[80px] flex items-center justify-center rounded-[10px] overflow-hidden"
           >
@@ -630,7 +635,7 @@
           </div>
           <h5 class="mt-2 font-normal text-[12px]">منتجات الشعر</h5>
         </div>
-        <div class="flex items-center justify-center flex-col">
+        <div class="item flex items-center justify-center flex-col">
           <div
             class="bg-[#ffde80] w-[80px] h-[80px] flex items-center justify-center rounded-[10px] overflow-hidden"
           >
@@ -642,7 +647,7 @@
           </div>
           <h5 class="mt-2 font-normal text-[12px]">ملابس</h5>
         </div>
-        <div class="flex items-center justify-center flex-col">
+        <div class="item flex items-center justify-center flex-col">
           <div
             class="bg-[#ffde80] w-[80px] h-[80px] flex items-center justify-center rounded-[10px] overflow-hidden"
           >
@@ -654,7 +659,7 @@
           </div>
           <h5 class="mt-2 font-normal text-[12px]">أحذية</h5>
         </div>
-        <div class="flex items-center justify-center flex-col">
+        <div class="item flex items-center justify-center flex-col">
           <div
             class="bg-[#ffde80] w-[80px] h-[80px] flex items-center justify-center rounded-[10px] overflow-hidden"
           >
@@ -666,7 +671,7 @@
           </div>
           <h5 class="mt-2 font-normal text-[12px]">الجوالات</h5>
         </div>
-        <div class="flex items-center justify-center flex-col">
+        <div class="item flex items-center justify-center flex-col">
           <div
             class="bg-[#ffde80] w-[80px] h-[80px] flex items-center justify-center rounded-[10px] overflow-hidden"
           >
@@ -678,7 +683,7 @@
           </div>
           <h5 class="mt-2 font-normal text-[12px]">أجهزة كهربائية</h5>
         </div>
-        <div class="flex items-center justify-center flex-col">
+        <div class="item flex items-center justify-center flex-col">
           <div
             class="bg-[#ffde80] w-[80px] h-[80px] flex items-center justify-center rounded-[10px] overflow-hidden"
           >
@@ -690,7 +695,7 @@
           </div>
           <h5 class="mt-2 font-normal text-[12px]">اكسسوارات</h5>
         </div>
-        <div class="flex items-center justify-center flex-col">
+        <div class="item flex items-center justify-center flex-col">
           <div
             class="bg-[#ffde80] w-[80px] h-[80px] flex items-center justify-center rounded-[10px] overflow-hidden"
           >
@@ -702,7 +707,7 @@
           </div>
           <h5 class="mt-2 font-normal text-[12px]">منتجات البشرة</h5>
         </div>
-        <div class="flex items-center justify-center flex-col">
+        <div class="item flex items-center justify-center flex-col">
           <div
             class="bg-[#ffde80] w-[80px] h-[80px] flex items-center justify-center rounded-[10px] overflow-hidden"
           >
@@ -714,7 +719,7 @@
           </div>
           <h5 class="mt-2 font-normal text-[12px]">منتجات الشعر</h5>
         </div>
-        <div class="flex items-center justify-center flex-col">
+        <div class="item flex items-center justify-center flex-col">
           <div
             class="bg-[#ffde80] w-[80px] h-[80px] flex items-center justify-center rounded-[10px] overflow-hidden"
           >
@@ -726,7 +731,7 @@
           </div>
           <h5 class="mt-2 font-normal text-[12px]">ملابس</h5>
         </div>
-        <div class="flex items-center justify-center flex-col">
+        <div class="item flex items-center justify-center flex-col">
           <div
             class="bg-[#ffde80] w-[80px] h-[80px] flex items-center justify-center rounded-[10px] overflow-hidden"
           >
@@ -738,7 +743,7 @@
           </div>
           <h5 class="mt-2 font-normal text-[12px]">الجوالات</h5>
         </div>
-        <div class="flex items-center justify-center flex-col">
+        <div class="item flex items-center justify-center flex-col">
           <div
             class="bg-[#ffde80] w-[80px] h-[80px] flex items-center justify-center rounded-[10px] overflow-hidden"
           >
@@ -750,7 +755,7 @@
           </div>
           <h5 class="mt-2 font-normal text-[12px]">أجهزة كهربائية</h5>
         </div>
-        <div class="flex items-center justify-center flex-col">
+        <div class="item flex items-center justify-center flex-col">
           <div
             class="bg-[#ffde80] w-[80px] h-[80px] flex items-center justify-center rounded-[10px] overflow-hidden"
           >
@@ -762,7 +767,7 @@
           </div>
           <h5 class="mt-2 font-normal text-[12px]">اكسسوارات</h5>
         </div>
-        <div class="flex items-center justify-center flex-col">
+        <div class="item flex items-center justify-center flex-col">
           <div
             class="bg-[#ffde80] w-[80px] h-[80px] flex items-center justify-center rounded-[10px] overflow-hidden"
           >
@@ -774,7 +779,7 @@
           </div>
           <h5 class="mt-2 font-normal text-[12px]">منتجات البشرة</h5>
         </div>
-        <div class="flex items-center justify-center flex-col">
+        <div class="item flex items-center justify-center flex-col">
           <div
             class="bg-[#ffde80] w-[80px] h-[80px] flex items-center justify-center rounded-[10px] overflow-hidden"
           >
@@ -786,7 +791,7 @@
           </div>
           <h5 class="mt-2 font-normal text-[12px]">منتجات الشعر</h5>
         </div>
-        <div class="flex items-center justify-center flex-col">
+        <div class="item flex items-center justify-center flex-col">
           <div
             class="bg-[#ffde80] w-[80px] h-[80px] flex items-center justify-center rounded-[10px] overflow-hidden"
           >
@@ -802,7 +807,7 @@
     </div>
 
     <!-- Latest Products -->
-    <div class="py-5 overflow-hidden">
+    <div class="pb-5 overflow-hidden">
       <div class="container">
         <div class="flex items-center justify-between">
           <h1 class="font-medium">أحدث المنتجات</h1>
@@ -810,310 +815,321 @@
         </div>
       </div>
       <div
-        class="flex items-center overflow-x-auto overflow-y-hidden flex-nowrap gap-x-6 my-5 lg:ps-[145px] ps-[22px] pe-[20px]"
+        id="sliderProducts"
+        class="owl-carousel owl-theme sliderProducts lg:ps-[145px] ps-[22px] pe-[20px] pt-6"
       >
-        <div
-          class="border border-[#F6F6F6] rounded-[15px] p-4 overflow-hidden w-[300px] shrink-0"
-        >
-          <div class="relative overflow-hidden rounded-[13px]">
-            <img src="./images/img.png" class="w-full h-[200px]" alt="" />
-            <div class="">
-              <span
-                class="shapeCss absolute top-0 rtl:left-0 ltr:right-0"
-              ></span>
-              <span
-                class="absolute top-[10px] rtl:left-[7px] ltr:right-[7px] text-white font-medium"
-                >% 10</span
-              >
-            </div>
-            <button
-              class="w-[25px] h-[25px] flex items-center justify-center bg-white rounded-[4px] absolute top-[10px] rtl:right-[10px] ltr:left-[10px]"
-            >
-              <img
-                class="max-w-[18px]"
-                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAe5JREFUaEPtWAtOwzAMdU8GOxnsZMDJyjxSEVwn/uRlU1ErTVrVOX2/xu4WOvixHBw/nQSe7eDpwOEcWIneC+gXInq9fT7L+Rd/X37PVW7rTw1/+OA16uNq1ctF3REqwN+cil8kkGA9E9mE6t7SJFAU+3ACr3/GztwVDYKv19gJEXJg4MYJvs2SrhtNBwzlr+V2W/75lOO1ZdsiEK1vOtEjcDNgd5jZXIk4bi0i3foimirEQnrTVQk0omOC3+g+sr5FQKrP2+PFykV9XajpJt8TQXNhR0DLfsu+CKHMb1ciKeROCI2AzHBY/QxYrUaJYoqAuRejAMt1FAI7MTUHpG3PJMC72Z8mKuP8LwnIZyC8g6AipWworgjxEFUPbc8kYG4oWoQkAW6B5tCHUl30EvN59Dayh7ugjSSuRsYKjI4Co25E7g8f5iaBb8Y4M05Pi1Pn/SM+TneixJfgJDrgcy80xmgMJZEFzyBc2+PIDaxnYnRtF4FZcRoF73ZgRpwQ4MMEUE6gwKcIjJJAgk8TyJJAgx8iECUxA/wwAS+JWeAhBCwSZQfT/hSGdHN3HxhoSFopBDzMAUefqEnAwMMJGHGCzk+bIrAI1RJHXkisaFrXpxBQnIDGpiY1jYClHOr6SQClZHad04Gscqi6wzvwDT/cyTEwjk+pAAAAAElFTkSuQmCC"
-              />
-            </button>
-          </div>
-          <div class="py-2">
-            <div class="flex items-center justify-between">
-              <h4 class="font-normal text-[14px]">جوال ايفون 14</h4>
-              <span class="text-[#D6A723] text-[14px]">150.00 ر.س</span>
-            </div>
-            <p class="my-2 text-[13px] text-[#505050]">
-              شاشة سوبر ريتينا اكس دي ار مقاس 6.1 بوصة، نظام كاميرا متطور للحصول
-              على صور أفضل في أي إضاءة
-            </p>
-            <div class="flex items-center justify-between mt-3">
-              <div class="flex items-center justify-center gap-1">
-                <button
-                  class="flex items-center justify-center rounded-[5px] w-[28px] h-[28px] bg-main"
+        <div class="item">
+          <div
+            class="border border-[#F6F6F6] hover:border-main rounded-[15px] p-4 overflow-hidden lg:w-[95%]"
+          >
+            <div class="relative overflow-hidden rounded-[13px]">
+              <img src="./images/img.png" class="w-full h-[200px]" alt="" />
+              <div class="">
+                <span
+                  class="shapeCss absolute top-0 rtl:left-0 ltr:right-0"
+                ></span>
+                <span
+                  class="absolute top-[10px] rtl:left-[7px] ltr:right-[7px] text-white font-medium"
+                  >% 10</span
                 >
-                  <i class="fa-solid fa-plus text-white text-[13px]"></i>
-                </button>
-                <input
-                  type="text"
-                  class="border border-[#F6F6F6] rounded-[5px] text-center w-[50px] p-0 h-[30px]"
-                />
-                <button
-                  class="flex items-center justify-center rounded-[5px] w-[28px] h-[28px] bg-[#A5A5A5]"
-                >
-                  <i class="fa-solid fa-minus text-white text-[13px]"></i>
-                </button>
               </div>
               <button
-                class="border border-main rounded-[5px] p-2 flex items-center justify-center gap-1"
+                class="w-[25px] h-[25px] flex items-center justify-center bg-white rounded-[4px] absolute top-[10px] rtl:right-[10px] ltr:left-[10px]"
               >
                 <img
-                  class="max-w-[20px]"
-                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAfJJREFUaEPtmDFWwzAMhqUOwMDEMSAHaJiaA8EVCAsX6IEaFtoDBG4BEwss4sWlfSFWgmzLifteMuZFiT5L/y87CCd+4YnnDzPA1BWcK5BcBWiXEZNUBQTPmNfl1Al3v2+1UA/APo7gMTUIN4A9RIF5XaVSCXcAgAqXdZEsQDcx2mYrQNj8uZ9QFUQ2SrusAVi1IJKpggyAqQIua1Fs7FYTJ2FVIZE2kgNwWoi9vJYgbRsXAxgH5YfcmBiW9lwBumIeM3nzra723ACmbiNmJ+AE8NtGo1mq1bKMcbgDjGSptM1KQHj4b/Y4A7BijmCpjG2zG0lfgKhtxG1f+ganH0Dk/ZHVPgPbeC+A2GJmxNt7DvEHiCRmRryW97eHjzcAWwUFMbu0jxlsIaOUEVvwNlvi/WoV0LZUqfdrA6hZqtT7dQGULNXF+1UBeiw1RFpOv3CCRHzIkj34hyII/0GpAMQ47EjP3HoAemcFp9+YagChHeMbrwpAm+tLOMczk8wXfWPx9ilJzDcueBK3k6OXmytAbA4hd+Y+wRqISrx9/RiC8I07vFOlAmYFLxZPx+SP9gRrzOv7PgDfOP050Kz+At+5RIfcxKy+R9wM0F1p31bwjVOvgNHsKYtYYpWxnlFxoVjJSd47A0hWKeYzcwVirq7k3T9ggzJAeLUgqwAAAABJRU5ErkJggg=="
+                  class="max-w-[18px]"
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAe5JREFUaEPtWAtOwzAMdU8GOxnsZMDJyjxSEVwn/uRlU1ErTVrVOX2/xu4WOvixHBw/nQSe7eDpwOEcWIneC+gXInq9fT7L+Rd/X37PVW7rTw1/+OA16uNq1ctF3REqwN+cil8kkGA9E9mE6t7SJFAU+3ACr3/GztwVDYKv19gJEXJg4MYJvs2SrhtNBwzlr+V2W/75lOO1ZdsiEK1vOtEjcDNgd5jZXIk4bi0i3foimirEQnrTVQk0omOC3+g+sr5FQKrP2+PFykV9XajpJt8TQXNhR0DLfsu+CKHMb1ciKeROCI2AzHBY/QxYrUaJYoqAuRejAMt1FAI7MTUHpG3PJMC72Z8mKuP8LwnIZyC8g6AipWworgjxEFUPbc8kYG4oWoQkAW6B5tCHUl30EvN59Dayh7ugjSSuRsYKjI4Co25E7g8f5iaBb8Y4M05Pi1Pn/SM+TneixJfgJDrgcy80xmgMJZEFzyBc2+PIDaxnYnRtF4FZcRoF73ZgRpwQ4MMEUE6gwKcIjJJAgk8TyJJAgx8iECUxA/wwAS+JWeAhBCwSZQfT/hSGdHN3HxhoSFopBDzMAUefqEnAwMMJGHGCzk+bIrAI1RJHXkisaFrXpxBQnIDGpiY1jYClHOr6SQClZHad04Gscqi6wzvwDT/cyTEwjk+pAAAAAElFTkSuQmCC"
                 />
-                <span class="text-[13px]">إضافة للسلة</span>
               </button>
+            </div>
+            <div class="py-2">
+              <div class="flex items-center justify-between">
+                <h4 class="font-normal text-[14px]">جوال ايفون 14</h4>
+                <span class="text-[#D6A723] text-[14px]">150.00 ر.س</span>
+              </div>
+              <p class="my-2 text-[13px] text-[#505050]">
+                شاشة سوبر ريتينا اكس دي ار مقاس 6.1 بوصة، نظام كاميرا متطور
+                للحصول على صور أفضل في أي إضاءة
+              </p>
+              <div class="flex items-center justify-between mt-3">
+                <div class="flex items-center justify-center gap-1">
+                  <button
+                    class="flex items-center justify-center rounded-[5px] w-[28px] h-[28px] bg-main"
+                  >
+                    <i class="fa-solid fa-plus text-white text-[13px]"></i>
+                  </button>
+                  <input
+                    type="text"
+                    class="border border-[#F6F6F6] rounded-[5px] text-center w-[50px] p-0 h-[30px]"
+                  />
+                  <button
+                    class="flex items-center justify-center rounded-[5px] w-[28px] h-[28px] bg-[#A5A5A5]"
+                  >
+                    <i class="fa-solid fa-minus text-white text-[13px]"></i>
+                  </button>
+                </div>
+                <button
+                  class="border border-main rounded-[5px] p-2 flex items-center justify-center gap-1"
+                >
+                  <img
+                    class="max-w-[20px]"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAfJJREFUaEPtmDFWwzAMhqUOwMDEMSAHaJiaA8EVCAsX6IEaFtoDBG4BEwss4sWlfSFWgmzLifteMuZFiT5L/y87CCd+4YnnDzPA1BWcK5BcBWiXEZNUBQTPmNfl1Al3v2+1UA/APo7gMTUIN4A9RIF5XaVSCXcAgAqXdZEsQDcx2mYrQNj8uZ9QFUQ2SrusAVi1IJKpggyAqQIua1Fs7FYTJ2FVIZE2kgNwWoi9vJYgbRsXAxgH5YfcmBiW9lwBumIeM3nzra723ACmbiNmJ+AE8NtGo1mq1bKMcbgDjGSptM1KQHj4b/Y4A7BijmCpjG2zG0lfgKhtxG1f+ganH0Dk/ZHVPgPbeC+A2GJmxNt7DvEHiCRmRryW97eHjzcAWwUFMbu0jxlsIaOUEVvwNlvi/WoV0LZUqfdrA6hZqtT7dQGULNXF+1UBeiw1RFpOv3CCRHzIkj34hyII/0GpAMQ47EjP3HoAemcFp9+YagChHeMbrwpAm+tLOMczk8wXfWPx9ilJzDcueBK3k6OXmytAbA4hd+Y+wRqISrx9/RiC8I07vFOlAmYFLxZPx+SP9gRrzOv7PgDfOP050Kz+At+5RIfcxKy+R9wM0F1p31bwjVOvgNHsKYtYYpWxnlFxoVjJSd47A0hWKeYzcwVirq7k3T9ggzJAeLUgqwAAAABJRU5ErkJggg=="
+                  />
+                  <span class="text-[13px]">إضافة للسلة</span>
+                </button>
+              </div>
             </div>
           </div>
         </div>
-        <div
-          class="border border-[#F6F6F6] rounded-[15px] p-4 overflow-hidden w-[300px] shrink-0"
-        >
-          <div class="relative overflow-hidden rounded-[13px]">
-            <img src="./images/img.png" class="w-full h-[200px]" alt="" />
-            <div class="">
-              <span
-                class="shapeCss absolute top-0 rtl:left-0 ltr:right-0"
-              ></span>
-              <span
-                class="absolute top-[10px] rtl:left-[7px] ltr:right-[7px] text-white font-medium"
-                >% 10</span
-              >
-            </div>
-            <button
-              class="w-[25px] h-[25px] flex items-center justify-center bg-white rounded-[4px] absolute top-[10px] rtl:right-[10px] ltr:left-[10px]"
-            >
-              <img
-                class="max-w-[18px]"
-                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAe5JREFUaEPtWAtOwzAMdU8GOxnsZMDJyjxSEVwn/uRlU1ErTVrVOX2/xu4WOvixHBw/nQSe7eDpwOEcWIneC+gXInq9fT7L+Rd/X37PVW7rTw1/+OA16uNq1ctF3REqwN+cil8kkGA9E9mE6t7SJFAU+3ACr3/GztwVDYKv19gJEXJg4MYJvs2SrhtNBwzlr+V2W/75lOO1ZdsiEK1vOtEjcDNgd5jZXIk4bi0i3foimirEQnrTVQk0omOC3+g+sr5FQKrP2+PFykV9XajpJt8TQXNhR0DLfsu+CKHMb1ciKeROCI2AzHBY/QxYrUaJYoqAuRejAMt1FAI7MTUHpG3PJMC72Z8mKuP8LwnIZyC8g6AipWworgjxEFUPbc8kYG4oWoQkAW6B5tCHUl30EvN59Dayh7ugjSSuRsYKjI4Co25E7g8f5iaBb8Y4M05Pi1Pn/SM+TneixJfgJDrgcy80xmgMJZEFzyBc2+PIDaxnYnRtF4FZcRoF73ZgRpwQ4MMEUE6gwKcIjJJAgk8TyJJAgx8iECUxA/wwAS+JWeAhBCwSZQfT/hSGdHN3HxhoSFopBDzMAUefqEnAwMMJGHGCzk+bIrAI1RJHXkisaFrXpxBQnIDGpiY1jYClHOr6SQClZHad04Gscqi6wzvwDT/cyTEwjk+pAAAAAElFTkSuQmCC"
-              />
-            </button>
-          </div>
-          <div class="py-2">
-            <div class="flex items-center justify-between">
-              <h4 class="font-normal text-[14px]">جوال ايفون 14</h4>
-              <span class="text-[#D6A723] text-[14px]">150.00 ر.س</span>
-            </div>
-            <p class="my-2 text-[13px] text-[#505050]">
-              شاشة سوبر ريتينا اكس دي ار مقاس 6.1 بوصة، نظام كاميرا متطور للحصول
-              على صور أفضل في أي إضاءة
-            </p>
-            <div class="flex items-center justify-between mt-3">
-              <div class="flex items-center justify-center gap-1">
-                <button
-                  class="flex items-center justify-center rounded-[5px] w-[28px] h-[28px] bg-main"
+        <div class="item">
+          <div
+            class="border border-[#F6F6F6] hover:border-main rounded-[15px] p-4 overflow-hidden lg:w-[95%]"
+          >
+            <div class="relative overflow-hidden rounded-[13px]">
+              <img src="./images/img.png" class="w-full h-[200px]" alt="" />
+              <div class="">
+                <span
+                  class="shapeCss absolute top-0 rtl:left-0 ltr:right-0"
+                ></span>
+                <span
+                  class="absolute top-[10px] rtl:left-[7px] ltr:right-[7px] text-white font-medium"
+                  >% 10</span
                 >
-                  <i class="fa-solid fa-plus text-white text-[13px]"></i>
-                </button>
-                <input
-                  type="text"
-                  class="border border-[#F6F6F6] rounded-[5px] text-center w-[50px] p-0 h-[30px]"
-                />
-                <button
-                  class="flex items-center justify-center rounded-[5px] w-[28px] h-[28px] bg-[#A5A5A5]"
-                >
-                  <i class="fa-solid fa-minus text-white text-[13px]"></i>
-                </button>
               </div>
               <button
-                class="border border-main rounded-[5px] p-2 flex items-center justify-center gap-1"
+                class="w-[25px] h-[25px] flex items-center justify-center bg-white rounded-[4px] absolute top-[10px] rtl:right-[10px] ltr:left-[10px]"
               >
                 <img
-                  class="max-w-[20px]"
-                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAfJJREFUaEPtmDFWwzAMhqUOwMDEMSAHaJiaA8EVCAsX6IEaFtoDBG4BEwss4sWlfSFWgmzLifteMuZFiT5L/y87CCd+4YnnDzPA1BWcK5BcBWiXEZNUBQTPmNfl1Al3v2+1UA/APo7gMTUIN4A9RIF5XaVSCXcAgAqXdZEsQDcx2mYrQNj8uZ9QFUQ2SrusAVi1IJKpggyAqQIua1Fs7FYTJ2FVIZE2kgNwWoi9vJYgbRsXAxgH5YfcmBiW9lwBumIeM3nzra723ACmbiNmJ+AE8NtGo1mq1bKMcbgDjGSptM1KQHj4b/Y4A7BijmCpjG2zG0lfgKhtxG1f+ganH0Dk/ZHVPgPbeC+A2GJmxNt7DvEHiCRmRryW97eHjzcAWwUFMbu0jxlsIaOUEVvwNlvi/WoV0LZUqfdrA6hZqtT7dQGULNXF+1UBeiw1RFpOv3CCRHzIkj34hyII/0GpAMQ47EjP3HoAemcFp9+YagChHeMbrwpAm+tLOMczk8wXfWPx9ilJzDcueBK3k6OXmytAbA4hd+Y+wRqISrx9/RiC8I07vFOlAmYFLxZPx+SP9gRrzOv7PgDfOP050Kz+At+5RIfcxKy+R9wM0F1p31bwjVOvgNHsKYtYYpWxnlFxoVjJSd47A0hWKeYzcwVirq7k3T9ggzJAeLUgqwAAAABJRU5ErkJggg=="
+                  class="max-w-[18px]"
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAe5JREFUaEPtWAtOwzAMdU8GOxnsZMDJyjxSEVwn/uRlU1ErTVrVOX2/xu4WOvixHBw/nQSe7eDpwOEcWIneC+gXInq9fT7L+Rd/X37PVW7rTw1/+OA16uNq1ctF3REqwN+cil8kkGA9E9mE6t7SJFAU+3ACr3/GztwVDYKv19gJEXJg4MYJvs2SrhtNBwzlr+V2W/75lOO1ZdsiEK1vOtEjcDNgd5jZXIk4bi0i3foimirEQnrTVQk0omOC3+g+sr5FQKrP2+PFykV9XajpJt8TQXNhR0DLfsu+CKHMb1ciKeROCI2AzHBY/QxYrUaJYoqAuRejAMt1FAI7MTUHpG3PJMC72Z8mKuP8LwnIZyC8g6AipWworgjxEFUPbc8kYG4oWoQkAW6B5tCHUl30EvN59Dayh7ugjSSuRsYKjI4Co25E7g8f5iaBb8Y4M05Pi1Pn/SM+TneixJfgJDrgcy80xmgMJZEFzyBc2+PIDaxnYnRtF4FZcRoF73ZgRpwQ4MMEUE6gwKcIjJJAgk8TyJJAgx8iECUxA/wwAS+JWeAhBCwSZQfT/hSGdHN3HxhoSFopBDzMAUefqEnAwMMJGHGCzk+bIrAI1RJHXkisaFrXpxBQnIDGpiY1jYClHOr6SQClZHad04Gscqi6wzvwDT/cyTEwjk+pAAAAAElFTkSuQmCC"
                 />
-                <span class="text-[13px]">إضافة للسلة</span>
               </button>
+            </div>
+            <div class="py-2">
+              <div class="flex items-center justify-between">
+                <h4 class="font-normal text-[14px]">جوال ايفون 14</h4>
+                <span class="text-[#D6A723] text-[14px]">150.00 ر.س</span>
+              </div>
+              <p class="my-2 text-[13px] text-[#505050]">
+                شاشة سوبر ريتينا اكس دي ار مقاس 6.1 بوصة، نظام كاميرا متطور
+                للحصول على صور أفضل في أي إضاءة
+              </p>
+              <div class="flex items-center justify-between mt-3">
+                <div class="flex items-center justify-center gap-1">
+                  <button
+                    class="flex items-center justify-center rounded-[5px] w-[28px] h-[28px] bg-main"
+                  >
+                    <i class="fa-solid fa-plus text-white text-[13px]"></i>
+                  </button>
+                  <input
+                    type="text"
+                    class="border border-[#F6F6F6] rounded-[5px] text-center w-[50px] p-0 h-[30px]"
+                  />
+                  <button
+                    class="flex items-center justify-center rounded-[5px] w-[28px] h-[28px] bg-[#A5A5A5]"
+                  >
+                    <i class="fa-solid fa-minus text-white text-[13px]"></i>
+                  </button>
+                </div>
+                <button
+                  class="border border-main rounded-[5px] p-2 flex items-center justify-center gap-1"
+                >
+                  <img
+                    class="max-w-[20px]"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAfJJREFUaEPtmDFWwzAMhqUOwMDEMSAHaJiaA8EVCAsX6IEaFtoDBG4BEwss4sWlfSFWgmzLifteMuZFiT5L/y87CCd+4YnnDzPA1BWcK5BcBWiXEZNUBQTPmNfl1Al3v2+1UA/APo7gMTUIN4A9RIF5XaVSCXcAgAqXdZEsQDcx2mYrQNj8uZ9QFUQ2SrusAVi1IJKpggyAqQIua1Fs7FYTJ2FVIZE2kgNwWoi9vJYgbRsXAxgH5YfcmBiW9lwBumIeM3nzra723ACmbiNmJ+AE8NtGo1mq1bKMcbgDjGSptM1KQHj4b/Y4A7BijmCpjG2zG0lfgKhtxG1f+ganH0Dk/ZHVPgPbeC+A2GJmxNt7DvEHiCRmRryW97eHjzcAWwUFMbu0jxlsIaOUEVvwNlvi/WoV0LZUqfdrA6hZqtT7dQGULNXF+1UBeiw1RFpOv3CCRHzIkj34hyII/0GpAMQ47EjP3HoAemcFp9+YagChHeMbrwpAm+tLOMczk8wXfWPx9ilJzDcueBK3k6OXmytAbA4hd+Y+wRqISrx9/RiC8I07vFOlAmYFLxZPx+SP9gRrzOv7PgDfOP050Kz+At+5RIfcxKy+R9wM0F1p31bwjVOvgNHsKYtYYpWxnlFxoVjJSd47A0hWKeYzcwVirq7k3T9ggzJAeLUgqwAAAABJRU5ErkJggg=="
+                  />
+                  <span class="text-[13px]">إضافة للسلة</span>
+                </button>
+              </div>
             </div>
           </div>
         </div>
-        <div
-          class="border border-[#F6F6F6] rounded-[15px] p-4 overflow-hidden w-[300px] shrink-0"
-        >
-          <div class="relative overflow-hidden rounded-[13px]">
-            <img src="./images/img.png" class="w-full h-[200px]" alt="" />
-            <div class="">
-              <span
-                class="shapeCss absolute top-0 rtl:left-0 ltr:right-0"
-              ></span>
-              <span
-                class="absolute top-[10px] rtl:left-[7px] ltr:right-[7px] text-white font-medium"
-                >% 10</span
-              >
-            </div>
-            <button
-              class="w-[25px] h-[25px] flex items-center justify-center bg-white rounded-[4px] absolute top-[10px] rtl:right-[10px] ltr:left-[10px]"
-            >
-              <img
-                class="max-w-[18px]"
-                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAe5JREFUaEPtWAtOwzAMdU8GOxnsZMDJyjxSEVwn/uRlU1ErTVrVOX2/xu4WOvixHBw/nQSe7eDpwOEcWIneC+gXInq9fT7L+Rd/X37PVW7rTw1/+OA16uNq1ctF3REqwN+cil8kkGA9E9mE6t7SJFAU+3ACr3/GztwVDYKv19gJEXJg4MYJvs2SrhtNBwzlr+V2W/75lOO1ZdsiEK1vOtEjcDNgd5jZXIk4bi0i3foimirEQnrTVQk0omOC3+g+sr5FQKrP2+PFykV9XajpJt8TQXNhR0DLfsu+CKHMb1ciKeROCI2AzHBY/QxYrUaJYoqAuRejAMt1FAI7MTUHpG3PJMC72Z8mKuP8LwnIZyC8g6AipWworgjxEFUPbc8kYG4oWoQkAW6B5tCHUl30EvN59Dayh7ugjSSuRsYKjI4Co25E7g8f5iaBb8Y4M05Pi1Pn/SM+TneixJfgJDrgcy80xmgMJZEFzyBc2+PIDaxnYnRtF4FZcRoF73ZgRpwQ4MMEUE6gwKcIjJJAgk8TyJJAgx8iECUxA/wwAS+JWeAhBCwSZQfT/hSGdHN3HxhoSFopBDzMAUefqEnAwMMJGHGCzk+bIrAI1RJHXkisaFrXpxBQnIDGpiY1jYClHOr6SQClZHad04Gscqi6wzvwDT/cyTEwjk+pAAAAAElFTkSuQmCC"
-              />
-            </button>
-          </div>
-          <div class="py-2">
-            <div class="flex items-center justify-between">
-              <h4 class="font-normal text-[14px]">جوال ايفون 14</h4>
-              <span class="text-[#D6A723] text-[14px]">150.00 ر.س</span>
-            </div>
-            <p class="my-2 text-[13px] text-[#505050]">
-              شاشة سوبر ريتينا اكس دي ار مقاس 6.1 بوصة، نظام كاميرا متطور للحصول
-              على صور أفضل في أي إضاءة
-            </p>
-            <div class="flex items-center justify-between mt-3">
-              <div class="flex items-center justify-center gap-1">
-                <button
-                  class="flex items-center justify-center rounded-[5px] w-[28px] h-[28px] bg-main"
+        <div class="item">
+          <div
+            class="border border-[#F6F6F6] hover:border-main rounded-[15px] p-4 overflow-hidden lg:w-[95%]"
+          >
+            <div class="relative overflow-hidden rounded-[13px]">
+              <img src="./images/img.png" class="w-full h-[200px]" alt="" />
+              <div class="">
+                <span
+                  class="shapeCss absolute top-0 rtl:left-0 ltr:right-0"
+                ></span>
+                <span
+                  class="absolute top-[10px] rtl:left-[7px] ltr:right-[7px] text-white font-medium"
+                  >% 10</span
                 >
-                  <i class="fa-solid fa-plus text-white text-[13px]"></i>
-                </button>
-                <input
-                  type="text"
-                  class="border border-[#F6F6F6] rounded-[5px] text-center w-[50px] p-0 h-[30px]"
-                />
-                <button
-                  class="flex items-center justify-center rounded-[5px] w-[28px] h-[28px] bg-[#A5A5A5]"
-                >
-                  <i class="fa-solid fa-minus text-white text-[13px]"></i>
-                </button>
               </div>
               <button
-                class="border border-main rounded-[5px] p-2 flex items-center justify-center gap-1"
+                class="w-[25px] h-[25px] flex items-center justify-center bg-white rounded-[4px] absolute top-[10px] rtl:right-[10px] ltr:left-[10px]"
               >
                 <img
-                  class="max-w-[20px]"
-                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAfJJREFUaEPtmDFWwzAMhqUOwMDEMSAHaJiaA8EVCAsX6IEaFtoDBG4BEwss4sWlfSFWgmzLifteMuZFiT5L/y87CCd+4YnnDzPA1BWcK5BcBWiXEZNUBQTPmNfl1Al3v2+1UA/APo7gMTUIN4A9RIF5XaVSCXcAgAqXdZEsQDcx2mYrQNj8uZ9QFUQ2SrusAVi1IJKpggyAqQIua1Fs7FYTJ2FVIZE2kgNwWoi9vJYgbRsXAxgH5YfcmBiW9lwBumIeM3nzra723ACmbiNmJ+AE8NtGo1mq1bKMcbgDjGSptM1KQHj4b/Y4A7BijmCpjG2zG0lfgKhtxG1f+ganH0Dk/ZHVPgPbeC+A2GJmxNt7DvEHiCRmRryW97eHjzcAWwUFMbu0jxlsIaOUEVvwNlvi/WoV0LZUqfdrA6hZqtT7dQGULNXF+1UBeiw1RFpOv3CCRHzIkj34hyII/0GpAMQ47EjP3HoAemcFp9+YagChHeMbrwpAm+tLOMczk8wXfWPx9ilJzDcueBK3k6OXmytAbA4hd+Y+wRqISrx9/RiC8I07vFOlAmYFLxZPx+SP9gRrzOv7PgDfOP050Kz+At+5RIfcxKy+R9wM0F1p31bwjVOvgNHsKYtYYpWxnlFxoVjJSd47A0hWKeYzcwVirq7k3T9ggzJAeLUgqwAAAABJRU5ErkJggg=="
+                  class="max-w-[18px]"
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAe5JREFUaEPtWAtOwzAMdU8GOxnsZMDJyjxSEVwn/uRlU1ErTVrVOX2/xu4WOvixHBw/nQSe7eDpwOEcWIneC+gXInq9fT7L+Rd/X37PVW7rTw1/+OA16uNq1ctF3REqwN+cil8kkGA9E9mE6t7SJFAU+3ACr3/GztwVDYKv19gJEXJg4MYJvs2SrhtNBwzlr+V2W/75lOO1ZdsiEK1vOtEjcDNgd5jZXIk4bi0i3foimirEQnrTVQk0omOC3+g+sr5FQKrP2+PFykV9XajpJt8TQXNhR0DLfsu+CKHMb1ciKeROCI2AzHBY/QxYrUaJYoqAuRejAMt1FAI7MTUHpG3PJMC72Z8mKuP8LwnIZyC8g6AipWworgjxEFUPbc8kYG4oWoQkAW6B5tCHUl30EvN59Dayh7ugjSSuRsYKjI4Co25E7g8f5iaBb8Y4M05Pi1Pn/SM+TneixJfgJDrgcy80xmgMJZEFzyBc2+PIDaxnYnRtF4FZcRoF73ZgRpwQ4MMEUE6gwKcIjJJAgk8TyJJAgx8iECUxA/wwAS+JWeAhBCwSZQfT/hSGdHN3HxhoSFopBDzMAUefqEnAwMMJGHGCzk+bIrAI1RJHXkisaFrXpxBQnIDGpiY1jYClHOr6SQClZHad04Gscqi6wzvwDT/cyTEwjk+pAAAAAElFTkSuQmCC"
                 />
-                <span class="text-[13px]">إضافة للسلة</span>
               </button>
+            </div>
+            <div class="py-2">
+              <div class="flex items-center justify-between">
+                <h4 class="font-normal text-[14px]">جوال ايفون 14</h4>
+                <span class="text-[#D6A723] text-[14px]">150.00 ر.س</span>
+              </div>
+              <p class="my-2 text-[13px] text-[#505050]">
+                شاشة سوبر ريتينا اكس دي ار مقاس 6.1 بوصة، نظام كاميرا متطور
+                للحصول على صور أفضل في أي إضاءة
+              </p>
+              <div class="flex items-center justify-between mt-3">
+                <div class="flex items-center justify-center gap-1">
+                  <button
+                    class="flex items-center justify-center rounded-[5px] w-[28px] h-[28px] bg-main"
+                  >
+                    <i class="fa-solid fa-plus text-white text-[13px]"></i>
+                  </button>
+                  <input
+                    type="text"
+                    class="border border-[#F6F6F6] rounded-[5px] text-center w-[50px] p-0 h-[30px]"
+                  />
+                  <button
+                    class="flex items-center justify-center rounded-[5px] w-[28px] h-[28px] bg-[#A5A5A5]"
+                  >
+                    <i class="fa-solid fa-minus text-white text-[13px]"></i>
+                  </button>
+                </div>
+                <button
+                  class="border border-main rounded-[5px] p-2 flex items-center justify-center gap-1"
+                >
+                  <img
+                    class="max-w-[20px]"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAfJJREFUaEPtmDFWwzAMhqUOwMDEMSAHaJiaA8EVCAsX6IEaFtoDBG4BEwss4sWlfSFWgmzLifteMuZFiT5L/y87CCd+4YnnDzPA1BWcK5BcBWiXEZNUBQTPmNfl1Al3v2+1UA/APo7gMTUIN4A9RIF5XaVSCXcAgAqXdZEsQDcx2mYrQNj8uZ9QFUQ2SrusAVi1IJKpggyAqQIua1Fs7FYTJ2FVIZE2kgNwWoi9vJYgbRsXAxgH5YfcmBiW9lwBumIeM3nzra723ACmbiNmJ+AE8NtGo1mq1bKMcbgDjGSptM1KQHj4b/Y4A7BijmCpjG2zG0lfgKhtxG1f+ganH0Dk/ZHVPgPbeC+A2GJmxNt7DvEHiCRmRryW97eHjzcAWwUFMbu0jxlsIaOUEVvwNlvi/WoV0LZUqfdrA6hZqtT7dQGULNXF+1UBeiw1RFpOv3CCRHzIkj34hyII/0GpAMQ47EjP3HoAemcFp9+YagChHeMbrwpAm+tLOMczk8wXfWPx9ilJzDcueBK3k6OXmytAbA4hd+Y+wRqISrx9/RiC8I07vFOlAmYFLxZPx+SP9gRrzOv7PgDfOP050Kz+At+5RIfcxKy+R9wM0F1p31bwjVOvgNHsKYtYYpWxnlFxoVjJSd47A0hWKeYzcwVirq7k3T9ggzJAeLUgqwAAAABJRU5ErkJggg=="
+                  />
+                  <span class="text-[13px]">إضافة للسلة</span>
+                </button>
+              </div>
             </div>
           </div>
         </div>
-        <div
-          class="border border-[#F6F6F6] rounded-[15px] p-4 overflow-hidden w-[300px] shrink-0"
-        >
-          <div class="relative overflow-hidden rounded-[13px]">
-            <img src="./images/img.png" class="w-full h-[200px]" alt="" />
-            <div class="">
-              <span
-                class="shapeCss absolute top-0 rtl:left-0 ltr:right-0"
-              ></span>
-              <span
-                class="absolute top-[10px] rtl:left-[7px] ltr:right-[7px] text-white font-medium"
-                >% 10</span
-              >
-            </div>
-            <button
-              class="w-[25px] h-[25px] flex items-center justify-center bg-white rounded-[4px] absolute top-[10px] rtl:right-[10px] ltr:left-[10px]"
-            >
-              <img
-                class="max-w-[18px]"
-                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAe5JREFUaEPtWAtOwzAMdU8GOxnsZMDJyjxSEVwn/uRlU1ErTVrVOX2/xu4WOvixHBw/nQSe7eDpwOEcWIneC+gXInq9fT7L+Rd/X37PVW7rTw1/+OA16uNq1ctF3REqwN+cil8kkGA9E9mE6t7SJFAU+3ACr3/GztwVDYKv19gJEXJg4MYJvs2SrhtNBwzlr+V2W/75lOO1ZdsiEK1vOtEjcDNgd5jZXIk4bi0i3foimirEQnrTVQk0omOC3+g+sr5FQKrP2+PFykV9XajpJt8TQXNhR0DLfsu+CKHMb1ciKeROCI2AzHBY/QxYrUaJYoqAuRejAMt1FAI7MTUHpG3PJMC72Z8mKuP8LwnIZyC8g6AipWworgjxEFUPbc8kYG4oWoQkAW6B5tCHUl30EvN59Dayh7ugjSSuRsYKjI4Co25E7g8f5iaBb8Y4M05Pi1Pn/SM+TneixJfgJDrgcy80xmgMJZEFzyBc2+PIDaxnYnRtF4FZcRoF73ZgRpwQ4MMEUE6gwKcIjJJAgk8TyJJAgx8iECUxA/wwAS+JWeAhBCwSZQfT/hSGdHN3HxhoSFopBDzMAUefqEnAwMMJGHGCzk+bIrAI1RJHXkisaFrXpxBQnIDGpiY1jYClHOr6SQClZHad04Gscqi6wzvwDT/cyTEwjk+pAAAAAElFTkSuQmCC"
-              />
-            </button>
-          </div>
-          <div class="py-2">
-            <div class="flex items-center justify-between">
-              <h4 class="font-normal text-[14px]">جوال ايفون 14</h4>
-              <span class="text-[#D6A723] text-[14px]">150.00 ر.س</span>
-            </div>
-            <p class="my-2 text-[13px] text-[#505050]">
-              شاشة سوبر ريتينا اكس دي ار مقاس 6.1 بوصة، نظام كاميرا متطور للحصول
-              على صور أفضل في أي إضاءة
-            </p>
-            <div class="flex items-center justify-between mt-3">
-              <div class="flex items-center justify-center gap-1">
-                <button
-                  class="flex items-center justify-center rounded-[5px] w-[28px] h-[28px] bg-main"
+        <div class="item">
+          <div
+            class="border border-[#F6F6F6] hover:border-main rounded-[15px] p-4 overflow-hidden lg:w-[95%]"
+          >
+            <div class="relative overflow-hidden rounded-[13px]">
+              <img src="./images/img.png" class="w-full h-[200px]" alt="" />
+              <div class="">
+                <span
+                  class="shapeCss absolute top-0 rtl:left-0 ltr:right-0"
+                ></span>
+                <span
+                  class="absolute top-[10px] rtl:left-[7px] ltr:right-[7px] text-white font-medium"
+                  >% 10</span
                 >
-                  <i class="fa-solid fa-plus text-white text-[13px]"></i>
-                </button>
-                <input
-                  type="text"
-                  class="border border-[#F6F6F6] rounded-[5px] text-center w-[50px] p-0 h-[30px]"
-                />
-                <button
-                  class="flex items-center justify-center rounded-[5px] w-[28px] h-[28px] bg-[#A5A5A5]"
-                >
-                  <i class="fa-solid fa-minus text-white text-[13px]"></i>
-                </button>
               </div>
               <button
-                class="border border-main rounded-[5px] p-2 flex items-center justify-center gap-1"
+                class="w-[25px] h-[25px] flex items-center justify-center bg-white rounded-[4px] absolute top-[10px] rtl:right-[10px] ltr:left-[10px]"
               >
                 <img
-                  class="max-w-[20px]"
-                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAfJJREFUaEPtmDFWwzAMhqUOwMDEMSAHaJiaA8EVCAsX6IEaFtoDBG4BEwss4sWlfSFWgmzLifteMuZFiT5L/y87CCd+4YnnDzPA1BWcK5BcBWiXEZNUBQTPmNfl1Al3v2+1UA/APo7gMTUIN4A9RIF5XaVSCXcAgAqXdZEsQDcx2mYrQNj8uZ9QFUQ2SrusAVi1IJKpggyAqQIua1Fs7FYTJ2FVIZE2kgNwWoi9vJYgbRsXAxgH5YfcmBiW9lwBumIeM3nzra723ACmbiNmJ+AE8NtGo1mq1bKMcbgDjGSptM1KQHj4b/Y4A7BijmCpjG2zG0lfgKhtxG1f+ganH0Dk/ZHVPgPbeC+A2GJmxNt7DvEHiCRmRryW97eHjzcAWwUFMbu0jxlsIaOUEVvwNlvi/WoV0LZUqfdrA6hZqtT7dQGULNXF+1UBeiw1RFpOv3CCRHzIkj34hyII/0GpAMQ47EjP3HoAemcFp9+YagChHeMbrwpAm+tLOMczk8wXfWPx9ilJzDcueBK3k6OXmytAbA4hd+Y+wRqISrx9/RiC8I07vFOlAmYFLxZPx+SP9gRrzOv7PgDfOP050Kz+At+5RIfcxKy+R9wM0F1p31bwjVOvgNHsKYtYYpWxnlFxoVjJSd47A0hWKeYzcwVirq7k3T9ggzJAeLUgqwAAAABJRU5ErkJggg=="
+                  class="max-w-[18px]"
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAe5JREFUaEPtWAtOwzAMdU8GOxnsZMDJyjxSEVwn/uRlU1ErTVrVOX2/xu4WOvixHBw/nQSe7eDpwOEcWIneC+gXInq9fT7L+Rd/X37PVW7rTw1/+OA16uNq1ctF3REqwN+cil8kkGA9E9mE6t7SJFAU+3ACr3/GztwVDYKv19gJEXJg4MYJvs2SrhtNBwzlr+V2W/75lOO1ZdsiEK1vOtEjcDNgd5jZXIk4bi0i3foimirEQnrTVQk0omOC3+g+sr5FQKrP2+PFykV9XajpJt8TQXNhR0DLfsu+CKHMb1ciKeROCI2AzHBY/QxYrUaJYoqAuRejAMt1FAI7MTUHpG3PJMC72Z8mKuP8LwnIZyC8g6AipWworgjxEFUPbc8kYG4oWoQkAW6B5tCHUl30EvN59Dayh7ugjSSuRsYKjI4Co25E7g8f5iaBb8Y4M05Pi1Pn/SM+TneixJfgJDrgcy80xmgMJZEFzyBc2+PIDaxnYnRtF4FZcRoF73ZgRpwQ4MMEUE6gwKcIjJJAgk8TyJJAgx8iECUxA/wwAS+JWeAhBCwSZQfT/hSGdHN3HxhoSFopBDzMAUefqEnAwMMJGHGCzk+bIrAI1RJHXkisaFrXpxBQnIDGpiY1jYClHOr6SQClZHad04Gscqi6wzvwDT/cyTEwjk+pAAAAAElFTkSuQmCC"
                 />
-                <span class="text-[13px]">إضافة للسلة</span>
               </button>
+            </div>
+            <div class="py-2">
+              <div class="flex items-center justify-between">
+                <h4 class="font-normal text-[14px]">جوال ايفون 14</h4>
+                <span class="text-[#D6A723] text-[14px]">150.00 ر.س</span>
+              </div>
+              <p class="my-2 text-[13px] text-[#505050]">
+                شاشة سوبر ريتينا اكس دي ار مقاس 6.1 بوصة، نظام كاميرا متطور
+                للحصول على صور أفضل في أي إضاءة
+              </p>
+              <div class="flex items-center justify-between mt-3">
+                <div class="flex items-center justify-center gap-1">
+                  <button
+                    class="flex items-center justify-center rounded-[5px] w-[28px] h-[28px] bg-main"
+                  >
+                    <i class="fa-solid fa-plus text-white text-[13px]"></i>
+                  </button>
+                  <input
+                    type="text"
+                    class="border border-[#F6F6F6] rounded-[5px] text-center w-[50px] p-0 h-[30px]"
+                  />
+                  <button
+                    class="flex items-center justify-center rounded-[5px] w-[28px] h-[28px] bg-[#A5A5A5]"
+                  >
+                    <i class="fa-solid fa-minus text-white text-[13px]"></i>
+                  </button>
+                </div>
+                <button
+                  class="border border-main rounded-[5px] p-2 flex items-center justify-center gap-1"
+                >
+                  <img
+                    class="max-w-[20px]"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAfJJREFUaEPtmDFWwzAMhqUOwMDEMSAHaJiaA8EVCAsX6IEaFtoDBG4BEwss4sWlfSFWgmzLifteMuZFiT5L/y87CCd+4YnnDzPA1BWcK5BcBWiXEZNUBQTPmNfl1Al3v2+1UA/APo7gMTUIN4A9RIF5XaVSCXcAgAqXdZEsQDcx2mYrQNj8uZ9QFUQ2SrusAVi1IJKpggyAqQIua1Fs7FYTJ2FVIZE2kgNwWoi9vJYgbRsXAxgH5YfcmBiW9lwBumIeM3nzra723ACmbiNmJ+AE8NtGo1mq1bKMcbgDjGSptM1KQHj4b/Y4A7BijmCpjG2zG0lfgKhtxG1f+ganH0Dk/ZHVPgPbeC+A2GJmxNt7DvEHiCRmRryW97eHjzcAWwUFMbu0jxlsIaOUEVvwNlvi/WoV0LZUqfdrA6hZqtT7dQGULNXF+1UBeiw1RFpOv3CCRHzIkj34hyII/0GpAMQ47EjP3HoAemcFp9+YagChHeMbrwpAm+tLOMczk8wXfWPx9ilJzDcueBK3k6OXmytAbA4hd+Y+wRqISrx9/RiC8I07vFOlAmYFLxZPx+SP9gRrzOv7PgDfOP050Kz+At+5RIfcxKy+R9wM0F1p31bwjVOvgNHsKYtYYpWxnlFxoVjJSd47A0hWKeYzcwVirq7k3T9ggzJAeLUgqwAAAABJRU5ErkJggg=="
+                  />
+                  <span class="text-[13px]">إضافة للسلة</span>
+                </button>
+              </div>
             </div>
           </div>
         </div>
-        <div
-          class="border border-[#F6F6F6] rounded-[15px] p-4 overflow-hidden w-[300px] shrink-0"
-        >
-          <div class="relative overflow-hidden rounded-[13px]">
-            <img src="./images/img.png" class="w-full h-[200px]" alt="" />
-            <div class="">
-              <span
-                class="shapeCss absolute top-0 rtl:left-0 ltr:right-0"
-              ></span>
-              <span
-                class="absolute top-[10px] rtl:left-[7px] ltr:right-[7px] text-white font-medium"
-                >% 10</span
-              >
-            </div>
-            <button
-              class="w-[25px] h-[25px] flex items-center justify-center bg-white rounded-[4px] absolute top-[10px] rtl:right-[10px] ltr:left-[10px]"
-            >
-              <img
-                class="max-w-[18px]"
-                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAe5JREFUaEPtWAtOwzAMdU8GOxnsZMDJyjxSEVwn/uRlU1ErTVrVOX2/xu4WOvixHBw/nQSe7eDpwOEcWIneC+gXInq9fT7L+Rd/X37PVW7rTw1/+OA16uNq1ctF3REqwN+cil8kkGA9E9mE6t7SJFAU+3ACr3/GztwVDYKv19gJEXJg4MYJvs2SrhtNBwzlr+V2W/75lOO1ZdsiEK1vOtEjcDNgd5jZXIk4bi0i3foimirEQnrTVQk0omOC3+g+sr5FQKrP2+PFykV9XajpJt8TQXNhR0DLfsu+CKHMb1ciKeROCI2AzHBY/QxYrUaJYoqAuRejAMt1FAI7MTUHpG3PJMC72Z8mKuP8LwnIZyC8g6AipWworgjxEFUPbc8kYG4oWoQkAW6B5tCHUl30EvN59Dayh7ugjSSuRsYKjI4Co25E7g8f5iaBb8Y4M05Pi1Pn/SM+TneixJfgJDrgcy80xmgMJZEFzyBc2+PIDaxnYnRtF4FZcRoF73ZgRpwQ4MMEUE6gwKcIjJJAgk8TyJJAgx8iECUxA/wwAS+JWeAhBCwSZQfT/hSGdHN3HxhoSFopBDzMAUefqEnAwMMJGHGCzk+bIrAI1RJHXkisaFrXpxBQnIDGpiY1jYClHOr6SQClZHad04Gscqi6wzvwDT/cyTEwjk+pAAAAAElFTkSuQmCC"
-              />
-            </button>
-          </div>
-          <div class="py-2">
-            <div class="flex items-center justify-between">
-              <h4 class="font-normal text-[14px]">جوال ايفون 14</h4>
-              <span class="text-[#D6A723] text-[14px]">150.00 ر.س</span>
-            </div>
-            <p class="my-2 text-[13px] text-[#505050]">
-              شاشة سوبر ريتينا اكس دي ار مقاس 6.1 بوصة، نظام كاميرا متطور للحصول
-              على صور أفضل في أي إضاءة
-            </p>
-            <div class="flex items-center justify-between mt-3">
-              <div class="flex items-center justify-center gap-1">
-                <button
-                  class="flex items-center justify-center rounded-[5px] w-[28px] h-[28px] bg-main"
+        <div class="item">
+          <div
+            class="border border-[#F6F6F6] hover:border-main rounded-[15px] p-4 overflow-hidden lg:w-[95%]"
+          >
+            <div class="relative overflow-hidden rounded-[13px]">
+              <img src="./images/img.png" class="w-full h-[200px]" alt="" />
+              <div class="">
+                <span
+                  class="shapeCss absolute top-0 rtl:left-0 ltr:right-0"
+                ></span>
+                <span
+                  class="absolute top-[10px] rtl:left-[7px] ltr:right-[7px] text-white font-medium"
+                  >% 10</span
                 >
-                  <i class="fa-solid fa-plus text-white text-[13px]"></i>
-                </button>
-                <input
-                  type="text"
-                  class="border border-[#F6F6F6] rounded-[5px] text-center w-[50px] p-0 h-[30px]"
-                />
-                <button
-                  class="flex items-center justify-center rounded-[5px] w-[28px] h-[28px] bg-[#A5A5A5]"
-                >
-                  <i class="fa-solid fa-minus text-white text-[13px]"></i>
-                </button>
               </div>
               <button
-                class="border border-main rounded-[5px] p-2 flex items-center justify-center gap-1"
+                class="w-[25px] h-[25px] flex items-center justify-center bg-white rounded-[4px] absolute top-[10px] rtl:right-[10px] ltr:left-[10px]"
               >
                 <img
-                  class="max-w-[20px]"
-                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAfJJREFUaEPtmDFWwzAMhqUOwMDEMSAHaJiaA8EVCAsX6IEaFtoDBG4BEwss4sWlfSFWgmzLifteMuZFiT5L/y87CCd+4YnnDzPA1BWcK5BcBWiXEZNUBQTPmNfl1Al3v2+1UA/APo7gMTUIN4A9RIF5XaVSCXcAgAqXdZEsQDcx2mYrQNj8uZ9QFUQ2SrusAVi1IJKpggyAqQIua1Fs7FYTJ2FVIZE2kgNwWoi9vJYgbRsXAxgH5YfcmBiW9lwBumIeM3nzra723ACmbiNmJ+AE8NtGo1mq1bKMcbgDjGSptM1KQHj4b/Y4A7BijmCpjG2zG0lfgKhtxG1f+ganH0Dk/ZHVPgPbeC+A2GJmxNt7DvEHiCRmRryW97eHjzcAWwUFMbu0jxlsIaOUEVvwNlvi/WoV0LZUqfdrA6hZqtT7dQGULNXF+1UBeiw1RFpOv3CCRHzIkj34hyII/0GpAMQ47EjP3HoAemcFp9+YagChHeMbrwpAm+tLOMczk8wXfWPx9ilJzDcueBK3k6OXmytAbA4hd+Y+wRqISrx9/RiC8I07vFOlAmYFLxZPx+SP9gRrzOv7PgDfOP050Kz+At+5RIfcxKy+R9wM0F1p31bwjVOvgNHsKYtYYpWxnlFxoVjJSd47A0hWKeYzcwVirq7k3T9ggzJAeLUgqwAAAABJRU5ErkJggg=="
+                  class="max-w-[18px]"
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAe5JREFUaEPtWAtOwzAMdU8GOxnsZMDJyjxSEVwn/uRlU1ErTVrVOX2/xu4WOvixHBw/nQSe7eDpwOEcWIneC+gXInq9fT7L+Rd/X37PVW7rTw1/+OA16uNq1ctF3REqwN+cil8kkGA9E9mE6t7SJFAU+3ACr3/GztwVDYKv19gJEXJg4MYJvs2SrhtNBwzlr+V2W/75lOO1ZdsiEK1vOtEjcDNgd5jZXIk4bi0i3foimirEQnrTVQk0omOC3+g+sr5FQKrP2+PFykV9XajpJt8TQXNhR0DLfsu+CKHMb1ciKeROCI2AzHBY/QxYrUaJYoqAuRejAMt1FAI7MTUHpG3PJMC72Z8mKuP8LwnIZyC8g6AipWworgjxEFUPbc8kYG4oWoQkAW6B5tCHUl30EvN59Dayh7ugjSSuRsYKjI4Co25E7g8f5iaBb8Y4M05Pi1Pn/SM+TneixJfgJDrgcy80xmgMJZEFzyBc2+PIDaxnYnRtF4FZcRoF73ZgRpwQ4MMEUE6gwKcIjJJAgk8TyJJAgx8iECUxA/wwAS+JWeAhBCwSZQfT/hSGdHN3HxhoSFopBDzMAUefqEnAwMMJGHGCzk+bIrAI1RJHXkisaFrXpxBQnIDGpiY1jYClHOr6SQClZHad04Gscqi6wzvwDT/cyTEwjk+pAAAAAElFTkSuQmCC"
                 />
-                <span class="text-[13px]">إضافة للسلة</span>
               </button>
+            </div>
+            <div class="py-2">
+              <div class="flex items-center justify-between">
+                <h4 class="font-normal text-[14px]">جوال ايفون 14</h4>
+                <span class="text-[#D6A723] text-[14px]">150.00 ر.س</span>
+              </div>
+              <p class="my-2 text-[13px] text-[#505050]">
+                شاشة سوبر ريتينا اكس دي ار مقاس 6.1 بوصة، نظام كاميرا متطور
+                للحصول على صور أفضل في أي إضاءة
+              </p>
+              <div class="flex items-center justify-between mt-3">
+                <div class="flex items-center justify-center gap-1">
+                  <button
+                    class="flex items-center justify-center rounded-[5px] w-[28px] h-[28px] bg-main"
+                  >
+                    <i class="fa-solid fa-plus text-white text-[13px]"></i>
+                  </button>
+                  <input
+                    type="text"
+                    class="border border-[#F6F6F6] rounded-[5px] text-center w-[50px] p-0 h-[30px]"
+                  />
+                  <button
+                    class="flex items-center justify-center rounded-[5px] w-[28px] h-[28px] bg-[#A5A5A5]"
+                  >
+                    <i class="fa-solid fa-minus text-white text-[13px]"></i>
+                  </button>
+                </div>
+                <button
+                  class="border border-main rounded-[5px] p-2 flex items-center justify-center gap-1"
+                >
+                  <img
+                    class="max-w-[20px]"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAfJJREFUaEPtmDFWwzAMhqUOwMDEMSAHaJiaA8EVCAsX6IEaFtoDBG4BEwss4sWlfSFWgmzLifteMuZFiT5L/y87CCd+4YnnDzPA1BWcK5BcBWiXEZNUBQTPmNfl1Al3v2+1UA/APo7gMTUIN4A9RIF5XaVSCXcAgAqXdZEsQDcx2mYrQNj8uZ9QFUQ2SrusAVi1IJKpggyAqQIua1Fs7FYTJ2FVIZE2kgNwWoi9vJYgbRsXAxgH5YfcmBiW9lwBumIeM3nzra723ACmbiNmJ+AE8NtGo1mq1bKMcbgDjGSptM1KQHj4b/Y4A7BijmCpjG2zG0lfgKhtxG1f+ganH0Dk/ZHVPgPbeC+A2GJmxNt7DvEHiCRmRryW97eHjzcAWwUFMbu0jxlsIaOUEVvwNlvi/WoV0LZUqfdrA6hZqtT7dQGULNXF+1UBeiw1RFpOv3CCRHzIkj34hyII/0GpAMQ47EjP3HoAemcFp9+YagChHeMbrwpAm+tLOMczk8wXfWPx9ilJzDcueBK3k6OXmytAbA4hd+Y+wRqISrx9/RiC8I07vFOlAmYFLxZPx+SP9gRrzOv7PgDfOP050Kz+At+5RIfcxKy+R9wM0F1p31bwjVOvgNHsKYtYYpWxnlFxoVjJSd47A0hWKeYzcwVirq7k3T9ggzJAeLUgqwAAAABJRU5ErkJggg=="
+                  />
+                  <span class="text-[13px]">إضافة للسلة</span>
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -1121,7 +1137,7 @@
     </div>
 
     <!-- Box Banners -->
-    <div class="py-5 overflow-hidden">
+    <div class="pb-7 overflow-hidden">
       <div class="container">
         <div
           class="rounded-[10px] overflow-hidden"
@@ -1136,7 +1152,7 @@
     </div>
 
     <!-- Groups -->
-    <div class="py-5 overflow-hidden">
+    <div class="pb-5 overflow-hidden">
       <div class="container">
         <div class="flex items-center justify-between">
           <h1 class="font-medium">المجموعات</h1>
@@ -1144,220 +1160,210 @@
         </div>
       </div>
       <div
-        class="flex items-center overflow-x-auto overflow-y-hidden flex-nowrap gap-x-6 my-5 lg:ps-[145px] ps-[22px] pe-[20px]"
+        id="sliderGroups"
+        class="owl-carousel owl-theme sliderGroups lg:ps-[145px] ps-[22px] pe-[20px] pt-6"
       >
-        <div
-          class="border border-[#F6F6F6] rounded-[15px] p-4 overflow-hidden flex items-center gap-3 w-[620px] shrink-0"
-        >
-          <div class="relative overflow-hidden rounded-[13px]">
-            <img src="./images/bg-14.png" class="w-[300px] h-[140px]" alt="" />
-          </div>
-          <div class="py-2 flex-1">
-            <div class="flex items-center justify-between">
-              <h4 class="font-normal text-[14px]">مجموعة العناية بالشعر</h4>
-              <span class="text-[#D6A723] text-[14px]">150.00 ر.س</span>
+        <div class="item">
+          <div
+            class="border border-[#F6F6F6] hover:border-main rounded-[15px] p-4 overflow-hidden flex items-center lg:flex-row flex-col gap-3 lg:w-[95%]"
+          >
+            <div
+              class="relative overflow-hidden rounded-[13px] lg:w-auto w-full"
+            >
+              <img
+                src="./images/bg-14.png"
+                class="lg:w-[250px] w-full h-[140px]"
+                alt=""
+              />
             </div>
-            <p class="my-3 text-[13px] text-[#505050]">
-              أفضل مجموعة للعناية بالشعر ليصبح صحي وطويل وأكثر لمعاناً
-            </p>
-            <div class="flex items-center justify-between mt-3">
-              <div class="flex items-center justify-center gap-1">
+            <div class="py-2 flex-1">
+              <div class="flex items-center justify-between">
+                <h4 class="font-normal text-[14px]">مجموعة العناية بالشعر</h4>
+                <span class="text-[#D6A723] text-[14px]">150.00 ر.س</span>
+              </div>
+              <p class="my-3 text-[13px] text-[#505050]">
+                أفضل مجموعة للعناية بالشعر ليصبح صحي وطويل وأكثر لمعاناً
+              </p>
+              <div class="flex items-center justify-between mt-3">
+                <div class="flex items-center justify-center gap-1">
+                  <button
+                    class="flex items-center justify-center rounded-[5px] w-[28px] h-[28px] bg-main"
+                  >
+                    <i class="fa-solid fa-plus text-white text-[13px]"></i>
+                  </button>
+                  <input
+                    type="text"
+                    class="border border-[#F6F6F6] rounded-[5px] text-center w-[50px] p-0 h-[30px]"
+                  />
+                  <button
+                    class="flex items-center justify-center rounded-[5px] w-[28px] h-[28px] bg-[#A5A5A5]"
+                  >
+                    <i class="fa-solid fa-minus text-white text-[13px]"></i>
+                  </button>
+                </div>
                 <button
-                  class="flex items-center justify-center rounded-[5px] w-[28px] h-[28px] bg-main"
+                  class="border border-main rounded-[5px] p-2 flex items-center justify-center gap-1"
                 >
-                  <i class="fa-solid fa-plus text-white text-[13px]"></i>
-                </button>
-                <input
-                  type="text"
-                  class="border border-[#F6F6F6] rounded-[5px] text-center w-[50px] p-0 h-[30px]"
-                />
-                <button
-                  class="flex items-center justify-center rounded-[5px] w-[28px] h-[28px] bg-[#A5A5A5]"
-                >
-                  <i class="fa-solid fa-minus text-white text-[13px]"></i>
+                  <img
+                    class="max-w-[20px]"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAfJJREFUaEPtmDFWwzAMhqUOwMDEMSAHaJiaA8EVCAsX6IEaFtoDBG4BEwss4sWlfSFWgmzLifteMuZFiT5L/y87CCd+4YnnDzPA1BWcK5BcBWiXEZNUBQTPmNfl1Al3v2+1UA/APo7gMTUIN4A9RIF5XaVSCXcAgAqXdZEsQDcx2mYrQNj8uZ9QFUQ2SrusAVi1IJKpggyAqQIua1Fs7FYTJ2FVIZE2kgNwWoi9vJYgbRsXAxgH5YfcmBiW9lwBumIeM3nzra723ACmbiNmJ+AE8NtGo1mq1bKMcbgDjGSptM1KQHj4b/Y4A7BijmCpjG2zG0lfgKhtxG1f+ganH0Dk/ZHVPgPbeC+A2GJmxNt7DvEHiCRmRryW97eHjzcAWwUFMbu0jxlsIaOUEVvwNlvi/WoV0LZUqfdrA6hZqtT7dQGULNXF+1UBeiw1RFpOv3CCRHzIkj34hyII/0GpAMQ47EjP3HoAemcFp9+YagChHeMbrwpAm+tLOMczk8wXfWPx9ilJzDcueBK3k6OXmytAbA4hd+Y+wRqISrx9/RiC8I07vFOlAmYFLxZPx+SP9gRrzOv7PgDfOP050Kz+At+5RIfcxKy+R9wM0F1p31bwjVOvgNHsKYtYYpWxnlFxoVjJSd47A0hWKeYzcwVirq7k3T9ggzJAeLUgqwAAAABJRU5ErkJggg=="
+                  />
+                  <span class="text-[13px]">إضافة للسلة</span>
                 </button>
               </div>
-              <button
-                class="border border-main rounded-[5px] p-2 flex items-center justify-center gap-1"
-              >
-                <img
-                  class="max-w-[20px]"
-                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAfJJREFUaEPtmDFWwzAMhqUOwMDEMSAHaJiaA8EVCAsX6IEaFtoDBG4BEwss4sWlfSFWgmzLifteMuZFiT5L/y87CCd+4YnnDzPA1BWcK5BcBWiXEZNUBQTPmNfl1Al3v2+1UA/APo7gMTUIN4A9RIF5XaVSCXcAgAqXdZEsQDcx2mYrQNj8uZ9QFUQ2SrusAVi1IJKpggyAqQIua1Fs7FYTJ2FVIZE2kgNwWoi9vJYgbRsXAxgH5YfcmBiW9lwBumIeM3nzra723ACmbiNmJ+AE8NtGo1mq1bKMcbgDjGSptM1KQHj4b/Y4A7BijmCpjG2zG0lfgKhtxG1f+ganH0Dk/ZHVPgPbeC+A2GJmxNt7DvEHiCRmRryW97eHjzcAWwUFMbu0jxlsIaOUEVvwNlvi/WoV0LZUqfdrA6hZqtT7dQGULNXF+1UBeiw1RFpOv3CCRHzIkj34hyII/0GpAMQ47EjP3HoAemcFp9+YagChHeMbrwpAm+tLOMczk8wXfWPx9ilJzDcueBK3k6OXmytAbA4hd+Y+wRqISrx9/RiC8I07vFOlAmYFLxZPx+SP9gRrzOv7PgDfOP050Kz+At+5RIfcxKy+R9wM0F1p31bwjVOvgNHsKYtYYpWxnlFxoVjJSd47A0hWKeYzcwVirq7k3T9ggzJAeLUgqwAAAABJRU5ErkJggg=="
-                />
-                <span class="text-[13px]">إضافة للسلة</span>
-              </button>
             </div>
           </div>
         </div>
-        <div
-          class="border border-[#F6F6F6] rounded-[15px] p-4 overflow-hidden flex items-center gap-3 w-[620px] shrink-0"
-        >
-          <div class="relative overflow-hidden rounded-[13px]">
-            <img src="./images/bg-14.png" class="w-[300px] h-[140px]" alt="" />
-          </div>
-          <div class="py-2 flex-1">
-            <div class="flex items-center justify-between">
-              <h4 class="font-normal text-[14px]">مجموعة العناية بالشعر</h4>
-              <span class="text-[#D6A723] text-[14px]">150.00 ر.س</span>
+        <div class="item">
+          <div
+            class="border border-[#F6F6F6] hover:border-main rounded-[15px] p-4 overflow-hidden flex items-center lg:flex-row flex-col gap-3 lg:w-[95%]"
+          >
+            <div
+              class="relative overflow-hidden rounded-[13px] lg:w-auto w-full"
+            >
+              <img
+                src="./images/bg-14.png"
+                class="lg:w-[250px] w-full h-[140px]"
+                alt=""
+              />
             </div>
-            <p class="my-3 text-[13px] text-[#505050]">
-              أفضل مجموعة للعناية بالشعر ليصبح صحي وطويل وأكثر لمعاناً
-            </p>
-            <div class="flex items-center justify-between mt-3">
-              <div class="flex items-center justify-center gap-1">
+            <div class="py-2 flex-1">
+              <div class="flex items-center justify-between">
+                <h4 class="font-normal text-[14px]">مجموعة العناية بالشعر</h4>
+                <span class="text-[#D6A723] text-[14px]">150.00 ر.س</span>
+              </div>
+              <p class="my-3 text-[13px] text-[#505050]">
+                أفضل مجموعة للعناية بالشعر ليصبح صحي وطويل وأكثر لمعاناً
+              </p>
+              <div class="flex items-center justify-between mt-3">
+                <div class="flex items-center justify-center gap-1">
+                  <button
+                    class="flex items-center justify-center rounded-[5px] w-[28px] h-[28px] bg-main"
+                  >
+                    <i class="fa-solid fa-plus text-white text-[13px]"></i>
+                  </button>
+                  <input
+                    type="text"
+                    class="border border-[#F6F6F6] rounded-[5px] text-center w-[50px] p-0 h-[30px]"
+                  />
+                  <button
+                    class="flex items-center justify-center rounded-[5px] w-[28px] h-[28px] bg-[#A5A5A5]"
+                  >
+                    <i class="fa-solid fa-minus text-white text-[13px]"></i>
+                  </button>
+                </div>
                 <button
-                  class="flex items-center justify-center rounded-[5px] w-[28px] h-[28px] bg-main"
+                  class="border border-main rounded-[5px] p-2 flex items-center justify-center gap-1"
                 >
-                  <i class="fa-solid fa-plus text-white text-[13px]"></i>
-                </button>
-                <input
-                  type="text"
-                  class="border border-[#F6F6F6] rounded-[5px] text-center w-[50px] p-0 h-[30px]"
-                />
-                <button
-                  class="flex items-center justify-center rounded-[5px] w-[28px] h-[28px] bg-[#A5A5A5]"
-                >
-                  <i class="fa-solid fa-minus text-white text-[13px]"></i>
+                  <img
+                    class="max-w-[20px]"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAfJJREFUaEPtmDFWwzAMhqUOwMDEMSAHaJiaA8EVCAsX6IEaFtoDBG4BEwss4sWlfSFWgmzLifteMuZFiT5L/y87CCd+4YnnDzPA1BWcK5BcBWiXEZNUBQTPmNfl1Al3v2+1UA/APo7gMTUIN4A9RIF5XaVSCXcAgAqXdZEsQDcx2mYrQNj8uZ9QFUQ2SrusAVi1IJKpggyAqQIua1Fs7FYTJ2FVIZE2kgNwWoi9vJYgbRsXAxgH5YfcmBiW9lwBumIeM3nzra723ACmbiNmJ+AE8NtGo1mq1bKMcbgDjGSptM1KQHj4b/Y4A7BijmCpjG2zG0lfgKhtxG1f+ganH0Dk/ZHVPgPbeC+A2GJmxNt7DvEHiCRmRryW97eHjzcAWwUFMbu0jxlsIaOUEVvwNlvi/WoV0LZUqfdrA6hZqtT7dQGULNXF+1UBeiw1RFpOv3CCRHzIkj34hyII/0GpAMQ47EjP3HoAemcFp9+YagChHeMbrwpAm+tLOMczk8wXfWPx9ilJzDcueBK3k6OXmytAbA4hd+Y+wRqISrx9/RiC8I07vFOlAmYFLxZPx+SP9gRrzOv7PgDfOP050Kz+At+5RIfcxKy+R9wM0F1p31bwjVOvgNHsKYtYYpWxnlFxoVjJSd47A0hWKeYzcwVirq7k3T9ggzJAeLUgqwAAAABJRU5ErkJggg=="
+                  />
+                  <span class="text-[13px]">إضافة للسلة</span>
                 </button>
               </div>
-              <button
-                class="border border-main rounded-[5px] p-2 flex items-center justify-center gap-1"
-              >
-                <img
-                  class="max-w-[20px]"
-                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAfJJREFUaEPtmDFWwzAMhqUOwMDEMSAHaJiaA8EVCAsX6IEaFtoDBG4BEwss4sWlfSFWgmzLifteMuZFiT5L/y87CCd+4YnnDzPA1BWcK5BcBWiXEZNUBQTPmNfl1Al3v2+1UA/APo7gMTUIN4A9RIF5XaVSCXcAgAqXdZEsQDcx2mYrQNj8uZ9QFUQ2SrusAVi1IJKpggyAqQIua1Fs7FYTJ2FVIZE2kgNwWoi9vJYgbRsXAxgH5YfcmBiW9lwBumIeM3nzra723ACmbiNmJ+AE8NtGo1mq1bKMcbgDjGSptM1KQHj4b/Y4A7BijmCpjG2zG0lfgKhtxG1f+ganH0Dk/ZHVPgPbeC+A2GJmxNt7DvEHiCRmRryW97eHjzcAWwUFMbu0jxlsIaOUEVvwNlvi/WoV0LZUqfdrA6hZqtT7dQGULNXF+1UBeiw1RFpOv3CCRHzIkj34hyII/0GpAMQ47EjP3HoAemcFp9+YagChHeMbrwpAm+tLOMczk8wXfWPx9ilJzDcueBK3k6OXmytAbA4hd+Y+wRqISrx9/RiC8I07vFOlAmYFLxZPx+SP9gRrzOv7PgDfOP050Kz+At+5RIfcxKy+R9wM0F1p31bwjVOvgNHsKYtYYpWxnlFxoVjJSd47A0hWKeYzcwVirq7k3T9ggzJAeLUgqwAAAABJRU5ErkJggg=="
-                />
-                <span class="text-[13px]">إضافة للسلة</span>
-              </button>
             </div>
           </div>
         </div>
-        <div
-          class="border border-[#F6F6F6] rounded-[15px] p-4 overflow-hidden flex items-center gap-3 w-[620px] shrink-0"
-        >
-          <div class="relative overflow-hidden rounded-[13px]">
-            <img src="./images/bg-14.png" class="w-[300px] h-[140px]" alt="" />
-          </div>
-          <div class="py-2 flex-1">
-            <div class="flex items-center justify-between">
-              <h4 class="font-normal text-[14px]">مجموعة العناية بالشعر</h4>
-              <span class="text-[#D6A723] text-[14px]">150.00 ر.س</span>
+        <div class="item">
+          <div
+            class="border border-[#F6F6F6] hover:border-main rounded-[15px] p-4 overflow-hidden flex items-center lg:flex-row flex-col gap-3 lg:w-[95%]"
+          >
+            <div
+              class="relative overflow-hidden rounded-[13px] lg:w-auto w-full"
+            >
+              <img
+                src="./images/bg-14.png"
+                class="lg:w-[250px] w-full h-[140px]"
+                alt=""
+              />
             </div>
-            <p class="my-3 text-[13px] text-[#505050]">
-              أفضل مجموعة للعناية بالشعر ليصبح صحي وطويل وأكثر لمعاناً
-            </p>
-            <div class="flex items-center justify-between mt-3">
-              <div class="flex items-center justify-center gap-1">
+            <div class="py-2 flex-1">
+              <div class="flex items-center justify-between">
+                <h4 class="font-normal text-[14px]">مجموعة العناية بالشعر</h4>
+                <span class="text-[#D6A723] text-[14px]">150.00 ر.س</span>
+              </div>
+              <p class="my-3 text-[13px] text-[#505050]">
+                أفضل مجموعة للعناية بالشعر ليصبح صحي وطويل وأكثر لمعاناً
+              </p>
+              <div class="flex items-center justify-between mt-3">
+                <div class="flex items-center justify-center gap-1">
+                  <button
+                    class="flex items-center justify-center rounded-[5px] w-[28px] h-[28px] bg-main"
+                  >
+                    <i class="fa-solid fa-plus text-white text-[13px]"></i>
+                  </button>
+                  <input
+                    type="text"
+                    class="border border-[#F6F6F6] rounded-[5px] text-center w-[50px] p-0 h-[30px]"
+                  />
+                  <button
+                    class="flex items-center justify-center rounded-[5px] w-[28px] h-[28px] bg-[#A5A5A5]"
+                  >
+                    <i class="fa-solid fa-minus text-white text-[13px]"></i>
+                  </button>
+                </div>
                 <button
-                  class="flex items-center justify-center rounded-[5px] w-[28px] h-[28px] bg-main"
+                  class="border border-main rounded-[5px] p-2 flex items-center justify-center gap-1"
                 >
-                  <i class="fa-solid fa-plus text-white text-[13px]"></i>
-                </button>
-                <input
-                  type="text"
-                  class="border border-[#F6F6F6] rounded-[5px] text-center w-[50px] p-0 h-[30px]"
-                />
-                <button
-                  class="flex items-center justify-center rounded-[5px] w-[28px] h-[28px] bg-[#A5A5A5]"
-                >
-                  <i class="fa-solid fa-minus text-white text-[13px]"></i>
+                  <img
+                    class="max-w-[20px]"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAfJJREFUaEPtmDFWwzAMhqUOwMDEMSAHaJiaA8EVCAsX6IEaFtoDBG4BEwss4sWlfSFWgmzLifteMuZFiT5L/y87CCd+4YnnDzPA1BWcK5BcBWiXEZNUBQTPmNfl1Al3v2+1UA/APo7gMTUIN4A9RIF5XaVSCXcAgAqXdZEsQDcx2mYrQNj8uZ9QFUQ2SrusAVi1IJKpggyAqQIua1Fs7FYTJ2FVIZE2kgNwWoi9vJYgbRsXAxgH5YfcmBiW9lwBumIeM3nzra723ACmbiNmJ+AE8NtGo1mq1bKMcbgDjGSptM1KQHj4b/Y4A7BijmCpjG2zG0lfgKhtxG1f+ganH0Dk/ZHVPgPbeC+A2GJmxNt7DvEHiCRmRryW97eHjzcAWwUFMbu0jxlsIaOUEVvwNlvi/WoV0LZUqfdrA6hZqtT7dQGULNXF+1UBeiw1RFpOv3CCRHzIkj34hyII/0GpAMQ47EjP3HoAemcFp9+YagChHeMbrwpAm+tLOMczk8wXfWPx9ilJzDcueBK3k6OXmytAbA4hd+Y+wRqISrx9/RiC8I07vFOlAmYFLxZPx+SP9gRrzOv7PgDfOP050Kz+At+5RIfcxKy+R9wM0F1p31bwjVOvgNHsKYtYYpWxnlFxoVjJSd47A0hWKeYzcwVirq7k3T9ggzJAeLUgqwAAAABJRU5ErkJggg=="
+                  />
+                  <span class="text-[13px]">إضافة للسلة</span>
                 </button>
               </div>
-              <button
-                class="border border-main rounded-[5px] p-2 flex items-center justify-center gap-1"
-              >
-                <img
-                  class="max-w-[20px]"
-                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAfJJREFUaEPtmDFWwzAMhqUOwMDEMSAHaJiaA8EVCAsX6IEaFtoDBG4BEwss4sWlfSFWgmzLifteMuZFiT5L/y87CCd+4YnnDzPA1BWcK5BcBWiXEZNUBQTPmNfl1Al3v2+1UA/APo7gMTUIN4A9RIF5XaVSCXcAgAqXdZEsQDcx2mYrQNj8uZ9QFUQ2SrusAVi1IJKpggyAqQIua1Fs7FYTJ2FVIZE2kgNwWoi9vJYgbRsXAxgH5YfcmBiW9lwBumIeM3nzra723ACmbiNmJ+AE8NtGo1mq1bKMcbgDjGSptM1KQHj4b/Y4A7BijmCpjG2zG0lfgKhtxG1f+ganH0Dk/ZHVPgPbeC+A2GJmxNt7DvEHiCRmRryW97eHjzcAWwUFMbu0jxlsIaOUEVvwNlvi/WoV0LZUqfdrA6hZqtT7dQGULNXF+1UBeiw1RFpOv3CCRHzIkj34hyII/0GpAMQ47EjP3HoAemcFp9+YagChHeMbrwpAm+tLOMczk8wXfWPx9ilJzDcueBK3k6OXmytAbA4hd+Y+wRqISrx9/RiC8I07vFOlAmYFLxZPx+SP9gRrzOv7PgDfOP050Kz+At+5RIfcxKy+R9wM0F1p31bwjVOvgNHsKYtYYpWxnlFxoVjJSd47A0hWKeYzcwVirq7k3T9ggzJAeLUgqwAAAABJRU5ErkJggg=="
-                />
-                <span class="text-[13px]">إضافة للسلة</span>
-              </button>
             </div>
           </div>
         </div>
-        <div
-          class="border border-[#F6F6F6] rounded-[15px] p-4 overflow-hidden flex items-center gap-3 w-[620px] shrink-0"
-        >
-          <div class="relative overflow-hidden rounded-[13px]">
-            <img src="./images/bg-14.png" class="w-[300px] h-[140px]" alt="" />
-          </div>
-          <div class="py-2 flex-1">
-            <div class="flex items-center justify-between">
-              <h4 class="font-normal text-[14px]">مجموعة العناية بالشعر</h4>
-              <span class="text-[#D6A723] text-[14px]">150.00 ر.س</span>
+        <div class="item">
+          <div
+            class="border border-[#F6F6F6] hover:border-main rounded-[15px] p-4 overflow-hidden flex items-center lg:flex-row flex-col gap-3 lg:w-[95%]"
+          >
+            <div
+              class="relative overflow-hidden rounded-[13px] lg:w-auto w-full"
+            >
+              <img
+                src="./images/bg-14.png"
+                class="lg:w-[250px] w-full h-[140px]"
+                alt=""
+              />
             </div>
-            <p class="my-3 text-[13px] text-[#505050]">
-              أفضل مجموعة للعناية بالشعر ليصبح صحي وطويل وأكثر لمعاناً
-            </p>
-            <div class="flex items-center justify-between mt-3">
-              <div class="flex items-center justify-center gap-1">
+            <div class="py-2 flex-1">
+              <div class="flex items-center justify-between">
+                <h4 class="font-normal text-[14px]">مجموعة العناية بالشعر</h4>
+                <span class="text-[#D6A723] text-[14px]">150.00 ر.س</span>
+              </div>
+              <p class="my-3 text-[13px] text-[#505050]">
+                أفضل مجموعة للعناية بالشعر ليصبح صحي وطويل وأكثر لمعاناً
+              </p>
+              <div class="flex items-center justify-between mt-3">
+                <div class="flex items-center justify-center gap-1">
+                  <button
+                    class="flex items-center justify-center rounded-[5px] w-[28px] h-[28px] bg-main"
+                  >
+                    <i class="fa-solid fa-plus text-white text-[13px]"></i>
+                  </button>
+                  <input
+                    type="text"
+                    class="border border-[#F6F6F6] rounded-[5px] text-center w-[50px] p-0 h-[30px]"
+                  />
+                  <button
+                    class="flex items-center justify-center rounded-[5px] w-[28px] h-[28px] bg-[#A5A5A5]"
+                  >
+                    <i class="fa-solid fa-minus text-white text-[13px]"></i>
+                  </button>
+                </div>
                 <button
-                  class="flex items-center justify-center rounded-[5px] w-[28px] h-[28px] bg-main"
+                  class="border border-main rounded-[5px] p-2 flex items-center justify-center gap-1"
                 >
-                  <i class="fa-solid fa-plus text-white text-[13px]"></i>
-                </button>
-                <input
-                  type="text"
-                  class="border border-[#F6F6F6] rounded-[5px] text-center w-[50px] p-0 h-[30px]"
-                />
-                <button
-                  class="flex items-center justify-center rounded-[5px] w-[28px] h-[28px] bg-[#A5A5A5]"
-                >
-                  <i class="fa-solid fa-minus text-white text-[13px]"></i>
+                  <img
+                    class="max-w-[20px]"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAfJJREFUaEPtmDFWwzAMhqUOwMDEMSAHaJiaA8EVCAsX6IEaFtoDBG4BEwss4sWlfSFWgmzLifteMuZFiT5L/y87CCd+4YnnDzPA1BWcK5BcBWiXEZNUBQTPmNfl1Al3v2+1UA/APo7gMTUIN4A9RIF5XaVSCXcAgAqXdZEsQDcx2mYrQNj8uZ9QFUQ2SrusAVi1IJKpggyAqQIua1Fs7FYTJ2FVIZE2kgNwWoi9vJYgbRsXAxgH5YfcmBiW9lwBumIeM3nzra723ACmbiNmJ+AE8NtGo1mq1bKMcbgDjGSptM1KQHj4b/Y4A7BijmCpjG2zG0lfgKhtxG1f+ganH0Dk/ZHVPgPbeC+A2GJmxNt7DvEHiCRmRryW97eHjzcAWwUFMbu0jxlsIaOUEVvwNlvi/WoV0LZUqfdrA6hZqtT7dQGULNXF+1UBeiw1RFpOv3CCRHzIkj34hyII/0GpAMQ47EjP3HoAemcFp9+YagChHeMbrwpAm+tLOMczk8wXfWPx9ilJzDcueBK3k6OXmytAbA4hd+Y+wRqISrx9/RiC8I07vFOlAmYFLxZPx+SP9gRrzOv7PgDfOP050Kz+At+5RIfcxKy+R9wM0F1p31bwjVOvgNHsKYtYYpWxnlFxoVjJSd47A0hWKeYzcwVirq7k3T9ggzJAeLUgqwAAAABJRU5ErkJggg=="
+                  />
+                  <span class="text-[13px]">إضافة للسلة</span>
                 </button>
               </div>
-              <button
-                class="border border-main rounded-[5px] p-2 flex items-center justify-center gap-1"
-              >
-                <img
-                  class="max-w-[20px]"
-                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAfJJREFUaEPtmDFWwzAMhqUOwMDEMSAHaJiaA8EVCAsX6IEaFtoDBG4BEwss4sWlfSFWgmzLifteMuZFiT5L/y87CCd+4YnnDzPA1BWcK5BcBWiXEZNUBQTPmNfl1Al3v2+1UA/APo7gMTUIN4A9RIF5XaVSCXcAgAqXdZEsQDcx2mYrQNj8uZ9QFUQ2SrusAVi1IJKpggyAqQIua1Fs7FYTJ2FVIZE2kgNwWoi9vJYgbRsXAxgH5YfcmBiW9lwBumIeM3nzra723ACmbiNmJ+AE8NtGo1mq1bKMcbgDjGSptM1KQHj4b/Y4A7BijmCpjG2zG0lfgKhtxG1f+ganH0Dk/ZHVPgPbeC+A2GJmxNt7DvEHiCRmRryW97eHjzcAWwUFMbu0jxlsIaOUEVvwNlvi/WoV0LZUqfdrA6hZqtT7dQGULNXF+1UBeiw1RFpOv3CCRHzIkj34hyII/0GpAMQ47EjP3HoAemcFp9+YagChHeMbrwpAm+tLOMczk8wXfWPx9ilJzDcueBK3k6OXmytAbA4hd+Y+wRqISrx9/RiC8I07vFOlAmYFLxZPx+SP9gRrzOv7PgDfOP050Kz+At+5RIfcxKy+R9wM0F1p31bwjVOvgNHsKYtYYpWxnlFxoVjJSd47A0hWKeYzcwVirq7k3T9ggzJAeLUgqwAAAABJRU5ErkJggg=="
-                />
-                <span class="text-[13px]">إضافة للسلة</span>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div
-          class="border border-[#F6F6F6] rounded-[15px] p-4 overflow-hidden flex items-center gap-3 w-[620px] shrink-0"
-        >
-          <div class="relative overflow-hidden rounded-[13px]">
-            <img src="./images/bg-14.png" class="w-[300px] h-[140px]" alt="" />
-          </div>
-          <div class="py-2 flex-1">
-            <div class="flex items-center justify-between">
-              <h4 class="font-normal text-[14px]">مجموعة العناية بالشعر</h4>
-              <span class="text-[#D6A723] text-[14px]">150.00 ر.س</span>
-            </div>
-            <p class="my-3 text-[13px] text-[#505050]">
-              أفضل مجموعة للعناية بالشعر ليصبح صحي وطويل وأكثر لمعاناً
-            </p>
-            <div class="flex items-center justify-between mt-3">
-              <div class="flex items-center justify-center gap-1">
-                <button
-                  class="flex items-center justify-center rounded-[5px] w-[28px] h-[28px] bg-main"
-                >
-                  <i class="fa-solid fa-plus text-white text-[13px]"></i>
-                </button>
-                <input
-                  type="text"
-                  class="border border-[#F6F6F6] rounded-[5px] text-center w-[50px] p-0 h-[30px]"
-                />
-                <button
-                  class="flex items-center justify-center rounded-[5px] w-[28px] h-[28px] bg-[#A5A5A5]"
-                >
-                  <i class="fa-solid fa-minus text-white text-[13px]"></i>
-                </button>
-              </div>
-              <button
-                class="border border-main rounded-[5px] p-2 flex items-center justify-center gap-1"
-              >
-                <img
-                  class="max-w-[20px]"
-                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAfJJREFUaEPtmDFWwzAMhqUOwMDEMSAHaJiaA8EVCAsX6IEaFtoDBG4BEwss4sWlfSFWgmzLifteMuZFiT5L/y87CCd+4YnnDzPA1BWcK5BcBWiXEZNUBQTPmNfl1Al3v2+1UA/APo7gMTUIN4A9RIF5XaVSCXcAgAqXdZEsQDcx2mYrQNj8uZ9QFUQ2SrusAVi1IJKpggyAqQIua1Fs7FYTJ2FVIZE2kgNwWoi9vJYgbRsXAxgH5YfcmBiW9lwBumIeM3nzra723ACmbiNmJ+AE8NtGo1mq1bKMcbgDjGSptM1KQHj4b/Y4A7BijmCpjG2zG0lfgKhtxG1f+ganH0Dk/ZHVPgPbeC+A2GJmxNt7DvEHiCRmRryW97eHjzcAWwUFMbu0jxlsIaOUEVvwNlvi/WoV0LZUqfdrA6hZqtT7dQGULNXF+1UBeiw1RFpOv3CCRHzIkj34hyII/0GpAMQ47EjP3HoAemcFp9+YagChHeMbrwpAm+tLOMczk8wXfWPx9ilJzDcueBK3k6OXmytAbA4hd+Y+wRqISrx9/RiC8I07vFOlAmYFLxZPx+SP9gRrzOv7PgDfOP050Kz+At+5RIfcxKy+R9wM0F1p31bwjVOvgNHsKYtYYpWxnlFxoVjJSd47A0hWKeYzcwVirq7k3T9ggzJAeLUgqwAAAABJRU5ErkJggg=="
-                />
-                <span class="text-[13px]">إضافة للسلة</span>
-              </button>
             </div>
           </div>
         </div>
@@ -1394,319 +1400,250 @@
       </div>
     </div>
 
-    <!-- Latest Products -->
-    <div class="py-5 overflow-hidden">
+    <!-- Digital Products -->
+    <div class="pb-5 overflow-hidden">
       <div class="container">
         <div class="flex items-center justify-between">
-          <h1 class="font-medium">منتج والآخر مجاناً</h1>
+          <h1 class="font-medium">منتجات رقمية</h1>
           <a href="" class="underline text-main font-medium">عرض الكل</a>
         </div>
       </div>
       <div
-        class="flex items-center overflow-x-auto overflow-y-hidden flex-nowrap gap-x-6 my-5 lg:ps-[145px] ps-[22px] pe-[20px]"
+        id="sliderProducts"
+        class="owl-carousel owl-theme sliderProducts lg:ps-[145px] ps-[22px] pe-[20px] pt-6"
       >
-        <div
-          class="border border-[#F6F6F6] rounded-[15px] p-4 overflow-hidden w-[300px] shrink-0"
-        >
-          <div class="relative overflow-hidden rounded-[13px]">
-            <img src="./images/img.png" class="w-full h-[200px]" alt="" />
-            <div class="">
-              <span
-                class="shapeCss absolute top-0 rtl:left-0 ltr:right-0"
-              ></span>
-              <span
-                class="absolute top-[10px] rtl:left-[7px] ltr:right-[7px] text-white font-medium"
-                >% 10</span
-              >
-            </div>
-            <button
-              class="w-[25px] h-[25px] flex items-center justify-center bg-white rounded-[4px] absolute top-[10px] rtl:right-[10px] ltr:left-[10px]"
-            >
-              <img
-                class="max-w-[18px]"
-                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAe5JREFUaEPtWAtOwzAMdU8GOxnsZMDJyjxSEVwn/uRlU1ErTVrVOX2/xu4WOvixHBw/nQSe7eDpwOEcWIneC+gXInq9fT7L+Rd/X37PVW7rTw1/+OA16uNq1ctF3REqwN+cil8kkGA9E9mE6t7SJFAU+3ACr3/GztwVDYKv19gJEXJg4MYJvs2SrhtNBwzlr+V2W/75lOO1ZdsiEK1vOtEjcDNgd5jZXIk4bi0i3foimirEQnrTVQk0omOC3+g+sr5FQKrP2+PFykV9XajpJt8TQXNhR0DLfsu+CKHMb1ciKeROCI2AzHBY/QxYrUaJYoqAuRejAMt1FAI7MTUHpG3PJMC72Z8mKuP8LwnIZyC8g6AipWworgjxEFUPbc8kYG4oWoQkAW6B5tCHUl30EvN59Dayh7ugjSSuRsYKjI4Co25E7g8f5iaBb8Y4M05Pi1Pn/SM+TneixJfgJDrgcy80xmgMJZEFzyBc2+PIDaxnYnRtF4FZcRoF73ZgRpwQ4MMEUE6gwKcIjJJAgk8TyJJAgx8iECUxA/wwAS+JWeAhBCwSZQfT/hSGdHN3HxhoSFopBDzMAUefqEnAwMMJGHGCzk+bIrAI1RJHXkisaFrXpxBQnIDGpiY1jYClHOr6SQClZHad04Gscqi6wzvwDT/cyTEwjk+pAAAAAElFTkSuQmCC"
-              />
-            </button>
-          </div>
-          <div class="py-2">
-            <div class="flex items-center justify-between">
-              <h4 class="font-normal text-[14px]">جوال ايفون 14</h4>
-              <span class="text-[#D6A723] text-[14px]">150.00 ر.س</span>
-            </div>
-            <p class="my-2 text-[13px] text-[#505050]">
-              شاشة سوبر ريتينا اكس دي ار مقاس 6.1 بوصة، نظام كاميرا متطور للحصول
-              على صور أفضل في أي إضاءة
-            </p>
-            <div class="flex items-center justify-between mt-3">
-              <div class="flex items-center justify-center gap-1">
-                <button
-                  class="flex items-center justify-center rounded-[5px] w-[28px] h-[28px] bg-main"
+        <div class="item">
+          <div
+            class="border border-[#F6F6F6] hover:border-main rounded-[15px] p-4 overflow-hidden lg:w-[95%]"
+          >
+            <div class="relative overflow-hidden rounded-[13px]">
+              <img src="./images/img.png" class="w-full h-[200px]" alt="" />
+              <div class="">
+                <span
+                  class="shapeCss absolute top-0 rtl:left-0 ltr:right-0"
+                ></span>
+                <span
+                  class="absolute top-[10px] rtl:left-[7px] ltr:right-[7px] text-white font-medium"
+                  >% 10</span
                 >
-                  <i class="fa-solid fa-plus text-white text-[13px]"></i>
-                </button>
-                <input
-                  type="text"
-                  class="border border-[#F6F6F6] rounded-[5px] text-center w-[50px] p-0 h-[30px]"
-                />
-                <button
-                  class="flex items-center justify-center rounded-[5px] w-[28px] h-[28px] bg-[#A5A5A5]"
-                >
-                  <i class="fa-solid fa-minus text-white text-[13px]"></i>
-                </button>
               </div>
               <button
-                class="border border-main rounded-[5px] p-2 flex items-center justify-center gap-1"
+                class="w-[25px] h-[25px] flex items-center justify-center bg-white rounded-[4px] absolute top-[10px] rtl:right-[10px] ltr:left-[10px]"
               >
                 <img
-                  class="max-w-[20px]"
-                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAfJJREFUaEPtmDFWwzAMhqUOwMDEMSAHaJiaA8EVCAsX6IEaFtoDBG4BEwss4sWlfSFWgmzLifteMuZFiT5L/y87CCd+4YnnDzPA1BWcK5BcBWiXEZNUBQTPmNfl1Al3v2+1UA/APo7gMTUIN4A9RIF5XaVSCXcAgAqXdZEsQDcx2mYrQNj8uZ9QFUQ2SrusAVi1IJKpggyAqQIua1Fs7FYTJ2FVIZE2kgNwWoi9vJYgbRsXAxgH5YfcmBiW9lwBumIeM3nzra723ACmbiNmJ+AE8NtGo1mq1bKMcbgDjGSptM1KQHj4b/Y4A7BijmCpjG2zG0lfgKhtxG1f+ganH0Dk/ZHVPgPbeC+A2GJmxNt7DvEHiCRmRryW97eHjzcAWwUFMbu0jxlsIaOUEVvwNlvi/WoV0LZUqfdrA6hZqtT7dQGULNXF+1UBeiw1RFpOv3CCRHzIkj34hyII/0GpAMQ47EjP3HoAemcFp9+YagChHeMbrwpAm+tLOMczk8wXfWPx9ilJzDcueBK3k6OXmytAbA4hd+Y+wRqISrx9/RiC8I07vFOlAmYFLxZPx+SP9gRrzOv7PgDfOP050Kz+At+5RIfcxKy+R9wM0F1p31bwjVOvgNHsKYtYYpWxnlFxoVjJSd47A0hWKeYzcwVirq7k3T9ggzJAeLUgqwAAAABJRU5ErkJggg=="
+                  class="max-w-[18px]"
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAe5JREFUaEPtWAtOwzAMdU8GOxnsZMDJyjxSEVwn/uRlU1ErTVrVOX2/xu4WOvixHBw/nQSe7eDpwOEcWIneC+gXInq9fT7L+Rd/X37PVW7rTw1/+OA16uNq1ctF3REqwN+cil8kkGA9E9mE6t7SJFAU+3ACr3/GztwVDYKv19gJEXJg4MYJvs2SrhtNBwzlr+V2W/75lOO1ZdsiEK1vOtEjcDNgd5jZXIk4bi0i3foimirEQnrTVQk0omOC3+g+sr5FQKrP2+PFykV9XajpJt8TQXNhR0DLfsu+CKHMb1ciKeROCI2AzHBY/QxYrUaJYoqAuRejAMt1FAI7MTUHpG3PJMC72Z8mKuP8LwnIZyC8g6AipWworgjxEFUPbc8kYG4oWoQkAW6B5tCHUl30EvN59Dayh7ugjSSuRsYKjI4Co25E7g8f5iaBb8Y4M05Pi1Pn/SM+TneixJfgJDrgcy80xmgMJZEFzyBc2+PIDaxnYnRtF4FZcRoF73ZgRpwQ4MMEUE6gwKcIjJJAgk8TyJJAgx8iECUxA/wwAS+JWeAhBCwSZQfT/hSGdHN3HxhoSFopBDzMAUefqEnAwMMJGHGCzk+bIrAI1RJHXkisaFrXpxBQnIDGpiY1jYClHOr6SQClZHad04Gscqi6wzvwDT/cyTEwjk+pAAAAAElFTkSuQmCC"
                 />
-                <span class="text-[13px]">إضافة للسلة</span>
               </button>
+            </div>
+            <div class="py-2">
+              <div class="flex items-center justify-between">
+                <h4 class="font-normal text-[14px]">دورة الكيمياء التحليلية</h4>
+                <span class="text-[#D6A723] text-[14px]">150.00 ر.س</span>
+              </div>
+              <p class="my-2 text-[13px] text-[#505050]">
+                احجز دورتك الآن وتدرب معنا على يد أفضل المتخصصين في مجال
+                الكيمياء التحليلية
+              </p>
+              <div class="flex items-center mt-3">
+                <button
+                  class="border border-main rounded-[5px] p-2 flex items-center justify-center gap-1 w-full"
+                >
+                  <img
+                    class="max-w-[20px]"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAfJJREFUaEPtmDFWwzAMhqUOwMDEMSAHaJiaA8EVCAsX6IEaFtoDBG4BEwss4sWlfSFWgmzLifteMuZFiT5L/y87CCd+4YnnDzPA1BWcK5BcBWiXEZNUBQTPmNfl1Al3v2+1UA/APo7gMTUIN4A9RIF5XaVSCXcAgAqXdZEsQDcx2mYrQNj8uZ9QFUQ2SrusAVi1IJKpggyAqQIua1Fs7FYTJ2FVIZE2kgNwWoi9vJYgbRsXAxgH5YfcmBiW9lwBumIeM3nzra723ACmbiNmJ+AE8NtGo1mq1bKMcbgDjGSptM1KQHj4b/Y4A7BijmCpjG2zG0lfgKhtxG1f+ganH0Dk/ZHVPgPbeC+A2GJmxNt7DvEHiCRmRryW97eHjzcAWwUFMbu0jxlsIaOUEVvwNlvi/WoV0LZUqfdrA6hZqtT7dQGULNXF+1UBeiw1RFpOv3CCRHzIkj34hyII/0GpAMQ47EjP3HoAemcFp9+YagChHeMbrwpAm+tLOMczk8wXfWPx9ilJzDcueBK3k6OXmytAbA4hd+Y+wRqISrx9/RiC8I07vFOlAmYFLxZPx+SP9gRrzOv7PgDfOP050Kz+At+5RIfcxKy+R9wM0F1p31bwjVOvgNHsKYtYYpWxnlFxoVjJSd47A0hWKeYzcwVirq7k3T9ggzJAeLUgqwAAAABJRU5ErkJggg=="
+                  />
+                  <span class="text-[13px]">إضافة للسلة</span>
+                </button>
+              </div>
             </div>
           </div>
         </div>
-        <div
-          class="border border-[#F6F6F6] rounded-[15px] p-4 overflow-hidden w-[300px] shrink-0"
-        >
-          <div class="relative overflow-hidden rounded-[13px]">
-            <img src="./images/img.png" class="w-full h-[200px]" alt="" />
-            <div class="">
-              <span
-                class="shapeCss absolute top-0 rtl:left-0 ltr:right-0"
-              ></span>
-              <span
-                class="absolute top-[10px] rtl:left-[7px] ltr:right-[7px] text-white font-medium"
-                >% 10</span
-              >
-            </div>
-            <button
-              class="w-[25px] h-[25px] flex items-center justify-center bg-white rounded-[4px] absolute top-[10px] rtl:right-[10px] ltr:left-[10px]"
-            >
-              <img
-                class="max-w-[18px]"
-                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAe5JREFUaEPtWAtOwzAMdU8GOxnsZMDJyjxSEVwn/uRlU1ErTVrVOX2/xu4WOvixHBw/nQSe7eDpwOEcWIneC+gXInq9fT7L+Rd/X37PVW7rTw1/+OA16uNq1ctF3REqwN+cil8kkGA9E9mE6t7SJFAU+3ACr3/GztwVDYKv19gJEXJg4MYJvs2SrhtNBwzlr+V2W/75lOO1ZdsiEK1vOtEjcDNgd5jZXIk4bi0i3foimirEQnrTVQk0omOC3+g+sr5FQKrP2+PFykV9XajpJt8TQXNhR0DLfsu+CKHMb1ciKeROCI2AzHBY/QxYrUaJYoqAuRejAMt1FAI7MTUHpG3PJMC72Z8mKuP8LwnIZyC8g6AipWworgjxEFUPbc8kYG4oWoQkAW6B5tCHUl30EvN59Dayh7ugjSSuRsYKjI4Co25E7g8f5iaBb8Y4M05Pi1Pn/SM+TneixJfgJDrgcy80xmgMJZEFzyBc2+PIDaxnYnRtF4FZcRoF73ZgRpwQ4MMEUE6gwKcIjJJAgk8TyJJAgx8iECUxA/wwAS+JWeAhBCwSZQfT/hSGdHN3HxhoSFopBDzMAUefqEnAwMMJGHGCzk+bIrAI1RJHXkisaFrXpxBQnIDGpiY1jYClHOr6SQClZHad04Gscqi6wzvwDT/cyTEwjk+pAAAAAElFTkSuQmCC"
-              />
-            </button>
-          </div>
-          <div class="py-2">
-            <div class="flex items-center justify-between">
-              <h4 class="font-normal text-[14px]">جوال ايفون 14</h4>
-              <span class="text-[#D6A723] text-[14px]">150.00 ر.س</span>
-            </div>
-            <p class="my-2 text-[13px] text-[#505050]">
-              شاشة سوبر ريتينا اكس دي ار مقاس 6.1 بوصة، نظام كاميرا متطور للحصول
-              على صور أفضل في أي إضاءة
-            </p>
-            <div class="flex items-center justify-between mt-3">
-              <div class="flex items-center justify-center gap-1">
-                <button
-                  class="flex items-center justify-center rounded-[5px] w-[28px] h-[28px] bg-main"
+        <div class="item">
+          <div
+            class="border border-[#F6F6F6] hover:border-main rounded-[15px] p-4 overflow-hidden lg:w-[95%]"
+          >
+            <div class="relative overflow-hidden rounded-[13px]">
+              <img src="./images/img.png" class="w-full h-[200px]" alt="" />
+              <div class="">
+                <span
+                  class="shapeCss absolute top-0 rtl:left-0 ltr:right-0"
+                ></span>
+                <span
+                  class="absolute top-[10px] rtl:left-[7px] ltr:right-[7px] text-white font-medium"
+                  >% 10</span
                 >
-                  <i class="fa-solid fa-plus text-white text-[13px]"></i>
-                </button>
-                <input
-                  type="text"
-                  class="border border-[#F6F6F6] rounded-[5px] text-center w-[50px] p-0 h-[30px]"
-                />
-                <button
-                  class="flex items-center justify-center rounded-[5px] w-[28px] h-[28px] bg-[#A5A5A5]"
-                >
-                  <i class="fa-solid fa-minus text-white text-[13px]"></i>
-                </button>
               </div>
               <button
-                class="border border-main rounded-[5px] p-2 flex items-center justify-center gap-1"
+                class="w-[25px] h-[25px] flex items-center justify-center bg-white rounded-[4px] absolute top-[10px] rtl:right-[10px] ltr:left-[10px]"
               >
                 <img
-                  class="max-w-[20px]"
-                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAfJJREFUaEPtmDFWwzAMhqUOwMDEMSAHaJiaA8EVCAsX6IEaFtoDBG4BEwss4sWlfSFWgmzLifteMuZFiT5L/y87CCd+4YnnDzPA1BWcK5BcBWiXEZNUBQTPmNfl1Al3v2+1UA/APo7gMTUIN4A9RIF5XaVSCXcAgAqXdZEsQDcx2mYrQNj8uZ9QFUQ2SrusAVi1IJKpggyAqQIua1Fs7FYTJ2FVIZE2kgNwWoi9vJYgbRsXAxgH5YfcmBiW9lwBumIeM3nzra723ACmbiNmJ+AE8NtGo1mq1bKMcbgDjGSptM1KQHj4b/Y4A7BijmCpjG2zG0lfgKhtxG1f+ganH0Dk/ZHVPgPbeC+A2GJmxNt7DvEHiCRmRryW97eHjzcAWwUFMbu0jxlsIaOUEVvwNlvi/WoV0LZUqfdrA6hZqtT7dQGULNXF+1UBeiw1RFpOv3CCRHzIkj34hyII/0GpAMQ47EjP3HoAemcFp9+YagChHeMbrwpAm+tLOMczk8wXfWPx9ilJzDcueBK3k6OXmytAbA4hd+Y+wRqISrx9/RiC8I07vFOlAmYFLxZPx+SP9gRrzOv7PgDfOP050Kz+At+5RIfcxKy+R9wM0F1p31bwjVOvgNHsKYtYYpWxnlFxoVjJSd47A0hWKeYzcwVirq7k3T9ggzJAeLUgqwAAAABJRU5ErkJggg=="
+                  class="max-w-[18px]"
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAe5JREFUaEPtWAtOwzAMdU8GOxnsZMDJyjxSEVwn/uRlU1ErTVrVOX2/xu4WOvixHBw/nQSe7eDpwOEcWIneC+gXInq9fT7L+Rd/X37PVW7rTw1/+OA16uNq1ctF3REqwN+cil8kkGA9E9mE6t7SJFAU+3ACr3/GztwVDYKv19gJEXJg4MYJvs2SrhtNBwzlr+V2W/75lOO1ZdsiEK1vOtEjcDNgd5jZXIk4bi0i3foimirEQnrTVQk0omOC3+g+sr5FQKrP2+PFykV9XajpJt8TQXNhR0DLfsu+CKHMb1ciKeROCI2AzHBY/QxYrUaJYoqAuRejAMt1FAI7MTUHpG3PJMC72Z8mKuP8LwnIZyC8g6AipWworgjxEFUPbc8kYG4oWoQkAW6B5tCHUl30EvN59Dayh7ugjSSuRsYKjI4Co25E7g8f5iaBb8Y4M05Pi1Pn/SM+TneixJfgJDrgcy80xmgMJZEFzyBc2+PIDaxnYnRtF4FZcRoF73ZgRpwQ4MMEUE6gwKcIjJJAgk8TyJJAgx8iECUxA/wwAS+JWeAhBCwSZQfT/hSGdHN3HxhoSFopBDzMAUefqEnAwMMJGHGCzk+bIrAI1RJHXkisaFrXpxBQnIDGpiY1jYClHOr6SQClZHad04Gscqi6wzvwDT/cyTEwjk+pAAAAAElFTkSuQmCC"
                 />
-                <span class="text-[13px]">إضافة للسلة</span>
               </button>
+            </div>
+            <div class="py-2">
+              <div class="flex items-center justify-between">
+                <h4 class="font-normal text-[14px]">دورة الكيمياء التحليلية</h4>
+                <span class="text-[#D6A723] text-[14px]">150.00 ر.س</span>
+              </div>
+              <p class="my-2 text-[13px] text-[#505050]">
+                احجز دورتك الآن وتدرب معنا على يد أفضل المتخصصين في مجال
+                الكيمياء التحليلية
+              </p>
+              <div class="flex items-center mt-3">
+                <button
+                  class="border border-main rounded-[5px] p-2 flex items-center justify-center gap-1 w-full"
+                >
+                  <img
+                    class="max-w-[20px]"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAfJJREFUaEPtmDFWwzAMhqUOwMDEMSAHaJiaA8EVCAsX6IEaFtoDBG4BEwss4sWlfSFWgmzLifteMuZFiT5L/y87CCd+4YnnDzPA1BWcK5BcBWiXEZNUBQTPmNfl1Al3v2+1UA/APo7gMTUIN4A9RIF5XaVSCXcAgAqXdZEsQDcx2mYrQNj8uZ9QFUQ2SrusAVi1IJKpggyAqQIua1Fs7FYTJ2FVIZE2kgNwWoi9vJYgbRsXAxgH5YfcmBiW9lwBumIeM3nzra723ACmbiNmJ+AE8NtGo1mq1bKMcbgDjGSptM1KQHj4b/Y4A7BijmCpjG2zG0lfgKhtxG1f+ganH0Dk/ZHVPgPbeC+A2GJmxNt7DvEHiCRmRryW97eHjzcAWwUFMbu0jxlsIaOUEVvwNlvi/WoV0LZUqfdrA6hZqtT7dQGULNXF+1UBeiw1RFpOv3CCRHzIkj34hyII/0GpAMQ47EjP3HoAemcFp9+YagChHeMbrwpAm+tLOMczk8wXfWPx9ilJzDcueBK3k6OXmytAbA4hd+Y+wRqISrx9/RiC8I07vFOlAmYFLxZPx+SP9gRrzOv7PgDfOP050Kz+At+5RIfcxKy+R9wM0F1p31bwjVOvgNHsKYtYYpWxnlFxoVjJSd47A0hWKeYzcwVirq7k3T9ggzJAeLUgqwAAAABJRU5ErkJggg=="
+                  />
+                  <span class="text-[13px]">إضافة للسلة</span>
+                </button>
+              </div>
             </div>
           </div>
         </div>
-        <div
-          class="border border-[#F6F6F6] rounded-[15px] p-4 overflow-hidden w-[300px] shrink-0"
-        >
-          <div class="relative overflow-hidden rounded-[13px]">
-            <img src="./images/img.png" class="w-full h-[200px]" alt="" />
-            <div class="">
-              <span
-                class="shapeCss absolute top-0 rtl:left-0 ltr:right-0"
-              ></span>
-              <span
-                class="absolute top-[10px] rtl:left-[7px] ltr:right-[7px] text-white font-medium"
-                >% 10</span
-              >
-            </div>
-            <button
-              class="w-[25px] h-[25px] flex items-center justify-center bg-white rounded-[4px] absolute top-[10px] rtl:right-[10px] ltr:left-[10px]"
-            >
-              <img
-                class="max-w-[18px]"
-                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAe5JREFUaEPtWAtOwzAMdU8GOxnsZMDJyjxSEVwn/uRlU1ErTVrVOX2/xu4WOvixHBw/nQSe7eDpwOEcWIneC+gXInq9fT7L+Rd/X37PVW7rTw1/+OA16uNq1ctF3REqwN+cil8kkGA9E9mE6t7SJFAU+3ACr3/GztwVDYKv19gJEXJg4MYJvs2SrhtNBwzlr+V2W/75lOO1ZdsiEK1vOtEjcDNgd5jZXIk4bi0i3foimirEQnrTVQk0omOC3+g+sr5FQKrP2+PFykV9XajpJt8TQXNhR0DLfsu+CKHMb1ciKeROCI2AzHBY/QxYrUaJYoqAuRejAMt1FAI7MTUHpG3PJMC72Z8mKuP8LwnIZyC8g6AipWworgjxEFUPbc8kYG4oWoQkAW6B5tCHUl30EvN59Dayh7ugjSSuRsYKjI4Co25E7g8f5iaBb8Y4M05Pi1Pn/SM+TneixJfgJDrgcy80xmgMJZEFzyBc2+PIDaxnYnRtF4FZcRoF73ZgRpwQ4MMEUE6gwKcIjJJAgk8TyJJAgx8iECUxA/wwAS+JWeAhBCwSZQfT/hSGdHN3HxhoSFopBDzMAUefqEnAwMMJGHGCzk+bIrAI1RJHXkisaFrXpxBQnIDGpiY1jYClHOr6SQClZHad04Gscqi6wzvwDT/cyTEwjk+pAAAAAElFTkSuQmCC"
-              />
-            </button>
-          </div>
-          <div class="py-2">
-            <div class="flex items-center justify-between">
-              <h4 class="font-normal text-[14px]">جوال ايفون 14</h4>
-              <span class="text-[#D6A723] text-[14px]">150.00 ر.س</span>
-            </div>
-            <p class="my-2 text-[13px] text-[#505050]">
-              شاشة سوبر ريتينا اكس دي ار مقاس 6.1 بوصة، نظام كاميرا متطور للحصول
-              على صور أفضل في أي إضاءة
-            </p>
-            <div class="flex items-center justify-between mt-3">
-              <div class="flex items-center justify-center gap-1">
-                <button
-                  class="flex items-center justify-center rounded-[5px] w-[28px] h-[28px] bg-main"
+        <div class="item">
+          <div
+            class="border border-[#F6F6F6] hover:border-main rounded-[15px] p-4 overflow-hidden lg:w-[95%]"
+          >
+            <div class="relative overflow-hidden rounded-[13px]">
+              <img src="./images/img.png" class="w-full h-[200px]" alt="" />
+              <div class="">
+                <span
+                  class="shapeCss absolute top-0 rtl:left-0 ltr:right-0"
+                ></span>
+                <span
+                  class="absolute top-[10px] rtl:left-[7px] ltr:right-[7px] text-white font-medium"
+                  >% 10</span
                 >
-                  <i class="fa-solid fa-plus text-white text-[13px]"></i>
-                </button>
-                <input
-                  type="text"
-                  class="border border-[#F6F6F6] rounded-[5px] text-center w-[50px] p-0 h-[30px]"
-                />
-                <button
-                  class="flex items-center justify-center rounded-[5px] w-[28px] h-[28px] bg-[#A5A5A5]"
-                >
-                  <i class="fa-solid fa-minus text-white text-[13px]"></i>
-                </button>
               </div>
               <button
-                class="border border-main rounded-[5px] p-2 flex items-center justify-center gap-1"
+                class="w-[25px] h-[25px] flex items-center justify-center bg-white rounded-[4px] absolute top-[10px] rtl:right-[10px] ltr:left-[10px]"
               >
                 <img
-                  class="max-w-[20px]"
-                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAfJJREFUaEPtmDFWwzAMhqUOwMDEMSAHaJiaA8EVCAsX6IEaFtoDBG4BEwss4sWlfSFWgmzLifteMuZFiT5L/y87CCd+4YnnDzPA1BWcK5BcBWiXEZNUBQTPmNfl1Al3v2+1UA/APo7gMTUIN4A9RIF5XaVSCXcAgAqXdZEsQDcx2mYrQNj8uZ9QFUQ2SrusAVi1IJKpggyAqQIua1Fs7FYTJ2FVIZE2kgNwWoi9vJYgbRsXAxgH5YfcmBiW9lwBumIeM3nzra723ACmbiNmJ+AE8NtGo1mq1bKMcbgDjGSptM1KQHj4b/Y4A7BijmCpjG2zG0lfgKhtxG1f+ganH0Dk/ZHVPgPbeC+A2GJmxNt7DvEHiCRmRryW97eHjzcAWwUFMbu0jxlsIaOUEVvwNlvi/WoV0LZUqfdrA6hZqtT7dQGULNXF+1UBeiw1RFpOv3CCRHzIkj34hyII/0GpAMQ47EjP3HoAemcFp9+YagChHeMbrwpAm+tLOMczk8wXfWPx9ilJzDcueBK3k6OXmytAbA4hd+Y+wRqISrx9/RiC8I07vFOlAmYFLxZPx+SP9gRrzOv7PgDfOP050Kz+At+5RIfcxKy+R9wM0F1p31bwjVOvgNHsKYtYYpWxnlFxoVjJSd47A0hWKeYzcwVirq7k3T9ggzJAeLUgqwAAAABJRU5ErkJggg=="
+                  class="max-w-[18px]"
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAe5JREFUaEPtWAtOwzAMdU8GOxnsZMDJyjxSEVwn/uRlU1ErTVrVOX2/xu4WOvixHBw/nQSe7eDpwOEcWIneC+gXInq9fT7L+Rd/X37PVW7rTw1/+OA16uNq1ctF3REqwN+cil8kkGA9E9mE6t7SJFAU+3ACr3/GztwVDYKv19gJEXJg4MYJvs2SrhtNBwzlr+V2W/75lOO1ZdsiEK1vOtEjcDNgd5jZXIk4bi0i3foimirEQnrTVQk0omOC3+g+sr5FQKrP2+PFykV9XajpJt8TQXNhR0DLfsu+CKHMb1ciKeROCI2AzHBY/QxYrUaJYoqAuRejAMt1FAI7MTUHpG3PJMC72Z8mKuP8LwnIZyC8g6AipWworgjxEFUPbc8kYG4oWoQkAW6B5tCHUl30EvN59Dayh7ugjSSuRsYKjI4Co25E7g8f5iaBb8Y4M05Pi1Pn/SM+TneixJfgJDrgcy80xmgMJZEFzyBc2+PIDaxnYnRtF4FZcRoF73ZgRpwQ4MMEUE6gwKcIjJJAgk8TyJJAgx8iECUxA/wwAS+JWeAhBCwSZQfT/hSGdHN3HxhoSFopBDzMAUefqEnAwMMJGHGCzk+bIrAI1RJHXkisaFrXpxBQnIDGpiY1jYClHOr6SQClZHad04Gscqi6wzvwDT/cyTEwjk+pAAAAAElFTkSuQmCC"
                 />
-                <span class="text-[13px]">إضافة للسلة</span>
               </button>
+            </div>
+            <div class="py-2">
+              <div class="flex items-center justify-between">
+                <h4 class="font-normal text-[14px]">دورة الكيمياء التحليلية</h4>
+                <span class="text-[#D6A723] text-[14px]">150.00 ر.س</span>
+              </div>
+              <p class="my-2 text-[13px] text-[#505050]">
+                احجز دورتك الآن وتدرب معنا على يد أفضل المتخصصين في مجال
+                الكيمياء التحليلية
+              </p>
+              <div class="flex items-center mt-3">
+                <button
+                  class="border border-main rounded-[5px] p-2 flex items-center justify-center gap-1 w-full"
+                >
+                  <img
+                    class="max-w-[20px]"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAfJJREFUaEPtmDFWwzAMhqUOwMDEMSAHaJiaA8EVCAsX6IEaFtoDBG4BEwss4sWlfSFWgmzLifteMuZFiT5L/y87CCd+4YnnDzPA1BWcK5BcBWiXEZNUBQTPmNfl1Al3v2+1UA/APo7gMTUIN4A9RIF5XaVSCXcAgAqXdZEsQDcx2mYrQNj8uZ9QFUQ2SrusAVi1IJKpggyAqQIua1Fs7FYTJ2FVIZE2kgNwWoi9vJYgbRsXAxgH5YfcmBiW9lwBumIeM3nzra723ACmbiNmJ+AE8NtGo1mq1bKMcbgDjGSptM1KQHj4b/Y4A7BijmCpjG2zG0lfgKhtxG1f+ganH0Dk/ZHVPgPbeC+A2GJmxNt7DvEHiCRmRryW97eHjzcAWwUFMbu0jxlsIaOUEVvwNlvi/WoV0LZUqfdrA6hZqtT7dQGULNXF+1UBeiw1RFpOv3CCRHzIkj34hyII/0GpAMQ47EjP3HoAemcFp9+YagChHeMbrwpAm+tLOMczk8wXfWPx9ilJzDcueBK3k6OXmytAbA4hd+Y+wRqISrx9/RiC8I07vFOlAmYFLxZPx+SP9gRrzOv7PgDfOP050Kz+At+5RIfcxKy+R9wM0F1p31bwjVOvgNHsKYtYYpWxnlFxoVjJSd47A0hWKeYzcwVirq7k3T9ggzJAeLUgqwAAAABJRU5ErkJggg=="
+                  />
+                  <span class="text-[13px]">إضافة للسلة</span>
+                </button>
+              </div>
             </div>
           </div>
         </div>
-        <div
-          class="border border-[#F6F6F6] rounded-[15px] p-4 overflow-hidden w-[300px] shrink-0"
-        >
-          <div class="relative overflow-hidden rounded-[13px]">
-            <img src="./images/img.png" class="w-full h-[200px]" alt="" />
-            <div class="">
-              <span
-                class="shapeCss absolute top-0 rtl:left-0 ltr:right-0"
-              ></span>
-              <span
-                class="absolute top-[10px] rtl:left-[7px] ltr:right-[7px] text-white font-medium"
-                >% 10</span
-              >
-            </div>
-            <button
-              class="w-[25px] h-[25px] flex items-center justify-center bg-white rounded-[4px] absolute top-[10px] rtl:right-[10px] ltr:left-[10px]"
-            >
-              <img
-                class="max-w-[18px]"
-                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAe5JREFUaEPtWAtOwzAMdU8GOxnsZMDJyjxSEVwn/uRlU1ErTVrVOX2/xu4WOvixHBw/nQSe7eDpwOEcWIneC+gXInq9fT7L+Rd/X37PVW7rTw1/+OA16uNq1ctF3REqwN+cil8kkGA9E9mE6t7SJFAU+3ACr3/GztwVDYKv19gJEXJg4MYJvs2SrhtNBwzlr+V2W/75lOO1ZdsiEK1vOtEjcDNgd5jZXIk4bi0i3foimirEQnrTVQk0omOC3+g+sr5FQKrP2+PFykV9XajpJt8TQXNhR0DLfsu+CKHMb1ciKeROCI2AzHBY/QxYrUaJYoqAuRejAMt1FAI7MTUHpG3PJMC72Z8mKuP8LwnIZyC8g6AipWworgjxEFUPbc8kYG4oWoQkAW6B5tCHUl30EvN59Dayh7ugjSSuRsYKjI4Co25E7g8f5iaBb8Y4M05Pi1Pn/SM+TneixJfgJDrgcy80xmgMJZEFzyBc2+PIDaxnYnRtF4FZcRoF73ZgRpwQ4MMEUE6gwKcIjJJAgk8TyJJAgx8iECUxA/wwAS+JWeAhBCwSZQfT/hSGdHN3HxhoSFopBDzMAUefqEnAwMMJGHGCzk+bIrAI1RJHXkisaFrXpxBQnIDGpiY1jYClHOr6SQClZHad04Gscqi6wzvwDT/cyTEwjk+pAAAAAElFTkSuQmCC"
-              />
-            </button>
-          </div>
-          <div class="py-2">
-            <div class="flex items-center justify-between">
-              <h4 class="font-normal text-[14px]">جوال ايفون 14</h4>
-              <span class="text-[#D6A723] text-[14px]">150.00 ر.س</span>
-            </div>
-            <p class="my-2 text-[13px] text-[#505050]">
-              شاشة سوبر ريتينا اكس دي ار مقاس 6.1 بوصة، نظام كاميرا متطور للحصول
-              على صور أفضل في أي إضاءة
-            </p>
-            <div class="flex items-center justify-between mt-3">
-              <div class="flex items-center justify-center gap-1">
-                <button
-                  class="flex items-center justify-center rounded-[5px] w-[28px] h-[28px] bg-main"
+        <div class="item">
+          <div
+            class="border border-[#F6F6F6] hover:border-main rounded-[15px] p-4 overflow-hidden lg:w-[95%]"
+          >
+            <div class="relative overflow-hidden rounded-[13px]">
+              <img src="./images/img.png" class="w-full h-[200px]" alt="" />
+              <div class="">
+                <span
+                  class="shapeCss absolute top-0 rtl:left-0 ltr:right-0"
+                ></span>
+                <span
+                  class="absolute top-[10px] rtl:left-[7px] ltr:right-[7px] text-white font-medium"
+                  >% 10</span
                 >
-                  <i class="fa-solid fa-plus text-white text-[13px]"></i>
-                </button>
-                <input
-                  type="text"
-                  class="border border-[#F6F6F6] rounded-[5px] text-center w-[50px] p-0 h-[30px]"
-                />
-                <button
-                  class="flex items-center justify-center rounded-[5px] w-[28px] h-[28px] bg-[#A5A5A5]"
-                >
-                  <i class="fa-solid fa-minus text-white text-[13px]"></i>
-                </button>
               </div>
               <button
-                class="border border-main rounded-[5px] p-2 flex items-center justify-center gap-1"
+                class="w-[25px] h-[25px] flex items-center justify-center bg-white rounded-[4px] absolute top-[10px] rtl:right-[10px] ltr:left-[10px]"
               >
                 <img
-                  class="max-w-[20px]"
-                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAfJJREFUaEPtmDFWwzAMhqUOwMDEMSAHaJiaA8EVCAsX6IEaFtoDBG4BEwss4sWlfSFWgmzLifteMuZFiT5L/y87CCd+4YnnDzPA1BWcK5BcBWiXEZNUBQTPmNfl1Al3v2+1UA/APo7gMTUIN4A9RIF5XaVSCXcAgAqXdZEsQDcx2mYrQNj8uZ9QFUQ2SrusAVi1IJKpggyAqQIua1Fs7FYTJ2FVIZE2kgNwWoi9vJYgbRsXAxgH5YfcmBiW9lwBumIeM3nzra723ACmbiNmJ+AE8NtGo1mq1bKMcbgDjGSptM1KQHj4b/Y4A7BijmCpjG2zG0lfgKhtxG1f+ganH0Dk/ZHVPgPbeC+A2GJmxNt7DvEHiCRmRryW97eHjzcAWwUFMbu0jxlsIaOUEVvwNlvi/WoV0LZUqfdrA6hZqtT7dQGULNXF+1UBeiw1RFpOv3CCRHzIkj34hyII/0GpAMQ47EjP3HoAemcFp9+YagChHeMbrwpAm+tLOMczk8wXfWPx9ilJzDcueBK3k6OXmytAbA4hd+Y+wRqISrx9/RiC8I07vFOlAmYFLxZPx+SP9gRrzOv7PgDfOP050Kz+At+5RIfcxKy+R9wM0F1p31bwjVOvgNHsKYtYYpWxnlFxoVjJSd47A0hWKeYzcwVirq7k3T9ggzJAeLUgqwAAAABJRU5ErkJggg=="
+                  class="max-w-[18px]"
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAe5JREFUaEPtWAtOwzAMdU8GOxnsZMDJyjxSEVwn/uRlU1ErTVrVOX2/xu4WOvixHBw/nQSe7eDpwOEcWIneC+gXInq9fT7L+Rd/X37PVW7rTw1/+OA16uNq1ctF3REqwN+cil8kkGA9E9mE6t7SJFAU+3ACr3/GztwVDYKv19gJEXJg4MYJvs2SrhtNBwzlr+V2W/75lOO1ZdsiEK1vOtEjcDNgd5jZXIk4bi0i3foimirEQnrTVQk0omOC3+g+sr5FQKrP2+PFykV9XajpJt8TQXNhR0DLfsu+CKHMb1ciKeROCI2AzHBY/QxYrUaJYoqAuRejAMt1FAI7MTUHpG3PJMC72Z8mKuP8LwnIZyC8g6AipWworgjxEFUPbc8kYG4oWoQkAW6B5tCHUl30EvN59Dayh7ugjSSuRsYKjI4Co25E7g8f5iaBb8Y4M05Pi1Pn/SM+TneixJfgJDrgcy80xmgMJZEFzyBc2+PIDaxnYnRtF4FZcRoF73ZgRpwQ4MMEUE6gwKcIjJJAgk8TyJJAgx8iECUxA/wwAS+JWeAhBCwSZQfT/hSGdHN3HxhoSFopBDzMAUefqEnAwMMJGHGCzk+bIrAI1RJHXkisaFrXpxBQnIDGpiY1jYClHOr6SQClZHad04Gscqi6wzvwDT/cyTEwjk+pAAAAAElFTkSuQmCC"
                 />
-                <span class="text-[13px]">إضافة للسلة</span>
               </button>
+            </div>
+            <div class="py-2">
+              <div class="flex items-center justify-between">
+                <h4 class="font-normal text-[14px]">دورة الكيمياء التحليلية</h4>
+                <span class="text-[#D6A723] text-[14px]">150.00 ر.س</span>
+              </div>
+              <p class="my-2 text-[13px] text-[#505050]">
+                احجز دورتك الآن وتدرب معنا على يد أفضل المتخصصين في مجال
+                الكيمياء التحليلية
+              </p>
+              <div class="flex items-center mt-3">
+                <button
+                  class="border border-main rounded-[5px] p-2 flex items-center justify-center gap-1 w-full"
+                >
+                  <img
+                    class="max-w-[20px]"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAfJJREFUaEPtmDFWwzAMhqUOwMDEMSAHaJiaA8EVCAsX6IEaFtoDBG4BEwss4sWlfSFWgmzLifteMuZFiT5L/y87CCd+4YnnDzPA1BWcK5BcBWiXEZNUBQTPmNfl1Al3v2+1UA/APo7gMTUIN4A9RIF5XaVSCXcAgAqXdZEsQDcx2mYrQNj8uZ9QFUQ2SrusAVi1IJKpggyAqQIua1Fs7FYTJ2FVIZE2kgNwWoi9vJYgbRsXAxgH5YfcmBiW9lwBumIeM3nzra723ACmbiNmJ+AE8NtGo1mq1bKMcbgDjGSptM1KQHj4b/Y4A7BijmCpjG2zG0lfgKhtxG1f+ganH0Dk/ZHVPgPbeC+A2GJmxNt7DvEHiCRmRryW97eHjzcAWwUFMbu0jxlsIaOUEVvwNlvi/WoV0LZUqfdrA6hZqtT7dQGULNXF+1UBeiw1RFpOv3CCRHzIkj34hyII/0GpAMQ47EjP3HoAemcFp9+YagChHeMbrwpAm+tLOMczk8wXfWPx9ilJzDcueBK3k6OXmytAbA4hd+Y+wRqISrx9/RiC8I07vFOlAmYFLxZPx+SP9gRrzOv7PgDfOP050Kz+At+5RIfcxKy+R9wM0F1p31bwjVOvgNHsKYtYYpWxnlFxoVjJSd47A0hWKeYzcwVirq7k3T9ggzJAeLUgqwAAAABJRU5ErkJggg=="
+                  />
+                  <span class="text-[13px]">إضافة للسلة</span>
+                </button>
+              </div>
             </div>
           </div>
         </div>
-        <div
-          class="border border-[#F6F6F6] rounded-[15px] p-4 overflow-hidden w-[300px] shrink-0"
-        >
-          <div class="relative overflow-hidden rounded-[13px]">
-            <img src="./images/img.png" class="w-full h-[200px]" alt="" />
-            <div class="">
-              <span
-                class="shapeCss absolute top-0 rtl:left-0 ltr:right-0"
-              ></span>
-              <span
-                class="absolute top-[10px] rtl:left-[7px] ltr:right-[7px] text-white font-medium"
-                >% 10</span
-              >
-            </div>
-            <button
-              class="w-[25px] h-[25px] flex items-center justify-center bg-white rounded-[4px] absolute top-[10px] rtl:right-[10px] ltr:left-[10px]"
-            >
-              <img
-                class="max-w-[18px]"
-                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAe5JREFUaEPtWAtOwzAMdU8GOxnsZMDJyjxSEVwn/uRlU1ErTVrVOX2/xu4WOvixHBw/nQSe7eDpwOEcWIneC+gXInq9fT7L+Rd/X37PVW7rTw1/+OA16uNq1ctF3REqwN+cil8kkGA9E9mE6t7SJFAU+3ACr3/GztwVDYKv19gJEXJg4MYJvs2SrhtNBwzlr+V2W/75lOO1ZdsiEK1vOtEjcDNgd5jZXIk4bi0i3foimirEQnrTVQk0omOC3+g+sr5FQKrP2+PFykV9XajpJt8TQXNhR0DLfsu+CKHMb1ciKeROCI2AzHBY/QxYrUaJYoqAuRejAMt1FAI7MTUHpG3PJMC72Z8mKuP8LwnIZyC8g6AipWworgjxEFUPbc8kYG4oWoQkAW6B5tCHUl30EvN59Dayh7ugjSSuRsYKjI4Co25E7g8f5iaBb8Y4M05Pi1Pn/SM+TneixJfgJDrgcy80xmgMJZEFzyBc2+PIDaxnYnRtF4FZcRoF73ZgRpwQ4MMEUE6gwKcIjJJAgk8TyJJAgx8iECUxA/wwAS+JWeAhBCwSZQfT/hSGdHN3HxhoSFopBDzMAUefqEnAwMMJGHGCzk+bIrAI1RJHXkisaFrXpxBQnIDGpiY1jYClHOr6SQClZHad04Gscqi6wzvwDT/cyTEwjk+pAAAAAElFTkSuQmCC"
-              />
-            </button>
-          </div>
-          <div class="py-2">
-            <div class="flex items-center justify-between">
-              <h4 class="font-normal text-[14px]">جوال ايفون 14</h4>
-              <span class="text-[#D6A723] text-[14px]">150.00 ر.س</span>
-            </div>
-            <p class="my-2 text-[13px] text-[#505050]">
-              شاشة سوبر ريتينا اكس دي ار مقاس 6.1 بوصة، نظام كاميرا متطور للحصول
-              على صور أفضل في أي إضاءة
-            </p>
-            <div class="flex items-center justify-between mt-3">
-              <div class="flex items-center justify-center gap-1">
-                <button
-                  class="flex items-center justify-center rounded-[5px] w-[28px] h-[28px] bg-main"
+        <div class="item">
+          <div
+            class="border border-[#F6F6F6] hover:border-main rounded-[15px] p-4 overflow-hidden lg:w-[95%]"
+          >
+            <div class="relative overflow-hidden rounded-[13px]">
+              <img src="./images/img.png" class="w-full h-[200px]" alt="" />
+              <div class="">
+                <span
+                  class="shapeCss absolute top-0 rtl:left-0 ltr:right-0"
+                ></span>
+                <span
+                  class="absolute top-[10px] rtl:left-[7px] ltr:right-[7px] text-white font-medium"
+                  >% 10</span
                 >
-                  <i class="fa-solid fa-plus text-white text-[13px]"></i>
-                </button>
-                <input
-                  type="text"
-                  class="border border-[#F6F6F6] rounded-[5px] text-center w-[50px] p-0 h-[30px]"
-                />
-                <button
-                  class="flex items-center justify-center rounded-[5px] w-[28px] h-[28px] bg-[#A5A5A5]"
-                >
-                  <i class="fa-solid fa-minus text-white text-[13px]"></i>
-                </button>
               </div>
               <button
-                class="border border-main rounded-[5px] p-2 flex items-center justify-center gap-1"
+                class="w-[25px] h-[25px] flex items-center justify-center bg-white rounded-[4px] absolute top-[10px] rtl:right-[10px] ltr:left-[10px]"
               >
                 <img
-                  class="max-w-[20px]"
-                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAfJJREFUaEPtmDFWwzAMhqUOwMDEMSAHaJiaA8EVCAsX6IEaFtoDBG4BEwss4sWlfSFWgmzLifteMuZFiT5L/y87CCd+4YnnDzPA1BWcK5BcBWiXEZNUBQTPmNfl1Al3v2+1UA/APo7gMTUIN4A9RIF5XaVSCXcAgAqXdZEsQDcx2mYrQNj8uZ9QFUQ2SrusAVi1IJKpggyAqQIua1Fs7FYTJ2FVIZE2kgNwWoi9vJYgbRsXAxgH5YfcmBiW9lwBumIeM3nzra723ACmbiNmJ+AE8NtGo1mq1bKMcbgDjGSptM1KQHj4b/Y4A7BijmCpjG2zG0lfgKhtxG1f+ganH0Dk/ZHVPgPbeC+A2GJmxNt7DvEHiCRmRryW97eHjzcAWwUFMbu0jxlsIaOUEVvwNlvi/WoV0LZUqfdrA6hZqtT7dQGULNXF+1UBeiw1RFpOv3CCRHzIkj34hyII/0GpAMQ47EjP3HoAemcFp9+YagChHeMbrwpAm+tLOMczk8wXfWPx9ilJzDcueBK3k6OXmytAbA4hd+Y+wRqISrx9/RiC8I07vFOlAmYFLxZPx+SP9gRrzOv7PgDfOP050Kz+At+5RIfcxKy+R9wM0F1p31bwjVOvgNHsKYtYYpWxnlFxoVjJSd47A0hWKeYzcwVirq7k3T9ggzJAeLUgqwAAAABJRU5ErkJggg=="
+                  class="max-w-[18px]"
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAe5JREFUaEPtWAtOwzAMdU8GOxnsZMDJyjxSEVwn/uRlU1ErTVrVOX2/xu4WOvixHBw/nQSe7eDpwOEcWIneC+gXInq9fT7L+Rd/X37PVW7rTw1/+OA16uNq1ctF3REqwN+cil8kkGA9E9mE6t7SJFAU+3ACr3/GztwVDYKv19gJEXJg4MYJvs2SrhtNBwzlr+V2W/75lOO1ZdsiEK1vOtEjcDNgd5jZXIk4bi0i3foimirEQnrTVQk0omOC3+g+sr5FQKrP2+PFykV9XajpJt8TQXNhR0DLfsu+CKHMb1ciKeROCI2AzHBY/QxYrUaJYoqAuRejAMt1FAI7MTUHpG3PJMC72Z8mKuP8LwnIZyC8g6AipWworgjxEFUPbc8kYG4oWoQkAW6B5tCHUl30EvN59Dayh7ugjSSuRsYKjI4Co25E7g8f5iaBb8Y4M05Pi1Pn/SM+TneixJfgJDrgcy80xmgMJZEFzyBc2+PIDaxnYnRtF4FZcRoF73ZgRpwQ4MMEUE6gwKcIjJJAgk8TyJJAgx8iECUxA/wwAS+JWeAhBCwSZQfT/hSGdHN3HxhoSFopBDzMAUefqEnAwMMJGHGCzk+bIrAI1RJHXkisaFrXpxBQnIDGpiY1jYClHOr6SQClZHad04Gscqi6wzvwDT/cyTEwjk+pAAAAAElFTkSuQmCC"
                 />
-                <span class="text-[13px]">إضافة للسلة</span>
               </button>
+            </div>
+            <div class="py-2">
+              <div class="flex items-center justify-between">
+                <h4 class="font-normal text-[14px]">دورة الكيمياء التحليلية</h4>
+                <span class="text-[#D6A723] text-[14px]">150.00 ر.س</span>
+              </div>
+              <p class="my-2 text-[13px] text-[#505050]">
+                احجز دورتك الآن وتدرب معنا على يد أفضل المتخصصين في مجال
+                الكيمياء التحليلية
+              </p>
+              <div class="flex items-center mt-3">
+                <button
+                  class="border border-main rounded-[5px] p-2 flex items-center justify-center gap-1 w-full"
+                >
+                  <img
+                    class="max-w-[20px]"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAfJJREFUaEPtmDFWwzAMhqUOwMDEMSAHaJiaA8EVCAsX6IEaFtoDBG4BEwss4sWlfSFWgmzLifteMuZFiT5L/y87CCd+4YnnDzPA1BWcK5BcBWiXEZNUBQTPmNfl1Al3v2+1UA/APo7gMTUIN4A9RIF5XaVSCXcAgAqXdZEsQDcx2mYrQNj8uZ9QFUQ2SrusAVi1IJKpggyAqQIua1Fs7FYTJ2FVIZE2kgNwWoi9vJYgbRsXAxgH5YfcmBiW9lwBumIeM3nzra723ACmbiNmJ+AE8NtGo1mq1bKMcbgDjGSptM1KQHj4b/Y4A7BijmCpjG2zG0lfgKhtxG1f+ganH0Dk/ZHVPgPbeC+A2GJmxNt7DvEHiCRmRryW97eHjzcAWwUFMbu0jxlsIaOUEVvwNlvi/WoV0LZUqfdrA6hZqtT7dQGULNXF+1UBeiw1RFpOv3CCRHzIkj34hyII/0GpAMQ47EjP3HoAemcFp9+YagChHeMbrwpAm+tLOMczk8wXfWPx9ilJzDcueBK3k6OXmytAbA4hd+Y+wRqISrx9/RiC8I07vFOlAmYFLxZPx+SP9gRrzOv7PgDfOP050Kz+At+5RIfcxKy+R9wM0F1p31bwjVOvgNHsKYtYYpWxnlFxoVjJSd47A0hWKeYzcwVirq7k3T9ggzJAeLUgqwAAAABJRU5ErkJggg=="
+                  />
+                  <span class="text-[13px]">إضافة للسلة</span>
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -1728,7 +1665,7 @@
       </div>
     </div>
 
-    <!-- Latest Products -->
+    <!-- Customized Services -->
     <div class="py-5 overflow-hidden">
       <div class="container">
         <div class="flex items-center justify-between">
@@ -1737,74 +1674,83 @@
         </div>
       </div>
       <div
-        class="flex items-center overflow-x-auto overflow-y-hidden flex-nowrap gap-x-6 my-5 lg:ps-[145px] ps-[22px] pe-[20px]"
+        id="sliderCustomized"
+        class="owl-carousel owl-theme sliderCustomized lg:ps-[145px] ps-[22px] pe-[20px] pt-6"
       >
-        <div
-          class="border border-[#F6F6F6] rounded-[15px] p-4 overflow-hidden w-[420px] shrink-0"
-        >
-          <div class="relative overflow-hidden rounded-[13px]">
-            <img src="./images/bg-12.png" class="w-full h-[200px]" alt="" />
-          </div>
-          <div class="py-2">
-            <div class="flex items-center justify-between">
-              <h4 class="font-normal text-[14px]">طباعة الملابس</h4>
-              <span class="text-[#D6A723] text-[14px]">150.00 ر.س</span>
+        <div class="item">
+          <div
+            class="border border-[#F6F6F6] hover:border-main rounded-[15px] p-4 overflow-hidden lg:w-[95%]"
+          >
+            <div class="relative overflow-hidden rounded-[13px]">
+              <img src="./images/bg-12.png" class="w-full h-[200px]" alt="" />
             </div>
-            <p class="my-2 text-[13px] text-[#505050]">
-              صمم بنفسك ما يعبر عنك , قم باختيار الجملة المناسبة بالتصميم الذي
-              يناسبك وقم بطباعته الآن
-            </p>
+            <div class="py-2">
+              <div class="flex items-center justify-between">
+                <h4 class="font-normal text-[14px]">طباعة الملابس</h4>
+                <span class="text-[#D6A723] text-[14px]">150.00 ر.س</span>
+              </div>
+              <p class="my-2 text-[13px] text-[#505050]">
+                صمم بنفسك ما يعبر عنك , قم باختيار الجملة المناسبة بالتصميم الذي
+                يناسبك وقم بطباعته الآن
+              </p>
+            </div>
           </div>
         </div>
-        <div
-          class="border border-[#F6F6F6] rounded-[15px] p-4 overflow-hidden w-[420px] shrink-0"
-        >
-          <div class="relative overflow-hidden rounded-[13px]">
-            <img src="./images/bg-13.png" class="w-full h-[200px]" alt="" />
-          </div>
-          <div class="py-2">
-            <div class="flex items-center justify-between">
-              <h4 class="font-normal text-[14px]">طباعة الملابس</h4>
-              <span class="text-[#D6A723] text-[14px]">150.00 ر.س</span>
+        <div class="item">
+          <div
+            class="border border-[#F6F6F6] hover:border-main rounded-[15px] p-4 overflow-hidden lg:w-[95%]"
+          >
+            <div class="relative overflow-hidden rounded-[13px]">
+              <img src="./images/bg-12.png" class="w-full h-[200px]" alt="" />
             </div>
-            <p class="my-2 text-[13px] text-[#505050]">
-              صمم بنفسك ما يعبر عنك , قم باختيار الجملة المناسبة بالتصميم الذي
-              يناسبك وقم بطباعته الآن
-            </p>
+            <div class="py-2">
+              <div class="flex items-center justify-between">
+                <h4 class="font-normal text-[14px]">طباعة الملابس</h4>
+                <span class="text-[#D6A723] text-[14px]">150.00 ر.س</span>
+              </div>
+              <p class="my-2 text-[13px] text-[#505050]">
+                صمم بنفسك ما يعبر عنك , قم باختيار الجملة المناسبة بالتصميم الذي
+                يناسبك وقم بطباعته الآن
+              </p>
+            </div>
           </div>
         </div>
-        <div
-          class="border border-[#F6F6F6] rounded-[15px] p-4 overflow-hidden w-[420px] shrink-0"
-        >
-          <div class="relative overflow-hidden rounded-[13px]">
-            <img src="./images/bg-12.png" class="w-full h-[200px]" alt="" />
-          </div>
-          <div class="py-2">
-            <div class="flex items-center justify-between">
-              <h4 class="font-normal text-[14px]">طباعة الملابس</h4>
-              <span class="text-[#D6A723] text-[14px]">150.00 ر.س</span>
+        <div class="item">
+          <div
+            class="border border-[#F6F6F6] hover:border-main rounded-[15px] p-4 overflow-hidden lg:w-[95%]"
+          >
+            <div class="relative overflow-hidden rounded-[13px]">
+              <img src="./images/bg-12.png" class="w-full h-[200px]" alt="" />
             </div>
-            <p class="my-2 text-[13px] text-[#505050]">
-              صمم بنفسك ما يعبر عنك , قم باختيار الجملة المناسبة بالتصميم الذي
-              يناسبك وقم بطباعته الآن
-            </p>
+            <div class="py-2">
+              <div class="flex items-center justify-between">
+                <h4 class="font-normal text-[14px]">طباعة الملابس</h4>
+                <span class="text-[#D6A723] text-[14px]">150.00 ر.س</span>
+              </div>
+              <p class="my-2 text-[13px] text-[#505050]">
+                صمم بنفسك ما يعبر عنك , قم باختيار الجملة المناسبة بالتصميم الذي
+                يناسبك وقم بطباعته الآن
+              </p>
+            </div>
           </div>
         </div>
-        <div
-          class="border border-[#F6F6F6] rounded-[15px] p-4 overflow-hidden w-[420px] shrink-0"
-        >
-          <div class="relative overflow-hidden rounded-[13px]">
-            <img src="./images/bg-13.png" class="w-full h-[200px]" alt="" />
-          </div>
-          <div class="py-2">
-            <div class="flex items-center justify-between">
-              <h4 class="font-normal text-[14px]">طباعة الملابس</h4>
-              <span class="text-[#D6A723] text-[14px]">150.00 ر.س</span>
+        <div class="item">
+          <div
+            class="border border-[#F6F6F6] hover:border-main rounded-[15px] p-4 overflow-hidden lg:w-[95%]"
+          >
+            <div class="relative overflow-hidden rounded-[13px]">
+              <img src="./images/bg-12.png" class="w-full h-[200px]" alt="" />
             </div>
-            <p class="my-2 text-[13px] text-[#505050]">
-              صمم بنفسك ما يعبر عنك , قم باختيار الجملة المناسبة بالتصميم الذي
-              يناسبك وقم بطباعته الآن
-            </p>
+            <div class="py-2">
+              <div class="flex items-center justify-between">
+                <h4 class="font-normal text-[14px]">طباعة الملابس</h4>
+                <span class="text-[#D6A723] text-[14px]">150.00 ر.س</span>
+              </div>
+              <p class="my-2 text-[13px] text-[#505050]">
+                صمم بنفسك ما يعبر عنك , قم باختيار الجملة المناسبة بالتصميم الذي
+                يناسبك وقم بطباعته الآن
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -1840,8 +1786,8 @@
       </div>
     </div>
 
-    <!-- Latest Products -->
-    <div class="py-5 overflow-hidden">
+    <!-- Reservations -->
+    <div class="pb-3 overflow-hidden">
       <div class="container">
         <div class="flex items-center justify-between">
           <h1 class="font-medium">حجوزات</h1>
@@ -1849,74 +1795,271 @@
         </div>
       </div>
       <div
-        class="flex items-center overflow-x-auto overflow-y-hidden flex-nowrap gap-x-6 my-5 lg:ps-[145px] ps-[22px] pe-[20px]"
+        id="sliderCustomized"
+        class="owl-carousel owl-theme sliderCustomized lg:ps-[145px] ps-[22px] pe-[20px] pt-6"
       >
-        <div
-          class="border border-[#F6F6F6] rounded-[15px] p-4 overflow-hidden w-[420px] shrink-0"
-        >
-          <div class="relative overflow-hidden rounded-[13px]">
-            <img src="./images/bg-16.png" class="w-full h-[200px]" alt="" />
-          </div>
-          <div class="py-2">
-            <div class="flex items-center justify-between">
-              <h4 class="font-normal text-[14px]">طباعة الملابس</h4>
-              <span class="text-[#D6A723] text-[14px]">150.00 ر.س</span>
+        <div class="item">
+          <div
+            class="border border-[#F6F6F6] hover:border-main rounded-[15px] p-4 overflow-hidden lg:w-[95%]"
+          >
+            <div class="relative overflow-hidden rounded-[13px]">
+              <img src="./images/bg-16.png" class="w-full h-[200px]" alt="" />
             </div>
-            <p class="my-2 text-[13px] text-[#505050]">
-              صمم بنفسك ما يعبر عنك , قم باختيار الجملة المناسبة بالتصميم الذي
-              يناسبك وقم بطباعته الآن
-            </p>
+            <div class="py-2">
+              <div class="flex items-center justify-between">
+                <h4 class="font-normal text-[14px]">طباعة الملابس</h4>
+                <span class="text-[#D6A723] text-[14px]">150.00 ر.س</span>
+              </div>
+              <p class="my-2 text-[13px] text-[#505050]">
+                صمم بنفسك ما يعبر عنك , قم باختيار الجملة المناسبة بالتصميم الذي
+                يناسبك وقم بطباعته الآن
+              </p>
+            </div>
           </div>
         </div>
-        <div
-          class="border border-[#F6F6F6] rounded-[15px] p-4 overflow-hidden w-[420px] shrink-0"
-        >
-          <div class="relative overflow-hidden rounded-[13px]">
-            <img src="./images/bg-11.png" class="w-full h-[200px]" alt="" />
-          </div>
-          <div class="py-2">
-            <div class="flex items-center justify-between">
-              <h4 class="font-normal text-[14px]">طباعة الملابس</h4>
-              <span class="text-[#D6A723] text-[14px]">150.00 ر.س</span>
+        <div class="item">
+          <div
+            class="border border-[#F6F6F6] hover:border-main rounded-[15px] p-4 overflow-hidden lg:w-[95%]"
+          >
+            <div class="relative overflow-hidden rounded-[13px]">
+              <img src="./images/bg-16.png" class="w-full h-[200px]" alt="" />
             </div>
-            <p class="my-2 text-[13px] text-[#505050]">
-              صمم بنفسك ما يعبر عنك , قم باختيار الجملة المناسبة بالتصميم الذي
-              يناسبك وقم بطباعته الآن
-            </p>
+            <div class="py-2">
+              <div class="flex items-center justify-between">
+                <h4 class="font-normal text-[14px]">طباعة الملابس</h4>
+                <span class="text-[#D6A723] text-[14px]">150.00 ر.س</span>
+              </div>
+              <p class="my-2 text-[13px] text-[#505050]">
+                صمم بنفسك ما يعبر عنك , قم باختيار الجملة المناسبة بالتصميم الذي
+                يناسبك وقم بطباعته الآن
+              </p>
+            </div>
           </div>
         </div>
-        <div
-          class="border border-[#F6F6F6] rounded-[15px] p-4 overflow-hidden w-[420px] shrink-0"
-        >
-          <div class="relative overflow-hidden rounded-[13px]">
-            <img src="./images/bg-16.png" class="w-full h-[200px]" alt="" />
-          </div>
-          <div class="py-2">
-            <div class="flex items-center justify-between">
-              <h4 class="font-normal text-[14px]">طباعة الملابس</h4>
-              <span class="text-[#D6A723] text-[14px]">150.00 ر.س</span>
+        <div class="item">
+          <div
+            class="border border-[#F6F6F6] hover:border-main rounded-[15px] p-4 overflow-hidden lg:w-[95%]"
+          >
+            <div class="relative overflow-hidden rounded-[13px]">
+              <img src="./images/bg-16.png" class="w-full h-[200px]" alt="" />
             </div>
-            <p class="my-2 text-[13px] text-[#505050]">
-              صمم بنفسك ما يعبر عنك , قم باختيار الجملة المناسبة بالتصميم الذي
-              يناسبك وقم بطباعته الآن
-            </p>
+            <div class="py-2">
+              <div class="flex items-center justify-between">
+                <h4 class="font-normal text-[14px]">طباعة الملابس</h4>
+                <span class="text-[#D6A723] text-[14px]">150.00 ر.س</span>
+              </div>
+              <p class="my-2 text-[13px] text-[#505050]">
+                صمم بنفسك ما يعبر عنك , قم باختيار الجملة المناسبة بالتصميم الذي
+                يناسبك وقم بطباعته الآن
+              </p>
+            </div>
           </div>
         </div>
-        <div
-          class="border border-[#F6F6F6] rounded-[15px] p-4 overflow-hidden w-[420px] shrink-0"
-        >
-          <div class="relative overflow-hidden rounded-[13px]">
-            <img src="./images/bg-11.png" class="w-full h-[200px]" alt="" />
-          </div>
-          <div class="py-2">
-            <div class="flex items-center justify-between">
-              <h4 class="font-normal text-[14px]">طباعة الملابس</h4>
-              <span class="text-[#D6A723] text-[14px]">150.00 ر.س</span>
+        <div class="item">
+          <div
+            class="border border-[#F6F6F6] hover:border-main rounded-[15px] p-4 overflow-hidden lg:w-[95%]"
+          >
+            <div class="relative overflow-hidden rounded-[13px]">
+              <img src="./images/bg-16.png" class="w-full h-[200px]" alt="" />
             </div>
-            <p class="my-2 text-[13px] text-[#505050]">
-              صمم بنفسك ما يعبر عنك , قم باختيار الجملة المناسبة بالتصميم الذي
-              يناسبك وقم بطباعته الآن
-            </p>
+            <div class="py-2">
+              <div class="flex items-center justify-between">
+                <h4 class="font-normal text-[14px]">طباعة الملابس</h4>
+                <span class="text-[#D6A723] text-[14px]">150.00 ر.س</span>
+              </div>
+              <p class="my-2 text-[13px] text-[#505050]">
+                صمم بنفسك ما يعبر عنك , قم باختيار الجملة المناسبة بالتصميم الذي
+                يناسبك وقم بطباعته الآن
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Customer Reviews -->
+    <div class="pb-5 overflow-hidden">
+      <div class="container">
+        <div class="flex items-center justify-between">
+          <h1 class="font-medium">آراء العملاء</h1>
+          <button
+            data-modal-target="default-modal"
+            data-modal-toggle="default-modal"
+            class="block text-white bg-main font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+            type="button"
+          >
+            اضف تعليق
+          </button>
+        </div>
+      </div>
+      <div
+        id="sliderCustomer"
+        class="owl-carousel owl-theme sliderCustomer lg:ps-[145px] ps-[22px] pe-[20px] pt-6"
+      >
+        <div class="item">
+          <div
+            class="border border-[#F6F6F6] hover:border-main rounded-[15px] p-3 overflow-hidden flex gap-3"
+          >
+            <div
+              class="relative overflow-hidden rounded-[10px] w-[50px] h-[50px]"
+            >
+              <img src="./images/bg-16.png" class="w-[50px] h-[50px]" alt="" />
+            </div>
+            <div class="flex-1">
+              <div class="flex items-center justify-between">
+                <h4 class="font-normal text-[14px]">عبدالله أحمد</h4>
+                <span class="text-[14px]">13/5/2024</span>
+              </div>
+              <p class="my-2 text-[13px] text-[#505050]">منتج ممتاز</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div
+            class="border border-[#F6F6F6] hover:border-main rounded-[15px] p-3 overflow-hidden flex gap-3"
+          >
+            <div
+              class="relative overflow-hidden rounded-[10px] w-[50px] h-[50px]"
+            >
+              <img src="./images/bg-16.png" class="w-[50px] h-[50px]" alt="" />
+            </div>
+            <div class="flex-1">
+              <div class="flex items-center justify-between">
+                <h4 class="font-normal text-[14px]">عبدالله أحمد</h4>
+                <span class="text-[14px]">13/5/2024</span>
+              </div>
+              <p class="my-2 text-[13px] text-[#505050]">منتج ممتاز</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div
+            class="border border-[#F6F6F6] hover:border-main rounded-[15px] p-3 overflow-hidden flex gap-3"
+          >
+            <div
+              class="relative overflow-hidden rounded-[10px] w-[50px] h-[50px]"
+            >
+              <img src="./images/bg-16.png" class="w-[50px] h-[50px]" alt="" />
+            </div>
+            <div class="flex-1">
+              <div class="flex items-center justify-between">
+                <h4 class="font-normal text-[14px]">عبدالله أحمد</h4>
+                <span class="text-[14px]">13/5/2024</span>
+              </div>
+              <p class="my-2 text-[13px] text-[#505050]">منتج ممتاز</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div
+            class="border border-[#F6F6F6] hover:border-main rounded-[15px] p-3 overflow-hidden flex gap-3"
+          >
+            <div
+              class="relative overflow-hidden rounded-[10px] w-[50px] h-[50px]"
+            >
+              <img src="./images/bg-16.png" class="w-[50px] h-[50px]" alt="" />
+            </div>
+            <div class="flex-1">
+              <div class="flex items-center justify-between">
+                <h4 class="font-normal text-[14px]">عبدالله أحمد</h4>
+                <span class="text-[14px]">13/5/2024</span>
+              </div>
+              <p class="my-2 text-[13px] text-[#505050]">منتج ممتاز</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div
+            class="border border-[#F6F6F6] hover:border-main rounded-[15px] p-3 overflow-hidden flex gap-3"
+          >
+            <div
+              class="relative overflow-hidden rounded-[10px] w-[50px] h-[50px]"
+            >
+              <img src="./images/bg-16.png" class="w-[50px] h-[50px]" alt="" />
+            </div>
+            <div class="flex-1">
+              <div class="flex items-center justify-between">
+                <h4 class="font-normal text-[14px]">عبدالله أحمد</h4>
+                <span class="text-[14px]">13/5/2024</span>
+              </div>
+              <p class="my-2 text-[13px] text-[#505050]">منتج ممتاز</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div
+            class="border border-[#F6F6F6] hover:border-main rounded-[15px] p-3 overflow-hidden flex gap-3"
+          >
+            <div
+              class="relative overflow-hidden rounded-[10px] w-[50px] h-[50px]"
+            >
+              <img src="./images/bg-16.png" class="w-[50px] h-[50px]" alt="" />
+            </div>
+            <div class="flex-1">
+              <div class="flex items-center justify-between">
+                <h4 class="font-normal text-[14px]">عبدالله أحمد</h4>
+                <span class="text-[14px]">13/5/2024</span>
+              </div>
+              <p class="my-2 text-[13px] text-[#505050]">منتج ممتاز</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div
+            class="border border-[#F6F6F6] hover:border-main rounded-[15px] p-3 overflow-hidden flex gap-3"
+          >
+            <div
+              class="relative overflow-hidden rounded-[10px] w-[50px] h-[50px]"
+            >
+              <img src="./images/bg-16.png" class="w-[50px] h-[50px]" alt="" />
+            </div>
+            <div class="flex-1">
+              <div class="flex items-center justify-between">
+                <h4 class="font-normal text-[14px]">عبدالله أحمد</h4>
+                <span class="text-[14px]">13/5/2024</span>
+              </div>
+              <p class="my-2 text-[13px] text-[#505050]">منتج ممتاز</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Comment modal -->
+    <div
+      id="default-modal"
+      tabindex="-1"
+      aria-hidden="true"
+      class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full"
+    >
+      <div class="relative w-full max-w-2xl max-h-full">
+        <!-- Modal content -->
+        <div class="relative bg-white rounded-lg shadow">
+          <!-- Modal body -->
+          <div class="p-6 space-y-6">
+            <button
+              type="button"
+              class="bg-transparent"
+              data-modal-hide="default-modal"
+            >
+              <img
+                class="max-w-[20px]"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAgZJREFUaEPtmWtygzAMhPHJ2tzEnKTpSeybND2ZgyjMOCAZrR9QmPCjnSHG7Ke1JQGmO/lhTq6/ewMc7WA1B5xznwRjjPmKoMZzXdc96E8I4Zf+931/rwVeDOCcuxtjPgaRs1ittgcBlcJkA0zC42hrha/GhRC+c0FgAFoqQ8R/stUmLswBgQBqRl3iQCHUAHuIn6EQCBXAnuJRiE2AI8QjEEmAI8VHELe+78c6wh1JAO99aJFt0DmttaJO8Yf/EH3NUhIBMqJPNmurMTJ25JBcYAHQ6M9pT3MdMjZealJqZQG891RpVdFcTpyCQMYy++Rhrb0tz0sA2s3LTspBSBEEg7XKSCsAzTLQWBvPI4nPuFd9gKnPZ7tJEij1/6j4KWgrx1cOIJZqnOByfqZ4mqodQMqJGKJAvBpAu4HZgprqJAvFs/WAW0KnB1DXgKUFmj6+0IV2e0AjfgYugGgDkMrzNdModx+ukEEP7ZoipRmjabFbAOzaSnAd6TWbOXSTIS0yMlZT6a/5QEPkqAuaTZg7JpWir/tQP7kApdTcCKeu2yqQ136xVaH0Z5uyFfl54k0HjoDQiidtaoC9MhMiHgZoDTF8ckq+B+XWI+RAxUfDFy1o1OOLswEWe+N8H/mktw3juvz7aknHy2dWOkHRnp4RxFfmSOoqdgC5WYuxb4AWUUXmPL0DT0s02UBVbAhTAAAAAElFTkSuQmCC"
+              />
+            </button>
+            <h5 class="text-[20px] font-bold text-center !m-0">أضف تعليقك</h5>
+            <form action="">
+              <textarea
+                class="h-[100px] resize-none border border-[#F6F6F6] rounded-[10px] p-3 w-full"
+                placeholder="ادخل ملاحظتك"
+              ></textarea>
+              <button
+                type="submit"
+                class="bg-main w-[90%] my-4 table m-auto h-[45px] text-white rounded-[5px]"
+              >
+                تأكيد
+              </button>
+            </form>
           </div>
         </div>
       </div>
@@ -2030,8 +2173,6 @@
 
     <!-- Plugin Jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- Select2 -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.4/js/select2.min.js"></script>
     <!-- Plugin OwlCarousel 2 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
     <!-- Plugin TailwindCss -->
@@ -2059,7 +2200,7 @@
           extend: {
             boxShadow: {
               custom:
-                "rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px",
+                "rgba(17, 17, 26, 0.1) 0px -13px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px",
             },
             colors: {
               main: "#FFC82C",

@@ -88,10 +88,12 @@ $(document).ready(function () {
     $("body").toggleClass("overflow-hidden");
   });
 
+  const isRtl = $("html").attr("dir") === "rtl";
+
   // Slider Home
-  $("#sliderHome").owlCarousel({
+  $(".sliderHome").owlCarousel({
     loop: true,
-    margin: 0,
+    margin: 1000,
     center: true,
     autoplay: true,
     autoplayTimeout: 7000,
@@ -116,27 +118,113 @@ $(document).ready(function () {
       },
     },
   });
-   // Slider Classification
-   $("#sliderClassification").owlCarousel({
-    loop: true,
-    margin: 0,
+
+  // Slider Classification
+  $(".sliderClassification").owlCarousel({
+    rtl: isRtl,
+    loop: false,
+    margin: 10,
     center: false,
     autoplay: false,
     pagination: false,
     nav: false,
-    navText: [
-      '<i class="icon-arrow-left"></i>',
-      '<i class="icon-arrow-right"></i>',
-    ],
     responsive: {
       0: {
-        items: 2,
+        items: 3,
       },
       900: {
         items: 5,
       },
       1000: {
-        items: 10,
+        items: 12,
+      },
+    },
+  });
+
+  // Slider Products
+  $(".sliderProducts").owlCarousel({
+    rtl: isRtl,
+    loop: false,
+    margin: 0,
+    center: false,
+    autoplay: false,
+    pagination: false,
+    nav: false,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      900: {
+        items: 2,
+      },
+      1000: {
+        items: 4,
+      },
+    },
+  });
+
+  // Slider Groups
+  $(".sliderGroups").owlCarousel({
+    rtl: isRtl,
+    loop: false,
+    margin: 0,
+    center: false,
+    autoplay: false,
+    pagination: false,
+    nav: false,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      900: {
+        items: 2,
+      },
+      1000: {
+        items: 2,
+      },
+    },
+  });
+
+  // Slider Customized
+  $(".sliderCustomized").owlCarousel({
+    rtl: isRtl,
+    loop: false,
+    margin: 0,
+    center: false,
+    autoplay: false,
+    pagination: false,
+    nav: false,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      900: {
+        items: 2,
+      },
+      1000: {
+        items: 3,
+      },
+    },
+  });
+
+  // Slider Customized
+  $(".sliderCustomer").owlCarousel({
+    rtl: isRtl,
+    loop: false,
+    margin: 20,
+    center: false,
+    autoplay: false,
+    pagination: false,
+    nav: false,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      900: {
+        items: 2,
+      },
+      1000: {
+        items: 5,
       },
     },
   });
