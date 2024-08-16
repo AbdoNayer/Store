@@ -59,7 +59,7 @@
         <div class="flex items-center justify-between lg:flex-row flex-col">
           <div class="flex items-center justify-between lg:flex-1 w-full">
             <!-- Logo  -->
-            <a href=""
+            <a href="index.html"
               ><img class="max-w-[130px]" src="./images/logo.png" alt=""
             /></a>
             <div class="flex items-center gap-4">
@@ -155,7 +155,7 @@
 
     <!-- Nav -->
     <nav
-      class="lg:bg-[#F6F6F6] lg:p-4 list-head flex items-center lg:translate-x-[0] rtl:translate-x-[100%] ltr:translate-x-[-100%] transition duration-700 ease-in-out lg:flex-row flex-col lg:relative lg:w-auto lg:h-auto bg-white fixed top-0 rtl:right-0 ltr:left-0 w-[300px] h-screen z-[999]"
+      class="lg:bg-[#F6F6F6] lg:p-4 list-head lg:relative flex items-center lg:!translate-x-[0] rtl:translate-x-[100%] ltr:translate-x-[-100%] transition duration-700 ease-in-out lg:flex-row flex-col lg:relative lg:w-auto lg:h-auto bg-white fixed top-0 rtl:right-0 ltr:left-0 w-[300px] h-screen z-[999]"
     >
       <div class="container">
         <div
@@ -163,11 +163,11 @@
         >
           <div class="flex lg:items-center">
             <ul class="flex lg:items-center lg:flex-row flex-col gap-5">
-              <li><a href="">أحدث المنتجات</a></li>
-              <li><a href="">المجموعات</a></li>
-              <li><a href="">منتج والآخر مجاناً</a></li>
-              <li><a href="">خدمات حسب الطلب</a></li>
-              <li><a href="">حجوزات</a></li>
+              <li><a href="latest-products.html">أحدث المنتجات</a></li>
+              <li><a href="groups.html">المجموعات</a></li>
+              <li><a href="digital-products.html">منتجات رقمية</a></li>
+              <li><a href="customized-services.html">خدمات حسب الطلب</a></li>
+              <li><a href="reservations.html">حجوزات</a></li>
             </ul>
           </div>
           <div
@@ -272,7 +272,7 @@
     </div>
 
     <!-- Slider Head -->
-    <div class="main-body-slider relative pt-5" id="Home">
+    <div class="main-body-slider relative pt-[80px]" id="Home">
       <div class="container">
         <div
           id="sliderHome"
@@ -396,14 +396,14 @@
         <div class="grid grid-cols-12 gap-7">
           <div class="lg:col-span-4 col-span-12 overflow-hidden">
             <div
-              class="border border-main p-7 rounded-[10px]"
+              class="group border border-main p-7 rounded-[10px] hover:bg-[#fff5d6] hover:border-[#fff5d6]"
               data-aos="fade-up"
               data-aos-offset="200"
               data-aos-easing="ease-in-sine"
               data-aos-duration="300"
             >
               <span
-                class="w-[50px] h-[50px] rounded-[5px] flex items-center justify-center bg-[#fff5d6] relative"
+                class="w-[50px] h-[50px] rounded-[5px] flex items-center justify-center bg-[#fff5d6] relative group-hover:bg-white"
               >
                 <img class="max-w-[30px]" src="./images/visw.png" alt="" />
               </span>
@@ -413,14 +413,14 @@
           </div>
           <div class="lg:col-span-4 col-span-12 overflow-hidden">
             <div
-              class="border border-main p-7 rounded-[10px]"
+              class="group border border-main p-7 rounded-[10px] hover:bg-[#fff5d6] hover:border-[#fff5d6]"
               data-aos="fade-up"
               data-aos-offset="200"
               data-aos-easing="ease-in-sine"
               data-aos-duration="400"
             >
               <span
-                class="w-[50px] h-[50px] rounded-[5px] flex items-center justify-center bg-[#fff5d6] relative"
+                class="w-[50px] h-[50px] rounded-[5px] flex items-center justify-center bg-[#fff5d6] relative group-hover:bg-white"
               >
                 <img class="max-w-[30px]" src="./images/frame.png" alt="" />
               </span>
@@ -430,14 +430,14 @@
           </div>
           <div class="lg:col-span-4 col-span-12 overflow-hidden">
             <div
-              class="border border-main p-7 rounded-[10px]"
+              class="group border border-main p-7 rounded-[10px] hover:bg-[#fff5d6] hover:border-[#fff5d6]"
               data-aos="fade-up"
               data-aos-offset="200"
               data-aos-easing="ease-in-sine"
               data-aos-duration="500"
             >
               <span
-                class="w-[50px] h-[50px] rounded-[5px] flex items-center justify-center bg-[#fff5d6] relative"
+                class="w-[50px] h-[50px] rounded-[5px] flex items-center justify-center bg-[#fff5d6] relative group-hover:bg-white"
               >
                 <img class="max-w-[30px]" src="./images/dolar.png" alt="" />
               </span>
@@ -492,7 +492,8 @@
         class="owl-carousel owl-theme sliderClassification lg:ps-[135px] ps-[22px] pe-[20px] pt-6"
       >
         <div class="item flex items-center justify-center flex-col">
-          <div
+          <a
+            href="categories.html"
             class="bg-[#ffde80] w-[80px] h-[80px] flex items-center justify-center rounded-[10px] overflow-hidden"
           >
             <img
@@ -500,7 +501,7 @@
               class="w-[40px] h-[40px] object-contain"
               alt=""
             />
-          </div>
+          </a>
           <h5 class="mt-2 font-normal text-[12px]">الجوالات</h5>
         </div>
         <div class="item flex items-center justify-center flex-col">
@@ -842,7 +843,7 @@
                 />
               </button>
             </div>
-            <div class="py-2">
+            <a href="details-products.html" class="py-2 overflow-hidden block">
               <div class="flex items-center justify-between">
                 <h4 class="font-normal text-[14px]">جوال ايفون 14</h4>
                 <span class="text-[#D6A723] text-[14px]">150.00 ر.س</span>
@@ -878,7 +879,7 @@
                   <span class="text-[13px]">إضافة للسلة</span>
                 </button>
               </div>
-            </div>
+            </a>
           </div>
         </div>
         <div class="item">

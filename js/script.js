@@ -17,8 +17,6 @@ $(window).on("load", function () {
     });
   $("body").css("overflow-y", "auto");
 
-  // $(".sliderHome img, .main-body-slider").height($(document).height());
-
   // Animation Page
   AOS.init();
 });
@@ -228,4 +226,37 @@ $(document).ready(function () {
       },
     },
   });
+
+  // Owl URLHash Main
+  $('.owl-main').owlCarousel({
+    loop: false,
+    margin: 10,
+    nav: false,
+    items: 1,
+    URLhashListener: true,
+    startPosition: 'URLHash'
+  });
+
+  // Owl URLHash Sub Main
+  $(".owl-sub-main").owlCarousel({
+    rtl: isRtl,
+    loop: false,
+    margin: 20,
+    center: false,
+    autoplay: false,
+    pagination: false,
+    nav: false,
+    responsive: {
+      0: {
+        items: 2,
+      },
+      900: {
+        items: 2,
+      },
+      1000: {
+        items: 4,
+      },
+    },
+  });
+
 });

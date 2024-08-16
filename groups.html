@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <!-- Title Page -->
+    <title>Store</title>
+
+    <!-- favicon Page -->
+    <link rel="shortcut icon" href="./images/fav-icon.png" />
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <meta name="HandheldFriendly" content="true" />
+
+    <!-- Fancybox CSS -->
+    <meta name="theme-color" content="#121320" />
+    <meta name="msapplication-navbutton-color" content="#121320" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#121320" />
+
+    <!-- CSS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- CSS OwlCarousel 2 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+    />
+    <!-- CSS Flowbite -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./style/global.css" />
+  </head>
+  <body class="lg:pb-0 pb-[50px]">
+    <div
+      class="overlay fixed top-0 right-0 w-full h-full bg-overlay translate-x-[-100%] transition duration-700 ease-in-out z-[998]"
+    ></div>
+
+    <!-- Loading App -->
+    <div class="loader w-full h-full fixed top-0 right-0 z-[99999]">
+      <div
+        class="spinner w-[60px] h-[60px] absolute top-0 bottom-0 right-0 left-0 m-auto z-[9]"
+      ></div>
+    </div>
+
+    <!-- Header -->
+    <header class="py-5 lg:shadow-0 shadow-sm">
+      <div class="container">
+        <div class="flex items-center justify-between lg:flex-row flex-col">
+          <div class="flex items-center justify-between lg:flex-1 w-full">
+            <!-- Logo  -->
+            <a href="index.html"
+              ><img class="max-w-[130px]" src="./images/logo.png" alt=""
+            /></a>
+            <div class="flex items-center gap-4">
+              <!-- Click BTN On Mobile Open Search  -->
+              <button class="lg:hidden block">
+                <img
+                  class="max-w-[25px]"
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAilJREFUaEPtmcF1wyAMhsU+HiA5NZmsyWR1T8kA3ofUGPIMCBBCtHaffXGSZwOf9EsgRcHOL7Xz9cMB8NcebPKAfgwXUPC5grjYz6O5a/ieb+o83XqBsgD0c/gCALdY2to03HuAVAHox3ALLE5b/PopYRAyAMvqabxRnaZrPX38RhFgpXNMMk7rd6t189284yTmx4i/Ag1XdZ6WMZhXGeA5aGTsERYpkCbPSK/ZE1mAhGzYkyZA2OMZr6c8h04mEIDS46YBQukILN4ZC/OsOk1FOWPGRl/CrMSdIOnheC9hSQkH6Gj9txeWXXzeEN8Xx0gRwG9YPyklRlotAwhqP5QTEgvVMooBQm32BIhl1AWgebfMpOowDkQAvJ2XE1g1pwIdJIza+TAJ7R7AP+szMgPVA/ag2JRKKUHcMwbC+kIkBsJqq3rQCg/4AIyMh+0DzZmBDCCw41OPEuIyktrxUwDdZRSmT1sgVXcv6MdpALFYkLL+/y5oTHGO9X8YmSJXyBgrMouZrAdKk9ZottDZmDt47KZXsYzDdksvTWowLZWfNsrouhS2rTJX3K7tWO7iMSGKAEVPUJO+/9zcjomhGBBkABMTgq3F5FiVEFUAq3qW0yONmmESECwAD2RJBR/2N7+9btyW7+C1QjQB8OQfv9UCsQmAbHwVYmIzAAWI5GFyUwAoxJ48EGU5QkrdnAdWEBfK/w+bBaBmuAOAaqlezx0e6GVZ6ri798ALwRpmQODBJegAAAAASUVORK5CYII="
+                />
+              </button>
+              <!-- Click BTN On Mobile Open Nav  -->
+              <div class="click-nav lg:hidden block relative z-[999]">
+                <div class="handle bg-main"></div>
+                <div class="handle bg-main"></div>
+                <div class="handle bg-main"></div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="lg:flex-2 flex items-center justify-between lg:flex-row flex-col gap-14"
+          >
+            <div
+              class="lg:flex hidden items-center justify-between border border-[#F6F6F6] px-3 py-2 rounded-[4px] w-[400px] overflow-hidden"
+            >
+              <input
+                type="text"
+                placeholder="ابحث عن ما تريد.."
+                class="flex-1 border-0 p-0"
+              />
+              <img
+                class="max-w-[20px]"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAilJREFUaEPtmcF1wyAMhsU+HiA5NZmsyWR1T8kA3ofUGPIMCBBCtHaffXGSZwOf9EsgRcHOL7Xz9cMB8NcebPKAfgwXUPC5grjYz6O5a/ieb+o83XqBsgD0c/gCALdY2to03HuAVAHox3ALLE5b/PopYRAyAMvqabxRnaZrPX38RhFgpXNMMk7rd6t189284yTmx4i/Ag1XdZ6WMZhXGeA5aGTsERYpkCbPSK/ZE1mAhGzYkyZA2OMZr6c8h04mEIDS46YBQukILN4ZC/OsOk1FOWPGRl/CrMSdIOnheC9hSQkH6Gj9txeWXXzeEN8Xx0gRwG9YPyklRlotAwhqP5QTEgvVMooBQm32BIhl1AWgebfMpOowDkQAvJ2XE1g1pwIdJIza+TAJ7R7AP+szMgPVA/ag2JRKKUHcMwbC+kIkBsJqq3rQCg/4AIyMh+0DzZmBDCCw41OPEuIyktrxUwDdZRSmT1sgVXcv6MdpALFYkLL+/y5oTHGO9X8YmSJXyBgrMouZrAdKk9ZottDZmDt47KZXsYzDdksvTWowLZWfNsrouhS2rTJX3K7tWO7iMSGKAEVPUJO+/9zcjomhGBBkABMTgq3F5FiVEFUAq3qW0yONmmESECwAD2RJBR/2N7+9btyW7+C1QjQB8OQfv9UCsQmAbHwVYmIzAAWI5GFyUwAoxJ48EGU5QkrdnAdWEBfK/w+bBaBmuAOAaqlezx0e6GVZ6ri798ALwRpmQODBJegAAAAASUVORK5CYII="
+              />
+            </div>
+            <div class="lg:flex hidden items-center gap-4">
+              <div
+                class="w-[35px] h-[35px] rounded-[5px] flex items-center justify-center bg-[#fff5d6] relative"
+              >
+                <img
+                  class="max-w-[20px]"
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAglJREFUaEPtWWtygyAQXu7jAdJfbU7W5mRNfyUH8D60gE6iLOyDpdaOzmQmRsHvBSzGwc4Pt3P8cBDY2sHDgd054G/DRwTt4BUA3n4+13ju4St8dy9jOi8c/jaENuEz9/G408OFar/ulh2hCNzBO0txD+c1EGH7QCQJRRwkgaiYg0+qI+T6FSZFReCfO0KEEDmgfrCCbTlzMVZFN4oOVJX3cJke+Mh7ilfKNnVI21ecKBO4Dz7DkSJRzaa/DyFuOBGi/SQaKoQ7jShW9Ec0OgzwM+HfbI8TyNW/utN4ppKxGH9p8Cc1BeRrImAuZASw7JfskxDS3OvXQiJC5ATyDIvV14DF2mRRVBFgzMVWgNf9IGMpExNzYDn7bEsgW0TXcf6XBJbzuGIGsYoUMqEwIrQu2rYkwJhQsGk0qzr/0DSaVbm8hWwDF7CShLWQhfy2lgKtY0DyfPNirgv4sHmTFHOTC/hGpmOcivsPTTldjFK8QJfVUicq4HUbmmppbExCCz7AIPfEvZ1oAc8m0ItEK3gRAWsSFuDFBKxIWIFXEWglYQleTUBLwhp8EwEpiR7gmwlwSfQCb0KAIhEXROylsNFqzlrIOGWB6D2qEXgzB8iy41kBQ/DmBKpxMq6fZk3MIrQQGfszxFj5rgQyJzqB7xIhzoC3vKdLhCwBUn0dBCiFel8/HOitMNX/N/FMiEAAE0QvAAAAAElFTkSuQmCC"
+                />
+                <span
+                  class="absolute top-[10px] left-[5px] bg-[#D90303] text-white rounded-full w-[10px] h-[10px] flex items-center justify-center text-[8px] overflow-hidden"
+                  >1</span
+                >
+              </div>
+              <div
+                class="w-[35px] h-[35px] rounded-[5px] flex items-center justify-center bg-[#fff5d6] relative"
+              >
+                <img
+                  class="max-w-[20px]"
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAg1JREFUaEPtmVt2gyAQhof9uIDkqWZlbVZW+5QswP2QorFRHJgLgz05B19VmO+fCwM4ePPHvbn90AD+24NVPOBvXQ8OPp9wPXi4uvP4VQO2DsC9+waAPjJ4cKfxYg1hCrBSPjZ+sdscwgSAYfhWeA/XXw8N7jwOpR4pBvB4uPDsMsgNNYBY9TRSUVipAJ7Gh0TFngE8/IQQCS9DmPhbN1cgBx9Ics9jeLhoQkoHcO88YnkwPJTLbFxnPaeAEANMar5q/KKeuM6j44TEFpZaEQAaOgWJmBBDFEpSgFh9sWJx6CFVTDQmGyChvkgtLONLx5UAmKu/AO28IEhmPUBB7O/CaF8Y2GHEB4hXXFuA0L2u15UqAJva704jG57qK7A84I7PNsJHixd3Asr4VR6oBGoAXIWp77Qebh6glOW+bx6glNIqRI17SBXCusbaZZR7FEMmsVXfTnkC3VszVvssQML4sP0Tb2BIgPkwbL9NJeZKAhxp/F8eYLs9Yr+cBsCOSyooz+hMwyfJ5i4HsN24H2B8zhOposEGsK46ZE4wm0c2ADVh7ffFHqhtIDW+BgA7IqfmqfVekcSvS4rUUXktY+Nxsyd+5Ep8lJXaeRrAqnbjrQB6mmXXiph6gHnZwT4y4YSVKcDUtuRvbEyND/OZA0wQc1O2vsxg3R1wFI+/qQKgMUT7TwPQKmf139t74AHb2UBAKGpfKwAAAABJRU5ErkJggg=="
+                />
+                <span
+                  class="absolute top-[10px] left-[5px] bg-[#D90303] text-white rounded-full w-[10px] h-[10px] flex items-center justify-center text-[8px] overflow-hidden"
+                  >1</span
+                >
+              </div>
+              <a href="login.html" class="flex items-center gap-3">
+                <div
+                  class="w-[35px] h-[35px] rounded-[5px] flex items-center justify-center bg-[#fff5d6] relative"
+                >
+                  <img
+                    class="max-w-[20px]"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAjlJREFUaEPtmFt2wiAQhof9ZAH2qbqy6sqaPukCsh8sJKSQcJlbYj0nvug5Qvg/5meYjIE3/5g31w8HwKsjqB4Be+/OYOBrAjtP3z1Y+HG/zcdw1YRWA4iEB9FlnRZuWiAqAPbeXaNdx22wEoQYgCU+ICpAiAAq4p3nnU16p9XbCyA+G39RsnAJ43ChS0fJAB6dXS1aEVQA7s1puHDE+6TAnZgVg7DEdNi/k3UFUdADQIifrf/oHECcrdhR4AMsRRB2MROFlwAk/jengbQZdnF+qPNDNEmLxr6VCpDO1wBIffyGFmIfxFUGIySAZdbkW2gs2sjpkJt+S+meDeBv2HU6hOkGzlac2TvAXUbEBBDDyAByUfBkcPvN831SSowl9rpSFdhHdBPPlxKnEv0vxZwIQrjz4jS6PFSEsjqpVLm1mDpAEo3RnJ+R531ZHZfYUuGbAWgJwz5HlIWwi2w5TgQQvWk5u7hP+4V+HBcs5ToVc7rlgLIASB0IrCpmViIBbCI8BmRAoAFKZQB2g0njCJUtCqAh3ud1nzmnLkRL7Hx2xnQbunjpNCQEDiDXfXAHMWqdtETX/i9eggiIJoB2+VsC4bZcqgB7iU9u8aWlGlGoAyytw8gSVGtl3jGqHYsiQO7gSl48sCDUxlcNIO0477D7s5XWPadiO74MQHgIdnex4yiNLwqAqIuMFe/GaQGIOm8Uwbmx2MZXLQIHgCQK4ghIFt9zbrOU2FMMZ60DgLNrmnOOCGjuJudZT6PPUEATjvZJAAAAAElFTkSuQmCC"
+                  />
+                </div>
+                <div class="">
+                  <h6 class="text-[#505050] text-[12px]">أهلاً بك</h6>
+                  <h6 class="text-[14px]">دخول/إنشاء حساب</h6>
+                </div>
+              </a>
+              <div class="flex items-center gap-3">
+                <div
+                  class="w-[35px] h-[35px] rounded-[5px] flex items-center justify-center bg-[#fff5d6] relative"
+                >
+                  <img
+                    class="max-w-[20px]"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAfJJREFUaEPtmDFWwzAMhqUOwMDEMSAHaJiaA8EVCAsX6IEaFtoDBG4BEwss4sWlfSFWgmzLifteMuZFiT5L/y87CCd+4YnnDzPA1BWcK5BcBWiXEZNUBQTPmNfl1Al3v2+1UA/APo7gMTUIN4A9RIF5XaVSCXcAgAqXdZEsQDcx2mYrQNj8uZ9QFUQ2SrusAVi1IJKpggyAqQIua1Fs7FYTJ2FVIZE2kgNwWoi9vJYgbRsXAxgH5YfcmBiW9lwBumIeM3nzra723ACmbiNmJ+AE8NtGo1mq1bKMcbgDjGSptM1KQHj4b/Y4A7BijmCpjG2zG0lfgKhtxG1f+ganH0Dk/ZHVPgPbeC+A2GJmxNt7DvEHiCRmRryW97eHjzcAWwUFMbu0jxlsIaOUEVvwNlvi/WoV0LZUqfdrA6hZqtT7dQGULNXF+1UBeiw1RFpOv3CCRHzIkj34hyII/0GpAMQ47EjP3HoAemcFp9+YagChHeMbrwpAm+tLOMczk8wXfWPx9ilJzDcueBK3k6OXmytAbA4hd+Y+wRqISrx9/RiC8I07vFOlAmYFLxZPx+SP9gRrzOv7PgDfOP050Kz+At+5RIfcxKy+R9wM0F1p31bwjVOvgNHsKYtYYpWxnlFxoVjJSd47A0hWKeYzcwVirq7k3T9ggzJAeLUgqwAAAABJRU5ErkJggg=="
+                  />
+                </div>
+                <div class="">
+                  <h6 class="text-[#505050] text-[12px]">سلة المشتريات</h6>
+                  <h6 class="text-[14px]">300.00 ر.س</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Nav -->
+    <nav
+      class="lg:bg-[#F6F6F6] lg:p-4 list-head lg:relative flex items-center lg:!translate-x-[0] rtl:translate-x-[100%] ltr:translate-x-[-100%] transition duration-700 ease-in-out lg:flex-row flex-col lg:relative lg:w-auto lg:h-auto bg-white fixed top-0 rtl:right-0 ltr:left-0 w-[300px] h-screen z-[999]"
+    >
+      <div class="container">
+        <div
+          class="flex lg:items-center justify-between lg:flex-row flex-col py-6 lg:p-0"
+        >
+          <div class="flex lg:items-center">
+            <ul class="flex lg:items-center lg:flex-row flex-col gap-5">
+              <li><a href="latest-products.html">أحدث المنتجات</a></li>
+              <li><a href="groups.html">المجموعات</a></li>
+              <li><a href="digital-products.html">منتجات رقمية</a></li>
+              <li><a href="customized-services.html">خدمات حسب الطلب</a></li>
+              <li><a href="reservations.html">حجوزات</a></li>
+            </ul>
+          </div>
+          <div
+            class="flex lg:items-center lg:flex-row flex-col gap-x-6 lg:m-0 my-2"
+          >
+            <div class="flex items-center gap-1 lg:m-0 my-2">
+              <select
+                name=""
+                id=""
+                class="border-0 !bg-transparent !p-0 !bg-none text-[13px]"
+              >
+                <option value="">العربية</option>
+                <option value="">English</option>
+              </select>
+              <img
+                class="max-w-[20px]"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAARBJREFUaEPtl1EOwjAMQ7ObwcmAk42jQT6KULUOmpcITbg/Q6ri+dnd0BY7+FoO7t8E8OsG1YAagAnoCMEA8bgawBFCATUAA8TjagBHCAXUAAwQj/99Ayczu8MYkQZp4GpmFzO7PQH8d2RhjShAu3EzHYHI0Ah9Unrl60bcMxC9+SZ3nj2SWQ3MNDEyPxPAK78ogAtEjERmdp8tAjALkW7eDVCAbyFKzGcBfILwfX/d9it05nuRjAaa5ijlrTOcYj6zgRmINPMVAHvHyfdSzVcBjCDSzVcC9BAl5qsBGsT7dfdPKbKZ+RaK3B/PCABHCAXUAAwQj6sBHCEUUAMwQDyuBnCEUEANwADxuBrAEUKBB7c/LDHYu3A3AAAAAElFTkSuQmCC"
+              />
+            </div>
+            <div class="flex items-center gap-1 lg:m-0 my-2">
+              <img src="./images/saudi.png" class="max-w-[20px]" alt="" />
+              <select
+                name=""
+                id=""
+                class="border-0 !bg-transparent !p-0 !bg-none text-[13px]"
+              >
+                <option value="">ريال سعودي</option>
+                <option value="">جنية مصري</option>
+              </select>
+              <img
+                class="max-w-[20px]"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAARBJREFUaEPtl1EOwjAMQ7ObwcmAk42jQT6KULUOmpcITbg/Q6ri+dnd0BY7+FoO7t8E8OsG1YAagAnoCMEA8bgawBFCATUAA8TjagBHCAXUAAwQj/99Ayczu8MYkQZp4GpmFzO7PQH8d2RhjShAu3EzHYHI0Ah9Unrl60bcMxC9+SZ3nj2SWQ3MNDEyPxPAK78ogAtEjERmdp8tAjALkW7eDVCAbyFKzGcBfILwfX/d9it05nuRjAaa5ijlrTOcYj6zgRmINPMVAHvHyfdSzVcBjCDSzVcC9BAl5qsBGsT7dfdPKbKZ+RaK3B/PCABHCAXUAAwQj6sBHCEUUAMwQDyuBnCEUEANwADxuBrAEUKBB7c/LDHYu3A3AAAAAElFTkSuQmCC"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Tabs Mobile -->
+    <div
+      class="lg:hidden block fixed bottom-0 right-0 w-full drop-shadow-2xl bg-white z-[99]"
+    >
+      <ul class="flex items-center justify-between g-2">
+        <li class="flex-1 text-center">
+          <a
+            href=""
+            class="w-[45px] h-[45px] shadow-xl flex items-center justify-center rounded-full m-auto bg-white relative top-[-15px]"
+            ><img
+              class="max-w-[20px]"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAZ9JREFUaEPtmU1ygzAMheX7cIBkl5ysycnKLjkA93EGCmlpsP30Z4YZs42Q3ifJim0CHfwJB9dPDWDvCrpVID66CwX6IqILRbqH83DzgHUBiI/uNov/1ewEYQ6wKX7BcIAwBciKd4IwA4DEO0CYACTFR7pPmn8W8/oxaic1QE78MnkQG+mEUgFwhHFsOTBiAIkgyTslGBGARojm3S0YNoCFAAsfCwwLwDKwlS8YwCrg3zaw8AkBWARKLUat7yKANkBpioy/a2JkATSOEeEW7ZQEqCn+vUXa2oZPJaJrOA89a4zGZ/c9HUZWafI7mBQg+nAarlyAWFt8DiKchs1uSbfQs1sBpBxwex21j2D8BoBmlGtXtQKrGwhEKXCYqQvwr18RhskmMx6rAbDOwp9kyfFYD0Ca/RkmNd12AyiNW1QYaqceo2ig958UON9Rvw0AzVSrgNdeqFUgkVk0MW0Ro5lqi1i7iOENmpOh5ET2eSZ2Eld0m9l+524lxq+MI8TuT25/Jb/YqoPVz59oN69URglFgDo65VEagDx3Nm8evgIvrknBQErO03wAAAAASUVORK5CYII="
+            />
+          </a>
+        </li>
+        <li class="flex-1">
+          <a
+            href=""
+            class="w-[45px] h-[45px] shadow-xl flex items-center justify-center rounded-full m-auto bg-white relative top-[-15px]"
+            ><img
+              class="max-w-[20px]"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAglJREFUaEPtWWtygyAQXu7jAdJfbU7W5mRNfyUH8D60gE6iLOyDpdaOzmQmRsHvBSzGwc4Pt3P8cBDY2sHDgd054G/DRwTt4BUA3n4+13ju4St8dy9jOi8c/jaENuEz9/G408OFar/ulh2hCNzBO0txD+c1EGH7QCQJRRwkgaiYg0+qI+T6FSZFReCfO0KEEDmgfrCCbTlzMVZFN4oOVJX3cJke+Mh7ilfKNnVI21ecKBO4Dz7DkSJRzaa/DyFuOBGi/SQaKoQ7jShW9Ec0OgzwM+HfbI8TyNW/utN4ppKxGH9p8Cc1BeRrImAuZASw7JfskxDS3OvXQiJC5ATyDIvV14DF2mRRVBFgzMVWgNf9IGMpExNzYDn7bEsgW0TXcf6XBJbzuGIGsYoUMqEwIrQu2rYkwJhQsGk0qzr/0DSaVbm8hWwDF7CShLWQhfy2lgKtY0DyfPNirgv4sHmTFHOTC/hGpmOcivsPTTldjFK8QJfVUicq4HUbmmppbExCCz7AIPfEvZ1oAc8m0ItEK3gRAWsSFuDFBKxIWIFXEWglYQleTUBLwhp8EwEpiR7gmwlwSfQCb0KAIhEXROylsNFqzlrIOGWB6D2qEXgzB8iy41kBQ/DmBKpxMq6fZk3MIrQQGfszxFj5rgQyJzqB7xIhzoC3vKdLhCwBUn0dBCiFel8/HOitMNX/N/FMiEAAE0QvAAAAAElFTkSuQmCC"
+            />
+            <span
+              class="absolute top-[12px] left-[6px] bg-[#D90303] text-white rounded-full w-[12px] h-[12px] flex items-center justify-center text-[9px] overflow-hidden"
+              >1</span
+            ></a
+          >
+        </li>
+        <li class="flex-1">
+          <a
+            href=""
+            class="w-[45px] h-[45px] shadow-xl flex items-center justify-center rounded-full m-auto bg-white relative top-[-15px]"
+            ><img
+              class="max-w-[20px]"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAg1JREFUaEPtmVt2gyAQhof9uIDkqWZlbVZW+5QswP2QorFRHJgLgz05B19VmO+fCwM4ePPHvbn90AD+24NVPOBvXQ8OPp9wPXi4uvP4VQO2DsC9+waAPjJ4cKfxYg1hCrBSPjZ+sdscwgSAYfhWeA/XXw8N7jwOpR4pBvB4uPDsMsgNNYBY9TRSUVipAJ7Gh0TFngE8/IQQCS9DmPhbN1cgBx9Ics9jeLhoQkoHcO88YnkwPJTLbFxnPaeAEANMar5q/KKeuM6j44TEFpZaEQAaOgWJmBBDFEpSgFh9sWJx6CFVTDQmGyChvkgtLONLx5UAmKu/AO28IEhmPUBB7O/CaF8Y2GHEB4hXXFuA0L2u15UqAJva704jG57qK7A84I7PNsJHixd3Asr4VR6oBGoAXIWp77Qebh6glOW+bx6glNIqRI17SBXCusbaZZR7FEMmsVXfTnkC3VszVvssQML4sP0Tb2BIgPkwbL9NJeZKAhxp/F8eYLs9Yr+cBsCOSyooz+hMwyfJ5i4HsN24H2B8zhOposEGsK46ZE4wm0c2ADVh7ffFHqhtIDW+BgA7IqfmqfVekcSvS4rUUXktY+Nxsyd+5Ep8lJXaeRrAqnbjrQB6mmXXiph6gHnZwT4y4YSVKcDUtuRvbEyND/OZA0wQc1O2vsxg3R1wFI+/qQKgMUT7TwPQKmf139t74AHb2UBAKGpfKwAAAABJRU5ErkJggg=="
+            />
+            <span
+              class="absolute top-[12px] left-[8px] bg-[#D90303] text-white rounded-full w-[12px] h-[12px] flex items-center justify-center text-[9px] overflow-hidden"
+              >1</span
+            ></a
+          >
+        </li>
+        <li class="flex-1">
+          <a
+            href=""
+            class="w-[45px] h-[45px] shadow-xl flex items-center justify-center rounded-full m-auto bg-white relative top-[-15px]"
+            ><img
+              class="max-w-[20px]"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAjlJREFUaEPtmFt2wiAQhof9ZAH2qbqy6sqaPukCsh8sJKSQcJlbYj0nvug5Qvg/5meYjIE3/5g31w8HwKsjqB4Be+/OYOBrAjtP3z1Y+HG/zcdw1YRWA4iEB9FlnRZuWiAqAPbeXaNdx22wEoQYgCU+ICpAiAAq4p3nnU16p9XbCyA+G39RsnAJ43ChS0fJAB6dXS1aEVQA7s1puHDE+6TAnZgVg7DEdNi/k3UFUdADQIifrf/oHECcrdhR4AMsRRB2MROFlwAk/jengbQZdnF+qPNDNEmLxr6VCpDO1wBIffyGFmIfxFUGIySAZdbkW2gs2sjpkJt+S+meDeBv2HU6hOkGzlac2TvAXUbEBBDDyAByUfBkcPvN831SSowl9rpSFdhHdBPPlxKnEv0vxZwIQrjz4jS6PFSEsjqpVLm1mDpAEo3RnJ+R531ZHZfYUuGbAWgJwz5HlIWwi2w5TgQQvWk5u7hP+4V+HBcs5ToVc7rlgLIASB0IrCpmViIBbCI8BmRAoAFKZQB2g0njCJUtCqAh3ud1nzmnLkRL7Hx2xnQbunjpNCQEDiDXfXAHMWqdtETX/i9eggiIJoB2+VsC4bZcqgB7iU9u8aWlGlGoAyytw8gSVGtl3jGqHYsiQO7gSl48sCDUxlcNIO0477D7s5XWPadiO74MQHgIdnex4yiNLwqAqIuMFe/GaQGIOm8Uwbmx2MZXLQIHgCQK4ghIFt9zbrOU2FMMZ60DgLNrmnOOCGjuJudZT6PPUEATjvZJAAAAAElFTkSuQmCC"
+          /></a>
+        </li>
+        <li class="flex-1">
+          <a
+            href=""
+            class="w-[45px] h-[45px] shadow-xl flex items-center justify-center rounded-full m-auto bg-white relative top-[-15px]"
+            ><img
+              class="max-w-[20px]"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAfJJREFUaEPtmDFWwzAMhqUOwMDEMSAHaJiaA8EVCAsX6IEaFtoDBG4BEwss4sWlfSFWgmzLifteMuZFiT5L/y87CCd+4YnnDzPA1BWcK5BcBWiXEZNUBQTPmNfl1Al3v2+1UA/APo7gMTUIN4A9RIF5XaVSCXcAgAqXdZEsQDcx2mYrQNj8uZ9QFUQ2SrusAVi1IJKpggyAqQIua1Fs7FYTJ2FVIZE2kgNwWoi9vJYgbRsXAxgH5YfcmBiW9lwBumIeM3nzra723ACmbiNmJ+AE8NtGo1mq1bKMcbgDjGSptM1KQHj4b/Y4A7BijmCpjG2zG0lfgKhtxG1f+ganH0Dk/ZHVPgPbeC+A2GJmxNt7DvEHiCRmRryW97eHjzcAWwUFMbu0jxlsIaOUEVvwNlvi/WoV0LZUqfdrA6hZqtT7dQGULNXF+1UBeiw1RFpOv3CCRHzIkj34hyII/0GpAMQ47EjP3HoAemcFp9+YagChHeMbrwpAm+tLOMczk8wXfWPx9ilJzDcueBK3k6OXmytAbA4hd+Y+wRqISrx9/RiC8I07vFOlAmYFLxZPx+SP9gRrzOv7PgDfOP050Kz+At+5RIfcxKy+R9wM0F1p31bwjVOvgNHsKYtYYpWxnlFxoVjJSd47A0hWKeYzcwVirq7k3T9ggzJAeLUgqwAAAABJRU5ErkJggg=="
+          /></a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Groups -->
+    <div class="pb-5 overflow-hidden">
+      <div class="container">
+        <div class="flex items-center justify-between pt-[30px]">
+          <span class="flex-1"></span>
+          <h1 class="font-medium text-center flex-1 text-[18px]">المجموعات</h1>
+          <div class="flex flex-1 justify-end">
+            <div
+              class="border border-[#F6F6F6] rounded-[7px] py-2 px-3 flex items-center gap-3"
+            >
+              <h4 class="text-[12px] font-medium">ترتيب حسب :</h4>
+              <div
+                class="border border-[#F6F6F6] py-2 px-1 rounded-[5px] flex items-center justify-between gap-1 lg:m-0 my-2"
+              >
+                <select
+                  name=""
+                  id=""
+                  class="border-0 !bg-transparent !p-0 !bg-none text-[12px] font-medium"
+                >
+                  <option value="">الآكثر مبيعا</option>
+                  <option value="">الاقل مبيعا</option>
+                </select>
+                <img
+                  class="max-w-[18px]"
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAARBJREFUaEPtl1EOwjAMQ7ObwcmAk42jQT6KULUOmpcITbg/Q6ri+dnd0BY7+FoO7t8E8OsG1YAagAnoCMEA8bgawBFCATUAA8TjagBHCAXUAAwQj/99Ayczu8MYkQZp4GpmFzO7PQH8d2RhjShAu3EzHYHI0Ah9Unrl60bcMxC9+SZ3nj2SWQ3MNDEyPxPAK78ogAtEjERmdp8tAjALkW7eDVCAbyFKzGcBfILwfX/d9it05nuRjAaa5ijlrTOcYj6zgRmINPMVAHvHyfdSzVcBjCDSzVcC9BAl5qsBGsT7dfdPKbKZ+RaK3B/PCABHCAXUAAwQj6sBHCEUUAMwQDyuBnCEUEANwADxuBrAEUKBB7c/LDHYu3A3AAAAAElFTkSuQmCC"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-12 gap-5 py-7">
+          <div class="lg:col-span-6 col-span-12">
+            <div
+              class="border border-[#F6F6F6] hover:border-main rounded-[15px] p-4 overflow-hidden flex items-center lg:flex-row flex-col gap-3"
+            >
+              <div
+                class="relative overflow-hidden rounded-[13px] lg:w-auto w-full"
+              >
+                <img
+                  src="./images/bg-14.png"
+                  class="lg:w-[250px] w-full h-[140px]"
+                  alt=""
+                />
+              </div>
+              <div class="py-2 flex-1">
+                <div class="flex items-center justify-between">
+                  <h4 class="font-normal text-[14px]">مجموعة العناية بالشعر</h4>
+                  <span class="text-[#D6A723] text-[14px]">150.00 ر.س</span>
+                </div>
+                <p class="my-3 text-[13px] text-[#505050]">
+                  أفضل مجموعة للعناية بالشعر ليصبح صحي وطويل وأكثر لمعاناً
+                </p>
+                <div class="flex items-center justify-between mt-3">
+                  <div class="flex items-center justify-center gap-1">
+                    <button
+                      class="flex items-center justify-center rounded-[5px] w-[28px] h-[28px] bg-main"
+                    >
+                      <i class="fa-solid fa-plus text-white text-[13px]"></i>
+                    </button>
+                    <input
+                      type="text"
+                      class="border border-[#F6F6F6] rounded-[5px] text-center w-[50px] p-0 h-[30px]"
+                    />
+                    <button
+                      class="flex items-center justify-center rounded-[5px] w-[28px] h-[28px] bg-[#A5A5A5]"
+                    >
+                      <i class="fa-solid fa-minus text-white text-[13px]"></i>
+                    </button>
+                  </div>
+                  <button
+                    class="border border-main rounded-[5px] p-2 flex items-center justify-center gap-1"
+                  >
+                    <img
+                      class="max-w-[20px]"
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAfJJREFUaEPtmDFWwzAMhqUOwMDEMSAHaJiaA8EVCAsX6IEaFtoDBG4BEwss4sWlfSFWgmzLifteMuZFiT5L/y87CCd+4YnnDzPA1BWcK5BcBWiXEZNUBQTPmNfl1Al3v2+1UA/APo7gMTUIN4A9RIF5XaVSCXcAgAqXdZEsQDcx2mYrQNj8uZ9QFUQ2SrusAVi1IJKpggyAqQIua1Fs7FYTJ2FVIZE2kgNwWoi9vJYgbRsXAxgH5YfcmBiW9lwBumIeM3nzra723ACmbiNmJ+AE8NtGo1mq1bKMcbgDjGSptM1KQHj4b/Y4A7BijmCpjG2zG0lfgKhtxG1f+ganH0Dk/ZHVPgPbeC+A2GJmxNt7DvEHiCRmRryW97eHjzcAWwUFMbu0jxlsIaOUEVvwNlvi/WoV0LZUqfdrA6hZqtT7dQGULNXF+1UBeiw1RFpOv3CCRHzIkj34hyII/0GpAMQ47EjP3HoAemcFp9+YagChHeMbrwpAm+tLOMczk8wXfWPx9ilJzDcueBK3k6OXmytAbA4hd+Y+wRqISrx9/RiC8I07vFOlAmYFLxZPx+SP9gRrzOv7PgDfOP050Kz+At+5RIfcxKy+R9wM0F1p31bwjVOvgNHsKYtYYpWxnlFxoVjJSd47A0hWKeYzcwVirq7k3T9ggzJAeLUgqwAAAABJRU5ErkJggg=="
+                    />
+                    <span class="text-[13px]">إضافة للسلة</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="lg:col-span-6 col-span-12">
+            <div
+              class="border border-[#F6F6F6] hover:border-main rounded-[15px] p-4 overflow-hidden flex items-center lg:flex-row flex-col gap-3"
+            >
+              <div
+                class="relative overflow-hidden rounded-[13px] lg:w-auto w-full"
+              >
+                <img
+                  src="./images/bg-14.png"
+                  class="lg:w-[250px] w-full h-[140px]"
+                  alt=""
+                />
+              </div>
+              <div class="py-2 flex-1">
+                <div class="flex items-center justify-between">
+                  <h4 class="font-normal text-[14px]">مجموعة العناية بالشعر</h4>
+                  <span class="text-[#D6A723] text-[14px]">150.00 ر.س</span>
+                </div>
+                <p class="my-3 text-[13px] text-[#505050]">
+                  أفضل مجموعة للعناية بالشعر ليصبح صحي وطويل وأكثر لمعاناً
+                </p>
+                <div class="flex items-center justify-between mt-3">
+                  <div class="flex items-center justify-center gap-1">
+                    <button
+                      class="flex items-center justify-center rounded-[5px] w-[28px] h-[28px] bg-main"
+                    >
+                      <i class="fa-solid fa-plus text-white text-[13px]"></i>
+                    </button>
+                    <input
+                      type="text"
+                      class="border border-[#F6F6F6] rounded-[5px] text-center w-[50px] p-0 h-[30px]"
+                    />
+                    <button
+                      class="flex items-center justify-center rounded-[5px] w-[28px] h-[28px] bg-[#A5A5A5]"
+                    >
+                      <i class="fa-solid fa-minus text-white text-[13px]"></i>
+                    </button>
+                  </div>
+                  <button
+                    class="border border-main rounded-[5px] p-2 flex items-center justify-center gap-1"
+                  >
+                    <img
+                      class="max-w-[20px]"
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAfJJREFUaEPtmDFWwzAMhqUOwMDEMSAHaJiaA8EVCAsX6IEaFtoDBG4BEwss4sWlfSFWgmzLifteMuZFiT5L/y87CCd+4YnnDzPA1BWcK5BcBWiXEZNUBQTPmNfl1Al3v2+1UA/APo7gMTUIN4A9RIF5XaVSCXcAgAqXdZEsQDcx2mYrQNj8uZ9QFUQ2SrusAVi1IJKpggyAqQIua1Fs7FYTJ2FVIZE2kgNwWoi9vJYgbRsXAxgH5YfcmBiW9lwBumIeM3nzra723ACmbiNmJ+AE8NtGo1mq1bKMcbgDjGSptM1KQHj4b/Y4A7BijmCpjG2zG0lfgKhtxG1f+ganH0Dk/ZHVPgPbeC+A2GJmxNt7DvEHiCRmRryW97eHjzcAWwUFMbu0jxlsIaOUEVvwNlvi/WoV0LZUqfdrA6hZqtT7dQGULNXF+1UBeiw1RFpOv3CCRHzIkj34hyII/0GpAMQ47EjP3HoAemcFp9+YagChHeMbrwpAm+tLOMczk8wXfWPx9ilJzDcueBK3k6OXmytAbA4hd+Y+wRqISrx9/RiC8I07vFOlAmYFLxZPx+SP9gRrzOv7PgDfOP050Kz+At+5RIfcxKy+R9wM0F1p31bwjVOvgNHsKYtYYpWxnlFxoVjJSd47A0hWKeYzcwVirq7k3T9ggzJAeLUgqwAAAABJRU5ErkJggg=="
+                    />
+                    <span class="text-[13px]">إضافة للسلة</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="lg:col-span-6 col-span-12">
+            <div
+              class="border border-[#F6F6F6] hover:border-main rounded-[15px] p-4 overflow-hidden flex items-center lg:flex-row flex-col gap-3"
+            >
+              <div
+                class="relative overflow-hidden rounded-[13px] lg:w-auto w-full"
+              >
+                <img
+                  src="./images/bg-14.png"
+                  class="lg:w-[250px] w-full h-[140px]"
+                  alt=""
+                />
+              </div>
+              <div class="py-2 flex-1">
+                <div class="flex items-center justify-between">
+                  <h4 class="font-normal text-[14px]">مجموعة العناية بالشعر</h4>
+                  <span class="text-[#D6A723] text-[14px]">150.00 ر.س</span>
+                </div>
+                <p class="my-3 text-[13px] text-[#505050]">
+                  أفضل مجموعة للعناية بالشعر ليصبح صحي وطويل وأكثر لمعاناً
+                </p>
+                <div class="flex items-center justify-between mt-3">
+                  <div class="flex items-center justify-center gap-1">
+                    <button
+                      class="flex items-center justify-center rounded-[5px] w-[28px] h-[28px] bg-main"
+                    >
+                      <i class="fa-solid fa-plus text-white text-[13px]"></i>
+                    </button>
+                    <input
+                      type="text"
+                      class="border border-[#F6F6F6] rounded-[5px] text-center w-[50px] p-0 h-[30px]"
+                    />
+                    <button
+                      class="flex items-center justify-center rounded-[5px] w-[28px] h-[28px] bg-[#A5A5A5]"
+                    >
+                      <i class="fa-solid fa-minus text-white text-[13px]"></i>
+                    </button>
+                  </div>
+                  <button
+                    class="border border-main rounded-[5px] p-2 flex items-center justify-center gap-1"
+                  >
+                    <img
+                      class="max-w-[20px]"
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAfJJREFUaEPtmDFWwzAMhqUOwMDEMSAHaJiaA8EVCAsX6IEaFtoDBG4BEwss4sWlfSFWgmzLifteMuZFiT5L/y87CCd+4YnnDzPA1BWcK5BcBWiXEZNUBQTPmNfl1Al3v2+1UA/APo7gMTUIN4A9RIF5XaVSCXcAgAqXdZEsQDcx2mYrQNj8uZ9QFUQ2SrusAVi1IJKpggyAqQIua1Fs7FYTJ2FVIZE2kgNwWoi9vJYgbRsXAxgH5YfcmBiW9lwBumIeM3nzra723ACmbiNmJ+AE8NtGo1mq1bKMcbgDjGSptM1KQHj4b/Y4A7BijmCpjG2zG0lfgKhtxG1f+ganH0Dk/ZHVPgPbeC+A2GJmxNt7DvEHiCRmRryW97eHjzcAWwUFMbu0jxlsIaOUEVvwNlvi/WoV0LZUqfdrA6hZqtT7dQGULNXF+1UBeiw1RFpOv3CCRHzIkj34hyII/0GpAMQ47EjP3HoAemcFp9+YagChHeMbrwpAm+tLOMczk8wXfWPx9ilJzDcueBK3k6OXmytAbA4hd+Y+wRqISrx9/RiC8I07vFOlAmYFLxZPx+SP9gRrzOv7PgDfOP050Kz+At+5RIfcxKy+R9wM0F1p31bwjVOvgNHsKYtYYpWxnlFxoVjJSd47A0hWKeYzcwVirq7k3T9ggzJAeLUgqwAAAABJRU5ErkJggg=="
+                    />
+                    <span class="text-[13px]">إضافة للسلة</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="lg:col-span-6 col-span-12">
+            <div
+              class="border border-[#F6F6F6] hover:border-main rounded-[15px] p-4 overflow-hidden flex items-center lg:flex-row flex-col gap-3"
+            >
+              <div
+                class="relative overflow-hidden rounded-[13px] lg:w-auto w-full"
+              >
+                <img
+                  src="./images/bg-14.png"
+                  class="lg:w-[250px] w-full h-[140px]"
+                  alt=""
+                />
+              </div>
+              <div class="py-2 flex-1">
+                <div class="flex items-center justify-between">
+                  <h4 class="font-normal text-[14px]">مجموعة العناية بالشعر</h4>
+                  <span class="text-[#D6A723] text-[14px]">150.00 ر.س</span>
+                </div>
+                <p class="my-3 text-[13px] text-[#505050]">
+                  أفضل مجموعة للعناية بالشعر ليصبح صحي وطويل وأكثر لمعاناً
+                </p>
+                <div class="flex items-center justify-between mt-3">
+                  <div class="flex items-center justify-center gap-1">
+                    <button
+                      class="flex items-center justify-center rounded-[5px] w-[28px] h-[28px] bg-main"
+                    >
+                      <i class="fa-solid fa-plus text-white text-[13px]"></i>
+                    </button>
+                    <input
+                      type="text"
+                      class="border border-[#F6F6F6] rounded-[5px] text-center w-[50px] p-0 h-[30px]"
+                    />
+                    <button
+                      class="flex items-center justify-center rounded-[5px] w-[28px] h-[28px] bg-[#A5A5A5]"
+                    >
+                      <i class="fa-solid fa-minus text-white text-[13px]"></i>
+                    </button>
+                  </div>
+                  <button
+                    class="border border-main rounded-[5px] p-2 flex items-center justify-center gap-1"
+                  >
+                    <img
+                      class="max-w-[20px]"
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAfJJREFUaEPtmDFWwzAMhqUOwMDEMSAHaJiaA8EVCAsX6IEaFtoDBG4BEwss4sWlfSFWgmzLifteMuZFiT5L/y87CCd+4YnnDzPA1BWcK5BcBWiXEZNUBQTPmNfl1Al3v2+1UA/APo7gMTUIN4A9RIF5XaVSCXcAgAqXdZEsQDcx2mYrQNj8uZ9QFUQ2SrusAVi1IJKpggyAqQIua1Fs7FYTJ2FVIZE2kgNwWoi9vJYgbRsXAxgH5YfcmBiW9lwBumIeM3nzra723ACmbiNmJ+AE8NtGo1mq1bKMcbgDjGSptM1KQHj4b/Y4A7BijmCpjG2zG0lfgKhtxG1f+ganH0Dk/ZHVPgPbeC+A2GJmxNt7DvEHiCRmRryW97eHjzcAWwUFMbu0jxlsIaOUEVvwNlvi/WoV0LZUqfdrA6hZqtT7dQGULNXF+1UBeiw1RFpOv3CCRHzIkj34hyII/0GpAMQ47EjP3HoAemcFp9+YagChHeMbrwpAm+tLOMczk8wXfWPx9ilJzDcueBK3k6OXmytAbA4hd+Y+wRqISrx9/RiC8I07vFOlAmYFLxZPx+SP9gRrzOv7PgDfOP050Kz+At+5RIfcxKy+R9wM0F1p31bwjVOvgNHsKYtYYpWxnlFxoVjJSd47A0hWKeYzcwVirq7k3T9ggzJAeLUgqwAAAABJRU5ErkJggg=="
+                    />
+                    <span class="text-[13px]">إضافة للسلة</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-[#F6F6F6] pt-3">
+      <div class="container">
+        <div class="grid grid-cols-12 lg:gap-5 py-6">
+          <div class="lg:col-span-4 col-span-12 lg:my-3">
+            <div class="my-3">
+              <a href=""><img src="./images/logo.png" alt="" /></a>
+              <p class="text-[#505050] text-[13px] mt-4 pe-7 leading-7">
+                واحد من أهم روّاد المواقع الإلكترونية المتخصصة في مجال لبيع
+                المنتجات والخدمات خلال أقصر وقت ممكن وبأقل جهد يُذكر و يوجد
+                أقسام رئيسية وفرعية لعرض وتصفّح مختلف أنواع السلع والخدمات
+                بالموقع
+              </p>
+            </div>
+          </div>
+          <div class="lg:col-span-4 col-span-12 lg:my-3">
+            <div class="my-3">
+              <h5 class="text-[16px] font-bold">روابط سريعة</h5>
+              <ul class="flex items-center flex-wrap gap-y-3 my-3">
+                <li class="lg:w-[50%] w-full"><a href="">أحدث المنتجات</a></li>
+                <li class="lg:w-[50%] w-full">
+                  <a href="">خدمات حسب الطلب</a>
+                </li>
+                <li class="lg:w-[50%] w-full"><a href="">المجموعات</a></li>
+                <li class="lg:w-[50%] w-full"><a href="">حجوزات</a></li>
+                <li class="lg:w-[50%] w-full">
+                  <a href="">منتج والآخر مجاناً</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="lg:col-span-4 col-span-12 lg:my-3">
+            <div class="my-3">
+              <h5 class="text-[16px] font-bold">روابط التواصل</h5>
+              <ul class="my-3">
+                <li class="my-2">
+                  <a href="" class="flex items-center gap-2"
+                    ><i class="fa-solid fa-phone text-main"></i
+                    ><span>+966 12345678</span></a
+                  >
+                </li>
+                <li class="my-2">
+                  <a href="" class="flex items-center gap-2"
+                    ><i class="fa-solid fa-envelope text-main"></i
+                    ><span>info@example.com</span></a
+                  >
+                </li>
+              </ul>
+              <ul class="flex items-center gap-3 mt-5">
+                <li>
+                  <a href=""
+                    ><img
+                      src="./images/facebook.png"
+                      class="max-w-[27px]"
+                      alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><img
+                      src="./images/twitter.png"
+                      class="max-w-[27px]"
+                      alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><img
+                      src="./images/snapchat.png"
+                      class="max-w-[27px]"
+                      alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><img
+                      src="./images/whatsapp.png"
+                      class="max-w-[27px]"
+                      alt=""
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="p-4 bg-white text-center">
+        <p>جميع الحقوق محفوظة لمتجر الرياض 2024</p>
+      </div>
+    </footer>
+
+    <!-- Plugin Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Plugin OwlCarousel 2 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+    <!-- Plugin TailwindCss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Plugin Flowbite -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+    <!-- Plugin Animation Page -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Plugin Text Animation -->
+    <script src="./js/script.js"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          container: {
+            center: true,
+            padding: {
+              DEFAULT: "1.5rem",
+              sm: "1rem",
+              lg: "2rem",
+              xl: "2rem",
+              "2xl": "3rem",
+            },
+          },
+          extend: {
+            boxShadow: {
+              custom:
+                "rgba(17, 17, 26, 0.1) 0px -13px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px",
+            },
+            colors: {
+              main: "#FFC82C",
+              secondary: "#000",
+              overlay: "rgba(0, 0, 0, 0.4)",
+            },
+          },
+        },
+      };
+    </script>
+  </body>
+</html>
