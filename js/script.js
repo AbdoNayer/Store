@@ -22,6 +22,10 @@ $(window).on("load", function () {
 });
 
 $(document).ready(function () {
+  $(document).ready(function () {
+    $(".select2").select2();
+  });
+
   // Scroll Fix Header
   $(window).scroll(function () {
     if ($(window).width() > 767) {
@@ -86,14 +90,25 @@ $(document).ready(function () {
     $("body").toggleClass("overflow-hidden");
   });
 
+  // Toggle Favorite
+  const favoriteButtons = document.querySelectorAll(".favorite-btn");
+  favoriteButtons.forEach((button) => {
+    button.addEventListener("click", function () {
+      const heartIcon = this.querySelector(".fa-heart");
+      heartIcon.classList.toggle("fa-solid");
+    });
+  });
+
   const isRtl = $("html").attr("dir") === "rtl";
 
   // Slider Home
   $(".sliderHome").owlCarousel({
-    loop: true,
+    loop: false,
     margin: 1000,
-    center: true,
+    center: false,
     autoplay: true,
+    touchDrag: false,
+    mouseDrag: false,
     autoplayTimeout: 7000,
     smartSpeed: 1000,
     animateOut: "fadeOut",
@@ -228,13 +243,13 @@ $(document).ready(function () {
   });
 
   // Owl URLHash Main
-  $('.owl-main').owlCarousel({
+  $(".owl-main").owlCarousel({
     loop: false,
     margin: 10,
     nav: false,
     items: 1,
     URLhashListener: true,
-    startPosition: 'URLHash'
+    startPosition: "URLHash",
   });
 
   // Owl URLHash Sub Main
@@ -258,5 +273,4 @@ $(document).ready(function () {
       },
     },
   });
-
 });
