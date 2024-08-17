@@ -476,6 +476,58 @@ header ul li a::after {
   overflow: auto;
 }
 
+#datepicker-inline .datepicker-picker {
+  background-color: #fafafa;
+  width: 100%;
+  padding: 0;
+}
+#datepicker-inline .datepicker-main {
+  padding: 0;
+}
+#datepicker-inline .datepicker-main .datepicker-view {
+  width: 100%;
+}
+#datepicker-inline .datepicker-main .datepicker-view .days {
+  width: 100%;
+}
+#datepicker-inline .datepicker-main .datepicker-view .days .days-of-week {
+  background-color: #fff;
+  padding: 10px;
+}
+#datepicker-inline .datepicker-main .datepicker-view .days .datepicker-grid {
+  width: 100%;
+}
+#datepicker-inline .datepicker-main .datepicker-view .days .datepicker-grid span {
+  color: #000;
+  margin: 7px 0;
+}
+#datepicker-inline .datepicker-main .datepicker-view .days .datepicker-grid span:hover {
+  background-color: #e9e9e9;
+  color: #000;
+}
+#datepicker-inline .datepicker-main .datepicker-view .days .datepicker-grid span.focused, #datepicker-inline .datepicker-main .datepicker-view .days .datepicker-grid span.selected {
+  background-color: #ffc82c;
+  color: #fff;
+}
+#datepicker-inline .datepicker-controls {
+  padding: 15px;
+}
+#datepicker-inline .datepicker-controls button:nth-child(1), #datepicker-inline .datepicker-controls button:nth-child(3) {
+  background-color: #ffc82c;
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#datepicker-inline .datepicker-controls button:nth-child(2) {
+  background-color: transparent;
+  color: #000000;
+}
+
 @media (max-width: 767px) {
   .main-body-slider #sliderHome .owl-stage-outer {
     overflow: hidden !important;
