@@ -99,6 +99,23 @@ $(document).ready(function () {
     });
   });
 
+  // Count Input Plus Minus
+  $(".minus-btn").click(function () {
+    let $counterInput = $(this).siblings(".counter-input");
+    let currentValue = parseInt($counterInput.val());
+    let minValue = parseInt($counterInput.attr("min"));
+    if (currentValue > minValue) {
+      $counterInput.val(currentValue - 1);
+    }
+  });
+
+  // Handle the click event for plus buttons
+  $(".plus-btn").click(function () {
+    let $counterInput = $(this).siblings(".counter-input");
+    let currentValue = parseInt($counterInput.val());
+    $counterInput.val(currentValue + 1);
+  });
+
   const isRtl = $("html").attr("dir") === "rtl";
 
   // Slider Home
