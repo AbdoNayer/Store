@@ -289,7 +289,9 @@ header {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-
+  img{
+    max-width: 20px;
+  }
   span {
     direction: ltr;
   }
@@ -328,12 +330,16 @@ header {
 .lang_list #loop_list_language {
   padding-left: 0;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
 }
 
 .lang_list #loop_list_language li {
   list-style: none;
   margin-block: 5px;
   cursor: pointer;
+  margin: 0;
 }
 
 .lang_list #loop_list_language li:hover {
@@ -342,22 +348,22 @@ header {
 
 .mobile_select img {
   margin-inline-end: 5px;
-  width: 26px;
+  width: 22px;
   height: 17px;
 }
 
 #loop_list_language img {
-  width: 28px;
+  width: 22px;
   height: 15px;
 }
 
 .lang_list {
   display: none;
   position: absolute;
-  background-color: #f4f3f3;
+  background-color: #fcfcfc;
   width: 100%;
   box-shadow: 1px 1px 1px #ccc;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 10px 5px;
   top: 112%;
   z-index: 99;
