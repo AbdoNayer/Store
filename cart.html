@@ -133,7 +133,7 @@
                   <h6 class="text-[14px]">دخول/إنشاء حساب</h6>
                 </div>
               </a>
-              <div class="flex items-center gap-3">
+              <a href="cart.html" class="flex items-center gap-3">
                 <div
                   class="w-[35px] h-[35px] rounded-[5px] flex items-center justify-center bg-[#fff5d6] relative"
                 >
@@ -146,7 +146,7 @@
                   <h6 class="text-[#505050] text-[12px]">سلة المشتريات</h6>
                   <h6 class="text-[14px]">300.00 ر.س</h6>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
         </div>
@@ -650,50 +650,16 @@
         <div
           class="flex items-center justify-center lg:flex-row flex-col gap-7 pb-9"
         >
-          <button
-            class="w-[300px] h-[50px] text-white rounded-[5px] bg-[#FFC82C] font-medium"
-            data-modal-target="modal-done-cart"
-            data-modal-toggle="modal-done-cart"
+          <a href="completing-order.html"
+            class="w-[300px] h-[50px] text-white rounded-[5px] bg-[#FFC82C] font-medium flex items-center justify-center"
           >
-            إرسال الطلب
-          </button>
+            إستكمال الطلب
+          </a>
           <a
             href="index.html"
             class="w-[300px] h-[50px] text-white rounded-[5px] font-medium bg-[#A5A5A5] flex items-center justify-center"
             >إلغاء الطلب</a
           >
-        </div>
-      </div>
-    </div>
-
-    <!-- Done Cart -->
-    <div
-      id="modal-done-cart"
-      tabindex="-1"
-      aria-hidden="true"
-      class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full"
-    >
-      <div class="relative w-full max-w-md max-h-full">
-        <!-- Modal content -->
-        <div class="relative bg-white rounded-lg shadow">
-          <!-- Modal body -->
-          <div class="p-6 space-y-6">
-            <div class="!m-0 text-center">
-              <img
-                class="max-w-[70px] m-auto"
-                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAidJREFUaEPtmUtuwjAQhu12VdQ93KZlD2cqnAn2pLeBfUVXrSvHikhtj+fBOCEIFiABtv/vn/H4EWsm/rIT128eAGNHUC0Ci93ru4dx9ufjAmXb74xxjX+3zn76z+P6vNECvxpgsZttnHVvxnRiqdJc44GuhREDBOGm5zZVePo/68xWCsIG8Kni7O9BLhduKQFhAWi6DmFwIcgAQ4jvoDgQJIAhxXMhUIAxxHMgigBjir9APC2P6692Hcm9igDz/czVqDbcPk+rM6gT/OEW3KekEghwK+53EFAUsgDDuO/3R/TtB1RaswDz/cuB0zk3pzsxPKNcc1p9L+OxAIB6kzd2kgNhXVqREgBOh1Ln43bUiI8KAOUwz7A0jZIIUN3guK8jPhyM4nlwJQBeSfTEkwFoE5hSSXTFh5jH60EmAjgApZLUEE8EwNaAfD3uT8Za4tXmQEkgdOvAqzZQiVCcxJxTk454fy2THv4zCxn90E6B0BLvY6IOAHXaJYCm+NwEbsfPZRt3Mcs5oy0+N4FBAMngfQhJe2xlZ22nfWeSA40fpF0vlW7s+lCsA41vWMNFzGXo91KxuN9DfYgCvaRK3cXaYaX6vi+2atVzzHVsfem3RyMwBgSWNiKAoSoTRzy4kJVCXLO85g7tWLqRUyjuSBOE67o4hXJuTPYhHwQTthL+qWWbof8es4bq8txuN0pX5ljaqEaAM1iN/4rnQA0xkj4fABLXNNv8AScnlECApHkLAAAAAElFTkSuQmCC"
-              />
-              <h1 class="my-3">تم إرسال الطلب بنجاح</h1>
-            </div>
-            <div class="flex items-center justify-center gap-x-4">
-              <a
-                href="index.html"
-                class="bg-main rounded-[6px] text-white lg:w-[160px] w-full p-2 flex items-center justify-center gap-1"
-              >
-                <span class="text-[15px]">العودة للرئيسية</span>
-              </a>
-            </div>
-          </div>
         </div>
       </div>
     </div>

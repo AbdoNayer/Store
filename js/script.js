@@ -115,6 +115,7 @@ $(document).ready(function () {
     let currentValue = parseInt($counterInput.val());
     $counterInput.val(currentValue + 1);
   });
+  
 
   const isRtl = $("html").attr("dir") === "rtl";
 

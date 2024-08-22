@@ -452,6 +452,15 @@ header {
   color: red;
 }
 
+.range-slider__input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 12px !important;
+  height: 12px !important;
+  border-radius: 10px;
+  background-color: hsl(50, 100%, 50%) !important;
+  overflow: visible;
+}
+
 // media
 @media (max-width: 767px) {
   // Slider Home

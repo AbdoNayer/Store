@@ -133,7 +133,7 @@
                   <h6 class="text-[14px]">دخول/إنشاء حساب</h6>
                 </div>
               </a>
-              <div class="flex items-center gap-3">
+              <a href="cart.html" class="flex items-center gap-3">
                 <div
                   class="w-[35px] h-[35px] rounded-[5px] flex items-center justify-center bg-[#fff5d6] relative"
                 >
@@ -146,7 +146,7 @@
                   <h6 class="text-[#505050] text-[12px]">سلة المشتريات</h6>
                   <h6 class="text-[14px]">300.00 ر.س</h6>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
         </div>
@@ -280,25 +280,243 @@
             أحدث المنتجات
           </h1>
           <div class="flex flex-1 justify-end">
-            <div
-              class="border border-[#F6F6F6] rounded-[7px] py-2 px-3 flex items-center gap-3"
-            >
-              <h4 class="text-[12px] font-medium">ترتيب حسب :</h4>
-              <div
-                class="border border-[#F6F6F6] py-2 px-1 rounded-[5px] flex items-center justify-between gap-1 lg:m-0 my-2"
+            <div class="flex items-center gap-4">
+              <button
+                id="dropdownBgHoverButton"
+                data-dropdown-toggle="dropdownBgHover"
+                class="text-white bg-main font-medium rounded-lg text-sm px-5 py-2.5 text-center flex items-center gap-3"
+                type="button"
               >
-                <select
-                  name=""
-                  id=""
-                  class="border-0 !bg-transparent !p-0 !bg-none text-[12px] font-medium"
+                فلتر حسب
+                <svg
+                  class="w-2.5 h-2.5"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 10 6"
                 >
-                  <option value="">الآكثر مبيعا</option>
-                  <option value="">الاقل مبيعا</option>
-                </select>
-                <img
-                  class="max-w-[18px]"
-                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAARBJREFUaEPtl1EOwjAMQ7ObwcmAk42jQT6KULUOmpcITbg/Q6ri+dnd0BY7+FoO7t8E8OsG1YAagAnoCMEA8bgawBFCATUAA8TjagBHCAXUAAwQj/99Ayczu8MYkQZp4GpmFzO7PQH8d2RhjShAu3EzHYHI0Ah9Unrl60bcMxC9+SZ3nj2SWQ3MNDEyPxPAK78ogAtEjERmdp8tAjALkW7eDVCAbyFKzGcBfILwfX/d9it05nuRjAaa5ijlrTOcYj6zgRmINPMVAHvHyfdSzVcBjCDSzVcC9BAl5qsBGsT7dfdPKbKZ+RaK3B/PCABHCAXUAAwQj6sBHCEUUAMwQDyuBnCEUEANwADxuBrAEUKBB7c/LDHYu3A3AAAAAElFTkSuQmCC"
-                />
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 1 4 4 4-4"
+                  />
+                </svg>
+              </button>
+              <!-- Dropdown menu -->
+              <div
+                id="dropdownBgHover"
+                class="z-10 hidden w-48 bg-white rounded-lg shadow p-3"
+              >
+                <div id="accordion-open" data-accordion="open">
+                  <div id="accordion-open-heading-1">
+                    <button
+                      type="button"
+                      class="flex items-center justify-between w-full pb-3 font-medium gap-3 !text-black !bg-transparent !transform-none"
+                      data-accordion-target="#accordion-open-body-1"
+                      aria-expanded="true"
+                      aria-controls="accordion-open-body-1"
+                    >
+                      <span class="flex items-center text-[12px]"
+                        >تصنيف المنتج</span
+                      >
+                      <svg
+                        data-accordion-icon
+                        class="w-2 h-2 rotate-180 shrink-0"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 10 6"
+                      >
+                        <path
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M9 5 5 1 1 5"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                  <div
+                    id="accordion-open-body-1"
+                    class="hidden"
+                    aria-labelledby="accordion-open-heading-1"
+                  >
+                    <ul
+                      class="space-y-1 text-sm text-gray-700 overflow-hidden border rounded-[5px] p-2"
+                      aria-labelledby="dropdownBgHoverButton"
+                    >
+                      <li class="border-b py-1.5">
+                        <div class="flex items-center p-2 rounded">
+                          <input
+                            id="checkbox-item-4"
+                            type="checkbox"
+                            value=""
+                            class="w-4 h-4 text-main border-main rounded focus:ring-main focus:ring-2"
+                          />
+                          <label
+                            for="checkbox-item-4"
+                            class="w-full ms-2 font-medium rounded text-[12px]"
+                            >الكل</label
+                          >
+                        </div>
+                      </li>
+                      <li class="border-b py-1.5">
+                        <div class="flex items-center p-2 rounded">
+                          <input
+                            id="checkbox-item-4"
+                            type="checkbox"
+                            value=""
+                            class="w-4 h-4 text-main border-main rounded focus:ring-main focus:ring-2"
+                          />
+                          <label
+                            for="checkbox-item-4"
+                            class="w-full ms-2 text-[12px] font-medium rounded"
+                            >جوالات</label
+                          >
+                        </div>
+                        <ul class="ps-6">
+                          <li>
+                            <div class="flex items-center p-2 rounded">
+                              <input
+                                id="checkbox-item-4"
+                                type="checkbox"
+                                value=""
+                                class="w-4 h-4 text-main border-main rounded focus:ring-main focus:ring-2"
+                              />
+                              <label
+                                for="checkbox-item-4"
+                                class="w-full ms-2 text-[12px] font-medium rounded"
+                                >ايفون</label
+                              >
+                            </div>
+                          </li>
+                          <li>
+                            <div class="flex items-center p-2 rounded">
+                              <input
+                                id="checkbox-item-4"
+                                type="checkbox"
+                                value=""
+                                class="w-4 h-4 text-main border-main rounded focus:ring-main focus:ring-2"
+                              />
+                              <label
+                                for="checkbox-item-4"
+                                class="w-full ms-2 text-[12px] font-medium rounded"
+                                >اندرويد</label
+                              >
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="py-1.5">
+                        <div class="flex items-center p-2 rounded">
+                          <input
+                            id="checkbox-item-4"
+                            type="checkbox"
+                            value=""
+                            class="w-4 h-4 text-main border-main rounded focus:ring-main focus:ring-2"
+                          />
+                          <label
+                            for="checkbox-item-4"
+                            class="w-full ms-2 text-[12px] font-medium rounded"
+                            >آجهزه كهربائيه</label
+                          >
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div id="accordion-open-heading-2">
+                    <button
+                      type="button"
+                      class="flex items-center justify-between w-full py-3 font-medium gap-3 !text-black !bg-transparent !transform-none"
+                      data-accordion-target="#accordion-open-body-2"
+                      aria-expanded="true"
+                      aria-controls="accordion-open-body-2"
+                    >
+                      <span class="flex items-center text-[12px]"
+                        >سعر المنتج</span
+                      >
+                      <svg
+                        data-accordion-icon
+                        class="w-2 h-2 rotate-180 shrink-0"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 10 6"
+                      >
+                        <path
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M9 5 5 1 1 5"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                  <div
+                    id="accordion-open-body-2"
+                    class="hidden"
+                    aria-labelledby="accordion-open-heading-2"
+                  >
+                    <div class="border rounded-[5px] p-2 pb-9 relative">
+                      <div class="range-slider" style="direction: ltr">
+                        <input
+                          type="range"
+                          min="0"
+                          max="1000"
+                          step="1"
+                          value="0"
+                          class="range-slider__input"
+                        />
+                        <input
+                          type="range"
+                          min="0"
+                          max="1000"
+                          step="1"
+                          value="1000"
+                          class="range-slider__input"
+                        />
+                        <div class="range-slider__display"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex items-center justify-center gap-3 mt-4">
+                  <button
+                    class=" text-white rounded-[5px] bg-[#FFC82C] text-[11px] px-3 py-1.5 font-medium"
+                    data-modal-target="modal-done-order"
+                    data-modal-toggle="modal-done-order"
+                  >
+                    عرض النتائج
+                  </button>
+                  <button
+                    class="rounded-[5px] font-medium text-[11px] px-3 py-1.5 bg-[#f6f6f6] flex items-center justify-center"
+                    >إعادة تعيين</button>
+                </div>
+              </div>
+              <div
+                class="border border-[#F6F6F6] rounded-[7px] py-2 px-3 flex items-center gap-3"
+              >
+                <h4 class="text-[12px] font-medium">ترتيب حسب :</h4>
+                <div
+                  class="border border-[#F6F6F6] py-2 px-1 rounded-[5px] flex items-center justify-between gap-1 lg:m-0 my-2"
+                >
+                  <select
+                    name=""
+                    id=""
+                    class="border-0 !bg-transparent !p-0 !bg-none text-[12px] font-medium"
+                  >
+                    <option value="">الآكثر مبيعا</option>
+                    <option value="">الاقل مبيعا</option>
+                  </select>
+                  <img
+                    class="max-w-[18px]"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAARBJREFUaEPtl1EOwjAMQ7ObwcmAk42jQT6KULUOmpcITbg/Q6ri+dnd0BY7+FoO7t8E8OsG1YAagAnoCMEA8bgawBFCATUAA8TjagBHCAXUAAwQj/99Ayczu8MYkQZp4GpmFzO7PQH8d2RhjShAu3EzHYHI0Ah9Unrl60bcMxC9+SZ3nj2SWQ3MNDEyPxPAK78ogAtEjERmdp8tAjALkW7eDVCAbyFKzGcBfILwfX/d9it05nuRjAaa5ijlrTOcYj6zgRmINPMVAHvHyfdSzVcBjCDSzVcC9BAl5qsBGsT7dfdPKbKZ+RaK3B/PCABHCAXUAAwQj6sBHCEUUAMwQDyuBnCEUEANwADxuBrAEUKBB7c/LDHYu3A3AAAAAElFTkSuQmCC"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -330,7 +548,11 @@
               </div>
               <div class="py-2">
                 <div class="flex items-center justify-between">
-                  <a href="details-products.html" class="font-normal text-[14px]">جوال ايفون 14</a>
+                  <a
+                    href="details-products.html"
+                    class="font-normal text-[14px]"
+                    >جوال ايفون 14</a
+                  >
                   <span class="text-[#D6A723] text-[14px]">150.00 ر.س</span>
                 </div>
                 <p class="my-2 text-[13px] text-[#505050]">
@@ -393,7 +615,11 @@
               </div>
               <div class="py-2">
                 <div class="flex items-center justify-between">
-                  <a href="details-products.html" class="font-normal text-[14px]">جوال ايفون 14</a>
+                  <a
+                    href="details-products.html"
+                    class="font-normal text-[14px]"
+                    >جوال ايفون 14</a
+                  >
                   <span class="text-[#D6A723] text-[14px]">150.00 ر.س</span>
                 </div>
                 <p class="my-2 text-[13px] text-[#505050]">
@@ -456,7 +682,11 @@
               </div>
               <div class="py-2">
                 <div class="flex items-center justify-between">
-                  <a href="details-products.html" class="font-normal text-[14px]">جوال ايفون 14</a>
+                  <a
+                    href="details-products.html"
+                    class="font-normal text-[14px]"
+                    >جوال ايفون 14</a
+                  >
                   <span class="text-[#D6A723] text-[14px]">150.00 ر.س</span>
                 </div>
                 <p class="my-2 text-[13px] text-[#505050]">
@@ -519,7 +749,11 @@
               </div>
               <div class="py-2">
                 <div class="flex items-center justify-between">
-                  <a href="details-products.html" class="font-normal text-[14px]">جوال ايفون 14</a>
+                  <a
+                    href="details-products.html"
+                    class="font-normal text-[14px]"
+                    >جوال ايفون 14</a
+                  >
                   <span class="text-[#D6A723] text-[14px]">150.00 ر.س</span>
                 </div>
                 <p class="my-2 text-[13px] text-[#505050]">
@@ -582,7 +816,11 @@
               </div>
               <div class="py-2">
                 <div class="flex items-center justify-between">
-                  <a href="details-products.html" class="font-normal text-[14px]">جوال ايفون 14</a>
+                  <a
+                    href="details-products.html"
+                    class="font-normal text-[14px]"
+                    >جوال ايفون 14</a
+                  >
                   <span class="text-[#D6A723] text-[14px]">150.00 ر.س</span>
                 </div>
                 <p class="my-2 text-[13px] text-[#505050]">
@@ -726,6 +964,53 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Plugin Text Animation -->
     <script src="./js/script.js"></script>
+
+    <script>
+      const onInput = (parent, e) => {
+        const slides = parent.querySelectorAll("input");
+        const min = parseFloat(slides[0].min);
+        const max = parseFloat(slides[0].max);
+
+        let slide1 = parseFloat(slides[0].value);
+        let slide2 = parseFloat(slides[1].value);
+
+        const percentageMin = (slide1 / (max - min)) * 100;
+        const percentageMax = (slide2 / (max - min)) * 100;
+
+        parent.style.setProperty("--range-slider-value-low", percentageMin);
+        parent.style.setProperty("--range-slider-value-high", percentageMax);
+
+        if (slide1 > slide2) {
+          const tmp = slide2;
+          slide2 = slide1;
+          slide1 = tmp;
+
+          if (e?.currentTarget === slides[0]) {
+            slides[0].insertAdjacentElement("beforebegin", slides[1]);
+          } else {
+            slides[1].insertAdjacentElement("afterend", slides[0]);
+          }
+        }
+
+        parent
+          .querySelector(".range-slider__display")
+          .setAttribute("data-low", "ر.س" + " " + slide1);
+        parent
+          .querySelector(".range-slider__display")
+          .setAttribute("data-high", "ر.س" + " " + slide2);
+      };
+
+      addEventListener("DOMContentLoaded", (event) => {
+        document.querySelectorAll(".range-slider").forEach((range) =>
+          range.querySelectorAll("input").forEach((input) => {
+            if (input.type === "range") {
+              input.oninput = (e) => onInput(range, e);
+              onInput(range);
+            }
+          })
+        );
+      });
+    </script>
 
     <script>
       tailwind.config = {

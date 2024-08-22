@@ -133,7 +133,7 @@
                   <h6 class="text-[14px]">دخول/إنشاء حساب</h6>
                 </div>
               </a>
-              <div class="flex items-center gap-3">
+              <a href="cart.html" class="flex items-center gap-3">
                 <div
                   class="w-[35px] h-[35px] rounded-[5px] flex items-center justify-center bg-[#fff5d6] relative"
                 >
@@ -146,7 +146,7 @@
                   <h6 class="text-[#505050] text-[12px]">سلة المشتريات</h6>
                   <h6 class="text-[14px]">300.00 ر.س</h6>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
         </div>
@@ -383,6 +383,34 @@
                 >أبل باي</label
               >
             </div>
+            <div class="flex items-center gap-2">
+              <input
+                id="default-radio-1"
+                type="radio"
+                value=""
+                name="default-radio"
+                class="w-5 h-5 text-main border-main rounded-full"
+              />
+              <label
+                for="default-radio-1"
+                class="text-sm font-medium text-[#505050]"
+                >المحفظة</label
+              >
+            </div>
+            <div class="flex items-center gap-2">
+              <input
+                id="default-radio-1"
+                type="radio"
+                value=""
+                name="default-radio"
+                class="w-5 h-5 text-main border-main rounded-full"
+              />
+              <label
+                for="default-radio-1"
+                class="text-sm font-medium text-[#505050]"
+                >عند الاستلام</label
+              >
+            </div>
           </div>
         </div>
         <div
@@ -400,182 +428,6 @@
             class="w-[300px] h-[50px] text-white rounded-[5px] font-medium bg-[#A5A5A5] flex items-center justify-center"
             >إلغاء الطلب</a
           >
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal Add Address -->
-    <div
-      id="modal-add-address"
-      tabindex="-1"
-      aria-hidden="true"
-      class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full"
-    >
-      <div class="relative w-full max-w-[700px] max-h-full">
-        <!-- Modal content -->
-        <div class="relative bg-white rounded-lg shadow">
-          <!-- Modal body -->
-          <div class="p-6 space-y-6">
-            <button
-              type="button"
-              class="bg-transparent"
-              data-modal-hide="modal-add-address"
-            >
-              <img
-                class="max-w-[25px]"
-                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAgZJREFUaEPtmWtygzAMhPHJ2tzEnKTpSeybND2ZgyjMOCAZrR9QmPCjnSHG7Ke1JQGmO/lhTq6/ewMc7WA1B5xznwRjjPmKoMZzXdc96E8I4Zf+931/rwVeDOCcuxtjPgaRs1ittgcBlcJkA0zC42hrha/GhRC+c0FgAFoqQ8R/stUmLswBgQBqRl3iQCHUAHuIn6EQCBXAnuJRiE2AI8QjEEmAI8VHELe+78c6wh1JAO99aJFt0DmttaJO8Yf/EH3NUhIBMqJPNmurMTJ25JBcYAHQ6M9pT3MdMjZealJqZQG891RpVdFcTpyCQMYy++Rhrb0tz0sA2s3LTspBSBEEg7XKSCsAzTLQWBvPI4nPuFd9gKnPZ7tJEij1/6j4KWgrx1cOIJZqnOByfqZ4mqodQMqJGKJAvBpAu4HZgprqJAvFs/WAW0KnB1DXgKUFmj6+0IV2e0AjfgYugGgDkMrzNdModx+ukEEP7ZoipRmjabFbAOzaSnAd6TWbOXSTIS0yMlZT6a/5QEPkqAuaTZg7JpWir/tQP7kApdTcCKeu2yqQ136xVaH0Z5uyFfl54k0HjoDQiidtaoC9MhMiHgZoDTF8ckq+B+XWI+RAxUfDFy1o1OOLswEWe+N8H/mktw3juvz7aknHy2dWOkHRnp4RxFfmSOoqdgC5WYuxb4AWUUXmPL0DT0s02UBVbAhTAAAAAElFTkSuQmCC"
-              />
-            </button>
-            <div class="!m-0">
-              <h1 class="mb-4 text-center font-medium">إضافة عنوان جديد</h1>
-              <form class="grid grid-cols-12 gap-5 py-3">
-                <div class="lg:col-span-6 col-span-12">
-                  <div
-                    class="flex items-center justify-between border border-[#F6F6F6] rounded-[5px] w-full h-[45px] px-3 gap-1 lg:m-0 my-2"
-                  >
-                    <select
-                      name=""
-                      id=""
-                      class="border-0 !bg-transparent !p-0 !bg-none text-[13px] flex-1"
-                    >
-                      <option value="" disabled selected>الدولة</option>
-                      <option value="">مصر</option>
-                      <option value="">السعودية</option>
-                    </select>
-                    <img
-                      class="max-w-[20px]"
-                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAARBJREFUaEPtl1EOwjAMQ7ObwcmAk42jQT6KULUOmpcITbg/Q6ri+dnd0BY7+FoO7t8E8OsG1YAagAnoCMEA8bgawBFCATUAA8TjagBHCAXUAAwQj/99Ayczu8MYkQZp4GpmFzO7PQH8d2RhjShAu3EzHYHI0Ah9Unrl60bcMxC9+SZ3nj2SWQ3MNDEyPxPAK78ogAtEjERmdp8tAjALkW7eDVCAbyFKzGcBfILwfX/d9it05nuRjAaa5ijlrTOcYj6zgRmINPMVAHvHyfdSzVcBjCDSzVcC9BAl5qsBGsT7dfdPKbKZ+RaK3B/PCABHCAXUAAwQj6sBHCEUUAMwQDyuBnCEUEANwADxuBrAEUKBB7c/LDHYu3A3AAAAAElFTkSuQmCC"
-                    />
-                  </div>
-                </div>
-                <div class="lg:col-span-6 col-span-12">
-                  <div
-                    class="flex items-center justify-between border border-[#F6F6F6] rounded-[5px] w-full h-[45px] px-3 gap-1 lg:m-0 my-2"
-                  >
-                    <select
-                      name=""
-                      id=""
-                      class="border-0 !bg-transparent !p-0 !bg-none text-[13px] flex-1"
-                    >
-                      <option value="" disabled selected>الدولة</option>
-                      <option value="">مصر</option>
-                      <option value="">السعودية</option>
-                    </select>
-                    <img
-                      class="max-w-[20px]"
-                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAARBJREFUaEPtl1EOwjAMQ7ObwcmAk42jQT6KULUOmpcITbg/Q6ri+dnd0BY7+FoO7t8E8OsG1YAagAnoCMEA8bgawBFCATUAA8TjagBHCAXUAAwQj/99Ayczu8MYkQZp4GpmFzO7PQH8d2RhjShAu3EzHYHI0Ah9Unrl60bcMxC9+SZ3nj2SWQ3MNDEyPxPAK78ogAtEjERmdp8tAjALkW7eDVCAbyFKzGcBfILwfX/d9it05nuRjAaa5ijlrTOcYj6zgRmINPMVAHvHyfdSzVcBjCDSzVcC9BAl5qsBGsT7dfdPKbKZ+RaK3B/PCABHCAXUAAwQj6sBHCEUUAMwQDyuBnCEUEANwADxuBrAEUKBB7c/LDHYu3A3AAAAAElFTkSuQmCC"
-                    />
-                  </div>
-                </div>
-                <div class="lg:col-span-6 col-span-12">
-                  <div class="w-full">
-                    <input
-                      type="text"
-                      placeholder="الحي"
-                      class="border border-[#F6F6F6] rounded-[5px] w-full h-[45px] px-3 rtl:text-right ltr:text-left text-[13px]"
-                    />
-                  </div>
-                </div>
-                <div class="lg:col-span-6 col-span-12">
-                  <div class="w-full">
-                    <input
-                      type="text"
-                      placeholder="الشارع"
-                      class="border border-[#F6F6F6] rounded-[5px] w-full h-[45px] px-3 rtl:text-right ltr:text-left text-[13px]"
-                    />
-                  </div>
-                </div>
-                <div class="lg:col-span-6 col-span-12">
-                  <div class="w-full">
-                    <input
-                      type="text"
-                      placeholder="الرمز البريدي (اختياري)"
-                      class="border border-[#F6F6F6] rounded-[5px] w-full h-[45px] px-3 rtl:text-right ltr:text-left text-[13px]"
-                    />
-                  </div>
-                </div>
-                <div class="lg:col-span-6 col-span-12">
-                  <div class="w-full">
-                    <input
-                      type="text"
-                      placeholder="وصف البيت (اختياري)"
-                      class="border border-[#F6F6F6] rounded-[5px] w-full h-[45px] px-3 rtl:text-right ltr:text-left text-[13px]"
-                    />
-                  </div>
-                </div>
-                <div class="lg:col-span-12 col-span-12">
-                  <div class="relative">
-                    <input
-                      type="text"
-                      placeholder="ادخل عنوان التوصيل"
-                      class="h-[45px] text-[13px] resize-none border border-[#F6F6F6] rounded-[7px] p-3 w-full"
-                    />
-                    <img
-                      class="max-w-[20px] absolute top-[50%] translate-y-[-50%] rtl:left-[10px] ltr:right-[10px]"
-                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAqdJREFUaEPtWUFywjAMtPsVuJQ+ovCMvKbwGp7R9BGlF/hK03ESM45Gtla2KMMMuQQmiaPV7sqy492DH/7B43dPAPdm0JSBn+N6O7jhIwG1nX/34Tw4/xXOb915bwXcBMDpuPp0zsVgodgG5w8WQJoAfB/Xe7/MOBR8elMrkGoANVkvoOs33WWnRu+cvgolOuckM2rdO38I59fuPP4Pz/zOEisx5p3fxWdQMGoGTsfVwAzeh6DRlxekp2ZCBSAjG/VLYwIyQFTjwQC4l7UaMABpHRcGQKWTCz7q3bvhfc70Ntxbqv8cs5vuAsUG3cRliXsBUlZzwBkQkJQgAEj2keCj9jkQc3ULE+L1QFgQASDZ1wRfAkFZQMqqGgCXPaa0jmU1zgU5gDTAGhmJAOigFADCUMy6NBYjI9EHagA0axRAqbRKAUrXudkZAbCYeamxqHxKxkMC1Iw3tS3CIQ2oNR4wXjFhNFwEwKLXl4xXqhyS3BCGzAEwJs4aT5pPbgKABkgzzE1A8/JxXHGF69P/cam5aMGpXySGqkyMZOVWExnSLIoe4DLM6VwDotAPqQwMVaFwkzQBCf39gvlc8DXygQFoG60QzDT4qPvrlsqLc31u1SYZPFftRQklbcCCXkSf0hxTYg7pRGEGcisn9CUSkNrsqwDMXqALerHZkoLXNINVZTR9iPNCi5Ra18NqBriKNA2i38+xSgZs4shEZuZVS4nbX6pJhBpAztChXKLbg9wuRK0UqwC0gLDQferLagA5P5QyabETp26npTKIysF6WzLG1cRAMktzHziunrhV8FVlNMdI4XtB6IXoVjxseEkBJgwITNAYzII3ZaDUmCUITIO/CYBcia2t8/8qofRlScnsw+dViy+Szc2clI17XDc18RNARQYenoE/N0lATyZdBGsAAAAASUVORK5CYII="
-                    />
-                  </div>
-                </div>
-              </form>
-            </div>
-            <div class="flex items-center justify-center gap-x-4">
-              <button
-                data-modal-hide="modal-add-address"
-                class="bg-main rounded-[6px] text-white lg:w-[90%] w-full px-2 h-[45px] flex items-center justify-center gap-1"
-              >
-                <span class="text-[15px] font-medium">تأكيد</span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal Remove Address -->
-    <div
-      id="modal-remove-address"
-      tabindex="-1"
-      aria-hidden="true"
-      class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full"
-    >
-      <div class="relative w-full max-w-[700px] max-h-full">
-        <!-- Modal content -->
-        <div class="relative bg-white rounded-lg shadow">
-          <!-- Modal body -->
-          <div class="p-6 space-y-6">
-            <button
-              type="button"
-              class="bg-transparent"
-              data-modal-hide="modal-remove-address"
-            >
-              <img
-                class="max-w-[25px]"
-                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAgZJREFUaEPtmWtygzAMhPHJ2tzEnKTpSeybND2ZgyjMOCAZrR9QmPCjnSHG7Ke1JQGmO/lhTq6/ewMc7WA1B5xznwRjjPmKoMZzXdc96E8I4Zf+931/rwVeDOCcuxtjPgaRs1ittgcBlcJkA0zC42hrha/GhRC+c0FgAFoqQ8R/stUmLswBgQBqRl3iQCHUAHuIn6EQCBXAnuJRiE2AI8QjEEmAI8VHELe+78c6wh1JAO99aJFt0DmttaJO8Yf/EH3NUhIBMqJPNmurMTJ25JBcYAHQ6M9pT3MdMjZealJqZQG891RpVdFcTpyCQMYy++Rhrb0tz0sA2s3LTspBSBEEg7XKSCsAzTLQWBvPI4nPuFd9gKnPZ7tJEij1/6j4KWgrx1cOIJZqnOByfqZ4mqodQMqJGKJAvBpAu4HZgprqJAvFs/WAW0KnB1DXgKUFmj6+0IV2e0AjfgYugGgDkMrzNdModx+ukEEP7ZoipRmjabFbAOzaSnAd6TWbOXSTIS0yMlZT6a/5QEPkqAuaTZg7JpWir/tQP7kApdTcCKeu2yqQ136xVaH0Z5uyFfl54k0HjoDQiidtaoC9MhMiHgZoDTF8ckq+B+XWI+RAxUfDFy1o1OOLswEWe+N8H/mktw3juvz7aknHy2dWOkHRnp4RxFfmSOoqdgC5WYuxb4AWUUXmPL0DT0s02UBVbAhTAAAAAElFTkSuQmCC"
-              />
-            </button>
-            <div class="!m-0">
-              <h1 class="mb-4 text-center font-medium text-[17px]">
-                حذف عنوان
-              </h1>
-              <div
-                class="flex items-center bg-[#fae6e6] p-3 rounded-[5px] gap-x-2"
-              >
-                <img
-                  class="max-w-[20px]"
-                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAlpJREFUaEPtmVFuwjAMhhPaswztFIyTDU7GdoqJnaUlk6tmKo4d20kQK4OXSih1/P2208TxbuU/v3L/3RPg3hFsFoGvvn8DmC6E9wgVnJv+8859wDN4/wnP7TAcWoFXA5z7/uBD2EVntY4BFADVwhQDgONuobbWcXKc98dSEDMApMomhFOVw9zLBSAmAEl1SIvR+2P073UYptyP9bGZayIbOSOEGiDn/MX7fXRWG5msGAYIFQA7mWEiDqzWtgjATVCiOgfB1pVCoCwA5XzMc2vKaFLru+tOeDmWhMoDdF3AE2/HUYyaxllqDBeJ3JysM5T6khpLp84IXgtOQmRSiQfA6ivysQUA2KDE4wQgASwG2NWlMALRHo6gYwQkAZJiMqo/qVgJgFMJFo+XcdxjwegIVE5eWsT4PSwCVYMJQJI+Beq3AsCZsDoATRolEdBQt1JYsnNXgNoijrvY5dadKuS0BhoVcAsAzWr2eACtaqBFBP5nDfylCGi+SUkNaMImLX+a4lPZwJ0P4qMqAsBE2q1wq90ot6Gj/FBt5iznAMvkuSjg9LFt5oimlTUKtatQ1XaaymFuP36L84DlPPK4R0oyCs65knrQrDjsSUxYRLIdBuqAzRWTxUmuIwGt+aTLLZxHxBbJqhtbv2HlWukNTms3by2KEDCgACTbpjfYE1Po6usqXWrMrfXLfKWE2+tgi8zz5SQG5yftrMUn3RFY7S3Hl6xwZgBVSlkpjKpfBcw6Fx6/2ks+CnxKL8jLEHbwxNes8F+8gmrVni9OodrItXr/CdBKyVI7q4/AD7KrKU+i/JQcAAAAAElFTkSuQmCC"
-                />
-                <p class="text-[15px]">سيتم حذف العنوان بشكل نهائي</p>
-              </div>
-            </div>
-            <div class="flex items-center justify-center gap-x-4">
-              <button
-                data-modal-hide="modal-remove-address"
-                class="bg-main rounded-[6px] text-white lg:w-[80%] w-full px-2 h-[45px] flex items-center justify-center gap-1"
-              >
-                <span class="text-[15px] font-medium">تأكيد</span>
-              </button>
-            </div>
-          </div>
         </div>
       </div>
     </div>
@@ -608,7 +460,7 @@
               </a>
               <a
                 href="index.html"
-                class="border border-main rounded-[6px] lg:w-[140px] w-full p-2 flex items-center justify-center gap-1"
+                class="border border-main text-main rounded-[6px] lg:w-[140px] w-full p-2 flex items-center justify-center gap-1"
               >
                 <span class="text-[15px]">العودة للرئيسية</span>
               </a>
