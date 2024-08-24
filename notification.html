@@ -322,218 +322,24 @@
       </ul>
     </div>
 
-    <!-- Digital Products -->
-    <div class="pt-9 overflow-hidden">
+    <!-- Notification -->
+    <div class="py-6">
       <div class="container">
-        <h1 class="font-medium text-center flex-1 text-[18px]">شراء</h1>
-        <div
-          class="border border-[#F6F6F6] p-4 max-w-[700px] m-auto rounded-[15px] mb-4 mt-7"
-        >
-          <div class="overflow-hidden flex lg:flex-row flex-col gap-3">
-            <div
-              class="relative overflow-hidden rounded-[13px] lg:w-auto w-full"
-            >
-              <img
-                src="./images/bg-14.png"
-                class="lg:w-[250px] w-full h-[145px]"
-                alt=""
-              />
-            </div>
-            <div class="flex-1">
-              <div class="flex items-center justify-between">
-                <h4 class="font-normal text-[14px]">مجموعة العناية بالشعر</h4>
-                <button
-                  class="w-[33px] h-[33px] flex items-center justify-center bg-white rounded-[6px] border border-[#D90303]"
-                >
-                  <i class="fa-solid fa-xmark text-[#D90303]"></i>
-                </button>
-              </div>
-              <div class="flex items-center justify-between mt-4">
-                <div class="flex items-center justify-center gap-1">
-                  <button
-                    class="plus-btn flex items-center justify-center rounded-[5px] w-[28px] h-[28px] bg-main"
-                  >
-                    <i class="fa-solid fa-plus text-white text-[13px]"></i>
-                  </button>
-                  <input
-                    type="number"
-                    value="1"
-                    min="1"
-                    class="counter-input border border-[#F6F6F6] rounded-[5px] text-center lg:w-[50px] w-[120px] p-0 h-[30px]"
-                  />
-                  <button
-                    class="minus-btn flex items-center justify-center rounded-[5px] w-[28px] h-[28px] bg-[#A5A5A5]"
-                  >
-                    <i class="fa-solid fa-minus text-white text-[13px]"></i>
-                  </button>
-                </div>
-                <div class="flex items-center gap-x-3">
-                  <span class="text-[#D6A723] text-[14px]">150.00 ر.س</span>
-                  <span class="text-[#505050] text-[12px] line-through"
-                    >180.00 ر.س</span
-                  >
-                </div>
-              </div>
-              <p class="text-[#D90303] mt-4 text-[13px] font-medium">
-                عرض اليوم: خصم 10%
-              </p>
-            </div>
-          </div>
-        </div>
+        <h1 class="text-center text-[20px] my-7">الاشعارات</h1>
         <div class="grid grid-cols-12 gap-5 py-7">
           <div class="lg:col-span-6 col-span-12">
-            <div class="border border-[#F6F6F6] p-4 rounded-[15px] mb-4">
-              <div class="flex items-center gap-x-2">
-                <img src="./images/percent-red.png" alt="" />
-                <span>كوبون الخصم</span>
-              </div>
-              <div class="relative mt-4">
-                <input
-                  type="text"
-                  placeholder="ادخل كوبون الخصم"
-                  class="h-[45px] text-[13px] resize-none border border-[#F6F6F6] rounded-[7px] p-3 w-full"
-                />
-              </div>
-            </div>
-            <div class="border border-[#F6F6F6] p-4 rounded-[15px] mb-4">
-              <label for="" class="block mb-3">عنوان التوصيل</label>
-              <div class="relative">
-                <input
-                  type="text"
-                  placeholder="ادخل عنوان التوصيل"
-                  class="h-[45px] text-[13px] resize-none border border-[#F6F6F6] rounded-[7px] p-3 w-full"
-                />
-                <img
-                  class="max-w-[20px] absolute top-[50%] translate-y-[-50%] rtl:left-[10px] ltr:right-[10px]"
-                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAqdJREFUaEPtWUFywjAMtPsVuJQ+ovCMvKbwGp7R9BGlF/hK03ESM45Gtla2KMMMuQQmiaPV7sqy492DH/7B43dPAPdm0JSBn+N6O7jhIwG1nX/34Tw4/xXOb915bwXcBMDpuPp0zsVgodgG5w8WQJoAfB/Xe7/MOBR8elMrkGoANVkvoOs33WWnRu+cvgolOuckM2rdO38I59fuPP4Pz/zOEisx5p3fxWdQMGoGTsfVwAzeh6DRlxekp2ZCBSAjG/VLYwIyQFTjwQC4l7UaMABpHRcGQKWTCz7q3bvhfc70Ntxbqv8cs5vuAsUG3cRliXsBUlZzwBkQkJQgAEj2keCj9jkQc3ULE+L1QFgQASDZ1wRfAkFZQMqqGgCXPaa0jmU1zgU5gDTAGhmJAOigFADCUMy6NBYjI9EHagA0axRAqbRKAUrXudkZAbCYeamxqHxKxkMC1Iw3tS3CIQ2oNR4wXjFhNFwEwKLXl4xXqhyS3BCGzAEwJs4aT5pPbgKABkgzzE1A8/JxXHGF69P/cam5aMGpXySGqkyMZOVWExnSLIoe4DLM6VwDotAPqQwMVaFwkzQBCf39gvlc8DXygQFoG60QzDT4qPvrlsqLc31u1SYZPFftRQklbcCCXkSf0hxTYg7pRGEGcisn9CUSkNrsqwDMXqALerHZkoLXNINVZTR9iPNCi5Ra18NqBriKNA2i38+xSgZs4shEZuZVS4nbX6pJhBpAztChXKLbg9wuRK0UqwC0gLDQferLagA5P5QyabETp26npTKIysF6WzLG1cRAMktzHziunrhV8FVlNMdI4XtB6IXoVjxseEkBJgwITNAYzII3ZaDUmCUITIO/CYBcia2t8/8qofRlScnsw+dViy+Szc2clI17XDc18RNARQYenoE/N0lATyZdBGsAAAAASUVORK5CYII="
-                />
-              </div>
-            </div>
-            <div class="border border-[#F6F6F6] p-4 rounded-[15px] mb-4">
-              <h4>طريقة الدفع</h4>
-              <div
-                class="flex items-center lg:flex-row flex-col mt-4 mb-2 gap-x-8"
-              >
-                <div class="flex items-center gap-2">
-                  <input
-                    id="default-radio-1"
-                    type="radio"
-                    value=""
-                    name="default-radio"
-                    class="w-5 h-5 text-main border-main rounded-full"
-                  />
-                  <label
-                    for="default-radio-1"
-                    class="text-sm font-medium text-[#505050]"
-                    >فيزا</label
-                  >
-                </div>
-                <div class="flex items-center gap-2">
-                  <input
-                    id="default-radio-1"
-                    type="radio"
-                    value=""
-                    name="default-radio"
-                    class="w-5 h-5 text-main border-main rounded-full"
-                  />
-                  <label
-                    for="default-radio-1"
-                    class="text-sm font-medium text-[#505050]"
-                    >ماستر</label
-                  >
-                </div>
-                <div class="flex items-center gap-2">
-                  <input
-                    id="default-radio-1"
-                    type="radio"
-                    value=""
-                    name="default-radio"
-                    class="w-5 h-5 text-main border-main rounded-full"
-                  />
-                  <label
-                    for="default-radio-1"
-                    class="text-sm font-medium text-[#505050]"
-                    >أبل باي</label
-                  >
-                </div>
-              </div>
+            <div class="bg-[#fff4d5] p-3 overflow-hidden rounded-[4px]">
+              <p>تم قبول طلبك رقم 2345</p>
             </div>
           </div>
           <div class="lg:col-span-6 col-span-12">
-            <div class="border border-[#F6F6F6] p-4 rounded-[15px] mb-4">
-              <label for="" for="" class="block mb-3">أضف ملاحظتك</label>
-              <textarea
-                class="h-[100px] text-[13px] resize-none border border-[#F6F6F6] rounded-[7px] p-3 w-full"
-                placeholder="ادخل ملاحظتك"
-              ></textarea>
-            </div>
-
-            <div class="border border-[#F6F6F6] p-3 rounded-[15px] mb-4">
-              <h4>ملخص الطلب</h4>
-              <div class="flex items-center justify-between my-3">
-                <h5 class="text-[#505050]">قيمة المنتجات</h5>
-                <h4 class="text-[#505050]">300.00 ر.س</h4>
-              </div>
-              <div class="flex items-center justify-between my-3">
-                <h5 class="text-[#505050]">قيمة الخصم</h5>
-                <h4 class="text-[#505050]">30.00 ر.س</h4>
-              </div>
-              <div class="flex items-center justify-between my-3">
-                <h5 class="text-[#505050]">قيمة الشحن</h5>
-                <h4 class="text-[#505050]">30.00 ر.س</h4>
-              </div>
-              <div class="flex items-center justify-between my-3">
-                <h5 class="text-[#D6A723]">الإجمالي</h5>
-                <h4 class="text-[#D6A723]">300.00 ر.س</h4>
-              </div>
+            <div class="bg-[#fff4d5] p-3 overflow-hidden rounded-[4px]">
+              <p>تم قبول طلبك رقم 2345</p>
             </div>
           </div>
-        </div>
-        <div
-          class="flex items-center justify-center lg:flex-row flex-col gap-7 pb-9"
-        >
-          <button
-            class="w-[300px] h-[50px] text-white rounded-[5px] bg-[#FFC82C] font-medium"
-            data-modal-target="modal-done-cart"
-            data-modal-toggle="modal-done-cart"
-          >
-            إرسال الطلب
-          </button>
-          <a
-            href="index.html"
-            class="w-[300px] h-[50px] text-white rounded-[5px] font-medium bg-[#A5A5A5] flex items-center justify-center"
-            >إلغاء الطلب</a
-          >
-        </div>
-      </div>
-    </div>
-
-    <!-- Done Cart -->
-    <div
-      id="modal-done-cart"
-      tabindex="-1"
-      aria-hidden="true"
-      class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full"
-    >
-      <div class="relative w-full max-w-md max-h-full">
-        <!-- Modal content -->
-        <div class="relative bg-white rounded-lg shadow">
-          <!-- Modal body -->
-          <div class="p-6 space-y-6">
-            <div class="!m-0 text-center">
-              <img
-                class="max-w-[70px] m-auto"
-                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAidJREFUaEPtmUtuwjAQhu12VdQ93KZlD2cqnAn2pLeBfUVXrSvHikhtj+fBOCEIFiABtv/vn/H4EWsm/rIT128eAGNHUC0Ci93ru4dx9ufjAmXb74xxjX+3zn76z+P6vNECvxpgsZttnHVvxnRiqdJc44GuhREDBOGm5zZVePo/68xWCsIG8Kni7O9BLhduKQFhAWi6DmFwIcgAQ4jvoDgQJIAhxXMhUIAxxHMgigBjir9APC2P6692Hcm9igDz/czVqDbcPk+rM6gT/OEW3KekEghwK+53EFAUsgDDuO/3R/TtB1RaswDz/cuB0zk3pzsxPKNcc1p9L+OxAIB6kzd2kgNhXVqREgBOh1Ln43bUiI8KAOUwz7A0jZIIUN3guK8jPhyM4nlwJQBeSfTEkwFoE5hSSXTFh5jH60EmAjgApZLUEE8EwNaAfD3uT8Za4tXmQEkgdOvAqzZQiVCcxJxTk454fy2THv4zCxn90E6B0BLvY6IOAHXaJYCm+NwEbsfPZRt3Mcs5oy0+N4FBAMngfQhJe2xlZ22nfWeSA40fpF0vlW7s+lCsA41vWMNFzGXo91KxuN9DfYgCvaRK3cXaYaX6vi+2atVzzHVsfem3RyMwBgSWNiKAoSoTRzy4kJVCXLO85g7tWLqRUyjuSBOE67o4hXJuTPYhHwQTthL+qWWbof8es4bq8txuN0pX5ljaqEaAM1iN/4rnQA0xkj4fABLXNNv8AScnlECApHkLAAAAAElFTkSuQmCC"
-              />
-              <h1 class="my-3">تم إرسال الطلب بنجاح</h1>
-            </div>
-            <div class="flex items-center justify-center gap-x-4">
-              <a
-                href="index.html"
-                class="bg-main rounded-[6px] text-white lg:w-[160px] w-full p-2 flex items-center justify-center gap-1"
-              >
-                <span class="text-[15px]">العودة للرئيسية</span>
-              </a>
+          <div class="lg:col-span-6 col-span-12">
+            <div class="bg-[#fff4d5] p-3 overflow-hidden rounded-[4px]">
+              <p>تم قبول طلبك رقم 2345</p>
             </div>
           </div>
         </div>

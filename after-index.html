@@ -95,7 +95,8 @@
               />
             </div>
             <div class="lg:flex hidden items-center gap-4">
-              <div
+              <a
+                href="favorite.html"
                 class="w-[35px] h-[35px] rounded-[5px] flex items-center justify-center bg-[#fff5d6] relative"
               >
                 <img
@@ -106,8 +107,9 @@
                   class="absolute top-[10px] left-[5px] bg-[#D90303] text-white rounded-full w-[10px] h-[10px] flex items-center justify-center text-[8px] overflow-hidden"
                   >1</span
                 >
-              </div>
-              <div
+              </a>
+              <a
+                href="notification.html"
                 class="w-[35px] h-[35px] rounded-[5px] flex items-center justify-center bg-[#fff5d6] relative"
               >
                 <img
@@ -118,8 +120,14 @@
                   class="absolute top-[10px] left-[5px] bg-[#D90303] text-white rounded-full w-[10px] h-[10px] flex items-center justify-center text-[8px] overflow-hidden"
                   >1</span
                 >
-              </div>
-              <a href="login.html" class="flex items-center gap-3">
+              </a>
+              <!-- Dropdown Menu User -->
+              <button
+                id="dropdownBgHoverButton"
+                data-dropdown-toggle="dropdownBgHover"
+                class="flex items-center gap-3 !transform-none"
+                type="button"
+              >
                 <div
                   class="w-[35px] h-[35px] rounded-[5px] flex items-center justify-center bg-[#fff5d6] relative"
                 >
@@ -130,9 +138,52 @@
                 </div>
                 <div class="">
                   <h6 class="text-[#505050] text-[12px]">أهلاً بك</h6>
-                  <h6 class="text-[14px]">دخول/إنشاء حساب</h6>
+                  <h6 class="text-[14px]">عبدالوهاب نير</h6>
                 </div>
-              </a>
+              </button>
+              <!-- Dropdown Menu User -->
+              <div
+                id="dropdownBgHover"
+                class="z-10 hidden w-48 bg-white rounded-lg shadow"
+              >
+                <ul>
+                  <li class="border-b py-3 block">
+                    <a
+                      href="profile.html"
+                      class="text-center text-[13px] block hover:text-main"
+                      >الملف الشخصي</a
+                    >
+                  </li>
+                  <li class="border-b py-3 block">
+                    <a
+                      href="my-order.html"
+                      class="text-center text-[13px] block hover:text-main"
+                      >الطلبات</a
+                    >
+                  </li>
+                  <li class="border-b py-3 block">
+                    <a
+                      href="my-wallet.html"
+                      class="text-center text-[13px] block hover:text-main"
+                      >المحفظة</a
+                    >
+                  </li>
+                  <li class="border-b py-3 block">
+                    <a
+                      href="saved-addresses.html"
+                      class="text-center text-[13px] block hover:text-main"
+                      >العناوين المحفوظة</a
+                    >
+                  </li>
+                  <li class="py-3 block">
+                    <a
+                      href="login.html"
+                      class="text-center text-[13px] block text-red-500"
+                      >تسجيل الخروج</a
+                    >
+                  </li>
+                </ul>
+              </div>
               <a href="cart.html" class="flex items-center gap-3">
                 <div
                   class="w-[35px] h-[35px] rounded-[5px] flex items-center justify-center bg-[#fff5d6] relative"
