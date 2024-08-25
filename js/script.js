@@ -22,9 +22,9 @@ $(window).on("load", function () {
 });
 
 $(document).ready(function () {
-  $(document).ready(function () {
-    $(".select2").select2();
-  });
+  
+  // Select2
+  $(".select2").select2();
 
   // Scroll Fix Header
   $(window).scroll(function () {

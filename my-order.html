@@ -322,10 +322,1371 @@
       </ul>
     </div>
 
-    <!-- Main Content -->
-    <div class="">
+    <!-- My Order -->
+    <div class="py-6">
       <div class="container">
-        <div class=""></div>
+        <h1 class="text-center text-[20px] my-7">الطلبات</h1>
+        <div class="mb-4">
+          <ul
+            class="flex flex-wrap justify-center gap-4 text-center"
+            id="in-order-tab"
+            data-tabs-toggle="#order-tab-content"
+            role="tablist"
+          >
+            <li role="presentation">
+              <button
+                class="inline-block border !border-main !text-[#D6A723] w-[170px] h-[40px] rounded-[5px]"
+                id="purchase-orders-tab"
+                data-tabs-target="#purchase-orders"
+                type="button"
+                role="tab"
+                aria-controls="purchase-orders"
+                aria-selected="false"
+              >
+                طلبات الشراء
+              </button>
+            </li>
+            <li role="presentation">
+              <button
+                class="inline-block border !border-main !text-[#D6A723] w-[170px] h-[40px] rounded-[5px]"
+                id="retrieval-requests-tab"
+                data-tabs-target="#retrieval-requests"
+                type="button"
+                role="tab"
+                aria-controls="retrieval-requests"
+                aria-selected="false"
+              >
+                طلبات الاسترجاع
+              </button>
+            </li>
+            <li role="presentation">
+              <button
+                class="inline-block border !border-main !text-[#D6A723] w-[170px] h-[40px] rounded-[5px]"
+                id="reservations-tab"
+                data-tabs-target="#reservations"
+                type="button"
+                role="tab"
+                aria-controls="reservations"
+                aria-selected="false"
+              >
+                الحجوزات
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div id="order-tab-content">
+          <!-- Purchase Orders Tab -->
+          <div
+            class="hidden p-4"
+            id="purchase-orders"
+            role="tabpanel"
+            aria-labelledby="purchase-orders-tab"
+          >
+            <div class="mb-4">
+              <ul
+                class="flex flex-wrap justify-center gap-4 text-center"
+                id="in-order-tab-1"
+                data-tabs-toggle="#order-tab-content-1"
+                role="tablist"
+              >
+                <li role="presentation">
+                  <button
+                    class="inline-block w-[170px] h-[40px] !text-black"
+                    id="sale-tab-1"
+                    data-tabs-target="#sale-1"
+                    type="button"
+                    role="tab"
+                    aria-controls="sale-1"
+                    aria-selected="false"
+                  >
+                    جديدة
+                  </button>
+                </li>
+                <li role="presentation">
+                  <button
+                    class="inline-block w-[170px] h-[40px] !text-black"
+                    id="sale-tab-2"
+                    data-tabs-target="#sale-2"
+                    type="button"
+                    role="tab"
+                    aria-controls="sale-2"
+                    aria-selected="false"
+                  >
+                    حالية
+                  </button>
+                </li>
+                <li role="presentation">
+                  <button
+                    class="inline-block w-[170px] h-[40px] !text-black"
+                    id="sale-tab-3"
+                    data-tabs-target="#sale-3"
+                    type="button"
+                    role="tab"
+                    aria-controls="sale-3"
+                    aria-selected="false"
+                  >
+                    منتهية
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div id="order-tab-content-1">
+              <div
+                class="hidden p-4"
+                id="sale-1"
+                role="tabpanel"
+                aria-labelledby="sale-tab-1"
+              >
+                <div class="grid grid-cols-12 gap-5 pt-9">
+                  <div class="lg:col-span-4 col-span-12">
+                    <a href="details-purchase-order.html" class="border border-[#F6F6F6] p-4 rounded-[5px]">
+                      <div class="flex items-center justify-between mb-5">
+                        <div class="flex items-center gap-x-1">
+                          <h4 class="text-[17px]">رقم الطلب :</h4>
+                          <span class="text-[17px]">#1223</span>
+                        </div>
+                        <strong class="text-[#D6A723] font-normal text-[14px]"
+                          >150.00 ر.س</strong
+                        >
+                      </div>
+                      <div class="flex items-center justify-between">
+                        <span
+                          class="bg-main py-[0.5px] px-4 text-white text-[15px] rounded-[6px]"
+                          >جديد</span
+                        >
+                        <strong class="font-normal text-[14px] text-[#505050]"
+                          >20/5/2024 - 10:00pm</strong
+                        >
+                      </div>
+                    </a>
+                  </div>
+                  <div class="lg:col-span-4 col-span-12">
+                    <div class="border border-[#F6F6F6] p-4 rounded-[5px]">
+                      <div class="flex items-center justify-between mb-5">
+                        <div class="flex items-center gap-x-1">
+                          <h4 class="text-[17px]">رقم الطلب :</h4>
+                          <span class="text-[17px]">#1223</span>
+                        </div>
+                        <strong class="text-[#D6A723] font-normal text-[14px]"
+                          >150.00 ر.س</strong
+                        >
+                      </div>
+                      <div class="flex items-center justify-between">
+                        <span
+                          class="bg-main py-[0.5px] px-4 text-white text-[15px] rounded-[6px]"
+                          >جديد</span
+                        >
+                        <strong class="font-normal text-[14px] text-[#505050]"
+                          >20/5/2024 - 10:00pm</strong
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="lg:col-span-4 col-span-12">
+                    <div class="border border-[#F6F6F6] p-4 rounded-[5px]">
+                      <div class="flex items-center justify-between mb-5">
+                        <div class="flex items-center gap-x-1">
+                          <h4 class="text-[17px]">رقم الطلب :</h4>
+                          <span class="text-[17px]">#1223</span>
+                        </div>
+                        <strong class="text-[#D6A723] font-normal text-[14px]"
+                          >150.00 ر.س</strong
+                        >
+                      </div>
+                      <div class="flex items-center justify-between">
+                        <span
+                          class="bg-main py-[0.5px] px-4 text-white text-[15px] rounded-[6px]"
+                          >جديد</span
+                        >
+                        <strong class="font-normal text-[14px] text-[#505050]"
+                          >20/5/2024 - 10:00pm</strong
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="lg:col-span-4 col-span-12">
+                    <div class="border border-[#F6F6F6] p-4 rounded-[5px]">
+                      <div class="flex items-center justify-between mb-5">
+                        <div class="flex items-center gap-x-1">
+                          <h4 class="text-[17px]">رقم الطلب :</h4>
+                          <span class="text-[17px]">#1223</span>
+                        </div>
+                        <strong class="text-[#D6A723] font-normal text-[14px]"
+                          >150.00 ر.س</strong
+                        >
+                      </div>
+                      <div class="flex items-center justify-between">
+                        <span
+                          class="bg-main py-[0.5px] px-4 text-white text-[15px] rounded-[6px]"
+                          >جديد</span
+                        >
+                        <strong class="font-normal text-[14px] text-[#505050]"
+                          >20/5/2024 - 10:00pm</strong
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="hidden p-4"
+                id="sale-2"
+                role="tabpanel"
+                aria-labelledby="sale-tab-2"
+              >
+                <div class="grid grid-cols-12 gap-5 pt-9">
+                  <div class="lg:col-span-4 col-span-12">
+                    <a href="details-purchase-order.html" class="border border-[#F6F6F6] p-4 rounded-[5px]">
+                      <div class="flex items-center justify-between mb-5">
+                        <div class="flex items-center gap-x-1">
+                          <h4 class="text-[17px]">رقم الطلب :</h4>
+                          <span class="text-[17px]">#1223</span>
+                        </div>
+                        <strong class="text-[#D6A723] font-normal text-[14px]"
+                          >150.00 ر.س</strong
+                        >
+                      </div>
+                      <div class="flex items-center justify-between">
+                        <span
+                          class="bg-main py-[0.5px] px-4 text-white text-[15px] rounded-[6px]"
+                          >تم التنفيذ</span
+                        >
+                        <strong class="font-normal text-[14px] text-[#505050]"
+                          >20/5/2024 - 10:00pm</strong
+                        >
+                      </div>
+                    </a>
+                  </div>
+                  <div class="lg:col-span-4 col-span-12">
+                    <div class="border border-[#F6F6F6] p-4 rounded-[5px]">
+                      <div class="flex items-center justify-between mb-5">
+                        <div class="flex items-center gap-x-1">
+                          <h4 class="text-[17px]">رقم الطلب :</h4>
+                          <span class="text-[17px]">#1223</span>
+                        </div>
+                        <strong class="text-[#D6A723] font-normal text-[14px]"
+                          >150.00 ر.س</strong
+                        >
+                      </div>
+                      <div class="flex items-center justify-between">
+                        <span
+                          class="bg-main py-[0.5px] px-4 text-white text-[15px] rounded-[6px]"
+                          >قيد التوصيل</span
+                        >
+                        <strong class="font-normal text-[14px] text-[#505050]"
+                          >20/5/2024 - 10:00pm</strong
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="lg:col-span-4 col-span-12">
+                    <div class="border border-[#F6F6F6] p-4 rounded-[5px]">
+                      <div class="flex items-center justify-between mb-5">
+                        <div class="flex items-center gap-x-1">
+                          <h4 class="text-[17px]">رقم الطلب :</h4>
+                          <span class="text-[17px]">#1223</span>
+                        </div>
+                        <strong class="text-[#D6A723] font-normal text-[14px]"
+                          >150.00 ر.س</strong
+                        >
+                      </div>
+                      <div class="flex items-center justify-between">
+                        <span
+                          class="bg-main py-[0.5px] px-4 text-white text-[15px] rounded-[6px]"
+                          >قيد التوصيل</span
+                        >
+                        <strong class="font-normal text-[14px] text-[#505050]"
+                          >20/5/2024 - 10:00pm</strong
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="lg:col-span-4 col-span-12">
+                    <div class="border border-[#F6F6F6] p-4 rounded-[5px]">
+                      <div class="flex items-center justify-between mb-5">
+                        <div class="flex items-center gap-x-1">
+                          <h4 class="text-[17px]">رقم الطلب :</h4>
+                          <span class="text-[17px]">#1223</span>
+                        </div>
+                        <strong class="text-[#D6A723] font-normal text-[14px]"
+                          >150.00 ر.س</strong
+                        >
+                      </div>
+                      <div class="flex items-center justify-between">
+                        <span
+                          class="bg-main py-[0.5px] px-4 text-white text-[15px] rounded-[6px]"
+                          >تم التنفيذ</span
+                        >
+                        <strong class="font-normal text-[14px] text-[#505050]"
+                          >20/5/2024 - 10:00pm</strong
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="hidden p-4"
+                id="sale-3"
+                role="tabpanel"
+                aria-labelledby="sale-tab-3"
+              >
+                <div class="grid grid-cols-12 gap-5 pt-9">
+                  <div class="lg:col-span-4 col-span-12">
+                    <a href="details-purchase-order.html" class="border border-[#F6F6F6] p-4 rounded-[5px]">
+                      <div class="flex items-center justify-between mb-5">
+                        <div class="flex items-center gap-x-1">
+                          <h4 class="text-[17px]">رقم الطلب :</h4>
+                          <span class="text-[17px]">#1223</span>
+                        </div>
+                        <strong class="text-[#D6A723] font-normal text-[14px]"
+                          >150.00 ر.س</strong
+                        >
+                      </div>
+                      <div class="flex items-center justify-between">
+                        <span
+                          class="bg-main py-[0.5px] px-4 text-white text-[15px] rounded-[6px]"
+                          >قيد التوصيل</span
+                        >
+                        <strong class="font-normal text-[14px] text-[#505050]"
+                          >20/5/2024 - 10:00pm</strong
+                        >
+                      </div>
+                    </a>
+                  </div>
+                  <div class="lg:col-span-4 col-span-12">
+                    <div class="border border-[#F6F6F6] p-4 rounded-[5px]">
+                      <div class="flex items-center justify-between mb-5">
+                        <div class="flex items-center gap-x-1">
+                          <h4 class="text-[17px]">رقم الطلب :</h4>
+                          <span class="text-[17px]">#1223</span>
+                        </div>
+                        <strong class="text-[#D6A723] font-normal text-[14px]"
+                          >150.00 ر.س</strong
+                        >
+                      </div>
+                      <div class="flex items-center justify-between">
+                        <span
+                          class="bg-main py-[0.5px] px-4 text-white text-[15px] rounded-[6px]"
+                          >قيد التوصيل</span
+                        >
+                        <strong class="font-normal text-[14px] text-[#505050]"
+                          >20/5/2024 - 10:00pm</strong
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="lg:col-span-4 col-span-12">
+                    <div class="border border-[#F6F6F6] p-4 rounded-[5px]">
+                      <div class="flex items-center justify-between mb-5">
+                        <div class="flex items-center gap-x-1">
+                          <h4 class="text-[17px]">رقم الطلب :</h4>
+                          <span class="text-[17px]">#1223</span>
+                        </div>
+                        <strong class="text-[#D6A723] font-normal text-[14px]"
+                          >150.00 ر.س</strong
+                        >
+                      </div>
+                      <div class="flex items-center justify-between">
+                        <span
+                          class="bg-main py-[0.5px] px-4 text-white text-[15px] rounded-[6px]"
+                          >قيد التوصيل</span
+                        >
+                        <strong class="font-normal text-[14px] text-[#505050]"
+                          >20/5/2024 - 10:00pm</strong
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="lg:col-span-4 col-span-12">
+                    <div class="border border-[#F6F6F6] p-4 rounded-[5px]">
+                      <div class="flex items-center justify-between mb-5">
+                        <div class="flex items-center gap-x-1">
+                          <h4 class="text-[17px]">رقم الطلب :</h4>
+                          <span class="text-[17px]">#1223</span>
+                        </div>
+                        <strong class="text-[#D6A723] font-normal text-[14px]"
+                          >150.00 ر.س</strong
+                        >
+                      </div>
+                      <div class="flex items-center justify-between">
+                        <span
+                          class="bg-main py-[0.5px] px-4 text-white text-[15px] rounded-[6px]"
+                          >قيد التوصيل</span
+                        >
+                        <strong class="font-normal text-[14px] text-[#505050]"
+                          >20/5/2024 - 10:00pm</strong
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="lg:col-span-4 col-span-12">
+                    <div class="border border-[#F6F6F6] p-4 rounded-[5px]">
+                      <div class="flex items-center justify-between mb-5">
+                        <div class="flex items-center gap-x-1">
+                          <h4 class="text-[17px]">رقم الطلب :</h4>
+                          <span class="text-[17px]">#1223</span>
+                        </div>
+                        <strong class="text-[#D6A723] font-normal text-[14px]"
+                          >150.00 ر.س</strong
+                        >
+                      </div>
+                      <div class="flex items-center justify-between">
+                        <span
+                          class="bg-main py-[0.5px] px-4 text-white text-[15px] rounded-[6px]"
+                          >قيد التوصيل</span
+                        >
+                        <strong class="font-normal text-[14px] text-[#505050]"
+                          >20/5/2024 - 10:00pm</strong
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="lg:col-span-4 col-span-12">
+                    <div class="border border-[#F6F6F6] p-4 rounded-[5px]">
+                      <div class="flex items-center justify-between mb-5">
+                        <div class="flex items-center gap-x-1">
+                          <h4 class="text-[17px]">رقم الطلب :</h4>
+                          <span class="text-[17px]">#1223</span>
+                        </div>
+                        <strong class="text-[#D6A723] font-normal text-[14px]"
+                          >150.00 ر.س</strong
+                        >
+                      </div>
+                      <div class="flex items-center justify-between">
+                        <span
+                          class="bg-main py-[0.5px] px-4 text-white text-[15px] rounded-[6px]"
+                          >قيد التوصيل</span
+                        >
+                        <strong class="font-normal text-[14px] text-[#505050]"
+                          >20/5/2024 - 10:00pm</strong
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Retrieval Requests Tab -->
+          <div
+            class="hidden p-4"
+            id="retrieval-requests"
+            role="tabpanel"
+            aria-labelledby="retrieval-requests-tab"
+          >
+            <div class="mb-4">
+              <ul
+                class="flex flex-wrap justify-center gap-4 text-center"
+                id="in-order-tab-2"
+                data-tabs-toggle="#order-tab-content-2"
+                role="tablist"
+              >
+                <li role="presentation">
+                  <button
+                    class="inline-block w-[170px] h-[40px] !text-black"
+                    id="sale-tab-11"
+                    data-tabs-target="#sale-11"
+                    type="button"
+                    role="tab"
+                    aria-controls="sale-11"
+                    aria-selected="false"
+                  >
+                    جديدة
+                  </button>
+                </li>
+                <li role="presentation">
+                  <button
+                    class="inline-block w-[170px] h-[40px] !text-black"
+                    id="sale-tab-22"
+                    data-tabs-target="#sale-22"
+                    type="button"
+                    role="tab"
+                    aria-controls="sale-22"
+                    aria-selected="false"
+                  >
+                    حالية
+                  </button>
+                </li>
+                <li role="presentation">
+                  <button
+                    class="inline-block w-[170px] h-[40px] !text-black"
+                    id="sale-tab-33"
+                    data-tabs-target="#sale-33"
+                    type="button"
+                    role="tab"
+                    aria-controls="sale-33"
+                    aria-selected="false"
+                  >
+                    منتهية
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div id="order-tab-content-2">
+              <div
+                class="hidden p-4"
+                id="sale-11"
+                role="tabpanel"
+                aria-labelledby="sale-tab-11"
+              >
+                <div class="grid grid-cols-12 gap-5 pt-9">
+                  <div class="lg:col-span-4 col-span-12">
+                    <a href="details-retrieval-order.html" class="border border-[#F6F6F6] p-4 rounded-[5px]">
+                      <div class="flex items-center justify-between mb-5">
+                        <div class="flex items-center gap-x-1">
+                          <h4 class="text-[17px]">رقم الطلب :</h4>
+                          <span class="text-[17px]">#1223</span>
+                        </div>
+                        <strong class="text-[#D6A723] font-normal text-[14px]"
+                          >150.00 ر.س</strong
+                        >
+                      </div>
+                      <div class="flex items-center justify-between">
+                        <span
+                          class="bg-main py-[0.5px] px-4 text-white text-[15px] rounded-[6px]"
+                          >جديد</span
+                        >
+                        <strong class="font-normal text-[14px] text-[#505050]"
+                          >20/5/2024 - 10:00pm</strong
+                        >
+                      </div>
+                    </a>
+                  </div>
+                  <div class="lg:col-span-4 col-span-12">
+                    <div class="border border-[#F6F6F6] p-4 rounded-[5px]">
+                      <div class="flex items-center justify-between mb-5">
+                        <div class="flex items-center gap-x-1">
+                          <h4 class="text-[17px]">رقم الطلب :</h4>
+                          <span class="text-[17px]">#1223</span>
+                        </div>
+                        <strong class="text-[#D6A723] font-normal text-[14px]"
+                          >150.00 ر.س</strong
+                        >
+                      </div>
+                      <div class="flex items-center justify-between">
+                        <span
+                          class="bg-main py-[0.5px] px-4 text-white text-[15px] rounded-[6px]"
+                          >جديد</span
+                        >
+                        <strong class="font-normal text-[14px] text-[#505050]"
+                          >20/5/2024 - 10:00pm</strong
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="lg:col-span-4 col-span-12">
+                    <div class="border border-[#F6F6F6] p-4 rounded-[5px]">
+                      <div class="flex items-center justify-between mb-5">
+                        <div class="flex items-center gap-x-1">
+                          <h4 class="text-[17px]">رقم الطلب :</h4>
+                          <span class="text-[17px]">#1223</span>
+                        </div>
+                        <strong class="text-[#D6A723] font-normal text-[14px]"
+                          >150.00 ر.س</strong
+                        >
+                      </div>
+                      <div class="flex items-center justify-between">
+                        <span
+                          class="bg-main py-[0.5px] px-4 text-white text-[15px] rounded-[6px]"
+                          >جديد</span
+                        >
+                        <strong class="font-normal text-[14px] text-[#505050]"
+                          >20/5/2024 - 10:00pm</strong
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="lg:col-span-4 col-span-12">
+                    <div class="border border-[#F6F6F6] p-4 rounded-[5px]">
+                      <div class="flex items-center justify-between mb-5">
+                        <div class="flex items-center gap-x-1">
+                          <h4 class="text-[17px]">رقم الطلب :</h4>
+                          <span class="text-[17px]">#1223</span>
+                        </div>
+                        <strong class="text-[#D6A723] font-normal text-[14px]"
+                          >150.00 ر.س</strong
+                        >
+                      </div>
+                      <div class="flex items-center justify-between">
+                        <span
+                          class="bg-main py-[0.5px] px-4 text-white text-[15px] rounded-[6px]"
+                          >جديد</span
+                        >
+                        <strong class="font-normal text-[14px] text-[#505050]"
+                          >20/5/2024 - 10:00pm</strong
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="lg:col-span-4 col-span-12">
+                    <div class="border border-[#F6F6F6] p-4 rounded-[5px]">
+                      <div class="flex items-center justify-between mb-5">
+                        <div class="flex items-center gap-x-1">
+                          <h4 class="text-[17px]">رقم الطلب :</h4>
+                          <span class="text-[17px]">#1223</span>
+                        </div>
+                        <strong class="text-[#D6A723] font-normal text-[14px]"
+                          >150.00 ر.س</strong
+                        >
+                      </div>
+                      <div class="flex items-center justify-between">
+                        <span
+                          class="bg-main py-[0.5px] px-4 text-white text-[15px] rounded-[6px]"
+                          >جديد</span
+                        >
+                        <strong class="font-normal text-[14px] text-[#505050]"
+                          >20/5/2024 - 10:00pm</strong
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="lg:col-span-4 col-span-12">
+                    <div class="border border-[#F6F6F6] p-4 rounded-[5px]">
+                      <div class="flex items-center justify-between mb-5">
+                        <div class="flex items-center gap-x-1">
+                          <h4 class="text-[17px]">رقم الطلب :</h4>
+                          <span class="text-[17px]">#1223</span>
+                        </div>
+                        <strong class="text-[#D6A723] font-normal text-[14px]"
+                          >150.00 ر.س</strong
+                        >
+                      </div>
+                      <div class="flex items-center justify-between">
+                        <span
+                          class="bg-main py-[0.5px] px-4 text-white text-[15px] rounded-[6px]"
+                          >جديد</span
+                        >
+                        <strong class="font-normal text-[14px] text-[#505050]"
+                          >20/5/2024 - 10:00pm</strong
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="lg:col-span-4 col-span-12">
+                    <div class="border border-[#F6F6F6] p-4 rounded-[5px]">
+                      <div class="flex items-center justify-between mb-5">
+                        <div class="flex items-center gap-x-1">
+                          <h4 class="text-[17px]">رقم الطلب :</h4>
+                          <span class="text-[17px]">#1223</span>
+                        </div>
+                        <strong class="text-[#D6A723] font-normal text-[14px]"
+                          >150.00 ر.س</strong
+                        >
+                      </div>
+                      <div class="flex items-center justify-between">
+                        <span
+                          class="bg-main py-[0.5px] px-4 text-white text-[15px] rounded-[6px]"
+                          >جديد</span
+                        >
+                        <strong class="font-normal text-[14px] text-[#505050]"
+                          >20/5/2024 - 10:00pm</strong
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="lg:col-span-4 col-span-12">
+                    <div class="border border-[#F6F6F6] p-4 rounded-[5px]">
+                      <div class="flex items-center justify-between mb-5">
+                        <div class="flex items-center gap-x-1">
+                          <h4 class="text-[17px]">رقم الطلب :</h4>
+                          <span class="text-[17px]">#1223</span>
+                        </div>
+                        <strong class="text-[#D6A723] font-normal text-[14px]"
+                          >150.00 ر.س</strong
+                        >
+                      </div>
+                      <div class="flex items-center justify-between">
+                        <span
+                          class="bg-main py-[0.5px] px-4 text-white text-[15px] rounded-[6px]"
+                          >جديد</span
+                        >
+                        <strong class="font-normal text-[14px] text-[#505050]"
+                          >20/5/2024 - 10:00pm</strong
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="lg:col-span-4 col-span-12">
+                    <div class="border border-[#F6F6F6] p-4 rounded-[5px]">
+                      <div class="flex items-center justify-between mb-5">
+                        <div class="flex items-center gap-x-1">
+                          <h4 class="text-[17px]">رقم الطلب :</h4>
+                          <span class="text-[17px]">#1223</span>
+                        </div>
+                        <strong class="text-[#D6A723] font-normal text-[14px]"
+                          >150.00 ر.س</strong
+                        >
+                      </div>
+                      <div class="flex items-center justify-between">
+                        <span
+                          class="bg-main py-[0.5px] px-4 text-white text-[15px] rounded-[6px]"
+                          >جديد</span
+                        >
+                        <strong class="font-normal text-[14px] text-[#505050]"
+                          >20/5/2024 - 10:00pm</strong
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="lg:col-span-4 col-span-12">
+                    <div class="border border-[#F6F6F6] p-4 rounded-[5px]">
+                      <div class="flex items-center justify-between mb-5">
+                        <div class="flex items-center gap-x-1">
+                          <h4 class="text-[17px]">رقم الطلب :</h4>
+                          <span class="text-[17px]">#1223</span>
+                        </div>
+                        <strong class="text-[#D6A723] font-normal text-[14px]"
+                          >150.00 ر.س</strong
+                        >
+                      </div>
+                      <div class="flex items-center justify-between">
+                        <span
+                          class="bg-main py-[0.5px] px-4 text-white text-[15px] rounded-[6px]"
+                          >جديد</span
+                        >
+                        <strong class="font-normal text-[14px] text-[#505050]"
+                          >20/5/2024 - 10:00pm</strong
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="lg:col-span-4 col-span-12">
+                    <div class="border border-[#F6F6F6] p-4 rounded-[5px]">
+                      <div class="flex items-center justify-between mb-5">
+                        <div class="flex items-center gap-x-1">
+                          <h4 class="text-[17px]">رقم الطلب :</h4>
+                          <span class="text-[17px]">#1223</span>
+                        </div>
+                        <strong class="text-[#D6A723] font-normal text-[14px]"
+                          >150.00 ر.س</strong
+                        >
+                      </div>
+                      <div class="flex items-center justify-between">
+                        <span
+                          class="bg-main py-[0.5px] px-4 text-white text-[15px] rounded-[6px]"
+                          >جديد</span
+                        >
+                        <strong class="font-normal text-[14px] text-[#505050]"
+                          >20/5/2024 - 10:00pm</strong
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="lg:col-span-4 col-span-12">
+                    <div class="border border-[#F6F6F6] p-4 rounded-[5px]">
+                      <div class="flex items-center justify-between mb-5">
+                        <div class="flex items-center gap-x-1">
+                          <h4 class="text-[17px]">رقم الطلب :</h4>
+                          <span class="text-[17px]">#1223</span>
+                        </div>
+                        <strong class="text-[#D6A723] font-normal text-[14px]"
+                          >150.00 ر.س</strong
+                        >
+                      </div>
+                      <div class="flex items-center justify-between">
+                        <span
+                          class="bg-main py-[0.5px] px-4 text-white text-[15px] rounded-[6px]"
+                          >جديد</span
+                        >
+                        <strong class="font-normal text-[14px] text-[#505050]"
+                          >20/5/2024 - 10:00pm</strong
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="hidden p-4"
+                id="sale-22"
+                role="tabpanel"
+                aria-labelledby="sale-tab-22"
+              >
+                <div class="grid grid-cols-12 gap-5 pt-9">
+                  <div class="lg:col-span-4 col-span-12">
+                    <a href="details-retrieval-order.html" class="border border-[#F6F6F6] p-4 rounded-[5px]">
+                      <div class="flex items-center justify-between mb-5">
+                        <div class="flex items-center gap-x-1">
+                          <h4 class="text-[17px]">رقم الطلب :</h4>
+                          <span class="text-[17px]">#1223</span>
+                        </div>
+                        <strong class="text-[#D6A723] font-normal text-[14px]"
+                          >150.00 ر.س</strong
+                        >
+                      </div>
+                      <div class="flex items-center justify-between">
+                        <span
+                          class="bg-main py-[0.5px] px-4 text-white text-[15px] rounded-[6px]"
+                          >قيد الاسترجاع</span
+                        >
+                        <strong class="font-normal text-[14px] text-[#505050]"
+                          >20/5/2024 - 10:00pm</strong
+                        >
+                      </div>
+                    </a>
+                  </div>
+                  <div class="lg:col-span-4 col-span-12">
+                    <div class="border border-[#F6F6F6] p-4 rounded-[5px]">
+                      <div class="flex items-center justify-between mb-5">
+                        <div class="flex items-center gap-x-1">
+                          <h4 class="text-[17px]">رقم الطلب :</h4>
+                          <span class="text-[17px]">#1223</span>
+                        </div>
+                        <strong class="text-[#D6A723] font-normal text-[14px]"
+                          >150.00 ر.س</strong
+                        >
+                      </div>
+                      <div class="flex items-center justify-between">
+                        <span
+                          class="bg-main py-[0.5px] px-4 text-white text-[15px] rounded-[6px]"
+                          >قيد الاسترجاع</span
+                        >
+                        <strong class="font-normal text-[14px] text-[#505050]"
+                          >20/5/2024 - 10:00pm</strong
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="lg:col-span-4 col-span-12">
+                    <div class="border border-[#F6F6F6] p-4 rounded-[5px]">
+                      <div class="flex items-center justify-between mb-5">
+                        <div class="flex items-center gap-x-1">
+                          <h4 class="text-[17px]">رقم الطلب :</h4>
+                          <span class="text-[17px]">#1223</span>
+                        </div>
+                        <strong class="text-[#D6A723] font-normal text-[14px]"
+                          >150.00 ر.س</strong
+                        >
+                      </div>
+                      <div class="flex items-center justify-between">
+                        <span
+                          class="bg-main py-[0.5px] px-4 text-white text-[15px] rounded-[6px]"
+                          >قيد الاسترجاع</span
+                        >
+                        <strong class="font-normal text-[14px] text-[#505050]"
+                          >20/5/2024 - 10:00pm</strong
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="lg:col-span-4 col-span-12">
+                    <div class="border border-[#F6F6F6] p-4 rounded-[5px]">
+                      <div class="flex items-center justify-between mb-5">
+                        <div class="flex items-center gap-x-1">
+                          <h4 class="text-[17px]">رقم الطلب :</h4>
+                          <span class="text-[17px]">#1223</span>
+                        </div>
+                        <strong class="text-[#D6A723] font-normal text-[14px]"
+                          >150.00 ر.س</strong
+                        >
+                      </div>
+                      <div class="flex items-center justify-between">
+                        <span
+                          class="bg-main py-[0.5px] px-4 text-white text-[15px] rounded-[6px]"
+                          >قيد الاسترجاع</span
+                        >
+                        <strong class="font-normal text-[14px] text-[#505050]"
+                          >20/5/2024 - 10:00pm</strong
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="lg:col-span-4 col-span-12">
+                    <div class="border border-[#F6F6F6] p-4 rounded-[5px]">
+                      <div class="flex items-center justify-between mb-5">
+                        <div class="flex items-center gap-x-1">
+                          <h4 class="text-[17px]">رقم الطلب :</h4>
+                          <span class="text-[17px]">#1223</span>
+                        </div>
+                        <strong class="text-[#D6A723] font-normal text-[14px]"
+                          >150.00 ر.س</strong
+                        >
+                      </div>
+                      <div class="flex items-center justify-between">
+                        <span
+                          class="bg-main py-[0.5px] px-4 text-white text-[15px] rounded-[6px]"
+                          >قيد الاسترجاع</span
+                        >
+                        <strong class="font-normal text-[14px] text-[#505050]"
+                          >20/5/2024 - 10:00pm</strong
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="lg:col-span-4 col-span-12">
+                    <div class="border border-[#F6F6F6] p-4 rounded-[5px]">
+                      <div class="flex items-center justify-between mb-5">
+                        <div class="flex items-center gap-x-1">
+                          <h4 class="text-[17px]">رقم الطلب :</h4>
+                          <span class="text-[17px]">#1223</span>
+                        </div>
+                        <strong class="text-[#D6A723] font-normal text-[14px]"
+                          >150.00 ر.س</strong
+                        >
+                      </div>
+                      <div class="flex items-center justify-between">
+                        <span
+                          class="bg-main py-[0.5px] px-4 text-white text-[15px] rounded-[6px]"
+                          >قيد الاسترجاع</span
+                        >
+                        <strong class="font-normal text-[14px] text-[#505050]"
+                          >20/5/2024 - 10:00pm</strong
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="hidden p-4"
+                id="sale-33"
+                role="tabpanel"
+                aria-labelledby="sale-tab-33"
+              >
+                <div class="grid grid-cols-12 gap-5 pt-9">
+                  <div class="lg:col-span-4 col-span-12">
+                    <a href="details-retrieval-order.html" class="border border-[#F6F6F6] p-4 rounded-[5px]">
+                      <div class="flex items-center justify-between mb-5">
+                        <div class="flex items-center gap-x-1">
+                          <h4 class="text-[17px]">رقم الطلب :</h4>
+                          <span class="text-[17px]">#1223</span>
+                        </div>
+                        <strong class="text-[#D6A723] font-normal text-[14px]"
+                          >150.00 ر.س</strong
+                        >
+                      </div>
+                      <div class="flex items-center justify-between">
+                        <span
+                          class="bg-main py-[0.5px] px-4 text-white text-[15px] rounded-[6px]"
+                          >مسترجع</span
+                        >
+                        <strong class="font-normal text-[14px] text-[#505050]"
+                          >20/5/2024 - 10:00pm</strong
+                        >
+                      </div>
+                    </a>
+                  </div>
+                  <div class="lg:col-span-4 col-span-12">
+                    <div class="border border-[#F6F6F6] p-4 rounded-[5px]">
+                      <div class="flex items-center justify-between mb-5">
+                        <div class="flex items-center gap-x-1">
+                          <h4 class="text-[17px]">رقم الطلب :</h4>
+                          <span class="text-[17px]">#1223</span>
+                        </div>
+                        <strong class="text-[#D6A723] font-normal text-[14px]"
+                          >150.00 ر.س</strong
+                        >
+                      </div>
+                      <div class="flex items-center justify-between">
+                        <span
+                          class="bg-main py-[0.5px] px-4 text-white text-[15px] rounded-[6px]"
+                          >مسترجع</span
+                        >
+                        <strong class="font-normal text-[14px] text-[#505050]"
+                          >20/5/2024 - 10:00pm</strong
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="lg:col-span-4 col-span-12">
+                    <div class="border border-[#F6F6F6] p-4 rounded-[5px]">
+                      <div class="flex items-center justify-between mb-5">
+                        <div class="flex items-center gap-x-1">
+                          <h4 class="text-[17px]">رقم الطلب :</h4>
+                          <span class="text-[17px]">#1223</span>
+                        </div>
+                        <strong class="text-[#D6A723] font-normal text-[14px]"
+                          >150.00 ر.س</strong
+                        >
+                      </div>
+                      <div class="flex items-center justify-between">
+                        <span
+                          class="bg-main py-[0.5px] px-4 text-white text-[15px] rounded-[6px]"
+                          >مسترجع</span
+                        >
+                        <strong class="font-normal text-[14px] text-[#505050]"
+                          >20/5/2024 - 10:00pm</strong
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="lg:col-span-4 col-span-12">
+                    <div class="border border-[#F6F6F6] p-4 rounded-[5px]">
+                      <div class="flex items-center justify-between mb-5">
+                        <div class="flex items-center gap-x-1">
+                          <h4 class="text-[17px]">رقم الطلب :</h4>
+                          <span class="text-[17px]">#1223</span>
+                        </div>
+                        <strong class="text-[#D6A723] font-normal text-[14px]"
+                          >150.00 ر.س</strong
+                        >
+                      </div>
+                      <div class="flex items-center justify-between">
+                        <span
+                          class="bg-main py-[0.5px] px-4 text-white text-[15px] rounded-[6px]"
+                          >مسترجع</span
+                        >
+                        <strong class="font-normal text-[14px] text-[#505050]"
+                          >20/5/2024 - 10:00pm</strong
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="lg:col-span-4 col-span-12">
+                    <div class="border border-[#F6F6F6] p-4 rounded-[5px]">
+                      <div class="flex items-center justify-between mb-5">
+                        <div class="flex items-center gap-x-1">
+                          <h4 class="text-[17px]">رقم الطلب :</h4>
+                          <span class="text-[17px]">#1223</span>
+                        </div>
+                        <strong class="text-[#D6A723] font-normal text-[14px]"
+                          >150.00 ر.س</strong
+                        >
+                      </div>
+                      <div class="flex items-center justify-between">
+                        <span
+                          class="bg-main py-[0.5px] px-4 text-white text-[15px] rounded-[6px]"
+                          >مسترجع</span
+                        >
+                        <strong class="font-normal text-[14px] text-[#505050]"
+                          >20/5/2024 - 10:00pm</strong
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="lg:col-span-4 col-span-12">
+                    <div class="border border-[#F6F6F6] p-4 rounded-[5px]">
+                      <div class="flex items-center justify-between mb-5">
+                        <div class="flex items-center gap-x-1">
+                          <h4 class="text-[17px]">رقم الطلب :</h4>
+                          <span class="text-[17px]">#1223</span>
+                        </div>
+                        <strong class="text-[#D6A723] font-normal text-[14px]"
+                          >150.00 ر.س</strong
+                        >
+                      </div>
+                      <div class="flex items-center justify-between">
+                        <span
+                          class="bg-main py-[0.5px] px-4 text-white text-[15px] rounded-[6px]"
+                          >مسترجع</span
+                        >
+                        <strong class="font-normal text-[14px] text-[#505050]"
+                          >20/5/2024 - 10:00pm</strong
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="lg:col-span-4 col-span-12">
+                    <div class="border border-[#F6F6F6] p-4 rounded-[5px]">
+                      <div class="flex items-center justify-between mb-5">
+                        <div class="flex items-center gap-x-1">
+                          <h4 class="text-[17px]">رقم الطلب :</h4>
+                          <span class="text-[17px]">#1223</span>
+                        </div>
+                        <strong class="text-[#D6A723] font-normal text-[14px]"
+                          >150.00 ر.س</strong
+                        >
+                      </div>
+                      <div class="flex items-center justify-between">
+                        <span
+                          class="bg-main py-[0.5px] px-4 text-white text-[15px] rounded-[6px]"
+                          >مسترجع</span
+                        >
+                        <strong class="font-normal text-[14px] text-[#505050]"
+                          >20/5/2024 - 10:00pm</strong
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Reservations Tab -->
+          <div
+            class="hidden p-4"
+            id="reservations"
+            role="tabpanel"
+            aria-labelledby="reservations-tab"
+          >
+            <div class="mb-4">
+              <ul
+                class="flex flex-wrap justify-center gap-4 text-center"
+                id="in-order-tab-3"
+                data-tabs-toggle="#order-tab-content-3"
+                role="tablist"
+              >
+                <li role="presentation">
+                  <button
+                    class="inline-block w-[170px] h-[40px] !text-black"
+                    id="sale-tab-111"
+                    data-tabs-target="#sale-111"
+                    type="button"
+                    role="tab"
+                    aria-controls="sale-111"
+                    aria-selected="false"
+                  >
+                    جديدة
+                  </button>
+                </li>
+                <li role="presentation">
+                  <button
+                    class="inline-block w-[170px] h-[40px] !text-black"
+                    id="sale-tab-222"
+                    data-tabs-target="#sale-222"
+                    type="button"
+                    role="tab"
+                    aria-controls="sale-222"
+                    aria-selected="false"
+                  >
+                    حالية
+                  </button>
+                </li>
+                <li role="presentation">
+                  <button
+                    class="inline-block w-[170px] h-[40px] !text-black"
+                    id="sale-tab-333"
+                    data-tabs-target="#sale-333"
+                    type="button"
+                    role="tab"
+                    aria-controls="sale-333"
+                    aria-selected="false"
+                  >
+                    منتهية
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div id="order-tab-content-3">
+              <div
+                class="hidden p-4"
+                id="sale-111"
+                role="tabpanel"
+                aria-labelledby="sale-tab-111"
+              >
+                <div class="grid grid-cols-12 gap-5 pt-9">
+                  <div class="lg:col-span-4 col-span-12">
+                    <a href="details-reservation-order.html" class="border border-[#F6F6F6] p-4 rounded-[5px]">
+                      <div class="flex items-center justify-between mb-5">
+                        <div class="flex items-center gap-x-1">
+                          <h4 class="text-[17px]">رقم الطلب :</h4>
+                          <span class="text-[17px]">#1223</span>
+                        </div>
+                        <strong class="text-[#D6A723] font-normal text-[14px]"
+                          >150.00 ر.س</strong
+                        >
+                      </div>
+                      <div class="flex items-center justify-between">
+                        <span
+                          class="bg-main py-[0.5px] px-4 text-white text-[15px] rounded-[6px]"
+                          >جديد</span
+                        >
+                        <strong class="font-normal text-[14px] text-[#505050]"
+                          >20/5/2024 - 10:00pm</strong
+                        >
+                      </div>
+                    </a>
+                  </div>
+                  <div class="lg:col-span-4 col-span-12">
+                    <div class="border border-[#F6F6F6] p-4 rounded-[5px]">
+                      <div class="flex items-center justify-between mb-5">
+                        <div class="flex items-center gap-x-1">
+                          <h4 class="text-[17px]">رقم الطلب :</h4>
+                          <span class="text-[17px]">#1223</span>
+                        </div>
+                        <strong class="text-[#D6A723] font-normal text-[14px]"
+                          >150.00 ر.س</strong
+                        >
+                      </div>
+                      <div class="flex items-center justify-between">
+                        <span
+                          class="bg-main py-[0.5px] px-4 text-white text-[15px] rounded-[6px]"
+                          >جديد</span
+                        >
+                        <strong class="font-normal text-[14px] text-[#505050]"
+                          >20/5/2024 - 10:00pm</strong
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="lg:col-span-4 col-span-12">
+                    <div class="border border-[#F6F6F6] p-4 rounded-[5px]">
+                      <div class="flex items-center justify-between mb-5">
+                        <div class="flex items-center gap-x-1">
+                          <h4 class="text-[17px]">رقم الطلب :</h4>
+                          <span class="text-[17px]">#1223</span>
+                        </div>
+                        <strong class="text-[#D6A723] font-normal text-[14px]"
+                          >150.00 ر.س</strong
+                        >
+                      </div>
+                      <div class="flex items-center justify-between">
+                        <span
+                          class="bg-main py-[0.5px] px-4 text-white text-[15px] rounded-[6px]"
+                          >جديد</span
+                        >
+                        <strong class="font-normal text-[14px] text-[#505050]"
+                          >20/5/2024 - 10:00pm</strong
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="hidden p-4"
+                id="sale-222"
+                role="tabpanel"
+                aria-labelledby="sale-tab-222"
+              >
+                <div class="grid grid-cols-12 gap-5 pt-9">
+                  <div class="lg:col-span-4 col-span-12">
+                    <a href="details-reservation-order.html" class="border border-[#F6F6F6] p-4 rounded-[5px]">
+                      <div class="flex items-center justify-between mb-5">
+                        <div class="flex items-center gap-x-1">
+                          <h4 class="text-[17px]">رقم الطلب :</h4>
+                          <span class="text-[17px]">#1223</span>
+                        </div>
+                        <strong class="text-[#D6A723] font-normal text-[14px]"
+                          >150.00 ر.س</strong
+                        >
+                      </div>
+                      <div class="flex items-center justify-between">
+                        <span
+                          class="bg-main py-[0.5px] px-4 text-white text-[15px] rounded-[6px]"
+                          >حالي</span
+                        >
+                        <strong class="font-normal text-[14px] text-[#505050]"
+                          >20/5/2024 - 10:00pm</strong
+                        >
+                      </div>
+                    </a>
+                  </div>
+                  <div class="lg:col-span-4 col-span-12">
+                    <div class="border border-[#F6F6F6] p-4 rounded-[5px]">
+                      <div class="flex items-center justify-between mb-5">
+                        <div class="flex items-center gap-x-1">
+                          <h4 class="text-[17px]">رقم الطلب :</h4>
+                          <span class="text-[17px]">#1223</span>
+                        </div>
+                        <strong class="text-[#D6A723] font-normal text-[14px]"
+                          >150.00 ر.س</strong
+                        >
+                      </div>
+                      <div class="flex items-center justify-between">
+                        <span
+                          class="bg-main py-[0.5px] px-4 text-white text-[15px] rounded-[6px]"
+                          >حالي</span
+                        >
+                        <strong class="font-normal text-[14px] text-[#505050]"
+                          >20/5/2024 - 10:00pm</strong
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="hidden p-4"
+                id="sale-333"
+                role="tabpanel"
+                aria-labelledby="sale-tab-33"
+              >
+                <div class="grid grid-cols-12 gap-5 pt-9">
+                  <div class="lg:col-span-4 col-span-12">
+                    <a href="details-reservation-order.html" class="border border-[#F6F6F6] p-4 rounded-[5px]">
+                      <div class="flex items-center justify-between mb-5">
+                        <div class="flex items-center gap-x-1">
+                          <h4 class="text-[17px]">رقم الطلب :</h4>
+                          <span class="text-[17px]">#1223</span>
+                        </div>
+                        <strong class="text-[#D6A723] font-normal text-[14px]"
+                          >150.00 ر.س</strong
+                        >
+                      </div>
+                      <div class="flex items-center justify-between">
+                        <span
+                          class="bg-main py-[0.5px] px-4 text-white text-[15px] rounded-[6px]"
+                          >منتهي</span
+                        >
+                        <strong class="font-normal text-[14px] text-[#505050]"
+                          >20/5/2024 - 10:00pm</strong
+                        >
+                      </div>
+                    </a>
+                  </div>
+                  <div class="lg:col-span-4 col-span-12">
+                    <div class="border border-[#F6F6F6] p-4 rounded-[5px]">
+                      <div class="flex items-center justify-between mb-5">
+                        <div class="flex items-center gap-x-1">
+                          <h4 class="text-[17px]">رقم الطلب :</h4>
+                          <span class="text-[17px]">#1223</span>
+                        </div>
+                        <strong class="text-[#D6A723] font-normal text-[14px]"
+                          >150.00 ر.س</strong
+                        >
+                      </div>
+                      <div class="flex items-center justify-between">
+                        <span
+                          class="bg-main py-[0.5px] px-4 text-white text-[15px] rounded-[6px]"
+                          >منتهي</span
+                        >
+                        <strong class="font-normal text-[14px] text-[#505050]"
+                          >20/5/2024 - 10:00pm</strong
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="lg:col-span-4 col-span-12">
+                    <div class="border border-[#F6F6F6] p-4 rounded-[5px]">
+                      <div class="flex items-center justify-between mb-5">
+                        <div class="flex items-center gap-x-1">
+                          <h4 class="text-[17px]">رقم الطلب :</h4>
+                          <span class="text-[17px]">#1223</span>
+                        </div>
+                        <strong class="text-[#D6A723] font-normal text-[14px]"
+                          >150.00 ر.س</strong
+                        >
+                      </div>
+                      <div class="flex items-center justify-between">
+                        <span
+                          class="bg-main py-[0.5px] px-4 text-white text-[15px] rounded-[6px]"
+                          >منتهي</span
+                        >
+                        <strong class="font-normal text-[14px] text-[#505050]"
+                          >20/5/2024 - 10:00pm</strong
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="lg:col-span-4 col-span-12">
+                    <div class="border border-[#F6F6F6] p-4 rounded-[5px]">
+                      <div class="flex items-center justify-between mb-5">
+                        <div class="flex items-center gap-x-1">
+                          <h4 class="text-[17px]">رقم الطلب :</h4>
+                          <span class="text-[17px]">#1223</span>
+                        </div>
+                        <strong class="text-[#D6A723] font-normal text-[14px]"
+                          >150.00 ر.س</strong
+                        >
+                      </div>
+                      <div class="flex items-center justify-between">
+                        <span
+                          class="bg-main py-[0.5px] px-4 text-white text-[15px] rounded-[6px]"
+                          >منتهي</span
+                        >
+                        <strong class="font-normal text-[14px] text-[#505050]"
+                          >20/5/2024 - 10:00pm</strong
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 

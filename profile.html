@@ -326,9 +326,199 @@
     <div class="py-6">
       <div class="container">
         <h1 class="text-center text-[20px] my-7">الملف الشخصي</h1>
-        <div class="grid grid-cols-12 gap-5 py-7">
+        <div class="relative m-auto table">
+          <img
+            class="w-[100px] h-[100px] rounded-full"
+            src="https://images.ctfassets.net/lh3zuq09vnm2/yBDals8aU8RWtb0xLnPkI/19b391bda8f43e16e64d40b55561e5cd/How_tracking_user_behavior_on_your_website_can_improve_customer_experience.png"
+            alt=""
+          />
+          <button
+            class="w-[30px] h-[30px] rounded-[3px] bg-main flex items-center justify-center absolute bottom-0"
+          >
+            <img src="./images/upload.svg" alt="" />
+          </button>
+        </div>
+        <div class="grid grid-cols-12 gap-5 pt-9">
           <div class="lg:col-span-6 col-span-12">
-            
+            <div class="w-full mb-3">
+              <label for="" class="block"
+                >الاسم الأول <span class="text-red-500">*</span></label
+              >
+              <div class="w-full my-3">
+                <input
+                  type="text"
+                  placeholder="ادخل الاسم الأول"
+                  class="border border-[#F6F6F6] rounded-[5px] w-full h-[45px] px-3 rtl:text-right ltr:text-left text-[13px]"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="lg:col-span-6 col-span-12">
+            <div class="w-full mb-2">
+              <label for="" class="block"
+                >الاسم الأخير <span class="text-red-500">*</span></label
+              >
+              <div class="w-full my-3">
+                <input
+                  type="text"
+                  placeholder="ادخل الاسم الأخير"
+                  class="border border-[#F6F6F6] rounded-[5px] w-full h-[45px] px-3 rtl:text-right ltr:text-left text-[13px]"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="lg:col-span-6 col-span-12">
+            <div class="w-full mb-2">
+              <label for="" class="block">
+                تاريخ الميلاد <span class="text-red-500">*</span></label
+              >
+              <div class="w-full my-3 relative">
+                <div
+                  class="absolute rtl:left-[20px] ltr:right-[20px] top-[15px] pointer-events-none"
+                >
+                  <svg
+                    class="w-4 h-4 text-gray-500 dark:text-gray-400"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"
+                    />
+                  </svg>
+                </div>
+                <input
+                  datepicker
+                  id="default-datepicker"
+                  type="text"
+                  class="border border-[#F6F6F6] rounded-[5px] w-full h-[45px] px-3 rtl:text-right ltr:text-left text-[13px]"
+                  placeholder="ادخل تاريخ الميلاد"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="lg:col-span-6 col-span-12">
+            <div class="w-full mb-2">
+              <label for="" class="block">
+                الجنس <span class="text-red-500">*</span></label
+              >
+              <div
+                class="flex items-center justify-between border border-[#F6F6F6] rounded-[5px] w-full h-[45px] px-3 gap-1 my-3"
+              >
+                <select
+                  name=""
+                  id=""
+                  class="border-0 !bg-transparent !p-0 !bg-none text-[13px] flex-1"
+                >
+                  <option value="" disabled selected>الدولة</option>
+                  <option value="">مصر</option>
+                  <option value="">السعودية</option>
+                </select>
+                <img
+                  class="max-w-[20px]"
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAARBJREFUaEPtl1EOwjAMQ7ObwcmAk42jQT6KULUOmpcITbg/Q6ri+dnd0BY7+FoO7t8E8OsG1YAagAnoCMEA8bgawBFCATUAA8TjagBHCAXUAAwQj/99Ayczu8MYkQZp4GpmFzO7PQH8d2RhjShAu3EzHYHI0Ah9Unrl60bcMxC9+SZ3nj2SWQ3MNDEyPxPAK78ogAtEjERmdp8tAjALkW7eDVCAbyFKzGcBfILwfX/d9it05nuRjAaa5ijlrTOcYj6zgRmINPMVAHvHyfdSzVcBjCDSzVcC9BAl5qsBGsT7dfdPKbKZ+RaK3B/PCABHCAXUAAwQj6sBHCEUUAMwQDyuBnCEUEANwADxuBrAEUKBB7c/LDHYu3A3AAAAAElFTkSuQmCC"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="lg:col-span-6 col-span-12">
+            <div class="w-full mb-2">
+              <label for="" class="block"
+                >البريد الألكتروني <span class="text-red-500">*</span></label
+              >
+              <div class="w-full my-3">
+                <input
+                  type="email"
+                  placeholder="ادخل الاسم الأول"
+                  class="border border-[#F6F6F6] rounded-[5px] w-full h-[45px] px-3 rtl:text-right ltr:text-left text-[13px]"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="lg:col-span-6 col-span-12">
+            <div class="w-full mb-2">
+              <label for="" class="block"
+                >رقم الجوال <span class="text-red-500 mx-1">*</span></label
+              >
+              <div class="w-full my-3 relative">
+                <input
+                  type="tel"
+                  placeholder="ادخل رقم الجوال"
+                  class="border border-[#F6F6F6] rounded-[5px] w-full h-[45px] px-3 rtl:text-right ltr:text-left text-[13px]"
+                />
+                <div class="lang-select">
+                  <button
+                    type="button"
+                    class="btn_select"
+                    value=""
+                    title="select your country code"
+                    aria-label="select your country code"
+                    data-drupal-selector="phone"
+                  ></button>
+                  <div class="lang_list">
+                    <ul id="loop_list_language"></ul>
+                  </div>
+                </div>
+                <select class="vodiapicker">
+                  <option value="+966" data-thumbnail="./images/flags/flag.png">
+                    +966
+                  </option>
+                  <option
+                    value="+976"
+                    class="test"
+                    data-thumbnail="./images/flags/flag1.png"
+                  >
+                    +976
+                  </option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="lg:col-span-12 col-span-12">
+            <div class="flex items-center justify-center gap-x-6 my-7">
+              <button
+              class="bg-main rounded-[5px] flex items-center justify-center text-white h-[50px] w-[300px]"
+            >
+              حفظ
+            </button>
+            <a href="change-password.html"
+              class="border border-main text-main rounded-[5px] flex items-center justify-center h-[50px] w-[300px]"
+            >
+              تغيير كلمة المرور
+            </a>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-12 gap-5 py-[50px]">
+          <div class="lg:col-span-6 col-span-12">
+            <div class="border border-[#F6F6F6] p-3 rounded-[5px]">
+              <label class="flex justify-between items-center cursor-pointer">
+                <span class="text-sm font-medium">الرسائل الترويجية</span>
+                <input type="checkbox" value="" class="sr-only peer" />
+                <div
+                  class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-main dark:peer-focus:ring-main rounded-full peer dark:bg-gray-300 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-300 peer-checked:bg-main"
+                ></div>
+              </label>
+              <p class="text-[#505050] text-[13px] mt-4">
+                يمكنك التحكم في تعطيل أو تفعيل الرسائل الترويجية من المتجر
+              </p>
+            </div>
+          </div>
+          <div class="lg:col-span-6 col-span-12">
+            <div class="border border-[#F6F6F6] p-3 rounded-[5px]">
+              <div class="flex justify-between items-center cursor-pointer">
+                <span class="text-sm font-medium">تعطيل الحساب</span>
+                <a
+                  href=""
+                  class="border border-[#FFC82C] text-[#D6A723] py-1 px-3 text-[11px] rounded-[5px]"
+                  >تعطيل الحساب</a
+                >
+              </div>
+              <p class="text-[#505050] text-[13px] mt-3">
+                يمكنك حذف حسابك من المتجر ، بما في ذلك طلباتك السابقة ومنتجات قائمة الأمنيات
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -464,6 +654,59 @@
           },
         },
       };
+    </script>
+    <script>
+      // START:: SELECT COUNTRIES CODE
+      var langArray = [];
+      $(".vodiapicker option").each(function () {
+        var img = $(this).attr("data-thumbnail");
+        var text = this.innerText;
+        var value = $(this).val();
+        var item =
+          '<li class="text-[12px] text-[#A5A5A5] flex items-center gap-1"><img src="' +
+          img +
+          '" alt="" value="' +
+          value +
+          '"width="26" height="17" /><span>' +
+          text +
+          "</span></li>";
+        langArray.push(item);
+      });
+
+      $("#loop_list_language").html(langArray);
+
+      $(".btn_select").html(langArray[0]);
+      $(".btn_select").attr("value", "en");
+
+      $("#loop_list_language li").click(function () {
+        var img = $(this).find("img").attr("src");
+        var value = $(this).find("img").attr("value");
+        var text = this.innerText;
+        var item =
+          '<li class="text-[12px] text-[#A5A5A5] flex items-center gap-1"><img src="' +
+          img +
+          '" alt="" height="20" width="33" /><span>' +
+          text +
+          "</span></li>";
+        $(".btn_select").html(item);
+        $(".btn_select").attr("value", value);
+        $(".lang_list").toggle();
+      });
+
+      $(".btn_select").click(function () {
+        $(".lang_list").toggle();
+      });
+
+      var sessionLang = localStorage.getItem("lang");
+      if (sessionLang) {
+        var langIndex = langArray.indexOf(sessionLang);
+        $(".btn_select").html(langArray[langIndex]);
+        $(".btn_select").attr("value", sessionLang);
+      } else {
+        var langIndex = langArray.indexOf("ch");
+        $(".btn_select").html(langArray[langIndex]);
+      }
+      // END:: SELECT COUNTRIES CODE
     </script>
   </body>
 </html>

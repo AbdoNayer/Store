@@ -484,6 +484,15 @@ input[type=number] {
   }
 }
 
+#in-order-tab button[aria-selected=true] {
+  background-color: #FFC82C !important;
+  color: #fff !important;
+}
+
+#in-order-tab-1 button[aria-selected=true], #in-order-tab-2 button[aria-selected=true], #in-order-tab-3 button[aria-selected=true] {
+  border-bottom: 1px solid #FFC82C !important;
+}
+
 .shapeCss {
   width: 0;
   height: 0;

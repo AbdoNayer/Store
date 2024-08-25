@@ -208,6 +208,20 @@
   }
 }
 
+// Tabs Order
+#in-order-tab{
+  button[aria-selected="true"]{
+    background-color: #FFC82C !important;
+    color: #fff !important;
+  }
+}
+
+#in-order-tab-1, #in-order-tab-2, #in-order-tab-3{
+  button[aria-selected="true"]{
+    border-bottom: 1px solid #FFC82C !important;
+  }
+}
+
 // Shape
 .shapeCss {
   width: 0;

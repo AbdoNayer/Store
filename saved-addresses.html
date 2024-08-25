@@ -322,10 +322,302 @@
       </ul>
     </div>
 
-    <!-- Main Content -->
-    <div class="">
+    <!-- Saved Addresses -->
+    <div class="py-6">
       <div class="container">
-        <div class=""></div>
+        <h1 class="text-center text-[20px] my-7">العناوين المحفوظة</h1>
+        <div class="py-7 border border-[#F6F6F6] p-2 rounded-[5px]">
+          <div class="flex items-center justify-end">
+            <button
+              class="bg-main rounded-[5px] py-1 px-3 flex items-center justify-center text-white"
+              data-modal-target="modal-add-address"
+              data-modal-toggle="modal-add-address"
+              type="button"
+            >
+              <span class="text-[13px]">أضف عنوان</span>
+            </button>
+          </div>
+          <div class="grid grid-cols-12 gap-x-5 py-5">
+            <div class="lg:col-span-6 col-span-12">
+              <div
+                class="flex items-center justify-between border border-[#F6F6F6] py-2 px-4 rounded-[10px] mb-5"
+              >
+                <p class="text-[13px]">
+                  30 شارع طاهر الجزائري,مقابل طوبكابي,مكة المكرمة
+                </p>
+                <div class="flex items-center gap-x-2">
+                  <button
+                    class="border border-[#505050] rounded-[5px] w-[30px] h-[30px] flex items-center justify-center"
+                    data-modal-target="modal-add-address"
+                    data-modal-toggle="modal-add-address"
+                    type="button"
+                  >
+                    <i
+                      class="fa-solid fa-pen-to-square text-[#505050] text-[13px]"
+                    ></i>
+                  </button>
+                  <button
+                    class="border border-[#D90303] rounded-[5px] w-[30px] h-[30px] flex items-center justify-center"
+                    data-modal-target="modal-remove-address"
+                    data-modal-toggle="modal-remove-address"
+                    type="button"
+                  >
+                    <i
+                      class="fa-solid fa-trash-can text-[#D90303] text-[13px]"
+                    ></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="lg:col-span-6 col-span-12">
+              <div
+                class="flex items-center justify-between border border-[#F6F6F6] py-2 px-4 rounded-[10px] mb-5"
+              >
+                <p class="text-[13px]">
+                  30 شارع طاهر الجزائري,مقابل طوبكابي,مكة المكرمة
+                </p>
+                <div class="flex items-center gap-x-2">
+                  <button
+                    class="border border-[#505050] rounded-[5px] w-[30px] h-[30px] flex items-center justify-center"
+                    data-modal-target="modal-add-address"
+                    data-modal-toggle="modal-add-address"
+                    type="button"
+                  >
+                    <i
+                      class="fa-solid fa-pen-to-square text-[#505050] text-[13px]"
+                    ></i>
+                  </button>
+                  <button
+                    class="border border-[#D90303] rounded-[5px] w-[30px] h-[30px] flex items-center justify-center"
+                    data-modal-target="modal-remove-address"
+                    data-modal-toggle="modal-remove-address"
+                    type="button"
+                  >
+                    <i
+                      class="fa-solid fa-trash-can text-[#D90303] text-[13px]"
+                    ></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="lg:col-span-6 col-span-12">
+              <div
+                class="flex items-center justify-between border border-[#F6F6F6] py-2 px-4 rounded-[10px] mb-5"
+              >
+                <p class="text-[13px]">
+                  30 شارع طاهر الجزائري,مقابل طوبكابي,مكة المكرمة
+                </p>
+                <div class="flex items-center gap-x-2">
+                  <button
+                    class="border border-[#505050] rounded-[5px] w-[30px] h-[30px] flex items-center justify-center"
+                    data-modal-target="modal-add-address"
+                    data-modal-toggle="modal-add-address"
+                    type="button"
+                  >
+                    <i
+                      class="fa-solid fa-pen-to-square text-[#505050] text-[13px]"
+                    ></i>
+                  </button>
+                  <button
+                    class="border border-[#D90303] rounded-[5px] w-[30px] h-[30px] flex items-center justify-center"
+                    data-modal-target="modal-remove-address"
+                    data-modal-toggle="modal-remove-address"
+                    type="button"
+                  >
+                    <i
+                      class="fa-solid fa-trash-can text-[#D90303] text-[13px]"
+                    ></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Add Address -->
+    <div
+      id="modal-add-address"
+      tabindex="-1"
+      aria-hidden="true"
+      class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full"
+    >
+      <div class="relative w-full max-w-[700px] max-h-full">
+        <!-- Modal content -->
+        <div class="relative bg-white rounded-lg shadow">
+          <!-- Modal body -->
+          <div class="p-6 space-y-6">
+            <button
+              type="button"
+              class="bg-transparent"
+              data-modal-hide="modal-add-address"
+            >
+              <img
+                class="max-w-[25px]"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAgZJREFUaEPtmWtygzAMhPHJ2tzEnKTpSeybND2ZgyjMOCAZrR9QmPCjnSHG7Ke1JQGmO/lhTq6/ewMc7WA1B5xznwRjjPmKoMZzXdc96E8I4Zf+931/rwVeDOCcuxtjPgaRs1ittgcBlcJkA0zC42hrha/GhRC+c0FgAFoqQ8R/stUmLswBgQBqRl3iQCHUAHuIn6EQCBXAnuJRiE2AI8QjEEmAI8VHELe+78c6wh1JAO99aJFt0DmttaJO8Yf/EH3NUhIBMqJPNmurMTJ25JBcYAHQ6M9pT3MdMjZealJqZQG891RpVdFcTpyCQMYy++Rhrb0tz0sA2s3LTspBSBEEg7XKSCsAzTLQWBvPI4nPuFd9gKnPZ7tJEij1/6j4KWgrx1cOIJZqnOByfqZ4mqodQMqJGKJAvBpAu4HZgprqJAvFs/WAW0KnB1DXgKUFmj6+0IV2e0AjfgYugGgDkMrzNdModx+ukEEP7ZoipRmjabFbAOzaSnAd6TWbOXSTIS0yMlZT6a/5QEPkqAuaTZg7JpWir/tQP7kApdTcCKeu2yqQ136xVaH0Z5uyFfl54k0HjoDQiidtaoC9MhMiHgZoDTF8ckq+B+XWI+RAxUfDFy1o1OOLswEWe+N8H/mktw3juvz7aknHy2dWOkHRnp4RxFfmSOoqdgC5WYuxb4AWUUXmPL0DT0s02UBVbAhTAAAAAElFTkSuQmCC"
+              />
+            </button>
+            <div class="!m-0">
+              <h1 class="mb-4 text-center font-medium">إضافة عنوان جديد</h1>
+              <div class="relative">
+                <input
+                  id="pac-input"
+                  class="controls w-[300px] absolute !top-[10px] right-0 left-0 m-auto rounded-[5px]"
+                  type="text"
+                  placeholder="Search Box"
+                />
+                <div class="w-full h-[400px]" id="map"></div>
+              </div>
+              <form class="grid grid-cols-12 gap-5 py-3">
+                <div class="lg:col-span-6 col-span-12">
+                  <div
+                    class="flex items-center justify-between border border-[#F6F6F6] rounded-[5px] w-full h-[45px] px-3 gap-1 lg:m-0 my-2"
+                  >
+                    <select
+                      name=""
+                      id=""
+                      class="border-0 !bg-transparent !p-0 !bg-none text-[13px] flex-1"
+                    >
+                      <option value="" disabled selected>الدولة</option>
+                      <option value="">مصر</option>
+                      <option value="">السعودية</option>
+                    </select>
+                    <img
+                      class="max-w-[20px]"
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAARBJREFUaEPtl1EOwjAMQ7ObwcmAk42jQT6KULUOmpcITbg/Q6ri+dnd0BY7+FoO7t8E8OsG1YAagAnoCMEA8bgawBFCATUAA8TjagBHCAXUAAwQj/99Ayczu8MYkQZp4GpmFzO7PQH8d2RhjShAu3EzHYHI0Ah9Unrl60bcMxC9+SZ3nj2SWQ3MNDEyPxPAK78ogAtEjERmdp8tAjALkW7eDVCAbyFKzGcBfILwfX/d9it05nuRjAaa5ijlrTOcYj6zgRmINPMVAHvHyfdSzVcBjCDSzVcC9BAl5qsBGsT7dfdPKbKZ+RaK3B/PCABHCAXUAAwQj6sBHCEUUAMwQDyuBnCEUEANwADxuBrAEUKBB7c/LDHYu3A3AAAAAElFTkSuQmCC"
+                    />
+                  </div>
+                </div>
+                <div class="lg:col-span-6 col-span-12">
+                  <div
+                    class="flex items-center justify-between border border-[#F6F6F6] rounded-[5px] w-full h-[45px] px-3 gap-1 lg:m-0 my-2"
+                  >
+                    <select
+                      name=""
+                      id=""
+                      class="border-0 !bg-transparent !p-0 !bg-none text-[13px] flex-1"
+                    >
+                      <option value="" disabled selected>الدولة</option>
+                      <option value="">مصر</option>
+                      <option value="">السعودية</option>
+                    </select>
+                    <img
+                      class="max-w-[20px]"
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAARBJREFUaEPtl1EOwjAMQ7ObwcmAk42jQT6KULUOmpcITbg/Q6ri+dnd0BY7+FoO7t8E8OsG1YAagAnoCMEA8bgawBFCATUAA8TjagBHCAXUAAwQj/99Ayczu8MYkQZp4GpmFzO7PQH8d2RhjShAu3EzHYHI0Ah9Unrl60bcMxC9+SZ3nj2SWQ3MNDEyPxPAK78ogAtEjERmdp8tAjALkW7eDVCAbyFKzGcBfILwfX/d9it05nuRjAaa5ijlrTOcYj6zgRmINPMVAHvHyfdSzVcBjCDSzVcC9BAl5qsBGsT7dfdPKbKZ+RaK3B/PCABHCAXUAAwQj6sBHCEUUAMwQDyuBnCEUEANwADxuBrAEUKBB7c/LDHYu3A3AAAAAElFTkSuQmCC"
+                    />
+                  </div>
+                </div>
+                <div class="lg:col-span-6 col-span-12">
+                  <div class="w-full">
+                    <input
+                      type="text"
+                      placeholder="الحي"
+                      class="border border-[#F6F6F6] rounded-[5px] w-full h-[45px] px-3 rtl:text-right ltr:text-left text-[13px]"
+                    />
+                  </div>
+                </div>
+                <div class="lg:col-span-6 col-span-12">
+                  <div class="w-full">
+                    <input
+                      type="text"
+                      placeholder="الشارع"
+                      class="border border-[#F6F6F6] rounded-[5px] w-full h-[45px] px-3 rtl:text-right ltr:text-left text-[13px]"
+                    />
+                  </div>
+                </div>
+                <div class="lg:col-span-6 col-span-12">
+                  <div class="w-full">
+                    <input
+                      type="text"
+                      placeholder="الرمز البريدي (اختياري)"
+                      class="border border-[#F6F6F6] rounded-[5px] w-full h-[45px] px-3 rtl:text-right ltr:text-left text-[13px]"
+                    />
+                  </div>
+                </div>
+                <div class="lg:col-span-6 col-span-12">
+                  <div class="w-full">
+                    <input
+                      type="text"
+                      placeholder="وصف البيت (اختياري)"
+                      class="border border-[#F6F6F6] rounded-[5px] w-full h-[45px] px-3 rtl:text-right ltr:text-left text-[13px]"
+                    />
+                  </div>
+                </div>
+                <div class="lg:col-span-12 col-span-12">
+                  <div class="relative">
+                    <input
+                      type="text"
+                      placeholder="ادخل عنوان التوصيل"
+                      class="h-[45px] text-[13px] resize-none border border-[#F6F6F6] rounded-[7px] p-3 w-full"
+                    />
+                    <img
+                      class="max-w-[20px] absolute top-[50%] translate-y-[-50%] rtl:left-[10px] ltr:right-[10px]"
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAqdJREFUaEPtWUFywjAMtPsVuJQ+ovCMvKbwGp7R9BGlF/hK03ESM45Gtla2KMMMuQQmiaPV7sqy492DH/7B43dPAPdm0JSBn+N6O7jhIwG1nX/34Tw4/xXOb915bwXcBMDpuPp0zsVgodgG5w8WQJoAfB/Xe7/MOBR8elMrkGoANVkvoOs33WWnRu+cvgolOuckM2rdO38I59fuPP4Pz/zOEisx5p3fxWdQMGoGTsfVwAzeh6DRlxekp2ZCBSAjG/VLYwIyQFTjwQC4l7UaMABpHRcGQKWTCz7q3bvhfc70Ntxbqv8cs5vuAsUG3cRliXsBUlZzwBkQkJQgAEj2keCj9jkQc3ULE+L1QFgQASDZ1wRfAkFZQMqqGgCXPaa0jmU1zgU5gDTAGhmJAOigFADCUMy6NBYjI9EHagA0axRAqbRKAUrXudkZAbCYeamxqHxKxkMC1Iw3tS3CIQ2oNR4wXjFhNFwEwKLXl4xXqhyS3BCGzAEwJs4aT5pPbgKABkgzzE1A8/JxXHGF69P/cam5aMGpXySGqkyMZOVWExnSLIoe4DLM6VwDotAPqQwMVaFwkzQBCf39gvlc8DXygQFoG60QzDT4qPvrlsqLc31u1SYZPFftRQklbcCCXkSf0hxTYg7pRGEGcisn9CUSkNrsqwDMXqALerHZkoLXNINVZTR9iPNCi5Ra18NqBriKNA2i38+xSgZs4shEZuZVS4nbX6pJhBpAztChXKLbg9wuRK0UqwC0gLDQferLagA5P5QyabETp26npTKIysF6WzLG1cRAMktzHziunrhV8FVlNMdI4XtB6IXoVjxseEkBJgwITNAYzII3ZaDUmCUITIO/CYBcia2t8/8qofRlScnsw+dViy+Szc2clI17XDc18RNARQYenoE/N0lATyZdBGsAAAAASUVORK5CYII="
+                    />
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="flex items-center justify-center gap-x-4">
+              <button
+                data-modal-hide="modal-add-address"
+                class="bg-main rounded-[6px] text-white lg:w-[90%] w-full px-2 h-[45px] flex items-center justify-center gap-1"
+              >
+                <span class="text-[15px] font-medium">تأكيد</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Remove Address -->
+    <div
+      id="modal-remove-address"
+      tabindex="-1"
+      aria-hidden="true"
+      class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full"
+    >
+      <div class="relative w-full max-w-[700px] max-h-full">
+        <!-- Modal content -->
+        <div class="relative bg-white rounded-lg shadow">
+          <!-- Modal body -->
+          <div class="p-6 space-y-6">
+            <button
+              type="button"
+              class="bg-transparent"
+              data-modal-hide="modal-remove-address"
+            >
+              <img
+                class="max-w-[25px]"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAgZJREFUaEPtmWtygzAMhPHJ2tzEnKTpSeybND2ZgyjMOCAZrR9QmPCjnSHG7Ke1JQGmO/lhTq6/ewMc7WA1B5xznwRjjPmKoMZzXdc96E8I4Zf+931/rwVeDOCcuxtjPgaRs1ittgcBlcJkA0zC42hrha/GhRC+c0FgAFoqQ8R/stUmLswBgQBqRl3iQCHUAHuIn6EQCBXAnuJRiE2AI8QjEEmAI8VHELe+78c6wh1JAO99aJFt0DmttaJO8Yf/EH3NUhIBMqJPNmurMTJ25JBcYAHQ6M9pT3MdMjZealJqZQG891RpVdFcTpyCQMYy++Rhrb0tz0sA2s3LTspBSBEEg7XKSCsAzTLQWBvPI4nPuFd9gKnPZ7tJEij1/6j4KWgrx1cOIJZqnOByfqZ4mqodQMqJGKJAvBpAu4HZgprqJAvFs/WAW0KnB1DXgKUFmj6+0IV2e0AjfgYugGgDkMrzNdModx+ukEEP7ZoipRmjabFbAOzaSnAd6TWbOXSTIS0yMlZT6a/5QEPkqAuaTZg7JpWir/tQP7kApdTcCKeu2yqQ136xVaH0Z5uyFfl54k0HjoDQiidtaoC9MhMiHgZoDTF8ckq+B+XWI+RAxUfDFy1o1OOLswEWe+N8H/mktw3juvz7aknHy2dWOkHRnp4RxFfmSOoqdgC5WYuxb4AWUUXmPL0DT0s02UBVbAhTAAAAAElFTkSuQmCC"
+              />
+            </button>
+            <div class="!m-0">
+              <h1 class="mb-4 text-center font-medium text-[17px]">
+                حذف عنوان
+              </h1>
+              <div
+                class="flex items-center bg-[#fae6e6] p-3 rounded-[5px] gap-x-2"
+              >
+                <img
+                  class="max-w-[20px]"
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAlpJREFUaEPtmVFuwjAMhhPaswztFIyTDU7GdoqJnaUlk6tmKo4d20kQK4OXSih1/P2208TxbuU/v3L/3RPg3hFsFoGvvn8DmC6E9wgVnJv+8859wDN4/wnP7TAcWoFXA5z7/uBD2EVntY4BFADVwhQDgONuobbWcXKc98dSEDMApMomhFOVw9zLBSAmAEl1SIvR+2P073UYptyP9bGZayIbOSOEGiDn/MX7fXRWG5msGAYIFQA7mWEiDqzWtgjATVCiOgfB1pVCoCwA5XzMc2vKaFLru+tOeDmWhMoDdF3AE2/HUYyaxllqDBeJ3JysM5T6khpLp84IXgtOQmRSiQfA6ivysQUA2KDE4wQgASwG2NWlMALRHo6gYwQkAZJiMqo/qVgJgFMJFo+XcdxjwegIVE5eWsT4PSwCVYMJQJI+Beq3AsCZsDoATRolEdBQt1JYsnNXgNoijrvY5dadKuS0BhoVcAsAzWr2eACtaqBFBP5nDfylCGi+SUkNaMImLX+a4lPZwJ0P4qMqAsBE2q1wq90ot6Gj/FBt5iznAMvkuSjg9LFt5oimlTUKtatQ1XaaymFuP36L84DlPPK4R0oyCs65knrQrDjsSUxYRLIdBuqAzRWTxUmuIwGt+aTLLZxHxBbJqhtbv2HlWukNTms3by2KEDCgACTbpjfYE1Po6usqXWrMrfXLfKWE2+tgi8zz5SQG5yftrMUn3RFY7S3Hl6xwZgBVSlkpjKpfBcw6Fx6/2ks+CnxKL8jLEHbwxNes8F+8gmrVni9OodrItXr/CdBKyVI7q4/AD7KrKU+i/JQcAAAAAElFTkSuQmCC"
+                />
+                <p class="text-[15px]">سيتم حذف العنوان بشكل نهائي</p>
+              </div>
+            </div>
+            <div class="flex items-center justify-center gap-x-4">
+              <button
+                data-modal-hide="modal-remove-address"
+                class="bg-main rounded-[6px] text-white lg:w-[80%] w-full px-2 h-[45px] flex items-center justify-center gap-1"
+              >
+                <span class="text-[15px] font-medium">تأكيد</span>
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -459,6 +751,87 @@
           },
         },
       };
+    </script>
+
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initAutocomplete&libraries=places&v=weekly"
+      defer
+    ></script>
+
+    <script>
+      function initAutocomplete() {
+        const map = new google.maps.Map(document.getElementById("map"), {
+          center: { lat: -33.8688, lng: 151.2195 },
+          zoom: 13,
+          mapTypeId: "roadmap",
+        });
+        // Create the search box and link it to the UI element.
+        const input = document.getElementById("pac-input");
+        const searchBox = new google.maps.places.SearchBox(input);
+
+        map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+        // Bias the SearchBox results towards current map's viewport.
+        map.addListener("bounds_changed", () => {
+          searchBox.setBounds(map.getBounds());
+        });
+
+        let markers = [];
+
+        // [START maps_places_searchbox_getplaces]
+        // Listen for the event fired when the user selects a prediction and retrieve
+        // more details for that place.
+        searchBox.addListener("places_changed", () => {
+          const places = searchBox.getPlaces();
+
+          if (places.length == 0) {
+            return;
+          }
+
+          // Clear out the old markers.
+          markers.forEach((marker) => {
+            marker.setMap(null);
+          });
+          markers = [];
+
+          // For each place, get the icon, name and location.
+          const bounds = new google.maps.LatLngBounds();
+
+          places.forEach((place) => {
+            if (!place.geometry || !place.geometry.location) {
+              console.log("Returned place contains no geometry");
+              return;
+            }
+
+            const icon = {
+              url: place.icon,
+              size: new google.maps.Size(71, 71),
+              origin: new google.maps.Point(0, 0),
+              anchor: new google.maps.Point(17, 34),
+              scaledSize: new google.maps.Size(25, 25),
+            };
+
+            // Create a marker for each place.
+            markers.push(
+              new google.maps.Marker({
+                map,
+                icon,
+                title: place.name,
+                position: place.geometry.location,
+              })
+            );
+            if (place.geometry.viewport) {
+              // Only geocodes have viewport.
+              bounds.union(place.geometry.viewport);
+            } else {
+              bounds.extend(place.geometry.location);
+            }
+          });
+          map.fitBounds(bounds);
+        });
+        // [END maps_places_searchbox_getplaces]
+      }
+
+      window.initAutocomplete = initAutocomplete;
     </script>
   </body>
 </html>
